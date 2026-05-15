@@ -1,0 +1,70 @@
+# Scenario config for leonmap_ablation.
+# Defines what pair, what evidence, what methods to compare.
+# The wrapper builds a TEMP leonmap v-config from this at runtime; the
+# original leonmap config is never touched.
+
+scenario:
+  name: mondo_mesh
+  source_prefix: mondo
+  target_prefix: mesh
+  semra_landscape: disease
+
+evidence:
+  use_biomappings: true
+  use_known_mappings: false   # OBO xrefs from mapnet.utils.obo.load_known_mappings_df
+  use_semra: true
+  cache_tsv: data/evidence_mondo_mesh.tsv
+  force_rebuild: false
+
+methods:
+  - {name: bm25}
+  - {name: tfidf}
+  - {name: sapbert, model: base, boost: false}
+  - {name: sapbert, model: base, boost: true}
+  - {name: sapbert, model: ft,   boost: false}
+  - {name: sapbert, model: ft,   boost: true}
+
+ks: [1, 50, 100, 200]
+
+# ontologies needed by this scenario. EVERY collection used in
+# ablation/mapping is declared here and goes into the temp v-config.
+collections:
+  mondo:
+    source: owl
+    model: ft
+    owl_path: mondo.owl
+    id_prefixes: [MONDO_]
+  mesh:
+    source: owl
+    model: ft
+    owl_path: mesh_disease.owl
+    id_prefixes: [mesh_]
+  mondo_base:
+    source: owl
+    model: base
+    owl_path: mondo.owl
+    id_prefixes: [MONDO_]
+  mesh_base:
+    source: owl
+    model: base
+    owl_path: mesh_disease.owl
+    id_prefixes: [mesh_]
+
+# ontology download targets. Skipped if files exist.
+data_prep:
+  mondo:
+    url: http://purl.obolibrary.org/obo/mondo.owl
+    out_path: data/mondo.owl
+  mesh:
+    # built from indra mesh_client like the generate script does
+    out_path: data/mesh_disease.owl
+
+# final mapper run after the ablation table is produced.
+# Uses the leonmap (sapbert_ft) model with boost on.
+mapper:
+  run: true
+  threshold: 0.9
+  top_k: 1
+
+output_dir: emnlp_results/mondo_mesh
+keep_temp_config: true   # save effective leonmap v-config into run dir
