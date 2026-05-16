@@ -2,7 +2,7 @@
 Shared helpers for the leonmap_ablation wrapper:
 - tokenization
 - payload -> text / token-list adapters used by BM25 and TF-IDF
-- gold-pair lexical-overlap bucketing (Jaccard on label tokens)
+- gold-pair lexical-overlap bucketing (three Jaccard variants per pair)
 - per-method finalize: eval predictions + write metrics + write jsonl
 - MeSH disease OWL builder (formerly in main.py)
 """
@@ -23,6 +23,12 @@ _TOKEN_RE = re.compile(r"[a-z0-9]+")
 #        | high if J > 0.66
 _BUCKET_THRESHOLDS: Tuple[float, float] = (0.33, 0.66)
 BUCKETS: List[str] = ["zero", "low", "medium", "high"]
+
+# Three Jaccard "views" of a pair:
+#   label   : tokens(src.label)               vs tokens(tgt.label)               — what the old code did
+#   pooled  : tokens(label + all synonyms)    vs same on tgt                     — what BM25/TF-IDF actually see
+#   max_syn : max over (s in {label, syns}, t in {label, syns}) of jaccard(s, t) — best alignment over surface forms
+BUCKET_KINDS: List[str] = ["label", "pooled", "max_syn"]
 
 
 # ----- tokenization / payload adapters --------------------------------------
@@ -61,8 +67,32 @@ def _bucket_for_jaccard(j: float) -> str:
     return "high"
 
 
-def _label_tokens(db, cid: str) -> set:
-    return set(tokenize((db.get_payload_by_id(cid) or {}).get("label", "")))
+def _surface_forms(payload: Dict) -> List[str]:
+    forms = [payload.get("label", "") or ""]
+    forms.extend(payload.get("synonyms", []) or [])
+    return [f for f in forms if f and f.strip()]
+
+
+def _jaccard(a: set, b: set) -> float:
+    if not a and not b:
+        return 0.0
+    return len(a & b) / len(a | b)
+
+
+def _max_synonym_jaccard(src_forms: List[set], tgt_forms: List[set]) -> float:
+    best = 0.0
+    for s in src_forms:
+        if not s:
+            continue
+        for t in tgt_forms:
+            if not t:
+                continue
+            j = _jaccard(s, t)
+            if j > best:
+                best = j
+                if best == 1.0:
+                    return best
+    return best
 
 
 def compute_buckets(
@@ -70,30 +100,65 @@ def compute_buckets(
     src_db,
     tgt_db,
     out_path: Optional[Path] = None,
-) -> Dict[Tuple[str, str], str]:
+) -> Dict[Tuple[str, str], Dict[str, str]]:
     """
-    For each gold pair, compute Jaccard between src.label and tgt.label token
-    sets and assign a bucket. Returns {(src_id, tgt_id): bucket}.
+    For each gold pair, compute three Jaccard variants and bucket each one.
 
-    If `out_path` is given, writes buckets.tsv (src_id, tgt_id, jaccard, bucket)
-    while iterating. Jaccard is 0 when the union is empty.
+    Returns {(src_id, tgt_id): {"label": bucket, "pooled": bucket, "max_syn": bucket}}.
+
+    If `out_path` is given, writes buckets.tsv with full per-pair diagnostics:
+    src_id, tgt_id, src_label, tgt_label, j_label, b_label, j_pooled, b_pooled,
+    j_max_syn, b_max_syn, n_inter_pooled, n_union_pooled.
     """
-    bucket_map: Dict[Tuple[str, str], str] = {}
+    bucket_map: Dict[Tuple[str, str], Dict[str, str]] = {}
     tsv = None
     if out_path is not None:
         out_path.parent.mkdir(parents=True, exist_ok=True)
         tsv = open(out_path, "w", encoding="utf-8")
-        tsv.write("src_id\ttgt_id\tjaccard\tbucket\n")
+        tsv.write(
+            "src_id\ttgt_id\tsrc_label\ttgt_label"
+            "\tj_label\tb_label"
+            "\tj_pooled\tb_pooled"
+            "\tj_max_syn\tb_max_syn"
+            "\tn_inter_pooled\tn_union_pooled\n"
+        )
     try:
         for src_id, tgt_id in gold_pairs:
-            s_toks = _label_tokens(src_db, src_id)
-            t_toks = _label_tokens(tgt_db, tgt_id)
-            union = s_toks | t_toks
-            j = (len(s_toks & t_toks) / len(union)) if union else 0.0
-            bucket = _bucket_for_jaccard(j)
-            bucket_map[(src_id, tgt_id)] = bucket
+            src_payload = src_db.get_payload_by_id(src_id) or {}
+            tgt_payload = tgt_db.get_payload_by_id(tgt_id) or {}
+
+            src_form_sets = [set(tokenize(f)) for f in _surface_forms(src_payload)]
+            tgt_form_sets = [set(tokenize(f)) for f in _surface_forms(tgt_payload)]
+
+            s_lab = src_form_sets[0] if src_form_sets else set()
+            t_lab = tgt_form_sets[0] if tgt_form_sets else set()
+            j_label = _jaccard(s_lab, t_lab)
+
+            s_pool = set().union(*src_form_sets) if src_form_sets else set()
+            t_pool = set().union(*tgt_form_sets) if tgt_form_sets else set()
+            j_pooled = _jaccard(s_pool, t_pool)
+            n_inter = len(s_pool & t_pool)
+            n_union = len(s_pool | t_pool)
+
+            j_max_syn = _max_synonym_jaccard(src_form_sets, tgt_form_sets)
+
+            buckets = {
+                "label": _bucket_for_jaccard(j_label),
+                "pooled": _bucket_for_jaccard(j_pooled),
+                "max_syn": _bucket_for_jaccard(j_max_syn),
+            }
+            bucket_map[(src_id, tgt_id)] = buckets
+
             if tsv is not None:
-                tsv.write(f"{src_id}\t{tgt_id}\t{j:.6f}\t{bucket}\n")
+                src_label = (src_payload.get("label") or "").replace("\t", " ")
+                tgt_label = (tgt_payload.get("label") or "").replace("\t", " ")
+                tsv.write(
+                    f"{src_id}\t{tgt_id}\t{src_label}\t{tgt_label}"
+                    f"\t{j_label:.6f}\t{buckets['label']}"
+                    f"\t{j_pooled:.6f}\t{buckets['pooled']}"
+                    f"\t{j_max_syn:.6f}\t{buckets['max_syn']}"
+                    f"\t{n_inter}\t{n_union}\n"
+                )
     finally:
         if tsv is not None:
             tsv.close()
@@ -133,7 +198,7 @@ def build_prediction_row(
 def eval_predictions(
     predictions: List[Dict],
     gold_pairs: Iterable[Tuple[str, str]],
-    bucket_map: Dict[Tuple[str, str], str],
+    bucket_map: Dict[Tuple[str, str], Dict[str, str]],
     ks: List[int],
     model_name: str,
     query_mode: str,
@@ -142,36 +207,54 @@ def eval_predictions(
     """
     Build the full metrics dict from per-pair prediction rows.
 
-    Overall recall@k denominator is len(predictions) — matches the
-    pre-bucketing semantics so headline numbers stay backwards-compatible.
+    Overall recall@k denominator is len(predictions).
 
-    Per-bucket totals (n_<bucket>) are counted from gold_pairs, NOT from
-    bucket_map.values(). bucket_map is keyed by unique pair, so iterating it
-    deduplicates — but `predictions` is built from gold_pairs iterated as a
-    list (duplicates preserved), so the denominator must match. A skipped
-    gold pair (in `gold_pairs` but not in `predictions`) counts toward the
-    bucket total and contributes 0 hits. Buckets with zero pairs get
-    n_<bucket>=0 and recall@K_<bucket>=0.0.
+    Per-bucket recall is reported for THREE bucket families: label, pooled,
+    and max_syn (see BUCKET_KINDS / compute_buckets). Each per-bucket recall
+    uses the EVALUATED-IN-BUCKET denominator: only pairs that produced a
+    prediction count. Skipped pairs are reported separately as
+    `skipped_<kind>_<bucket>` so they don't pollute recall.
+
+    Emitted keys per kind/bucket:
+      gold_<kind>_<bucket>       : gold-pair count in bucket (informational)
+      evaluated_<kind>_<bucket>  : pairs in bucket that produced a prediction
+      skipped_<kind>_<bucket>    : gold - evaluated for this bucket
+      recall@<k>_<kind>_<bucket> : evaluated_hits / evaluated_in_bucket
     """
     total = len(predictions)
     hits_at = {k: 0 for k in ks}
 
-    bucket_totals = {b: 0 for b in BUCKETS}
+    gold_per_bucket = {kind: {b: 0 for b in BUCKETS} for kind in BUCKET_KINDS}
     for pair in gold_pairs:
-        b = bucket_map.get(pair)
-        if b in bucket_totals:
-            bucket_totals[b] += 1
+        kinds = bucket_map.get(pair)
+        if not kinds:
+            continue
+        for kind in BUCKET_KINDS:
+            b = kinds.get(kind)
+            if b in gold_per_bucket[kind]:
+                gold_per_bucket[kind][b] += 1
 
-    bucket_hits = {b: {k: 0 for k in ks} for b in BUCKETS}
+    eval_per_bucket = {kind: {b: 0 for b in BUCKETS} for kind in BUCKET_KINDS}
+    hits_per_bucket = {kind: {b: {k: 0 for k in ks} for b in BUCKETS} for kind in BUCKET_KINDS}
+
     for row in predictions:
         tgt_id = row["tgt_id_gold"]
-        bucket = bucket_map.get((row["src_id"], tgt_id))
+        kinds = bucket_map.get((row["src_id"], tgt_id))
         top_ids = [m["id"] for m in row.get("top_matches", [])]
+        hit_at_k = {k: tgt_id in top_ids[:k] for k in ks}
         for k in ks:
-            if tgt_id in top_ids[:k]:
+            if hit_at_k[k]:
                 hits_at[k] += 1
-                if bucket is not None:
-                    bucket_hits[bucket][k] += 1
+        if not kinds:
+            continue
+        for kind in BUCKET_KINDS:
+            b = kinds.get(kind)
+            if b not in eval_per_bucket[kind]:
+                continue
+            eval_per_bucket[kind][b] += 1
+            for k in ks:
+                if hit_at_k[k]:
+                    hits_per_bucket[kind][b][k] += 1
 
     metrics: Dict = {
         "direction": direction,
@@ -181,17 +264,20 @@ def eval_predictions(
     }
     for k in ks:
         metrics[f"recall@{k}"] = (hits_at[k] / total) if total else 0.0
-        if k == 1:
-            metrics["tp@1"] = hits_at[1]
-            metrics["fp@1"] = total - hits_at[1]
-            metrics["accuracy@1"] = (hits_at[1] / total) if total else 0.0
 
-    for b in BUCKETS:
-        metrics[f"n_{b}"] = bucket_totals[b]
-    for k in ks:
+    for kind in BUCKET_KINDS:
         for b in BUCKETS:
-            n = bucket_totals[b]
-            metrics[f"recall@{k}_{b}"] = (bucket_hits[b][k] / n) if n else 0.0
+            gold_n = gold_per_bucket[kind][b]
+            eval_n = eval_per_bucket[kind][b]
+            metrics[f"gold_{kind}_{b}"] = gold_n
+            metrics[f"evaluated_{kind}_{b}"] = eval_n
+            metrics[f"skipped_{kind}_{b}"] = gold_n - eval_n
+        for k in ks:
+            for b in BUCKETS:
+                eval_n = eval_per_bucket[kind][b]
+                metrics[f"recall@{k}_{kind}_{b}"] = (
+                    hits_per_bucket[kind][b][k] / eval_n
+                ) if eval_n else 0.0
 
     return metrics
 
@@ -218,7 +304,7 @@ def finalize_method(
     out_dir: Path,
     predictions: List[Dict],
     gold_pairs: Iterable[Tuple[str, str]],
-    bucket_map: Dict[Tuple[str, str], str],
+    bucket_map: Dict[Tuple[str, str], Dict[str, str]],
     ks: List[int],
     *,
     model_name: str,

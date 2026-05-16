@@ -27,7 +27,7 @@ def run(
     src_db,
     tgt_db,
     gold_pairs: List[Tuple[str, str]],
-    bucket_map: Dict[Tuple[str, str], str],
+    bucket_map: Dict[Tuple[str, str], Dict[str, str]],
 ) -> Path:
     corpus_ids: List[str] = []
     corpus_tokens: List[List[str]] = []

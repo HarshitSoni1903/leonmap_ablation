@@ -58,8 +58,6 @@ scenarios:
       use_known_mappings: false
       use_semra: true
       cache_tsv: data/evidence_mondo_mesh.tsv
-      # the cached TSV has subject_id=mondo, object_id=mesh; swap columns
-      # so this scenario reads it as mesh -> mondo.
       src_col: object_id
       tgt_col: subject_id
     collections:

@@ -76,10 +76,12 @@ def _run_leonmap_ablation(
 
 
 def _find_ablation_dir(run_dir: Path, model: str) -> Path:
-    """Find the dir holding metrics.json + predictions_at_<k>.jsonl for `model`."""
     matches = list(run_dir.rglob(f"{model}/full_src/metrics.json"))
     if not matches:
         raise RuntimeError(f"No metrics.json found under {run_dir} for model={model}")
+    if len(matches) > 1:
+        rel = [str(m.relative_to(run_dir)) for m in matches]
+        raise RuntimeError(f"Ambiguous ablation dir under {run_dir} for model={model}: {rel}")
     return matches[0].parent
 
 
@@ -101,7 +103,7 @@ def run(
     model: str,
     boost: bool,
     gold_pairs: List[Tuple[str, str]],
-    bucket_map: Dict[Tuple[str, str], str],
+    bucket_map: Dict[Tuple[str, str], Dict[str, str]],
     v_on: Path,
     v_off: Path,
 ) -> Path:

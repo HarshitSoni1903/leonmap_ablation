@@ -115,10 +115,13 @@ def run_scenario(
     bucket_map = utils.compute_buckets(gold_pairs, src_db, tgt_db,
                                        out_path=run_dir / "buckets.tsv")
 
-    counts = {b: 0 for b in utils.BUCKETS}
-    for b in bucket_map.values():
-        counts[b] += 1
-    logger.info("Buckets: " + ", ".join(f"{b}={counts[b]}" for b in utils.BUCKETS))
+    for kind in utils.BUCKET_KINDS:
+        counts = {b: 0 for b in utils.BUCKETS}
+        for kinds in bucket_map.values():
+            counts[kinds[kind]] += 1
+        logger.info(
+            f"Buckets[{kind}]: " + ", ".join(f"{b}={counts[b]}" for b in utils.BUCKETS)
+        )
 
     # 6. run methods
     method_results: List[Tuple[Dict, Path]] = []

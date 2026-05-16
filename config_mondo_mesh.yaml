@@ -10,8 +10,9 @@ scenario:
   semra_landscape: disease
 
 evidence:
+  prebuilt_tsv: data/leonmap_mondo_mesh_right_gold.tsv
   use_biomappings: true
-  use_known_mappings: false   # OBO xrefs from mapnet.utils.obo.load_known_mappings_df
+  use_known_mappings: false
   use_semra: true
   cache_tsv: data/evidence_mondo_mesh.tsv
   force_rebuild: false
