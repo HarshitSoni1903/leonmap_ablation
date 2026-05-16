@@ -71,14 +71,28 @@ def print_table(rows: List[Dict]) -> None:
         print("  ".join(str(r[c]).ljust(widths[c]) for c in cols))
 
 
+_KS = [1, 50, 100, 200]
+_BUCKETS = ["zero", "low", "medium", "high"]
+
+
+def _slim_columns() -> List[str]:
+    cols = ["scenario", "method", "evaluated"]
+    cols += [f"recall@{k}" for k in _KS]
+    for k in _KS:
+        cols += [f"recall@{k}_pooled_{b}" for b in _BUCKETS]
+    cols += [f"evaluated_pooled_{b}" for b in _BUCKETS]
+    cols += [f"recall@1_label_{b}" for b in _BUCKETS]
+    cols += ["skipped_src_missing", "skipped_tgt_missing"]
+    return cols
+
+
 def write_full_metrics(
     scenario_method_results: List[Tuple[str, Dict, Path]],
     out_path: Path,
 ) -> None:
-    """
-    scenario_method_results: list of (scenario_name, method_spec, metrics_json_path)
-    Writes one row per (scenario, method) with all metrics fields.
-    """
+    """One row per (scenario, method). Slim view: headline R@k, pooled R@k per
+    bucket, pooled n per bucket, label R@1 per bucket (kept as the bug-exhibit),
+    plus skip counts. The full per-method metrics.json files retain everything."""
     rows = []
     for scenario_name, spec, mpath in scenario_method_results:
         metrics = json.loads(Path(mpath).read_text())
@@ -88,14 +102,7 @@ def write_full_metrics(
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     if rows:
-        # union of all keys (in case some methods report fields others don't)
-        all_keys = []
-        seen = set()
-        for r in rows:
-            for k in r:
-                if k not in seen:
-                    all_keys.append(k); seen.add(k)
         with open(out_path, "w", newline="") as f:
-            w = csv.DictWriter(f, fieldnames=all_keys, delimiter="\t", extrasaction="ignore")
+            w = csv.DictWriter(f, fieldnames=_slim_columns(), delimiter="\t", extrasaction="ignore")
             w.writeheader()
             w.writerows(rows)
