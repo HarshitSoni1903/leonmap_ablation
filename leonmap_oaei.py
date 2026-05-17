@@ -2,27 +2,28 @@
 Run LeonMap against the OAEI Bio-ML benchmark.
 
 Evaluates LeonMap on the five Bio-ML pairs (OMIM-ORDO, NCIT-DOID, and three UMLS
-pairs) using OAEI's own protocol: global matching (P/R/F1 vs refs_equiv/full.tsv)
-and local ranking (MRR / Hits@K vs refs_equiv/test.cands.tsv). Results land in a
-table that slots into the OAEI 2024 leaderboard.
+pairs) using OAEI's own protocol: global matching (P/R/F1) and local ranking
+(MRR / Hits@K). Mapper is invoked once per task at a low floor threshold so the
+raw scored predictions can be filtered post-hoc without re-embedding.
 
-Expected layout (you place the data manually):
+Two evaluation modes:
+  - default: fixed threshold per task (TASK_THRESHOLDS, falling back to
+    DEFAULT_THRESHOLD), evaluated against refs_equiv/full.tsv. Unsupervised.
+  - --sweep: tune threshold on refs_equiv/train.tsv, evaluate against
+    refs_equiv/test.tsv. Semi-supervised (OAEI-comparable).
+
+Expected layout (placed manually):
 
     {LEONMAP_ROOT}/{BIOML_DATA_DIR}/{task}/
         <src>.owl
         <tgt>.owl
-        refs_equiv/full.tsv
-        refs_equiv/test.tsv
+        refs_equiv/{full,test,train}.tsv
         refs_equiv/test.cands.tsv
-        refs_equiv/train.tsv
 
 Usage:
-    python leonmap_oaei.py                       # run all five tasks
-    python leonmap_oaei.py --task ncit-doid      # one task only
-
-Install:
-    pip install git+https://github.com/HarshitSoni1903/Weakly-Supervised-Representation-Learning-for-Cross-Ontology-Mapping.git
-    pip install owlready2 huggingface_hub numpy
+    python leonmap_oaei.py                                # all tasks, fixed thresholds
+    python leonmap_oaei.py --sweep                        # all tasks, tuned on train
+    python leonmap_oaei.py --task ncit-doid --sweep       # one task, sweep mode
 
 The fine-tuned SapBERT model is pulled from HuggingFace on first run.
 """
@@ -32,7 +33,6 @@ import argparse
 import ast
 import csv
 import json
-import os
 import sys
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
@@ -42,11 +42,32 @@ from huggingface_hub import snapshot_download
 
 # Config
 
-LEONMAP_ROOT = Path(__file__).resolve().parent.parent
-RECORD_ID = "13119437"                       # Zenodo record id; doubles as folder name
-BIOML_DATA_DIR = f"data/{RECORD_ID}"  # joined with LEONMAP_ROOT at runtime
-THRESHOLD = 0.9
+# Anchor everything to the script's parent dir, so cwd doesn't matter.
+LEONMAP_ROOT = Path(__file__).resolve().parent.parent       # leonmap_ablation/ -> mapnet/
+RECORD_ID = "13119437"                                      # Zenodo record id; doubles as folder name
+BIOML_DATA_DIR = f"data/{RECORD_ID}"                        # joined with LEONMAP_ROOT
 HF_MODEL_REPO = "harshitsoni1903/sapbert-finetuned-semra"
+
+# Threshold used when NOT sweeping. Single source of truth.
+DEFAULT_THRESHOLD = 0.9
+
+# Per-task override (None -> DEFAULT_THRESHOLD). Lets us pin per-pair values
+# after looking at score distributions, without rerunning the encoder.
+TASK_THRESHOLDS: Dict[str, Optional[float]] = {
+    "omim-ordo":           None,
+    "ncit-doid":           None,
+    "snomed-fma.body":     None,
+    "snomed-ncit.pharm":   None,
+    "snomed-ncit.neoplas": None,
+}
+
+# Sweep grid (used only with --sweep). Coarse 0.05 steps from 0.50 to 0.95.
+SWEEP_GRID: List[float] = [round(0.50 + 0.05 * i, 2) for i in range(10)]
+
+# Mapper runs at this floor so its TSV contains every post-boost candidate
+# we might ever want to threshold above. Must be <= min(SWEEP_GRID) and <=
+# min(TASK_THRESHOLDS.values()) and <= DEFAULT_THRESHOLD.
+MAPPER_FLOOR_THRESHOLD = 0.5
 
 TASKS = [
     "omim-ordo",
@@ -60,15 +81,15 @@ TASKS = [
 _LM: Dict = {}
 
 
-# Helpers (depend on _LM populated in __main__)
+# Helpers
 
 def _owl_files(task: str) -> Tuple[str, str]:
     """
     Derive (src_owl, tgt_owl) filenames from a Bio-ML task name.
 
     Examples:
-        "ncit-doid"            -> ("ncit.owl",         "doid.owl")
-        "snomed-fma.body"      -> ("snomed.body.owl",  "fma.body.owl")
+        "ncit-doid"            -> ("ncit.owl",          "doid.owl")
+        "snomed-fma.body"      -> ("snomed.body.owl",   "fma.body.owl")
         "snomed-ncit.neoplas"  -> ("snomed.neoplas.owl","ncit.neoplas.owl")
     """
     src_part, tgt_part = task.split("-", 1)
@@ -79,11 +100,7 @@ def _owl_files(task: str) -> Tuple[str, str]:
 
 
 def _iri_to_id(iri: str) -> str:
-    """
-    Same IRI tail extraction LeonMap's _owl_class_id uses, then canonicalize.
-    Going through LeonMap's own canonicalize_id guarantees we get the form
-    that's actually in the FAISS collection's id2pos.
-    """
+    """Re-use LeonMap's own canonicalize_id on the IRI tail. Same rule as build-time."""
     canonicalize_id = _LM["canonicalize_id"]
     tail = iri.split("#")[-1].rsplit("/", 1)[-1].strip()
     if "id.nlm.nih.gov/mesh/" in iri or "obo/mesh#" in iri or "purl.obolibrary.org/obo/mesh" in iri:
@@ -93,9 +110,8 @@ def _iri_to_id(iri: str) -> str:
 
 def _get_ignored_iris(owl_path: Path) -> set:
     """
-    Collect IRIs of classes annotated `use_in_alignment=false` (locality-module
-    auxiliary classes added by Bio-ML 2023+). Predictions involving these are
-    excluded from global matching evaluation.
+    IRIs of classes annotated `use_in_alignment=false` (locality-module
+    auxiliary classes). Predictions involving these are dropped before eval.
     """
     from owlready2 import get_ontology
 
@@ -111,10 +127,9 @@ def _get_ignored_iris(owl_path: Path) -> set:
 
 def _register_task(task: str, src_owl_abs: Path, tgt_owl_abs: Path) -> Tuple[str, str, str]:
     """
-    Inject runtime entries into leonmap.config.COLLECTIONS and MAPPINGS.
-    id_prefixes=[] because Bio-ML's pruned OWLs already contain just one
-    ontology's classes; no filter needed and it dodges the canonicalize-id
-    namespace mismatch (e.g. NCIT classes have no namespace prefix).
+    Inject runtime entries into leonmap.config so build_vdb and mapper can find
+    them via --collections / --study. Mapper threshold is set to the floor so
+    the resulting TSV preserves every candidate we might want to keep later.
     """
     _cfg = _LM["cfg_mod"]
     src_col = f"oaei_{task}_src"
@@ -136,7 +151,7 @@ def _register_task(task: str, src_owl_abs: Path, tgt_owl_abs: Path) -> Tuple[str
     _cfg.MAPPINGS[mapping_key] = {
         "src_collection": src_col,
         "tgt_collection": tgt_col,
-        "threshold": THRESHOLD,
+        "threshold": MAPPER_FLOOR_THRESHOLD,
         "top_k": 1,
         "reverse": False,
     }
@@ -146,9 +161,8 @@ def _register_task(task: str, src_owl_abs: Path, tgt_owl_abs: Path) -> Tuple[str
 def _score_candidates(src_id: str, candidate_ids: List[str], src_db, tgt_db) -> List[Tuple[str, float, str]]:
     """
     Score a fixed candidate list against a source concept. No FAISS retrieval:
-    reconstruct vectors directly from each side's index, compute cosine, hand
-    the pool to rank_pool with threshold=0 so all candidates stay ranked.
-    Boost still applies (unambiguous label match in pool -> 1.0).
+    reconstruct vectors directly, cosine, hand to rank_pool at threshold 0 so
+    nothing is dropped. Boost still applies.
     """
     rank_pool = _LM["rank_pool"]
 
@@ -180,24 +194,28 @@ def _run(entry_main, cli_name: str, argv: List[str]) -> None:
         sys.argv = old
 
 
-# Format conversion + evaluation
+# I/O for predictions and references
 
-def _mapper_to_match_result(mapper_tsv: Path, src_db, tgt_db, ignored: set, out_path: Path) -> int:
+def _load_mapper_predictions(
+    mapper_tsv: Path, src_db, tgt_db, ignored: set,
+) -> List[Tuple[str, str, float]]:
     """
-    Convert mapper.py's TSV (canonical-id columns) into OAEI match.result.tsv
-    (IRI columns). Rows referencing locality-module classes are dropped.
+    Read mapper.py's output TSV (canonical-id columns) and return a list of
+    (src_iri, tgt_iri, score) tuples with ignored classes already filtered out.
+    This is the raw post-boost prediction set we threshold against later.
     """
-    n = 0
-    with open(mapper_tsv, "r", encoding="utf-8") as f, \
-         open(out_path, "w", encoding="utf-8", newline="") as g:
+    preds: List[Tuple[str, str, float]] = []
+    with open(mapper_tsv, "r", encoding="utf-8") as f:
         r = csv.DictReader(f, delimiter="\t")
-        w = csv.writer(g, delimiter="\t")
-        w.writerow(["SrcEntity", "TgtEntity", "Score"])
         for row in r:
             src_id = row.get("src_id", "").strip()
             tgt_id = row.get("tgt_id", "").strip()
-            score = row.get("score", "").strip()
-            if not src_id or not tgt_id:
+            score_str = row.get("score", "").strip()
+            if not src_id or not tgt_id or not score_str:
+                continue
+            try:
+                score = float(score_str)
+            except ValueError:
                 continue
             src_iri = (src_db.get_payload_by_id(src_id) or {}).get("iri", "")
             tgt_iri = (tgt_db.get_payload_by_id(tgt_id) or {}).get("iri", "")
@@ -205,19 +223,74 @@ def _mapper_to_match_result(mapper_tsv: Path, src_db, tgt_db, ignored: set, out_
                 continue
             if src_iri in ignored or tgt_iri in ignored:
                 continue
-            w.writerow([src_iri, tgt_iri, score])
-            n += 1
+            preds.append((src_iri, tgt_iri, score))
+    return preds
+
+
+def _write_match_result(preds: List[Tuple[str, str, float]], threshold: float, out_path: Path) -> int:
+    """Filter raw predictions at threshold and write the OAEI match.result.tsv."""
+    n = 0
+    with open(out_path, "w", encoding="utf-8", newline="") as g:
+        w = csv.writer(g, delimiter="\t")
+        w.writerow(["SrcEntity", "TgtEntity", "Score"])
+        for src_iri, tgt_iri, score in preds:
+            if score >= threshold:
+                w.writerow([src_iri, tgt_iri, score])
+                n += 1
     return n
 
 
-def _run_local_ranking(test_cands_path: Path, src_db, tgt_db, out_path: Path) -> Tuple[int, int]:
-    """
-    For each row in test.cands.tsv (SrcEntity, TgtEntity, TgtCandidates list of
-    IRIs), score the candidates and write rank.result.tsv with the same
-    columns but TgtCandidates as a list of (iri, score) tuples.
+def _load_refs(refs_path: Path) -> set:
+    """Load (src_iri, tgt_iri) gold pairs from a Bio-ML reference TSV."""
+    pairs: set = set()
+    with open(refs_path, "r", encoding="utf-8") as f:
+        r = csv.DictReader(f, delimiter="\t")
+        for row in r:
+            s = row.get("SrcEntity", "").strip()
+            t = row.get("TgtEntity", "").strip()
+            if s and t:
+                pairs.add((s, t))
+    return pairs
 
-    Returns (rows_written, rows_with_src_not_in_db).
+
+def _f1(preds: set, refs: set) -> Tuple[float, float, float, int]:
+    tp = len(preds & refs)
+    p = tp / len(preds) if preds else 0.0
+    r = tp / len(refs) if refs else 0.0
+    f1 = 2 * p * r / (p + r) if (p + r) else 0.0
+    return p, r, f1, tp
+
+
+# Threshold selection: sweep on train
+
+def _sweep_threshold(
+    preds: List[Tuple[str, str, float]], train_refs_path: Path, grid: List[float],
+) -> Dict:
     """
+    Pick the threshold that maximizes F1 on train.tsv. Predictions are filtered
+    to those whose src_iri appears in train (OAEI convention: only score
+    predictions for source concepts that have a gold mapping in the slice
+    you're evaluating against).
+    """
+    train_refs = _load_refs(train_refs_path)
+    train_src = {s for s, _ in train_refs}
+    train_preds = [(s, t, sc) for s, t, sc in preds if s in train_src]
+
+    sweep_log: List[Dict] = []
+    best = {"threshold": grid[0], "F1": -1.0, "P": 0.0, "R": 0.0, "tp": 0, "n_preds": 0}
+    for t in grid:
+        preds_at_t = {(s, tg) for s, tg, sc in train_preds if sc >= t}
+        p, r, f1, tp = _f1(preds_at_t, train_refs)
+        rec = {"threshold": t, "P": p, "R": r, "F1": f1, "tp": tp, "n_preds": len(preds_at_t)}
+        sweep_log.append(rec)
+        if f1 > best["F1"]:
+            best = rec
+    return {"best": best, "sweep": sweep_log, "n_train_refs": len(train_refs)}
+
+
+# Local ranking (unchanged by threshold; output is candidate scores)
+
+def _run_local_ranking(test_cands_path: Path, src_db, tgt_db, out_path: Path) -> Tuple[int, int]:
     n_written = 0
     n_src_missing = 0
     with open(test_cands_path, "r", encoding="utf-8") as f, \
@@ -239,7 +312,6 @@ def _run_local_ranking(test_cands_path: Path, src_db, tgt_db, out_path: Path) ->
             ranked = _score_candidates(src_id, cand_ids, src_db, tgt_db)
             score_map: Dict[str, float] = {cid: float(s) for cid, s, _ in ranked}
 
-            # Preserve input order; eval will sort.
             scored: List[Tuple[str, float]] = [
                 (iri, score_map.get(cid, 0.0))
                 for iri, cid in zip(cand_iris, cand_ids)
@@ -250,28 +322,6 @@ def _run_local_ranking(test_cands_path: Path, src_db, tgt_db, out_path: Path) ->
     return n_written, n_src_missing
 
 
-def _eval_global(match_path: Path, refs_full_path: Path, ignored: set) -> Dict:
-    preds: set = set()
-    refs: set = set()
-    with open(match_path, "r", encoding="utf-8") as f:
-        r = csv.DictReader(f, delimiter="\t")
-        for row in r:
-            preds.add((row["SrcEntity"], row["TgtEntity"]))
-    with open(refs_full_path, "r", encoding="utf-8") as f:
-        r = csv.DictReader(f, delimiter="\t")
-        for row in r:
-            s = row.get("SrcEntity", "")
-            t = row.get("TgtEntity", "")
-            if s in ignored or t in ignored:
-                continue
-            refs.add((s, t))
-    tp = len(preds & refs)
-    p = tp / len(preds) if preds else 0.0
-    rec = tp / len(refs) if refs else 0.0
-    f1 = 2 * p * rec / (p + rec) if (p + rec) else 0.0
-    return {"P": p, "R": rec, "F1": f1, "n_preds": len(preds), "n_refs": len(refs), "tp": tp}
-
-
 def _eval_ranking(rank_path: Path, ks: Tuple[int, ...] = (1, 5, 10)) -> Dict:
     mrr_sum = 0.0
     hits = {k: 0 for k in ks}
@@ -280,7 +330,7 @@ def _eval_ranking(rank_path: Path, ks: Tuple[int, ...] = (1, 5, 10)) -> Dict:
         r = csv.DictReader(f, delimiter="\t")
         for row in r:
             gold = row["TgtEntity"].strip()
-            scored = list(ast.literal_eval(row["TgtCandidates"]))  # list of (iri, score)
+            scored = list(ast.literal_eval(row["TgtCandidates"]))
             scored.sort(key=lambda x: -float(x[1]))
             rank = next((i + 1 for i, (iri, _s) in enumerate(scored) if iri == gold), None)
             if rank is not None:
@@ -295,9 +345,27 @@ def _eval_ranking(rank_path: Path, ks: Tuple[int, ...] = (1, 5, 10)) -> Dict:
     return out
 
 
+# Global eval: from a written match.result.tsv against a refs file
+
+def _eval_global_match_file(match_path: Path, refs_path: Path, restrict_to_refs_src: bool) -> Dict:
+    refs = _load_refs(refs_path)
+    refs_src = {s for s, _ in refs}
+    preds: set = set()
+    with open(match_path, "r", encoding="utf-8") as f:
+        r = csv.DictReader(f, delimiter="\t")
+        for row in r:
+            s = row["SrcEntity"].strip()
+            t = row["TgtEntity"].strip()
+            if restrict_to_refs_src and s not in refs_src:
+                continue
+            preds.add((s, t))
+    p, r_, f1, tp = _f1(preds, refs)
+    return {"P": p, "R": r_, "F1": f1, "tp": tp, "n_preds": len(preds), "n_refs": len(refs)}
+
+
 # Per-task driver
 
-def run_task(task: str, year_dir: Path, out_dir: Path) -> Optional[Dict]:
+def run_task(task: str, year_dir: Path, out_dir: Path, sweep: bool) -> Optional[Dict]:
     task_dir = year_dir / task
     if not task_dir.is_dir():
         print(f"[SKIP] Task data not found: {task_dir}")
@@ -311,23 +379,28 @@ def run_task(task: str, year_dir: Path, out_dir: Path) -> Optional[Dict]:
         return None
 
     refs_full = task_dir / "refs_equiv" / "full.tsv"
+    refs_train = task_dir / "refs_equiv" / "train.tsv"
+    refs_test = task_dir / "refs_equiv" / "test.tsv"
     test_cands = task_dir / "refs_equiv" / "test.cands.tsv"
-    for p in (refs_full, test_cands):
+
+    required = [refs_full, test_cands] + ([refs_train, refs_test] if sweep else [])
+    for p in required:
         if not p.exists():
             print(f"[SKIP] Missing reference file: {p}")
             return None
 
-    print(f"\n=== Task: {task} ===")
+    print(f"\n=== Task: {task}  (mode: {'sweep' if sweep else 'fixed'}) ===")
     print(f"  src OWL: {src_owl}")
     print(f"  tgt OWL: {tgt_owl}")
 
     src_col, tgt_col, mapping_key = _register_task(task, src_owl, tgt_owl)
 
-    # Build FAISS collections (skipped automatically if already present).
+    # Build FAISS collections (no-op if already built).
     _run(_LM["build_main"], "leonmap-build", ["--collections", src_col, tgt_col])
 
-    # Global matching: produces mapper_results/<study>/run_<stamp>/<src>_to_<tgt>.tsv
-    _run(_LM["mapper_main"], "leonmap-map", ["--study", mapping_key])
+    # Mapper at the floor threshold so we keep every candidate.
+    _run(_LM["mapper_main"], "leonmap-map",
+         ["--study", mapping_key, "--threshold", str(MAPPER_FLOOR_THRESHOLD)])
 
     project_root: Path = _LM["cfg_mod"].PROJECT_ROOT
     mapper_runs_dir = project_root / "mapper_results" / mapping_key
@@ -341,7 +414,7 @@ def run_task(task: str, year_dir: Path, out_dir: Path) -> Optional[Dict]:
         print(f"[ERROR] Mapper output missing: {mapper_tsv}")
         return None
 
-    # Load collections for ranking + IRI lookups.
+    # Load collections for IRI lookups + ranking.
     BuildConfig = _LM["BuildConfig"]
     load_collection = _LM["load_collection"]
     cfg = BuildConfig()
@@ -357,16 +430,51 @@ def run_task(task: str, year_dir: Path, out_dir: Path) -> Optional[Dict]:
     rank_path = out_dir / "rank.result.tsv"
     metrics_path = out_dir / "metrics.json"
 
-    n_match = _mapper_to_match_result(mapper_tsv, src_db, tgt_db, ignored, match_path)
-    print(f"  Global matching: {n_match} predictions written")
+    # Raw post-boost predictions (filtered for ignored). One row per source.
+    raw_preds = _load_mapper_predictions(mapper_tsv, src_db, tgt_db, ignored)
+    print(f"  Raw predictions (>= {MAPPER_FLOOR_THRESHOLD}): {len(raw_preds)}")
 
+    # Pick threshold + decide which refs we evaluate against.
+    sweep_info: Optional[Dict] = None
+    if sweep:
+        sweep_info = _sweep_threshold(raw_preds, refs_train, SWEEP_GRID)
+        chosen_threshold = float(sweep_info["best"]["threshold"])
+        eval_refs = refs_test
+        eval_target = "test.tsv"
+        restrict_src = True
+        print(f"  Sweep best: threshold={chosen_threshold:.2f}  "
+              f"trainF1={sweep_info['best']['F1']:.4f}  "
+              f"trainP={sweep_info['best']['P']:.4f}  "
+              f"trainR={sweep_info['best']['R']:.4f}")
+    else:
+        chosen_threshold = TASK_THRESHOLDS.get(task) or DEFAULT_THRESHOLD
+        eval_refs = refs_full
+        eval_target = "full.tsv"
+        restrict_src = False
+        print(f"  Fixed threshold: {chosen_threshold}")
+
+    # Write match.result.tsv at the chosen threshold and evaluate.
+    n_match = _write_match_result(raw_preds, chosen_threshold, match_path)
+    print(f"  Global matching: {n_match} predictions @ threshold={chosen_threshold} -> {eval_target}")
+    global_metrics = _eval_global_match_file(match_path, eval_refs, restrict_to_refs_src=restrict_src)
+
+    # Local ranking is threshold-independent.
     n_rank, n_src_missing = _run_local_ranking(test_cands, src_db, tgt_db, rank_path)
     print(f"  Local ranking: {n_rank} test rows scored ({n_src_missing} src not in DB)")
-
-    global_metrics = _eval_global(match_path, refs_full, ignored)
     ranking_metrics = _eval_ranking(rank_path)
 
-    metrics = {"task": task, **global_metrics, **ranking_metrics, "src_missing": n_src_missing}
+    metrics = {
+        "task": task,
+        "mode": "sweep" if sweep else "fixed",
+        "threshold": chosen_threshold,
+        "eval_on": eval_target,
+        **global_metrics,
+        **ranking_metrics,
+        "src_missing": n_src_missing,
+    }
+    if sweep_info is not None:
+        metrics["sweep_log"] = sweep_info["sweep"]
+        metrics["n_train_refs"] = sweep_info["n_train_refs"]
     metrics_path.write_text(json.dumps(metrics, indent=2), encoding="utf-8")
 
     print(f"  P={global_metrics['P']:.4f}  R={global_metrics['R']:.4f}  F1={global_metrics['F1']:.4f}")
@@ -380,9 +488,12 @@ def run_task(task: str, year_dir: Path, out_dir: Path) -> Optional[Dict]:
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[1])
     ap.add_argument("--task", default=None, help=f"Run a single task. One of: {TASKS}")
+    ap.add_argument("--sweep", action="store_true",
+                    help="Tune threshold per task on refs_equiv/train.tsv, evaluate on test.tsv. "
+                         "Default: fixed threshold per TASK_THRESHOLDS (or DEFAULT_THRESHOLD), eval on full.tsv.")
     args = ap.parse_args()
 
-    root = Path(os.path.abspath(LEONMAP_ROOT))
+    root = Path(LEONMAP_ROOT)
 
     # Patch PROJECT_ROOT before importing anything else from leonmap.
     import leonmap.config as _cfg
@@ -403,7 +514,6 @@ if __name__ == "__main__":
         "mapper_main": mapper_main,
     })
 
-    # Pull the fine-tuned SapBERT if it's not already local.
     cfg = BuildConfig()
     model_dir = resolve_path(cfg.ft_model_path)
     if not model_dir.exists():
@@ -419,19 +529,20 @@ if __name__ == "__main__":
         raise SystemExit(f"Unknown task: {args.task}. One of: {TASKS}")
     tasks_to_run = [args.task] if args.task else list(TASKS)
 
-    out_root = root / "oaei_results" / RECORD_ID
+    suffix = "sweep" if args.sweep else "fixed"
+    out_root = root / "oaei_results" / RECORD_ID / suffix
     out_root.mkdir(parents=True, exist_ok=True)
 
     all_metrics: List[Dict] = []
     for task in tasks_to_run:
-        m = run_task(task, year_dir, out_root / task)
+        m = run_task(task, year_dir, out_root / task, sweep=args.sweep)
         if m:
             all_metrics.append(m)
 
-    # Summary table
     if all_metrics:
         summary_path = out_root / "results_summary.tsv"
-        cols = ["task", "P", "R", "F1", "MRR", "Hits@1", "Hits@5", "Hits@10",
+        cols = ["task", "mode", "threshold", "eval_on",
+                "P", "R", "F1", "MRR", "Hits@1", "Hits@5", "Hits@10",
                 "n_preds", "n_refs", "tp", "n_test", "src_missing"]
         with open(summary_path, "w", encoding="utf-8", newline="") as f:
             w = csv.DictWriter(f, fieldnames=cols, delimiter="\t", extrasaction="ignore")
@@ -440,12 +551,12 @@ if __name__ == "__main__":
                 w.writerow(m)
         print(f"\nSummary -> {summary_path}\n")
 
-        # stdout table
-        hdr = f"{'task':<24} {'P':>6} {'R':>6} {'F1':>6} {'MRR':>6} {'H@1':>6} {'H@5':>6} {'H@10':>6}"
+        hdr = (f"{'task':<24} {'thr':>5} {'on':<10} "
+               f"{'P':>6} {'R':>6} {'F1':>6} {'MRR':>6} {'H@1':>6} {'H@5':>6} {'H@10':>6}")
         print(hdr)
         print("-" * len(hdr))
         for m in all_metrics:
-            print(f"{m['task']:<24} "
+            print(f"{m['task']:<24} {m['threshold']:>5.2f} {m['eval_on']:<10} "
                   f"{m['P']:>6.3f} {m['R']:>6.3f} {m['F1']:>6.3f} "
                   f"{m['MRR']:>6.3f} {m['Hits@1']:>6.3f} {m['Hits@5']:>6.3f} {m['Hits@10']:>6.3f}")
 
