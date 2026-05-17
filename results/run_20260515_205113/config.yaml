@@ -1,0 +1,91 @@
+methods:
+  - {name: bm25}
+  - {name: tfidf}
+  - {name: sapbert, model: base, boost: false}
+  - {name: sapbert, model: base, boost: true}
+  - {name: sapbert, model: ft,   boost: false}
+  - {name: sapbert, model: ft,   boost: true}
+
+ks: [1, 50, 100, 200]
+keep_temp_config: true
+
+scenarios:
+  - scenario:
+      name: mondo_mesh
+      source_prefix: mondo
+      target_prefix: mesh
+      semra_landscape: disease
+    evidence:
+      use_biomappings: true
+      use_known_mappings: false
+      use_semra: true
+      cache_tsv: data/evidence_mondo_mesh.tsv
+    collections:
+      mondo: {source: owl, model: ft, owl_path: mondo.owl, id_prefixes: [MONDO_]}
+      mesh: {source: owl, model: ft, owl_path: mesh_disease.owl, id_prefixes: [mesh_]}
+      mondo_base: {source: owl, model: base, owl_path: mondo.owl, id_prefixes: [MONDO_]}
+      mesh_base: {source: owl, model: base, owl_path: mesh_disease.owl, id_prefixes: [mesh_]}
+    data_prep:
+      mondo: {url: http://purl.obolibrary.org/obo/mondo.owl, out_path: data/mondo.owl}
+      mesh: {out_path: data/mesh_disease.owl}
+    mapper: {run: true, threshold: 0.9, top_k: 1}
+
+  - scenario:
+      name: hp_mp
+      source_prefix: hp
+      target_prefix: mp
+    evidence:
+      use_biomappings: false
+      use_known_mappings: false
+      use_semra: false
+      prebuilt_tsv: data/hp_mp_gold.tsv
+      cache_tsv: data/evidence_hp_mp.tsv
+      src_col: src_id
+      tgt_col: tgt_id
+    collections:
+      hp: {source: owl, model: ft, owl_path: hp_enriched.owl, id_prefixes: [HP_]}
+      mp: {source: owl, model: ft, owl_path: mp_enriched.owl, id_prefixes: [MP_]}
+      hp_base: {source: owl, model: base, owl_path: hp_enriched.owl, id_prefixes: [HP_]}
+      mp_base: {source: owl, model: base, owl_path: mp_enriched.owl, id_prefixes: [MP_]}
+    mapper: {run: true, threshold: 0.9, top_k: 1}
+  - scenario:
+      name: mesh_mondo
+      source_prefix: mesh
+      target_prefix: mondo
+      semra_landscape: disease
+    evidence:
+      use_biomappings: true
+      use_known_mappings: false
+      use_semra: true
+      cache_tsv: data/evidence_mondo_mesh.tsv
+      src_col: object_id
+      tgt_col: subject_id
+    collections:
+      mondo: {source: owl, model: ft, owl_path: mondo.owl, id_prefixes: [MONDO_]}
+      mesh: {source: owl, model: ft, owl_path: mesh_disease.owl, id_prefixes: [mesh_]}
+      mondo_base: {source: owl, model: base, owl_path: mondo.owl, id_prefixes: [MONDO_]}
+      mesh_base: {source: owl, model: base, owl_path: mesh_disease.owl, id_prefixes: [mesh_]}
+    data_prep:
+      mondo: {url: http://purl.obolibrary.org/obo/mondo.owl, out_path: data/mondo.owl}
+      mesh: {out_path: data/mesh_disease.owl}
+    mapper: {run: true, threshold: 0.9, top_k: 1}
+
+  - scenario:
+      name: mp_hp
+      source_prefix: mp
+      target_prefix: hp
+    evidence:
+      use_biomappings: false
+      use_known_mappings: false
+      use_semra: false
+      prebuilt_tsv: data/hp_mp_gold.tsv
+      cache_tsv: data/evidence_hp_mp.tsv
+      src_col: tgt_id
+      tgt_col: src_id
+    collections:
+      hp: {source: owl, model: ft, owl_path: hp_enriched.owl, id_prefixes: [HP_]}
+      mp: {source: owl, model: ft, owl_path: mp_enriched.owl, id_prefixes: [MP_]}
+      hp_base: {source: owl, model: base, owl_path: hp_enriched.owl, id_prefixes: [HP_]}
+      mp_base: {source: owl, model: base, owl_path: mp_enriched.owl, id_prefixes: [MP_]}
+    mapper: {run: true, threshold: 0.9, top_k: 1}
+    

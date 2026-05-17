@@ -1,0 +1,1215 @@
+src_id	tgt_id	src_label	tgt_label	j_label	b_label	j_pooled	b_pooled	j_max_syn	b_max_syn	n_inter_pooled	n_union_pooled
+mondo:0016295	mesh:D009472	neuronal ceroid lipofuscinosis	Neuronal Ceroid-Lipofuscinoses	0.500000	medium	0.090909	low	1.000000	high	4	44
+mondo:0005161	mesh:D030361	human papilloma virus infection	Papillomavirus Infections	0.000000	zero	0.250000	low	1.000000	high	3	12
+mondo:0005684	mesh:D011052	bulbar polio	Poliomyelitis, Bulbar	0.333333	medium	1.000000	high	1.000000	high	5	5
+mondo:0018871	mesh:D015479	acute myelomonocytic leukemia M4	Leukemia, Myelomonocytic, Acute	0.750000	high	0.400000	medium	1.000000	high	6	15
+mondo:0025303	mesh:D000712	obsolete anaplasmosis	Anaplasmosis	0.500000	medium	0.111111	low	0.500000	medium	1	9
+mondo:0021943	mesh:D014375	tuberculoma	Tuberculoma	1.000000	high	1.000000	high	1.000000	high	1	1
+mondo:0024275	mesh:D004404	amebic dysentery	Dysentery, Amebic	1.000000	high	0.833333	high	1.000000	high	15	18
+mondo:0001163	mesh:D010260	paranoid personality disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0018037	mesh:D007589	hyper-IgE syndrome	Job Syndrome	0.250000	low	0.400000	medium	1.000000	high	8	20
+mondo:0005090	mesh:D012559	schizophrenia		0.000000	zero	0.000000	zero	0.000000	zero	0	14
+mondo:0044083	mesh:D060487	alternariosis	Alternariosis	1.000000	high	1.000000	high	1.000000	high	5	5
+mondo:0007082	mesh:C566303	alopecia areata 1		0.000000	zero	0.000000	zero	0.000000	zero	0	5
+mondo:0012522	mesh:C566432	diabetes mellitus, transient neonatal, 3		0.000000	zero	0.000000	zero	0.000000	zero	0	16
+mondo:0004712	mesh:D007617	herpes simplex dermatitis	Kaposi Varicelliform Eruption	0.000000	zero	0.111111	low	1.000000	high	2	18
+mondo:0000748	mesh:D008417	mastoiditis	Mastoiditis	1.000000	high	0.100000	low	1.000000	high	1	10
+mondo:0005287	mesh:D002658	developmental disability		0.000000	zero	0.000000	zero	0.000000	zero	0	2
+mondo:0019380	mesh:D020241	western equine encephalitis	Encephalomyelitis, Western Equine	0.500000	medium	0.500000	medium	1.000000	high	4	8
+mondo:0041161	mesh:D004714	obsolete endometrial hyperplasia	Endometrial Hyperplasia	0.666667	high	0.200000	low	1.000000	high	2	10
+mondo:0017388	mesh:D000074742	celiac trunk compression syndrome	Median Arcuate Ligament Syndrome	0.142857	low	0.571429	medium	1.000000	high	8	14
+mondo:0005878	mesh:D015827	ocular onchocerciasis	Onchocerciasis, Ocular	1.000000	high	0.200000	low	1.000000	high	2	10
+mondo:0005383	mesh:D016584	panic disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0044345	mesh:D012555	Schistosoma mansoni infectious disease	Schistosomiasis mansoni	0.200000	low	0.250000	low	1.000000	high	3	12
+mondo:0005697	mesh:D016781	cerebral toxoplasmosis	Toxoplasmosis, Cerebral	1.000000	high	0.142857	low	1.000000	high	2	14
+mondo:0025382	mesh:D001357	sarcoma, avian	Sarcoma, Avian	1.000000	high	1.000000	high	1.000000	high	4	4
+mondo:0007404	mesh:D003410	Cri-du-chat syndrome	Cri-du-Chat Syndrome	1.000000	high	0.684211	high	1.000000	high	13	19
+mondo:0005654	mesh:D001196	ascariasis	Ascariasis	1.000000	high	0.250000	low	1.000000	high	3	12
+mondo:0013189	mesh:D014256	trichotillomania		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0007013	mesh:D018783	vasculogenic impotence	Impotence, Vasculogenic	1.000000	high	0.285714	low	1.000000	high	2	7
+mondo:0016607	mesh:C564146	odontohypophosphatasia		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0005776	mesh:D058429	gnathomiasis	Gnathostomiasis	0.000000	zero	0.333333	medium	1.000000	high	3	9
+mondo:0005609	mesh:D006562	herpes zoster	Herpes Zoster	1.000000	high	0.666667	high	1.000000	high	4	6
+mondo:0005707	mesh:D003048	coccidiosis	Coccidiosis	1.000000	high	0.142857	low	1.000000	high	1	7
+mondo:0005186	mesh:D019970	cocaine dependence	Cocaine-Related Disorders	0.250000	low	0.375000	medium	1.000000	high	3	8
+mondo:0005125	mesh:D015439	borderline leprosy	Leprosy, Borderline	1.000000	high	0.375000	medium	1.000000	high	3	8
+mondo:0005894	mesh:D010229	paracoccidioidomycosis	Paracoccidioidomycosis	1.000000	high	0.285714	low	1.000000	high	6	21
+mondo:0015518	mesh:C537500	infantile bilateral striatal necrosis		0.000000	zero	0.000000	zero	0.000000	zero	0	9
+mondo:0044067	mesh:D058365	candidiasis, invasive	Candidiasis, Invasive	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0020110	mesh:C562992	pulmonary agenesis		0.000000	zero	0.000000	zero	0.000000	zero	0	8
+mondo:0005971	mesh:D013202	staphyloenterotoxemia	Staphylococcal Food Poisoning	0.000000	zero	0.300000	low	1.000000	high	3	10
+mondo:0007110	mesh:C567302	Diamond-Blackfan anemia 1		0.000000	zero	0.000000	zero	0.000000	zero	0	31
+mondo:0013207	mesh:C567674	corneal dystrophy, fuchs endothelial, 7		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0005489	mesh:D004410	dyslexia	Dyslexia	1.000000	high	0.076923	low	1.000000	high	1	13
+mondo:0002565	mesh:D009187	myelitis	Myelitis	1.000000	high	0.307692	low	1.000000	high	4	13
+mondo:0007608	mesh:D018222	desmoid tumor	Desmoid Tumors	0.333333	medium	0.315789	low	1.000000	high	6	19
+mondo:0003619	mesh:D012488	salpingitis	Salpingitis	1.000000	high	0.166667	low	1.000000	high	1	6
+mondo:0005229	mesh:D016470	bacterial infectious disease with sepsis	Bacteremia	0.000000	zero	0.125000	low	0.500000	medium	1	8
+mondo:0005660	mesh:D045463	Avulavirus infectious disease	Avulavirus Infections	0.250000	low	0.200000	low	0.250000	low	1	5
+mondo:0031001	mesh:C565179	vitreoretinopathy with phalangeal epiphyseal dysplasia		0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0024608	mesh:D004030	dientamoebiasis	Dientamoebiasis	1.000000	high	0.230769	low	1.000000	high	3	13
+mondo:0001947	mesh:D013969	suppurative thyroiditis	Thyroiditis, Suppurative	1.000000	high	0.500000	medium	1.000000	high	4	8
+mondo:0001940	mesh:D011001	pleuropneumonia	Pleuropneumonia	1.000000	high	1.000000	high	1.000000	high	1	1
+mondo:0030048	mesh:C562816	harderoporphyria		0.000000	zero	0.000000	zero	0.000000	zero	0	2
+mondo:0004750	mesh:D007806	language disorder	Language Disorders	0.333333	medium	0.500000	medium	0.666667	high	2	4
+mondo:8000018	mesh:D065635	benign paroxysmal positional vertigo	Benign Paroxysmal Positional Vertigo	1.000000	high	0.583333	medium	1.000000	high	7	12
+mondo:0005705	mesh:D003003	clonorchiasis	Clonorchiasis	1.000000	high	0.100000	low	1.000000	high	1	10
+mondo:0005867	mesh:D011019	Mycoplasma pneumoniae pneumonia	Pneumonia, Mycoplasma	0.666667	high	0.157895	low	1.000000	high	3	19
+mondo:0004651	mesh:D012899	smallpox	Smallpox	1.000000	high	0.142857	low	1.000000	high	2	14
+mondo:0025487	mesh:D016183	murine acquired immunodeficiency syndrome	Murine Acquired Immunodeficiency Syndrome	1.000000	high	0.900000	high	1.000000	high	9	10
+mondo:0054868	mesh:D000074270	meconium ileus	Meconium Ileus	1.000000	high	1.000000	high	1.000000	high	2	2
+mondo:0005639	mesh:D000386	AIDS related complex	AIDS-Related Complex	1.000000	high	0.428571	medium	1.000000	high	3	7
+mondo:0002613	mesh:D006677	histrionic personality disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0007147	mesh:D020181	obstructive sleep apnea syndrome	Sleep Apnea, Obstructive	0.750000	high	0.909091	high	1.000000	high	10	11
+mondo:0021184	mesh:D006800	deltaretrovirus infections	Deltaretrovirus Infections	1.000000	high	1.000000	high	1.000000	high	5	5
+mondo:0001835	mesh:D020330	facial paralysis	Bell Palsy	0.000000	zero	0.200000	low	0.666667	high	3	15
+mondo:0002026	mesh:D002177	candidiasis	Candidiasis	1.000000	high	0.250000	low	1.000000	high	3	12
+mondo:0018072	mesh:D014339	persistent truncus arteriosus	Truncus Arteriosus, Persistent	1.000000	high	0.272727	low	1.000000	high	3	11
+mondo:0005939	mesh:D012088	Reoviridae infectious disease	Reoviridae Infections	0.250000	low	0.666667	high	1.000000	high	4	6
+mondo:0005845	mesh:D008590	meningoencephalitis	Meningoencephalitis	1.000000	high	0.166667	low	1.000000	high	1	6
+mondo:0018363	mesh:C537068	focal facial dermal dysplasia		0.000000	zero	0.000000	zero	0.000000	zero	0	5
+mondo:0011826	mesh:C564577	glucocorticoid deficiency 2		0.000000	zero	0.000000	zero	0.000000	zero	0	11
+mondo:0005582	mesh:D052018	binge eating disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0005945	mesh:D012226	rhinoscleroma	Rhinoscleroma	1.000000	high	0.333333	medium	1.000000	high	1	3
+mondo:0018082	mesh:D000082903	aorto-ventricular tunnel	Aortico-Ventricular Tunnel	0.500000	medium	0.272727	low	1.000000	high	3	11
+mondo:0009336	mesh:C536281	hemosiderosis, pulmonary, with deficiency of gamma-a globulin		0.000000	zero	0.000000	zero	0.000000	zero	0	8
+mondo:0025385	mesh:D001819	bluetongue	Bluetongue	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0007088	mesh:C536594	Alzheimer disease type 1		0.000000	zero	0.000000	zero	0.000000	zero	0	11
+mondo:0012425	mesh:C535479	corneal dystrophy, fuchs endothelial, 2		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0019633	mesh:D012061	relapsing fever	Relapsing Fever	1.000000	high	0.222222	low	1.000000	high	2	9
+mondo:0012214	mesh:C563776	glucocorticoid deficiency 3		0.000000	zero	0.000000	zero	0.000000	zero	0	7
+mondo:0043320	mesh:D055958	piriformis syndrome	Piriformis Muscle Syndrome	0.666667	high	0.266667	low	1.000000	high	4	15
+mondo:0005789	mesh:D003699	hepatitis D virus infection	Hepatitis D	0.500000	medium	0.222222	low	1.000000	high	4	18
+mondo:0007767	mesh:C564166	hyperparathyroidism 1		0.000000	zero	0.000000	zero	0.000000	zero	0	9
+mondo:0002680	mesh:D034081	chronic wasting disease	Wasting Disease, Chronic	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0005991	mesh:D014205	trench fever	Trench Fever	1.000000	high	0.238095	low	1.000000	high	5	21
+mondo:0005302	mesh:D001289	attention deficit hyperactivity disorder, inattentive type		0.000000	zero	0.000000	zero	0.000000	zero	0	11
+mondo:0001040	mesh:D009304	nasopharyngitis	Nasopharyngitis	1.000000	high	0.166667	low	1.000000	high	1	6
+mondo:0016566	mesh:D008118	loiasis	Loiasis	1.000000	high	0.272727	low	1.000000	high	3	11
+mondo:0025293	mesh:D031261	poult enteritis mortality syndrome	Poult Enteritis Mortality Syndrome	1.000000	high	1.000000	high	1.000000	high	5	5
+mondo:0005761	mesh:D004605	filarial elephantiasis	Elephantiasis, Filarial	1.000000	high	0.421053	medium	1.000000	high	8	19
+mondo:0004681	mesh:D007859	learning disability	Learning Disabilities	0.333333	medium	0.235294	low	1.000000	high	4	17
+mondo:0005672	mesh:D001759	blastomycosis	Blastomycosis	1.000000	high	0.500000	medium	1.000000	high	9	18
+mondo:0044344	mesh:D012552	Schistosoma japonicum infectious disease	Schistosomiasis	0.000000	zero	0.210526	low	0.500000	medium	4	19
+mondo:0005809	mesh:D004482	infectious ectromelia	Ectromelia, Infectious	1.000000	high	0.400000	medium	1.000000	high	2	5
+mondo:0005652	mesh:D018174	Arterivirus infectious disease	Arterivirus Infections	0.250000	low	0.125000	low	0.250000	low	1	8
+mondo:0024647	mesh:D052878	urolithiasis	Urolithiasis	1.000000	high	0.285714	low	1.000000	high	2	7
+mondo:0004730	mesh:D013064	speech disorder	Speech Disorders	0.333333	medium	0.142857	low	0.333333	medium	2	14
+mondo:0017182	mesh:D044903	familial hyperinsulinism	Congenital Hyperinsulinism	0.333333	medium	0.360000	medium	1.000000	high	9	25
+mondo:0002465	mesh:D001988	bronchiolitis	Bronchiolitis	1.000000	high	0.142857	low	1.000000	high	1	7
+mondo:0001158	mesh:D003193	obsessive-compulsive personality disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	8
+mondo:0016217	mesh:C537840	mal de Debarquement		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0025376	mesh:D000355	African horse sickness	African Horse Sickness	1.000000	high	1.000000	high	1.000000	high	9	9
+mondo:0005446	mesh:D016773	cutaneous leishmaniasis	Leishmaniasis, Cutaneous	1.000000	high	0.133333	low	1.000000	high	2	15
+mondo:0005792	mesh:D013283	herpes simplex virus gingivostomatitis	Stomatitis, Herpetic	0.000000	zero	0.727273	high	1.000000	high	8	11
+mondo:0000022	mesh:D053206	nocturnal enuresis	Nocturnal Enuresis	1.000000	high	0.428571	medium	1.000000	high	3	7
+mondo:0005724	mesh:D003453	cryptococcosis	Cryptococcosis	1.000000	high	0.238095	low	1.000000	high	5	21
+mondo:0021053	mesh:D002345	carotid body paraganglioma	Carotid Body Tumor	0.500000	medium	0.363636	medium	1.000000	high	4	11
+mondo:0001135	mesh:D014843	voyeurism		0.000000	zero	0.000000	zero	0.000000	zero	0	1
+mondo:0005993	mesh:D014247	Trichomonas vaginitis urogenital infection	Trichomonas Vaginitis	0.500000	medium	0.200000	low	1.000000	high	3	15
+mondo:0002046	mesh:D000437	alcohol abuse	Alcoholism	0.000000	zero	0.916667	high	1.000000	high	11	12
+mondo:0005752	mesh:D020802	epidural abscess	Epidural Abscess	1.000000	high	0.444444	medium	1.000000	high	4	9
+mondo:0007007	mesh:D016869	Ureaplasma urethritis	Ureaplasma Infections	0.333333	medium	0.333333	medium	1.000000	high	3	9
+mondo:0000940	mesh:D014352	trypanosomiasis	Trypanosomiasis	1.000000	high	0.250000	low	1.000000	high	2	8
+mondo:0000665	mesh:D001072	apraxia	Apraxias	0.000000	zero	0.086957	low	1.000000	high	2	23
+mondo:0005905	mesh:D020189	periodic limb movement disorder	Nocturnal Myoclonus Syndrome	0.000000	zero	0.461538	medium	1.000000	high	6	13
+mondo:0005679	mesh:D001912	bovine virus diarrhea-mucosal disease	Bovine Virus Diarrhea-Mucosal Disease	1.000000	high	0.625000	medium	1.000000	high	5	8
+mondo:0006743	mesh:D014383	endocrine tuberculosis	Tuberculosis, Endocrine	1.000000	high	0.666667	high	1.000000	high	2	3
+mondo:0025270	mesh:D014124	toxoplasmosis, non-human animal	Toxoplasmosis, Animal	0.500000	medium	0.600000	medium	1.000000	high	3	5
+mondo:0700086	mesh:D024182	uniparental disomy	Uniparental Disomy	1.000000	high	0.285714	low	1.000000	high	2	7
+mondo:0018274	mesh:C563799	GM3 synthase deficiency		0.000000	zero	0.000000	zero	0.000000	zero	0	30
+mondo:0000337	mesh:D005077	exanthema subitum	Exanthema Subitum	1.000000	high	0.750000	high	1.000000	high	6	8
+mondo:0005949	mesh:D019349	roseolovirus infectious disease	Roseolovirus Infections	0.250000	low	0.125000	low	0.250000	low	1	8
+mondo:0019804	mesh:D055090	congenital tracheomalacia	Tracheomalacia	0.500000	medium	0.100000	low	1.000000	high	1	10
+mondo:0004572	mesh:D003527	cyclothymic disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0002028	mesh:D010554	personality disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0000890	mesh:D000071243	Zika virus congenital syndrome	Zika Virus Infection	0.400000	medium	0.750000	high	1.000000	high	6	8
+mondo:0005126	mesh:D015441	tuberculoid leprosy	Leprosy, Tuberculoid	1.000000	high	0.250000	low	1.000000	high	2	8
+mondo:0019173	mesh:D011818	rabies	Rabies	1.000000	high	0.285714	low	1.000000	high	2	7
+mondo:0005452	mesh:D052018	bulimia nervosa		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0025598	mesh:D061387	pneumonia caused by chlamydia	Chlamydial Pneumonia	0.200000	low	0.285714	low	1.000000	high	2	7
+mondo:0005678	mesh:D048090	bovine respiratory disease complex	Bovine Respiratory Disease Complex	1.000000	high	1.000000	high	1.000000	high	4	4
+mondo:0005324	mesh:D065631	seasonal allergic rhinitis	Rhinitis, Allergic	0.666667	high	0.333333	medium	0.666667	high	2	6
+mondo:0018948	mesh:C564969	multiminicore myopathy		0.000000	zero	0.000000	zero	0.000000	zero	0	5
+mondo:0002647	mesh:D007827	laryngitis	Laryngitis	1.000000	high	0.166667	low	1.000000	high	1	6
+mondo:0001973	mesh:D002007	Brucella abortus brucellosis	Brucellosis, Bovine	0.250000	low	0.111111	low	0.250000	low	1	9
+mondo:0100350	mesh:C563443	neuronopathy, distal hereditary motor, type 5		0.000000	zero	0.000000	zero	0.000000	zero	0	13
+mondo:0005989	mesh:D014123	toxoplasmosis	Toxoplasmosis	1.000000	high	0.300000	low	1.000000	high	3	10
+mondo:0008243	mesh:D020774	Pick disease	Pick Disease of the Brain	0.400000	medium	0.777778	high	1.000000	high	14	18
+mondo:0016823	mesh:D008271	mycetoma	Mycetoma	1.000000	high	0.500000	medium	1.000000	high	3	6
+mondo:0005737	mesh:D019142	Ebola hemorrhagic fever	Hemorrhagic Fever, Ebola	1.000000	high	0.461538	medium	1.000000	high	6	13
+mondo:0001152	mesh:D000647	amnestic disorder	Amnesia	0.000000	zero	0.100000	low	1.000000	high	2	20
+mondo:0041751	mesh:D056006	multibacillary leprosy	Leprosy, Multibacillary	1.000000	high	0.500000	medium	1.000000	high	3	6
+mondo:0008426	mesh:C537328	Shprintzen-Goldberg syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	14
+mondo:0002595	mesh:D014615	vaccinia	Vaccinia	1.000000	high	1.000000	high	1.000000	high	1	1
+mondo:0005729	mesh:D004011	dicrocoeliasis	Dicrocoeliasis	1.000000	high	0.090909	low	1.000000	high	1	11
+mondo:0017276	mesh:D057180	frontotemporal dementia	Frontotemporal Dementia	1.000000	high	0.291667	low	1.000000	high	14	48
+mondo:0001628	mesh:D014009	tinea unguium	Onychomycosis	0.000000	zero	0.153846	low	1.000000	high	4	26
+mondo:0005810	mesh:D007244	infectious mononucleosis	Infectious Mononucleosis	1.000000	high	0.333333	medium	1.000000	high	4	12
+mondo:0002040	mesh:D003881	dermatomycosis	Dermatomycoses	0.000000	zero	0.142857	low	1.000000	high	1	7
+mondo:0001522	mesh:D005391	pyromania		0.000000	zero	0.000000	zero	0.000000	zero	0	5
+mondo:0005805	mesh:D007000	hypodermyiasis	Hypodermyiasis	1.000000	high	0.125000	low	1.000000	high	1	8
+mondo:0001121	mesh:D015522	frontal sinusitis	Frontal Sinusitis	1.000000	high	0.666667	high	1.000000	high	2	3
+mondo:0006845	mesh:D014389	male genital tuberculosis	Tuberculosis, Male Genital	1.000000	high	0.666667	high	1.000000	high	4	6
+mondo:0043004	mesh:D014895	Weil's disease	Weil Disease	0.666667	high	0.888889	high	1.000000	high	8	9
+mondo:0005957	mesh:D012719	setariasis	Setariasis	1.000000	high	0.100000	low	1.000000	high	1	10
+mondo:0022034	mesh:D016180	lentivirus infection	Lentivirus Infections	0.333333	medium	0.375000	medium	1.000000	high	3	8
+mondo:0005823	mesh:D007877	legionellosis	Legionnaires' Disease	0.000000	zero	0.181818	low	0.666667	high	2	11
+mondo:0005987	mesh:D017227	toxascariasis	Toxascariasis	1.000000	high	0.125000	low	1.000000	high	1	8
+mondo:0016225	mesh:D000067559	specific learning disability	Specific Learning Disorder	0.500000	medium	0.500000	medium	1.000000	high	3	6
+mondo:0005970	mesh:D011023	staphylococcal pneumonia	Pneumonia, Staphylococcal	1.000000	high	0.500000	medium	1.000000	high	3	6
+mondo:0006018	mesh:D014924	Wissler syndrome	Wissler's Syndrome	0.666667	high	0.666667	high	1.000000	high	6	9
+mondo:0008062	mesh:C563534	narcolepsy 1		0.000000	zero	0.000000	zero	0.000000	zero	0	11
+mondo:0021662	mesh:D001650	bile duct neoplasm	Bile Duct Neoplasms	0.500000	medium	0.285714	low	1.000000	high	4	14
+mondo:0005823	mesh:D007876	legionellosis	Legionellosis	1.000000	high	0.250000	low	1.000000	high	1	4
+mondo:0000408	mesh:D063647	fetal alcohol spectrum disorder	Fetal Alcohol Spectrum Disorders	0.600000	medium	0.827586	high	1.000000	high	24	29
+mondo:0100345	mesh:D007787	lactose intolerance	Lactose Intolerance	1.000000	high	0.230769	low	1.000000	high	3	13
+mondo:0003781	mesh:D001991	bronchitis	Bronchitis	1.000000	high	0.062500	low	1.000000	high	1	16
+mondo:0005625	mesh:D016779	cerebral malaria	Malaria, Cerebral	1.000000	high	0.400000	medium	1.000000	high	2	5
+mondo:0006921	mesh:D000193	Actinomycetales infectious disease	Actinomycetales Infections	0.250000	low	0.333333	medium	1.000000	high	4	12
+mondo:0008990	mesh:C537851	cleft larynx, posterior		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0019518	mesh:C536467	Waardenburg-Shah syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	12
+mondo:0043892	mesh:D016459	prosthesis-related infectious disease	Prosthesis-Related Infections	0.400000	medium	0.571429	medium	1.000000	high	4	7
+mondo:0005799	mesh:D006725	hookworm infectious disease	Hookworm Infections	0.250000	low	0.714286	high	1.000000	high	5	7
+mondo:0020590	mesh:D009164	mycobacterial infectious disease	Mycobacterium Infections	0.000000	zero	0.285714	low	1.000000	high	2	7
+mondo:0016798	mesh:C579922	ataxia neuropathy spectrum		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0008738	mesh:C538058	aganglionosis, total intestinal		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0018226	mesh:C567924	infantile epileptic-dyskinetic encephalopathy		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0005141	mesh:D011552	Pseudomonas infection	Pseudomonas Infections	0.333333	medium	0.222222	low	1.000000	high	2	9
+mondo:0005379	mesh:D009497	neurotic disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	13
+mondo:0005921	mesh:D016780	Plasmodium vivax malaria	Malaria, Vivax	0.666667	high	0.750000	high	1.000000	high	3	4
+mondo:0005903	mesh:D010495	pericardial tuberculosis	Pericarditis, Tuberculous	0.000000	zero	0.400000	medium	1.000000	high	2	5
+mondo:0000327	mesh:D054312	Buruli ulcer disease	Buruli Ulcer	0.666667	high	0.277778	low	1.000000	high	5	18
+mondo:0017880	mesh:D012295	Rift valley fever	Rift Valley Fever	1.000000	high	0.750000	high	1.000000	high	3	4
+mondo:0003040	mesh:D000648	retrograde amnesia	Amnesia, Retrograde	1.000000	high	0.250000	low	1.000000	high	2	8
+mondo:0005944	mesh:D018353	Rhabdoviridae infectious disease	Rhabdoviridae Infections	0.250000	low	0.600000	medium	1.000000	high	3	5
+mondo:0001301	mesh:D019959	rumination disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0008412	mesh:D012554	intestinal schistosomiasis	Schistosomiasis japonica	0.333333	medium	0.250000	low	1.000000	high	4	16
+mondo:0005763	mesh:D018178	Flaviviridae infectious disease	Flaviviridae Infections	0.250000	low	0.125000	low	0.250000	low	1	8
+mondo:0015265	mesh:D001989	bronchiolitis obliterans syndrome	Bronchiolitis Obliterans	0.666667	high	0.142857	low	1.000000	high	3	21
+mondo:0001020	mesh:D000550	amblyopia	Amblyopia	1.000000	high	0.250000	low	1.000000	high	3	12
+mondo:0005952	mesh:D012541	scarlet fever	Scarlet Fever	1.000000	high	0.500000	medium	1.000000	high	2	4
+mondo:0008734	mesh:C565972	adrenocortical carcinoma, hereditary		0.000000	zero	0.000000	zero	0.000000	zero	0	8
+mondo:0006001	mesh:D012553	urinary schistosomiasis	Schistosomiasis haematobia	0.333333	medium	0.250000	low	1.000000	high	5	20
+mondo:0005485	mesh:D011618	psychotic disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	7
+mondo:0004619	mesh:D008457	measles	Measles	1.000000	high	0.200000	low	1.000000	high	2	10
+mondo:0000597	mesh:D016735	Munchausen by proxy		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0005146	mesh:D013313	post-traumatic stress disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	7
+mondo:0001494	mesh:D014190	obsolete transvestism		0.000000	zero	0.000000	zero	0.000000	zero	0	8
+mondo:0025085	mesh:D006524	hepatitis, viral, animal	Hepatitis, Viral, Animal	1.000000	high	0.750000	high	1.000000	high	3	4
+mondo:0025505	mesh:D053489	mink viral enteritis	Mink Viral Enteritis	1.000000	high	1.000000	high	1.000000	high	6	6
+mondo:0007547	mesh:D004814	epidermoid cysts	Epidermal Cyst	0.000000	zero	0.266667	low	1.000000	high	4	15
+mondo:0005634	mesh:D003232	acute hemorrhagic conjunctivitis	Conjunctivitis, Acute Hemorrhagic	1.000000	high	0.375000	medium	1.000000	high	3	8
+mondo:0020920	mesh:D004927	escherichia coli infection	Escherichia coli Infections	0.500000	medium	0.384615	medium	1.000000	high	5	13
+mondo:0016047	mesh:D009877	endophthalmitis	Endophthalmitis	1.000000	high	0.250000	low	1.000000	high	1	4
+mondo:0045057	mesh:D003693	delirium	Delirium	1.000000	high	0.100000	low	1.000000	high	1	10
+mondo:0005679	mesh:D030243	bovine virus diarrhea-mucosal disease	Hemorrhagic Syndrome, Bovine	0.142857	low	0.428571	medium	1.000000	high	3	7
+mondo:0019121	mesh:D011020	pneumocystosis	Pneumonia, Pneumocystis	0.000000	zero	0.400000	medium	1.000000	high	6	15
+mondo:0001156	mesh:D001883	borderline personality disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	5
+mondo:0006753	mesh:D020814	Escherichia coli meningitis	Meningitis, Escherichia coli	1.000000	high	0.750000	high	1.000000	high	3	4
+mondo:0002822	mesh:D015266	trabecular adenocarcinoma	Carcinoma, Merkel Cell	0.000000	zero	0.250000	low	1.000000	high	3	12
+mondo:0100226	mesh:D013009	parasomnia, sleepwalking type	Somnambulism	0.000000	zero	0.416667	medium	1.000000	high	5	12
+mondo:0013600	mesh:D007319	insomnia	Sleep Initiation and Maintenance Disorders	0.000000	zero	0.096774	low	1.000000	high	3	31
+mondo:0016101	mesh:D008380	neurolymphomatosis	Marek Disease	0.000000	zero	0.666667	high	1.000000	high	6	9
+mondo:0015465	mesh:C537519	craniometaphyseal dysplasia		0.000000	zero	0.000000	zero	0.000000	zero	0	2
+mondo:0004389	mesh:D008924	mite infestation	Mite Infestations	0.333333	medium	0.166667	low	1.000000	high	2	12
+mondo:0012914	mesh:C567291	chromosome 1q21.1 deletion syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	19
+mondo:0005988	mesh:D014120	toxocariasis	Toxocariasis	1.000000	high	0.071429	low	1.000000	high	1	14
+mondo:0005108	mesh:D014777	viral infectious disease	Virus Diseases	0.000000	zero	0.454545	medium	1.000000	high	5	11
+mondo:0001161	mesh:D012557	schizoid personality disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0005498	mesh:D001906	botulism	Botulism	1.000000	high	0.388889	medium	1.000000	high	7	18
+mondo:0003472	mesh:D010373	lice infestation	Lice Infestations	0.333333	medium	0.187500	low	1.000000	high	3	16
+mondo:0004668	mesh:D005211	fascioliasis	Fascioliasis	1.000000	high	0.285714	low	1.000000	high	4	14
+mondo:0000242	mesh:C000656825	tinea barbae		0.000000	zero	0.000000	zero	0.000000	zero	0	5
+mondo:0000367	mesh:D013622	taeniasis	Taeniasis	1.000000	high	0.210526	low	1.000000	high	4	19
+mondo:0000918	mesh:D004716	endometritis	Endometritis	1.000000	high	0.142857	low	1.000000	high	1	7
+mondo:0005084	mesh:D001523	mental disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	8
+mondo:0005887	mesh:D014393	oral tuberculosis	Tuberculosis, Oral	1.000000	high	0.666667	high	1.000000	high	2	3
+mondo:0001195	mesh:D000073605	spotted fever	Spotted Fever Group Rickettsiosis	0.500000	medium	0.176471	low	1.000000	high	6	34
+mondo:0025271	mesh:D014354	trypanosomiasis, bovine	Trypanosomiasis, Bovine	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0019203	mesh:D000080203	acute interstitial pneumonia	Hamman-Rich Syndrome	0.000000	zero	0.500000	medium	1.000000	high	8	16
+mondo:0006019	mesh:D015001	yaws	Yaws	1.000000	high	0.150000	low	1.000000	high	3	20
+mondo:0005883	mesh:D006563	ophthalmic herpes zoster	Herpes Zoster Ophthalmicus	0.500000	medium	0.500000	medium	1.000000	high	3	6
+mondo:0006805	mesh:D000789	intermediate coronary syndrome	Angina, Unstable	0.000000	zero	0.315789	low	1.000000	high	6	19
+mondo:0025449	mesh:D010283	paratuberculosis	Paratuberculosis	1.000000	high	1.000000	high	1.000000	high	6	6
+mondo:0025489	mesh:D016583	enzootic bovine leukosis	Enzootic Bovine Leukosis	1.000000	high	0.909091	high	1.000000	high	10	11
+mondo:0010760	mesh:C009691	obsolete XH antigen		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0005055	mesh:D012514	Kaposi's sarcoma	Sarcoma, Kaposi	0.666667	high	0.070175	low	1.000000	high	4	57
+mondo:0024543	mesh:C536192	brittle cornea syndrome 1		0.000000	zero	0.000000	zero	0.000000	zero	0	29
+mondo:0001882	mesh:D001437	bacteriuria	Bacteriuria	1.000000	high	0.500000	medium	1.000000	high	1	2
+mondo:0001109	mesh:D059270	petrositis	Petrositis	1.000000	high	0.117647	low	1.000000	high	2	17
+mondo:0005812	mesh:D007251	influenza	Influenza, Human	0.500000	medium	0.105263	low	1.000000	high	2	19
+mondo:0017881	mesh:D007733	Kyasanur forest disease	Kyasanur Forest Disease	1.000000	high	0.307692	low	1.000000	high	4	13
+mondo:0025030	mesh:D058066	digital dermatitis in cattle	Digital Dermatitis	0.500000	medium	0.875000	high	1.000000	high	14	16
+mondo:0006955	mesh:D012214	rheumatic heart disease	Rheumatic Heart Disease	1.000000	high	0.333333	medium	1.000000	high	3	9
+mondo:0005594	mesh:D002921	severe cutaneous adverse reaction	Cicatrix	0.000000	zero	0.125000	low	1.000000	high	1	8
+mondo:0015240	mesh:C565097	digitotalar dysmorphism		0.000000	zero	0.000000	zero	0.000000	zero	0	13
+mondo:0024935	mesh:D005535	foot rot	Foot Rot	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0005566	mesh:D009357	neonatal abstinence syndrome	Neonatal Abstinence Syndrome	1.000000	high	0.266667	low	1.000000	high	4	15
+mondo:0007025	mesh:D002601	chancre	Chancre	1.000000	high	1.000000	high	1.000000	high	1	1
+mondo:0005720	mesh:D015605	cowpox	Cowpox	1.000000	high	0.250000	low	1.000000	high	1	4
+mondo:0005714	mesh:D013590	congenital syphilis	Syphilis, Congenital	1.000000	high	0.166667	low	1.000000	high	2	12
+mondo:0000986	mesh:D010998	pleurisy	Pleurisy	1.000000	high	0.285714	low	1.000000	high	2	7
+mondo:0005802	mesh:D006925	hymenolepiasis	Hymenolepiasis	1.000000	high	0.300000	low	1.000000	high	3	10
+mondo:0006485	mesh:D012192	uterine carcinosarcoma	Retroviridae Infections	0.000000	zero	0.000000	zero	0.000000	zero	0	25
+mondo:0005354	mesh:D019698	chronic hepatitis C virus infection	Hepatitis C, Chronic	0.600000	medium	0.600000	medium	1.000000	high	3	5
+mondo:0013996	mesh:C536385	focal facial dermal dysplasia type II		0.000000	zero	0.000000	zero	0.000000	zero	0	12
+mondo:0005884	mesh:D009889	opisthorchiasis	Opisthorchiasis	1.000000	high	0.384615	medium	1.000000	high	5	13
+mondo:0018181	mesh:D013206	staphylococcal scalded skin syndrome	Staphylococcal Scalded Skin Syndrome	1.000000	high	0.318182	low	1.000000	high	7	22
+mondo:0000694	mesh:D016574	seasonal affective disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0005950	mesh:D012478	Salmonella gastroenteritis	Salmonella Food Poisoning	0.250000	low	0.166667	low	0.250000	low	1	6
+mondo:0044344	mesh:D012554	Schistosoma japonicum infectious disease	Schistosomiasis japonica	0.000000	zero	0.250000	low	1.000000	high	4	16
+mondo:0008197	mesh:C566827	parietal foramina 1		0.000000	zero	0.000000	zero	0.000000	zero	0	19
+mondo:0001617	mesh:D020236	transient global amnesia	Amnesia, Transient Global	1.000000	high	0.500000	medium	1.000000	high	3	6
+mondo:0018669	mesh:D012909	snakebite envenomation	Snake Bites	0.000000	zero	0.266667	low	1.000000	high	4	15
+mondo:0024685	mesh:D015466	Philadelphia-positive myelogenous leukemia	Leukemia, Myeloid, Chronic-Phase	0.142857	low	0.333333	medium	0.333333	medium	4	12
+mondo:0018854	mesh:D014884	acquired purpura fulminans	Waterhouse-Friderichsen Syndrome	0.000000	zero	0.117647	low	0.333333	medium	2	17
+mondo:0020776	mesh:D002694	chlamydiaceae infections	Chlamydiaceae Infections	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0020731	mesh:D001102	arbovirus infection	Arbovirus Infections	0.333333	medium	0.333333	medium	1.000000	high	3	9
+mondo:0005242	mesh:D004653	empyema	Empyema	1.000000	high	0.250000	low	1.000000	high	1	4
+mondo:0010281	mesh:D052120	Danon disease	Glycogen Storage Disease Type IIb	0.166667	low	0.666667	high	1.000000	high	28	42
+mondo:0021742	mesh:D011645	puerperal infection	Puerperal Infection	1.000000	high	0.500000	medium	1.000000	high	3	6
+mondo:0021107	mesh:D009290	narcolepsy	Narcolepsy	1.000000	high	0.307692	low	1.000000	high	4	13
+mondo:0006981	mesh:D004698	subacute bacterial endocarditis	Endocarditis, Subacute Bacterial	1.000000	high	0.666667	high	1.000000	high	4	6
+mondo:0005829	mesh:D008146	louping ill	Louping Ill	1.000000	high	1.000000	high	1.000000	high	2	2
+mondo:0044746	mesh:D000086966	obsolete zoonotic bacterial infection	Bacterial Zoonoses	0.200000	low	0.357143	medium	1.000000	high	5	14
+mondo:0005994	mesh:D014252	trichostrongyloidiasis	Trichostrongyloidiasis	1.000000	high	0.125000	low	1.000000	high	1	8
+mondo:0100233	mesh:D000094024	long COVID-19	Post-Acute COVID-19 Syndrome	0.333333	medium	0.866667	high	1.000000	high	13	15
+mondo:0021679	mesh:D016908	gram-positive bacterial infections	Gram-Positive Bacterial Infections	1.000000	high	0.833333	high	1.000000	high	5	6
+mondo:0021681	mesh:D012749	sexually transmitted disease	Sexually Transmitted Diseases	0.500000	medium	0.666667	high	1.000000	high	8	12
+mondo:0004525	mesh:D012532	scabies	Scabies	1.000000	high	0.133333	low	1.000000	high	2	15
+mondo:0005084	mesh:D011618	mental disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	8
+mondo:0006544	mesh:D016731	erythema infectiosum	Erythema Infectiosum	1.000000	high	0.500000	medium	1.000000	high	4	8
+mondo:0005996	mesh:D014257	trichuriasis	Trichuriasis	1.000000	high	0.375000	medium	1.000000	high	6	16
+mondo:0005661	mesh:D001404	babesiosis	Babesiosis	1.000000	high	0.411765	medium	1.000000	high	7	17
+mondo:0002508	mesh:D005891	gingivitis	Gingivitis	1.000000	high	0.142857	low	1.000000	high	1	7
+mondo:0004652	mesh:D018410	bacterial pneumonia	Pneumonia, Bacterial	1.000000	high	0.200000	low	1.000000	high	2	10
+mondo:0002009	mesh:D003865	major depressive disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	21
+mondo:0019210	mesh:D015266	cutaneous neuroendocrine carcinoma	Carcinoma, Merkel Cell	0.200000	low	0.411765	medium	1.000000	high	7	17
+mondo:0024610	mesh:D012876	parasitic skin disorder	Skin Diseases, Parasitic	0.500000	medium	0.800000	high	1.000000	high	4	5
+mondo:0003699	mesh:D010698	phobic disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0000690	mesh:D057215	body dysmorphic disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0005871	mesh:D007815	Nematoda infectious disease	Larva Migrans	0.000000	zero	0.000000	zero	0.000000	zero	0	23
+mondo:0001577	mesh:D018357	respiratory syncytial virus infectious disease	Respiratory Syncytial Virus Infections	0.500000	medium	0.555556	medium	0.800000	high	5	9
+mondo:0017373	mesh:D011051	poliomyelitis	Poliomyelitis	1.000000	high	0.384615	medium	1.000000	high	5	13
+mondo:0005963	mesh:D013031	sparganosis	Sparganosis	1.000000	high	0.076923	low	1.000000	high	1	13
+mondo:0005258	mesh:D000067877	autism spectrum disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	11
+mondo:0005826	mesh:D011017	lipid pneumonia	Pneumonia, Lipid	1.000000	high	0.500000	medium	1.000000	high	4	8
+mondo:0016101	mesh:D000077162	neurolymphomatosis	Neurolymphomatosis	1.000000	high	0.100000	low	1.000000	high	1	10
+mondo:0005682	mesh:D001996	bronchopneumonia	Bronchopneumonia	1.000000	high	0.375000	medium	1.000000	high	3	8
+mondo:0020753	mesh:D018352	Orthocoronavirinae infectious disease	Coronavirus Infections	0.000000	zero	0.090909	low	0.250000	low	1	11
+mondo:0020506	mesh:C565836	obsolete ovarioleukodystrophy		0.000000	zero	0.000000	zero	0.000000	zero	0	2
+mondo:0005344	mesh:D006509	hepatitis B virus infection	Hepatitis B	0.500000	medium	0.444444	medium	1.000000	high	4	9
+mondo:0005874	mesh:D020818	neuroschistosomiasis	Neuroschistosomiasis	1.000000	high	0.083333	low	1.000000	high	1	12
+mondo:0024653	mesh:D012888	skull neoplasm	Skull Neoplasms	0.333333	medium	0.285714	low	1.000000	high	2	7
+mondo:0025167	mesh:D055761	reticuloendotheliosis, avian	Reticuloendotheliosis, Avian	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0005947	mesh:D011022	rickettsial pneumonia	Pneumonia, Rickettsial	1.000000	high	0.400000	medium	1.000000	high	2	5
+mondo:0005700	mesh:D002644	chickenpox	Chickenpox	1.000000	high	0.800000	high	1.000000	high	4	5
+mondo:0000989	mesh:D019351	mumps infectious disease	Rubulavirus Infections	0.000000	zero	0.000000	zero	0.000000	zero	0	12
+mondo:0005747	mesh:D004769	enterovirus infectious disease	Enterovirus Infections	0.250000	low	0.250000	low	1.000000	high	3	12
+mondo:0043985	mesh:D020945	central nervous system lupus	Lupus Vasculitis, Central Nervous System	0.800000	high	0.916667	high	1.000000	high	11	12
+mondo:0007116	mesh:C536364	hereditary neurocutaneous angioma		0.000000	zero	0.000000	zero	0.000000	zero	0	13
+mondo:0005785	mesh:D045464	henipavirus infectious disease	Henipavirus Infections	0.250000	low	0.076923	low	0.250000	low	1	13
+mondo:0002012	mesh:C537358	methylmalonic acidemia		0.000000	zero	0.000000	zero	0.000000	zero	0	25
+mondo:0005743	mesh:D016890	encephalitozoonosis	Encephalitozoonosis	1.000000	high	0.200000	low	1.000000	high	1	5
+mondo:0004277	mesh:D006069	gonorrhea	Gonorrhea	1.000000	high	0.160000	low	1.000000	high	4	25
+mondo:0016366	mesh:D017042	maternal phenylketonuria	Phenylketonuria, Maternal	1.000000	high	0.230769	low	1.000000	high	3	13
+mondo:0025082	mesh:D006374	helminthiasis, animal	Helminthiasis, Animal	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0025095	mesh:D008289	malaria, avian	Malaria, Avian	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0005786	mesh:D018347	Hepadnaviridae infectious disease	Hepadnaviridae Infections	0.250000	low	0.125000	low	0.250000	low	1	8
+mondo:0005796	mesh:D019053	HIV enteropathy	HIV Enteropathy	1.000000	high	0.333333	medium	1.000000	high	2	6
+mondo:0006052	mesh:D014397	pulmonary tuberculosis	Tuberculosis, Pulmonary	1.000000	high	0.222222	low	1.000000	high	2	9
+mondo:0002814	mesh:D018268	adrenal carcinoma	Adrenocortical Carcinoma	0.333333	medium	0.250000	low	0.666667	high	2	8
+mondo:0005800	mesh:D006726	hordeolum	Hordeolum	1.000000	high	0.222222	low	1.000000	high	2	9
+mondo:0005156	mesh:D004679	encephalomyelitis	Encephalomyelitis	1.000000	high	0.076923	low	1.000000	high	1	13
+mondo:0001045	mesh:D007409	intestinal atresia	Intestinal Atresia	1.000000	high	0.200000	low	1.000000	high	3	15
+mondo:0024355	mesh:D012141	respiratory tract infectious disorder	Respiratory Tract Infections	0.400000	medium	0.625000	medium	1.000000	high	5	8
+mondo:0042488	mesh:D002590	Cestode infectious disease	Cestode Infections	0.250000	low	0.560000	medium	1.000000	high	14	25
+mondo:0017879	mesh:D018804	hantavirus pulmonary syndrome	Hantavirus Pulmonary Syndrome	1.000000	high	0.777778	high	1.000000	high	7	9
+mondo:0023305	mesh:D000075322	heavy metal poisoning	Heavy Metal Poisoning	1.000000	high	0.300000	low	1.000000	high	3	10
+mondo:0005691	mesh:D018188	cardiovirus infectious disease	Cardiovirus Infections	0.250000	low	0.600000	medium	1.000000	high	3	5
+mondo:0006730	mesh:D011605	drug psychosis	Psychoses, Substance-Induced	0.000000	zero	0.250000	low	0.333333	medium	2	8
+mondo:0005759	mesh:D005213	fascioloidiasis	Fascioloidiasis	1.000000	high	0.500000	medium	1.000000	high	1	2
+mondo:0005649	mesh:D001064	appendicitis	Appendicitis	1.000000	high	0.071429	low	1.000000	high	1	14
+mondo:0017416	mesh:D016262	postpoliomyelitis syndrome	Postpoliomyelitis Syndrome	1.000000	high	0.428571	medium	1.000000	high	6	14
+mondo:0024388	mesh:D003015	Clostridium infectious disease	Clostridium Infections	0.250000	low	0.176471	low	1.000000	high	3	17
+mondo:0025397	mesh:D004216	canine distemper	Distemper	0.500000	medium	1.000000	high	1.000000	high	3	3
+mondo:0001246	mesh:D012282	typhus	Rickettsia Infections	0.000000	zero	0.081081	low	0.333333	medium	3	37
+mondo:0002443	mesh:D002012	bruxism	Bruxism	1.000000	high	0.375000	medium	1.000000	high	3	8
+mondo:0004656	mesh:D012409	rubella	Rubella	1.000000	high	0.384615	medium	1.000000	high	5	13
+mondo:0017882	mesh:D006481	Omsk hemorrhagic fever	Hemorrhagic Fever, Omsk	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0013206	mesh:C567675	corneal dystrophy, Fuchs endothelial, 6		0.000000	zero	0.000000	zero	0.000000	zero	0	14
+mondo:0025485	mesh:D016181	feline acquired immunodeficiency syndrome	Feline Acquired Immunodeficiency Syndrome	1.000000	high	0.692308	high	1.000000	high	9	13
+mondo:0017999	mesh:C580102	fatty acid hydroxylase-associated neurodegeneration		0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0011849	mesh:D015535	psoriatic arthritis	Arthritis, Psoriatic	1.000000	high	0.333333	medium	1.000000	high	4	12
+mondo:0005246	mesh:D010019	osteomyelitis	Osteomyelitis	1.000000	high	0.333333	medium	1.000000	high	1	3
+mondo:0003937	mesh:D013166	spondylitis	Spondylitis	1.000000	high	0.200000	low	1.000000	high	1	5
+mondo:0001552	mesh:D060705	dyscalculia	Dyscalculia	1.000000	high	0.083333	low	1.000000	high	1	12
+mondo:0100120	mesh:D000079426	vector-borne disease	Vector Borne Diseases	0.500000	medium	0.428571	medium	0.500000	medium	3	7
+mondo:0019209	mesh:D004672	Japanese encephalitis	Encephalitis, Japanese	1.000000	high	0.600000	medium	1.000000	high	3	5
+mondo:0003398	mesh:D020324	anterograde amnesia	Amnesia, Anterograde	1.000000	high	0.250000	low	1.000000	high	2	8
+mondo:0005351	mesh:D000856	anorexia nervosa		0.000000	zero	0.000000	zero	0.000000	zero	0	2
+mondo:0020947	mesh:D015822	parasitic eye infection	Eye Infections, Parasitic	0.500000	medium	0.833333	high	1.000000	high	5	6
+mondo:0019632	mesh:D008193	Lyme disease	Lyme Disease	1.000000	high	0.315789	low	1.000000	high	6	19
+mondo:0010341	mesh:D038901	autism, susceptibility to, X-linked 2	X-Linked Intellectual Disability	0.250000	low	0.315789	low	1.000000	high	6	19
+mondo:0000266	mesh:D055732	pulmonary aspergilloma	Pulmonary Aspergillosis	0.333333	medium	0.428571	medium	1.000000	high	3	7
+mondo:0007817	mesh:C564133	IgE responsiveness, atopic		0.000000	zero	0.000000	zero	0.000000	zero	0	27
+mondo:0007459	mesh:C566872	dilution, pigmentary		0.000000	zero	0.000000	zero	0.000000	zero	0	11
+mondo:0001098	mesh:D001010	separation anxiety disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0005838	mesh:D008368	mansonelliasis	Mansonelliasis	1.000000	high	0.421053	medium	1.000000	high	8	19
+mondo:0019365	mesh:D012612	scrub typhus	Scrub Typhus	1.000000	high	0.238095	low	1.000000	high	5	21
+mondo:0016784	mesh:D031901	obsolete gestational trophoblastic disease	Gestational Trophoblastic Disease	0.750000	high	0.375000	medium	0.750000	high	3	8
+mondo:0044351	mesh:D012554	Schistosoma intercalatum infectious disease	Schistosomiasis japonica	0.000000	zero	0.153846	low	0.400000	medium	2	13
+mondo:0006014	mesh:D002181	vulvovaginal candidiasis	Candidiasis, Vulvovaginal	1.000000	high	0.210526	low	1.000000	high	4	19
+mondo:0018440	mesh:C537758	autosomal recessive distal renal tubular acidosis		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0005656	mesh:D017191	Ascaridida infectious disease	Ascaridida Infections	0.250000	low	0.214286	low	1.000000	high	3	14
+mondo:0030603	mesh:D007710	Klebsiella infectious disease	Klebsiella Infections	0.250000	low	0.375000	medium	1.000000	high	3	8
+mondo:0005645	mesh:D000724	ancylostomiasis	Ancylostomiasis	1.000000	high	0.090909	low	1.000000	high	1	11
+mondo:0011918	mesh:D001007	anxiety		0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0004934	mesh:D010522	periostitis	Periostitis	1.000000	high	0.200000	low	1.000000	high	1	5
+mondo:0017161	mesh:C566288	frontotemporal dementia with motor neuron disease		0.000000	zero	0.000000	zero	0.000000	zero	0	13
+mondo:0005972	mesh:D011018	streptococcal pneumonia	Pneumonia, Pneumococcal	0.333333	medium	0.200000	low	1.000000	high	2	10
+mondo:0021498	mesh:D014382	benign neoplasm of placenta	Tuberculosis, Cutaneous	0.000000	zero	0.000000	zero	0.000000	zero	0	14
+mondo:0006728	mesh:D015299	obsolete discitis	Discitis	0.500000	medium	0.076923	low	0.500000	medium	1	13
+mondo:0003232	mesh:D019512	alcoholic pancreatitis	Pancreatitis, Alcoholic	1.000000	high	1.000000	high	1.000000	high	2	2
+mondo:0007614	mesh:C580012	congenital fibrosis of extraocular muscles		0.000000	zero	0.000000	zero	0.000000	zero	0	21
+mondo:0006094	mesh:C563168	Askin tumor		0.000000	zero	0.000000	zero	0.000000	zero	0	12
+mondo:0021804	mesh:D012830	silicotuberculosis	Silicotuberculosis	1.000000	high	1.000000	high	1.000000	high	2	2
+mondo:0006012	mesh:D011024	viral pneumonia	Pneumonia, Viral	1.000000	high	0.400000	medium	1.000000	high	2	5
+mondo:0024264	mesh:C566852	hypothyroidism, congenital, nongoitrous, 2		0.000000	zero	0.000000	zero	0.000000	zero	0	16
+mondo:0012252	mesh:C563738	rhabdoid tumor predisposition syndrome 1		0.000000	zero	0.000000	zero	0.000000	zero	0	26
+mondo:0001153	mesh:D014189	obsolete gender dysphoria		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0015243	mesh:D001229	allergic bronchopulmonary aspergillosis	Aspergillosis, Allergic Bronchopulmonary	1.000000	high	0.250000	low	1.000000	high	3	12
+mondo:0100234	mesh:C537182	paroxysmal familial ventricular fibrillation		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0005638	mesh:D001072	agnosia	Apraxias	0.000000	zero	0.033333	low	0.500000	medium	1	30
+mondo:0019359	mesh:D012373	Rocky mountain spotted fever	Rocky Mountain Spotted Fever	1.000000	high	0.380952	medium	1.000000	high	8	21
+mondo:0006645	mesh:D020269	alcoholic polyneuropathy	Alcoholic Neuropathy	0.333333	medium	0.384615	medium	1.000000	high	5	13
+mondo:0005999	mesh:D004654	tuberculous empyema	Empyema, Tuberculous	1.000000	high	0.750000	high	1.000000	high	3	4
+mondo:0025420	mesh:D005761	gastroenteritis, transmissible, of swine	Gastroenteritis, Transmissible, of Swine	1.000000	high	1.000000	high	1.000000	high	6	6
+mondo:0004471	mesh:D001170	bacterial arthritis	Arthritis, Infectious	0.333333	medium	0.500000	medium	1.000000	high	4	8
+mondo:0041366	mesh:D004826	acute epiglottitis	Epiglottitis	0.500000	medium	0.200000	low	0.500000	medium	1	5
+mondo:0957421	mesh:D001890	borna virus encephalitis	Borna Disease	0.250000	low	0.250000	low	0.250000	low	1	4
+mondo:0018695	mesh:D005585	avian influenza	Influenza in Birds	0.250000	low	0.444444	medium	1.000000	high	4	9
+mondo:0100312	mesh:D000071699	vestibular ataxia	Bilateral Vestibulopathy	0.000000	zero	0.111111	low	0.333333	medium	1	9
+mondo:0001404	mesh:D004473	ecthyma	Ecthyma	1.000000	high	1.000000	high	1.000000	high	1	1
+mondo:0019168	mesh:D052880	pyomyositis	Pyomyositis	1.000000	high	0.375000	medium	1.000000	high	3	8
+mondo:0005850	mesh:D011213	milker's nodule	Poxviridae Infections	0.000000	zero	0.307692	low	0.500000	medium	4	13
+mondo:0019444	mesh:D014235	trichinellosis	Trichinellosis	1.000000	high	0.176471	low	1.000000	high	3	17
+mondo:0024422	mesh:D001308	auditory perceptual disorders	Auditory Perceptual Disorders	1.000000	high	0.666667	high	1.000000	high	10	15
+mondo:0006887	mesh:D010249	parametritis	Parametritis	1.000000	high	0.375000	medium	1.000000	high	3	8
+mondo:0010201	mesh:C536709	Winchester syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	15
+mondo:0012268	mesh:D000163	AIDS	Acquired Immunodeficiency Syndrome	0.000000	zero	0.600000	medium	1.000000	high	6	10
+mondo:0013199	mesh:C566021	tuberous sclerosis 2		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0010561	mesh:D038921	Coffin-Lowry syndrome	Coffin-Lowry Syndrome	1.000000	high	0.421053	medium	1.000000	high	8	19
+mondo:0005998	mesh:D014323	trombiculiasis	Trombiculiasis	1.000000	high	0.125000	low	1.000000	high	1	8
+mondo:0005873	mesh:D020953	neuroaspergillosis	Neuroaspergillosis	1.000000	high	0.166667	low	1.000000	high	1	6
+mondo:0002875	mesh:D004478	parasitic ectoparasitic infectious disease	Ectoparasitic Infestations	0.200000	low	0.428571	medium	1.000000	high	3	7
+mondo:0005113	mesh:D001424	bacterial infectious disease	Bacterial Infections	0.250000	low	0.444444	medium	1.000000	high	4	9
+mondo:0002050	mesh:D003866	depressive disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	7
+mondo:0007739	mesh:D006816	Huntington disease	Huntington Disease	1.000000	high	0.266667	low	1.000000	high	4	15
+mondo:0008300	mesh:D011218	Prader-Willi syndrome	Prader-Willi Syndrome	1.000000	high	0.133333	low	1.000000	high	4	30
+mondo:0024619	mesh:D002494	central nervous system infectious disorder	Central Nervous System Infections	0.500000	medium	0.500000	medium	1.000000	high	5	10
+mondo:0002967	mesh:D014006	dermatophytosis of scalp or beard	Tinea Capitis	0.000000	zero	0.100000	low	1.000000	high	2	20
+mondo:0006706	mesh:D039941	Bifidobacteriales infectious disease	Bifidobacteriales Infections	0.250000	low	0.375000	medium	1.000000	high	3	8
+mondo:0025294	mesh:D017282	tick-borne infectious disease	Tick-Borne Diseases	0.400000	medium	0.857143	high	1.000000	high	6	7
+mondo:0043653	mesh:D006560	herpes labialis	Herpes Labialis	1.000000	high	1.000000	high	1.000000	high	10	10
+mondo:0005772	mesh:D005847	geotrichosis	Geotrichosis	1.000000	high	0.500000	medium	1.000000	high	1	2
+mondo:0005111	mesh:D020031	Epstein-Barr virus infection	Epstein-Barr Virus Infections	0.600000	medium	0.625000	medium	1.000000	high	10	16
+mondo:0005888	mesh:D009956	ornithosis	Psittacosis	0.000000	zero	0.500000	medium	1.000000	high	2	4
+mondo:0008597	mesh:C566033	obsolete trichorhinophalangeal syndrome, type III		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0012164	mesh:C538162	Meacham syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	20
+mondo:0005812	mesh:D009976	influenza	Orthomyxoviridae Infections	0.000000	zero	0.166667	low	0.500000	medium	3	18
+mondo:0021065	mesh:D010997	pleural neoplasm	Pleural Neoplasms	0.333333	medium	0.200000	low	1.000000	high	2	10
+mondo:0009630	mesh:C565378	microphthalmia, isolated, with coloboma 4		0.000000	zero	0.000000	zero	0.000000	zero	0	9
+mondo:0002041	mesh:D009181	fungal infectious disease	Mycoses	0.000000	zero	0.384615	medium	1.000000	high	5	13
+mondo:0000983	mesh:D005084	exhibitionism		0.000000	zero	0.000000	zero	0.000000	zero	0	1
+mondo:0005898	mesh:D010304	paronychia	Paronychia	1.000000	high	0.076923	low	1.000000	high	1	13
+mondo:0019360	mesh:D012288	rickettsialpox	Rickettsiaceae Infections	0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0025494	mesh:D019318	porcine reproductive and respiratory syndrome	Porcine Reproductive and Respiratory Syndrome	1.000000	high	1.000000	high	1.000000	high	15	15
+mondo:0017767	mesh:D012213	rheumatic fever	Rheumatic Fever	1.000000	high	0.384615	medium	1.000000	high	5	13
+mondo:0001505	mesh:D006519	alcoholic hepatitis	Hepatitis, Alcoholic	1.000000	high	0.285714	low	1.000000	high	2	7
+mondo:0100128	mesh:D060085	coinfection	Coinfection	1.000000	high	0.142857	low	1.000000	high	1	7
+mondo:0013129	mesh:C567758	cone dystrophy 4		0.000000	zero	0.000000	zero	0.000000	zero	0	12
+mondo:0015474	mesh:D003457	cryptosporidiosis	Cryptosporidiosis	1.000000	high	0.307692	low	1.000000	high	4	13
+mondo:0005231	mesh:D006526	hepatitis C virus infection	Hepatitis C	0.500000	medium	0.411765	medium	0.666667	high	7	17
+mondo:0018857	mesh:D007815	creeping myiasis	Larva Migrans	0.000000	zero	0.076923	low	0.333333	medium	1	13
+mondo:0006005	mesh:D004685	Venezuelan equine encephalitis	Encephalomyelitis, Venezuelan Equine	0.500000	medium	0.250000	low	1.000000	high	3	12
+mondo:0005969	mesh:D004674	st. Louis encephalitis	Encephalitis, St. Louis	1.000000	high	0.266667	low	1.000000	high	4	15
+mondo:0005502	mesh:D003715	dengue disease	Dengue	0.500000	medium	0.315789	low	1.000000	high	6	19
+mondo:0003039	mesh:D000849	nominal aphasia	Anomia	0.000000	zero	0.363636	medium	1.000000	high	4	11
+mondo:0005820	mesh:D007835	Lassa fever	Lassa Fever	1.000000	high	0.333333	medium	1.000000	high	2	6
+mondo:0004975	mesh:D000544	Alzheimer disease	Alzheimer Disease	1.000000	high	0.333333	medium	1.000000	high	8	24
+mondo:0006751	mesh:D004889	Erysipelothrix infectious disease	Erysipelothrix Infections	0.250000	low	0.375000	medium	1.000000	high	3	8
+mondo:0006922	mesh:D000711	Anaplasmataceae infectious disease	Anaplasmataceae Infections	0.250000	low	0.500000	medium	1.000000	high	5	10
+mondo:0005977	mesh:D013606	tabes dorsalis	Tabes Dorsalis	1.000000	high	0.263158	low	1.000000	high	5	19
+mondo:0005914	mesh:D010850	Picornaviridae infectious disease	Picornaviridae Infections	0.250000	low	0.500000	medium	1.000000	high	3	6
+mondo:0005419	mesh:D019969	methamphetamine dependence	Amphetamine-Related Disorders	0.000000	zero	0.125000	low	0.333333	medium	1	8
+mondo:0000158	mesh:D000082602	developmental dysplasia of the hip	Developmental Dysplasia of the Hip	1.000000	high	0.555556	medium	1.000000	high	5	9
+mondo:0017361	mesh:D012410	congenital rubella syndrome	Rubella Syndrome, Congenital	1.000000	high	0.250000	low	1.000000	high	3	12
+mondo:0005876	mesh:D030341	Nidovirales infectious disease	Nidovirales Infections	0.250000	low	0.142857	low	0.250000	low	1	7
+mondo:0024945	mesh:D006520	hepatitis, non-human animal	Hepatitis, Animal	0.500000	medium	0.600000	medium	1.000000	high	3	5
+mondo:0700127	mesh:C536794	mosaic trisomy 21		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0009606	mesh:C537841	methemoglobinemia due to deficiency of methemoglobin reductase		0.000000	zero	0.000000	zero	0.000000	zero	0	20
+mondo:0005778	mesh:D006188	haemonchiasis	Haemonchiasis	1.000000	high	0.500000	medium	1.000000	high	1	2
+mondo:0008114	mesh:D009771	obsessive-compulsive disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	8
+mondo:0005920	mesh:D016778	Plasmodium falciparum malaria	Malaria, Falciparum	0.666667	high	0.333333	medium	1.000000	high	3	9
+mondo:0100081	mesh:D012893	sleep disorder	Sleep Wake Disorders	0.250000	low	0.105263	low	1.000000	high	2	19
+mondo:0004854	mesh:D009878	ophthalmia neonatorum	Ophthalmia Neonatorum	1.000000	high	0.400000	medium	1.000000	high	2	5
+mondo:0005296	mesh:D012891	sleep apnea syndrome	Sleep Apnea Syndromes	0.500000	medium	0.850000	high	1.000000	high	17	20
+mondo:0005954	mesh:D012610	screw worm infectious disease	Screw Worm Infection	0.400000	medium	0.312500	low	1.000000	high	5	16
+mondo:0000594	mesh:D002659	pervasive developmental disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0019978	mesh:C562492	Robinow syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	24
+mondo:0010717	mesh:C564071	pyruvate dehydrogenase E1-alpha deficiency		0.000000	zero	0.000000	zero	0.000000	zero	0	26
+mondo:0020500	mesh:D008379	Marburg hemorrhagic fever	Marburg Virus Disease	0.200000	low	0.555556	medium	1.000000	high	5	9
+mondo:0010623	mesh:C537365	ichthyosis and male hypogonadism		0.000000	zero	0.000000	zero	0.000000	zero	0	7
+mondo:0019155	mesh:C562567	Leydig cell hypoplasia		0.000000	zero	0.000000	zero	0.000000	zero	0	31
+mondo:0006559	mesh:D017497	hidradenitis suppurativa	Hidradenitis Suppurativa	1.000000	high	0.250000	low	1.000000	high	4	16
+mondo:0000922	mesh:D000292	pelvic inflammatory disease	Pelvic Inflammatory Disease	1.000000	high	0.428571	medium	1.000000	high	3	7
+mondo:0043224	mesh:D015161	multi-infarct dementia	Dementia, Multi-Infarct	1.000000	high	0.636364	medium	1.000000	high	7	11
+mondo:0007909	mesh:D000071070	familial multiple lipomatosis	Familial Multiple Lipomatosis	1.000000	high	0.307692	low	1.000000	high	4	13
+mondo:0018626	mesh:D010284	paratyphoid fever	Paratyphoid Fever	1.000000	high	0.333333	medium	1.000000	high	2	6
+mondo:0005745	mesh:D017189	Enoplea infectious disease	Enoplida Infections	0.000000	zero	0.000000	zero	0.000000	zero	0	24
+mondo:0006643	mesh:D002310	alcoholic cardiomyopathy	Cardiomyopathy, Alcoholic	1.000000	high	0.200000	low	1.000000	high	2	10
+mondo:0019355	mesh:D014924	adult-onset Still disease	Wissler's Syndrome	0.000000	zero	0.307692	low	1.000000	high	4	13
+mondo:0005834	mesh:D008219	lymphogranuloma venereum	Lymphogranuloma Venereum	1.000000	high	0.187500	low	1.000000	high	3	16
+mondo:0025459	mesh:D012301	rinderpest	Rinderpest	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0018312	mesh:D006660	histoplasmosis	Histoplasmosis	1.000000	high	0.142857	low	1.000000	high	2	14
+mondo:0019498	mesh:D058285	tungiasis	Tungiasis	1.000000	high	0.076923	low	1.000000	high	1	13
+mondo:0021106	mesh:D000083083	laminopathy	Laminopathies	0.000000	zero	0.142857	low	1.000000	high	1	7
+mondo:0004848	mesh:D005892	ulcerative stomatitis	Gingivitis, Necrotizing Ulcerative	0.250000	low	0.133333	low	1.000000	high	2	15
+mondo:0006881	mesh:D054517	orbital cellulitis	Orbital Cellulitis	1.000000	high	0.400000	medium	1.000000	high	2	5
+mondo:0009176	mesh:D004819	epidermodysplasia verruciformis	Epidermodysplasia Verruciformis	1.000000	high	0.444444	medium	1.000000	high	4	9
+mondo:0024472	mesh:D001907	boutonneuse fever	Boutonneuse Fever	1.000000	high	0.240000	low	1.000000	high	6	25
+mondo:0005643	mesh:D018354	Alphavirus infectious disease	Alphavirus Infections	0.250000	low	0.050000	low	0.250000	low	1	20
+mondo:0006015	mesh:D014884	Waterhouse-Friderichsen syndrome	Waterhouse-Friderichsen Syndrome	1.000000	high	0.333333	medium	1.000000	high	6	18
+mondo:0020806	mesh:D012848	sinoatrial block	Sinoatrial Block	1.000000	high	0.500000	medium	1.000000	high	2	4
+mondo:0009488	mesh:C536151	keratoconus posticus circumscriptus		0.000000	zero	0.000000	zero	0.000000	zero	0	7
+mondo:0005722	mesh:D003440	croup	Croup	1.000000	high	0.100000	low	1.000000	high	1	10
+mondo:0024465	mesh:C567048	surfactant metabolism dysfunction, pulmonary, 2		0.000000	zero	0.000000	zero	0.000000	zero	0	19
+mondo:0007012	mesh:D016643	variant Creutzfeldt-Jakob disease	Encephalopathy, Bovine Spongiform	0.000000	zero	0.076923	low	0.166667	low	1	13
+mondo:0001596	mesh:D006998	hypochondriasis		0.000000	zero	0.000000	zero	0.000000	zero	0	5
+mondo:0005830	mesh:D008166	lumpy skin disease	Lumpy Skin Disease	1.000000	high	0.750000	high	1.000000	high	3	4
+mondo:0025114	mesh:D011529	protozoan infections, animal	Protozoan Infections, Animal	1.000000	high	1.000000	high	1.000000	high	4	4
+mondo:0015903	mesh:C564591	hyperalphalipoproteinemia		0.000000	zero	0.000000	zero	0.000000	zero	0	2
+mondo:0009622	mesh:C567101	Jawad syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	13
+mondo:0016743	mesh:D008577	tumor of meninges	Meningeal Neoplasms	0.000000	zero	0.136364	low	1.000000	high	3	22
+mondo:0009202	mesh:C536503	Thakker-Donnai syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	14
+mondo:0400005	mesh:D055677	refeeding syndrome	Refeeding Syndrome	1.000000	high	1.000000	high	1.000000	high	2	2
+mondo:0600008	mesh:D000080424	cytokine release syndrome	Cytokine Release Syndrome	1.000000	high	0.500000	medium	1.000000	high	4	8
+mondo:0005132	mesh:D003586	cytomegalovirus infection	Cytomegalovirus Infections	0.333333	medium	0.150000	low	1.000000	high	3	20
+mondo:0018059	mesh:D008585	meningococcal meningitis	Meningitis, Meningococcal	1.000000	high	0.153846	low	1.000000	high	2	13
+mondo:0001405	mesh:D000084002	dermatophytosis of groin and perianal area	Tinea Cruris	0.000000	zero	0.272727	low	1.000000	high	3	11
+mondo:0017816	mesh:D000075363	primary systemic amyloidosis	Immunoglobulin Light-chain Amyloidosis	0.166667	low	0.636364	medium	1.000000	high	7	11
+mondo:0001071	mesh:D008607	intellectual disability	Intellectual Disability	1.000000	high	0.384615	medium	1.000000	high	5	13
+mondo:0024954	mesh:D014120	larva migrans, visceral	Toxocariasis	0.000000	zero	0.000000	zero	0.000000	zero	0	7
+mondo:0005665	mesh:D020330	Bell's palsy	Bell Palsy	0.666667	high	0.333333	medium	1.000000	high	5	15
+mondo:0005124	mesh:D007918	leprosy	Leprosy	1.000000	high	0.400000	medium	1.000000	high	4	10
+mondo:0041656	mesh:D000072657	ST-elevation myocardial infarction	ST Elevation Myocardial Infarction	1.000000	high	0.750000	high	1.000000	high	6	8
+mondo:0024430	mesh:D066190	allesthesia	Allesthesia	1.000000	high	0.571429	medium	1.000000	high	4	7
+mondo:0004944	mesh:D009494	neurosyphilis	Neurosyphilis	1.000000	high	0.050000	low	1.000000	high	1	20
+mondo:0000293	mesh:D003551	coenurosis	Cysticercosis	0.000000	zero	0.095238	low	1.000000	high	2	21
+mondo:0004922	mesh:D019957	developmental coordination disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	8
+mondo:0016809	mesh:C564395	spinocerebellar ataxia with epilepsy		0.000000	zero	0.000000	zero	0.000000	zero	0	7
+mondo:0012937	mesh:C538442	Diamond-Blackfan anemia 6		0.000000	zero	0.000000	zero	0.000000	zero	0	16
+mondo:0005077	mesh:D014917	pertussis	Whooping Cough	0.000000	zero	0.333333	medium	1.000000	high	5	15
+mondo:0005757	mesh:D008271	eumycotic mycetoma	Mycetoma	0.500000	medium	0.625000	medium	1.000000	high	5	8
+mondo:0000989	mesh:D009107	mumps infectious disease	Mumps	0.333333	medium	0.300000	low	1.000000	high	3	10
+mondo:0005938	mesh:D014398	renal tuberculosis	Tuberculosis, Renal	1.000000	high	0.400000	medium	1.000000	high	2	5
+mondo:0005259	mesh:D020817	obsolete Asperger syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0021698	mesh:D019973	alcohol-related disorders	Alcohol-Related Disorders	1.000000	high	0.800000	high	1.000000	high	4	5
+mondo:0025431	mesh:D007639	keratoconjunctivitis, infectious	Keratoconjunctivitis, Infectious	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0010383	mesh:D005600	fragile X syndrome	Fragile X Syndrome	1.000000	high	0.500000	medium	1.000000	high	16	32
+mondo:0011898	mesh:C539595	Charcot-Marie-Tooth disease, axonal, with vocal cord paresis, autosomal recessive		0.000000	zero	0.000000	zero	0.000000	zero	0	16
+mondo:0005676	mesh:D001890	borna disease	Borna Disease	1.000000	high	0.500000	medium	1.000000	high	2	4
+mondo:0003781	mesh:D029481	bronchitis	Bronchitis, Chronic	0.500000	medium	0.133333	low	1.000000	high	2	15
+mondo:0005907	mesh:D018923	persian gulf syndrome	Persian Gulf Syndrome	1.000000	high	1.000000	high	1.000000	high	4	4
+mondo:0005629	mesh:D015823	Acanthamoeba keratitis	Acanthamoeba Keratitis	1.000000	high	0.500000	medium	1.000000	high	2	4
+mondo:0100185	mesh:D054019	immune reconstitution inflammatory syndrome	Immune Reconstitution Inflammatory Syndrome	1.000000	high	0.461538	medium	1.000000	high	6	13
+mondo:0100482	mesh:D054908	extensively drug-resistant tuberculosis	Extensively Drug-Resistant Tuberculosis	1.000000	high	0.750000	high	1.000000	high	6	8
+mondo:0017769	mesh:D000163	acquired immunodeficiency	Acquired Immunodeficiency Syndrome	0.666667	high	0.222222	low	0.666667	high	2	9
+mondo:8000019	mesh:C567620	vertigo, benign recurrent, 1		0.000000	zero	0.000000	zero	0.000000	zero	0	5
+mondo:0010831	mesh:C535879	familial caudal dysgenesis		0.000000	zero	0.000000	zero	0.000000	zero	0	16
+mondo:1010029	mesh:D000453	aleutian mink disease, human	Aleutian Mink Disease	0.750000	high	0.600000	medium	0.750000	high	3	5
+mondo:0015306	mesh:D057831	Lemierre syndrome	Lemierre Syndrome	1.000000	high	0.185185	low	1.000000	high	5	27
+mondo:0018044	mesh:D020177	idiopathic hypersomnia	Idiopathic Hypersomnia	1.000000	high	0.230769	low	1.000000	high	3	13
+mondo:0005798	mesh:D016263	HIV-associated nephropathy	AIDS-Associated Nephropathy	0.500000	medium	0.500000	medium	1.000000	high	5	10
+mondo:0000879	mesh:D002179	cutaneous candidiasis	Candidiasis, Cutaneous	1.000000	high	0.333333	medium	1.000000	high	2	6
+mondo:0016426	mesh:D060585	fusariosis	Fusariosis	1.000000	high	0.230769	low	1.000000	high	3	13
+mondo:0006021	mesh:D000788	Prinzmetal angina	Angina Pectoris, Variant	0.250000	low	0.714286	high	1.000000	high	5	7
+mondo:0005275	mesh:D008169	lung disorder	Lung Abscess	0.333333	medium	0.250000	low	0.333333	medium	2	8
+mondo:0005968	mesh:D013174	sporotrichosis	Sporotrichosis	1.000000	high	0.100000	low	1.000000	high	1	10
+mondo:0019806	mesh:D018888	primary progressive aphasia	Aphasia, Primary Progressive	1.000000	high	0.625000	medium	1.000000	high	5	8
+mondo:0700092	mesh:D065886	neurodevelopmental disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	2
+mondo:0005791	mesh:D006557	herpangina	Herpangina	1.000000	high	0.333333	medium	1.000000	high	1	3
+mondo:0018668	mesh:C000656924	scedosporiosis		0.000000	zero	0.000000	zero	0.000000	zero	0	1
+mondo:0043904	mesh:D016774	leishmaniasis, diffuse cutaneous	Leishmaniasis, Diffuse Cutaneous	1.000000	high	0.500000	medium	1.000000	high	4	8
+mondo:0016318	mesh:D007968	progressive multifocal leukoencephalopathy	Leukoencephalopathy, Progressive Multifocal	1.000000	high	0.272727	low	1.000000	high	3	11
+mondo:0010103	mesh:D005671	teeth, fused	Fused Teeth	1.000000	high	0.285714	low	1.000000	high	2	7
+mondo:0019353	mesh:D000080362	Stargardt disease	Stargardt Disease	1.000000	high	0.692308	high	1.000000	high	9	13
+mondo:0005973	mesh:D017206	Strongylida infectious disease	Strongylida Infections	0.250000	low	0.100000	low	0.250000	low	1	10
+mondo:0000979	mesh:D010874	pinta disease	Pinta	0.500000	medium	0.058824	low	1.000000	high	1	17
+mondo:0005391	mesh:D012148	restless legs syndrome	Restless Legs Syndrome	1.000000	high	0.800000	high	1.000000	high	8	10
+mondo:0005821	mesh:D009494	late congenital syphilis	Neurosyphilis	0.000000	zero	0.166667	low	1.000000	high	4	24
+mondo:0005736	mesh:D020242	eastern equine encephalitis	Encephalomyelitis, Eastern Equine	0.500000	medium	0.600000	medium	1.000000	high	6	10
+mondo:0005194	mesh:D012400	Rotavirus infection	Rotavirus Infections	0.333333	medium	0.250000	low	1.000000	high	2	8
+mondo:0005756	mesh:D015521	ethmoid sinusitis	Ethmoid Sinusitis	1.000000	high	0.428571	medium	1.000000	high	3	7
+mondo:0009766	mesh:C537866	oculocerebral hypopigmentation syndrome of Preus		0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0024614	mesh:D009497	neurotic depression		0.000000	zero	0.000000	zero	0.000000	zero	0	2
+mondo:0025138	mesh:D014720	vesicular exanthema of swine	Vesicular Exanthema of Swine	1.000000	high	0.800000	high	1.000000	high	4	5
+mondo:0005357	mesh:D007562	Creutzfeldt Jacob disease	Creutzfeldt-Jakob Syndrome	0.200000	low	0.473684	medium	1.000000	high	9	19
+mondo:0040753	mesh:D055985	latent tuberculosis infection	Latent Tuberculosis	0.666667	high	0.375000	medium	1.000000	high	3	8
+mondo:0002905	mesh:D009155	mutism	Mutism	1.000000	high	0.083333	low	1.000000	high	1	12
+mondo:0015254	mesh:D012554	schistosomiasis	Schistosomiasis japonica	0.500000	medium	0.100000	low	0.500000	medium	1	10
+mondo:0019136	mesh:D009091	Zygomycosis	Mucormycosis	0.000000	zero	0.125000	low	1.000000	high	1	8
+mondo:0005709	mesh:D003139	common cold	Common Cold	1.000000	high	0.333333	medium	1.000000	high	4	12
+mondo:0044345	mesh:D012552	Schistosoma mansoni infectious disease	Schistosomiasis	0.000000	zero	0.062500	low	0.250000	low	1	16
+mondo:0019095	mesh:D015009	plague	Yersinia Infections	0.000000	zero	0.214286	low	1.000000	high	3	14
+mondo:0007794	mesh:C562785	hypogonadotropic hypogonadism 7 with or without anosmia		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0005116	mesh:D008061	Whipple disease	Whipple Disease	1.000000	high	0.250000	low	1.000000	high	5	20
+mondo:0005767	mesh:D005738	gas gangrene	Gas Gangrene	1.000000	high	0.333333	medium	1.000000	high	2	6
+mondo:0018081	mesh:D006480	hemorrhagic fever-renal syndrome	Hemorrhagic Fever with Renal Syndrome	0.800000	high	0.250000	low	0.800000	high	4	16
+mondo:0005429	mesh:D017096	prion disease	Prion Diseases	0.333333	medium	0.411765	medium	1.000000	high	7	17
+mondo:0015924	mesh:D000081029	pulmonary arterial hypertension	Pulmonary Arterial Hypertension	1.000000	high	0.200000	low	1.000000	high	3	15
+mondo:0001087	mesh:D012569	schizotypal personality disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0006670	mesh:D016920	bacterial meningitis	Meningitis, Bacterial	1.000000	high	0.333333	medium	1.000000	high	2	6
+mondo:0006642	mesh:D000430	alcohol withdrawal delirium	Alcohol Withdrawal Delirium	1.000000	high	1.000000	high	1.000000	high	9	9
+mondo:0100064	mesh:C537537	tyrosine hydroxylase deficiency		0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0003965	mesh:D002194	Capgras syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0005964	mesh:D015524	sphenoid sinusitis	Sphenoid Sinusitis	1.000000	high	0.500000	medium	1.000000	high	3	6
+mondo:0005379	mesh:D000275	neurotic disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	13
+mondo:0005937	mesh:D020187	REM sleep behavior disorder	REM Sleep Behavior Disorder	1.000000	high	0.777778	high	1.000000	high	7	9
+mondo:0005091	mesh:D045169	severe acute respiratory syndrome	Severe Acute Respiratory Syndrome	1.000000	high	0.384615	medium	1.000000	high	5	13
+mondo:0000344	mesh:D000096745	Ross river fever	Ross River Virus Infection	0.400000	medium	0.400000	medium	1.000000	high	4	10
+mondo:0003265	mesh:D000275	adjustment disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	7
+mondo:0008039	mesh:D015493	tropical spastic paraparesis	Paraparesis, Tropical Spastic	1.000000	high	0.600000	medium	1.000000	high	15	25
+mondo:0024295	mesh:D017192	skin disease caused by bacterial infection	Skin Diseases, Bacterial	0.285714	low	0.500000	medium	1.000000	high	4	8
+mondo:0001132	mesh:D012448	sexual sadism disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0012484	mesh:C537242	prosopagnosia, hereditary		0.000000	zero	0.000000	zero	0.000000	zero	0	7
+mondo:0020944	mesh:D015821	fungal infection of eye	Eye Infections, Fungal	0.400000	medium	0.833333	high	1.000000	high	10	12
+mondo:0005936	mesh:D009165	recurrent pneumonia	Mycobacterium Infections, Nontuberculous	0.000000	zero	0.000000	zero	0.000000	zero	0	14
+mondo:0018781	mesh:C536168	KID syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	12
+mondo:0016472	mesh:D004320	dracunculiasis	Dracunculiasis	1.000000	high	0.300000	low	1.000000	high	6	20
+mondo:0017572	mesh:D004675	tick-borne encephalitis	Encephalitis, Tick-Borne	1.000000	high	0.434783	medium	1.000000	high	10	23
+mondo:0043352	mesh:D018934	fournier gangrene	Fournier Gangrene	1.000000	high	1.000000	high	1.000000	high	5	5
+mondo:0010298	mesh:D007926	Lesch-Nyhan syndrome	Lesch-Nyhan Syndrome	1.000000	high	0.326087	low	1.000000	high	15	46
+mondo:0005779	mesh:D006232	hand, foot and mouth disease	Hand, Foot and Mouth Disease	1.000000	high	0.555556	medium	1.000000	high	5	9
+mondo:0005912	mesh:D010623	phencyclidine abuse	Phencyclidine Abuse	1.000000	high	0.428571	medium	1.000000	high	3	7
+mondo:0018667	mesh:D016724	pleural empyema	Empyema, Pleural	1.000000	high	0.214286	low	1.000000	high	3	14
+mondo:0019308	mesh:C535958	junctional epidermolysis bullosa inversa		0.000000	zero	0.000000	zero	0.000000	zero	0	8
+mondo:0005871	mesh:D009349	Nematoda infectious disease	Nematode Infections	0.000000	zero	0.250000	low	1.000000	high	3	12
+mondo:0005891	mesh:D010029	ostertagiasis	Ostertagiasis	1.000000	high	0.500000	medium	1.000000	high	1	2
+mondo:0005985	mesh:D014036	Togaviridae infectious disease	Togaviridae Infections	0.250000	low	0.200000	low	0.666667	high	2	10
+mondo:0018949	mesh:D049310	distal myopathy	Distal Myopathies	0.333333	medium	0.160000	low	1.000000	high	4	25
+mondo:0001780	mesh:D061686	premature ejaculation	Premature Ejaculation	1.000000	high	0.285714	low	1.000000	high	2	7
+mondo:0011232	mesh:C537246	migraine, familial hemiplegic, 2		0.000000	zero	0.000000	zero	0.000000	zero	0	15
+mondo:0019147	mesh:D009198	myiasis	Myiasis	1.000000	high	0.333333	medium	1.000000	high	4	12
+mondo:0010186	mesh:C562794	vitamin D-dependent rickets, type 2A		0.000000	zero	0.000000	zero	0.000000	zero	0	39
+mondo:0013203	mesh:C567678	corneal dystrophy, Fuchs endothelial, 3		0.000000	zero	0.000000	zero	0.000000	zero	0	16
+mondo:0005647	mesh:D003218	anogenital human papillomavirus infection	Condylomata Acuminata	0.000000	zero	0.250000	low	1.000000	high	4	16
+mondo:0020950	mesh:D015828	viral eye infection	Eye Infections, Viral	0.500000	medium	0.833333	high	1.000000	high	5	6
+mondo:0005777	mesh:D006100	granuloma inguinale	Granuloma Inguinale	1.000000	high	0.500000	medium	1.000000	high	3	6
+mondo:0010726	mesh:D015518	Rett syndrome	Rett Syndrome	1.000000	high	0.535714	medium	1.000000	high	15	28
+mondo:0100164	mesh:C563425	permanent neonatal diabetes mellitus		0.000000	zero	0.000000	zero	0.000000	zero	0	16
+mondo:0015260	mesh:D004169	diphyllobothriasis	Diphyllobothriasis	1.000000	high	0.250000	low	1.000000	high	3	12
+mondo:0005886	mesh:D002180	oral candidiasis	Candidiasis, Oral	1.000000	high	0.500000	medium	1.000000	high	4	8
+mondo:0009526	mesh:C565436	fibular aplasia, tibial campomelia, and oligosyndactyly syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	22
+mondo:0006926	mesh:D006192	haemophilus infectious disease	Haemophilus Infections	0.250000	low	0.307692	low	1.000000	high	4	13
+mondo:0006961	mesh:D012608	scrapie	Scrapie	1.000000	high	0.500000	medium	1.000000	high	1	2
+mondo:0044345	mesh:D012554	Schistosoma mansoni infectious disease	Schistosomiasis japonica	0.000000	zero	0.166667	low	0.500000	medium	2	12
+mondo:0002903	mesh:D001184	articulation disorder	Articulation Disorders	0.333333	medium	0.307692	low	0.666667	high	4	13
+mondo:0003763	mesh:D000068099	acute stress disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	5
+mondo:0000705	mesh:D004761	Clostridium difficile colitis	Enterocolitis, Pseudomembranous	0.000000	zero	0.214286	low	1.000000	high	3	14
+mondo:0005109	mesh:D015658	HIV infectious disease	HIV Infections	0.250000	low	0.210526	low	1.000000	high	4	19
+mondo:0003014	mesh:D012220	rhinitis	Rhinitis	1.000000	high	0.181818	low	1.000000	high	2	11
+mondo:0005846	mesh:D016881	microsporidiosis	Microsporidiosis	1.000000	high	0.266667	low	1.000000	high	4	15
+mondo:0002428	mesh:D011528	protozoa infectious disease	Protozoan Infections	0.000000	zero	0.083333	low	0.333333	medium	1	12
+mondo:0011042	mesh:C563346	Martinez-Frias syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	19
+mondo:0005706	mesh:D003047	coccidioidomycosis	Coccidioidomycosis	1.000000	high	0.400000	medium	1.000000	high	8	20
+mondo:0009878	mesh:C563172	pituitary hormone deficiency, combined, 2		0.000000	zero	0.000000	zero	0.000000	zero	0	22
+mondo:0021723	mesh:D052065	vaginismus	Vaginismus	1.000000	high	0.200000	low	1.000000	high	1	5
+mondo:0005725	mesh:D021866	cyclosporiasis	Cyclosporiasis	1.000000	high	0.187500	low	1.000000	high	3	16
+mondo:0005644	mesh:D000562	amebiasis	Amebiasis	1.000000	high	0.111111	low	1.000000	high	2	18
+mondo:0001103	mesh:D005873	giardiasis	Giardiasis	1.000000	high	0.615385	medium	1.000000	high	8	13
+mondo:0015059	mesh:D057178	progressive non-fluent aphasia	Primary Progressive Nonfluent Aphasia	0.333333	medium	0.538462	medium	1.000000	high	7	13
+mondo:0000330	mesh:D014437	endemic typhus	Typhus, Endemic Flea-Borne	0.500000	medium	0.285714	low	1.000000	high	6	21
+mondo:0001134	mesh:D000075222	essential hypertension	Essential Hypertension	1.000000	high	0.600000	medium	1.000000	high	3	5
+mondo:0001616	mesh:D060368	lobomycosis	Lobomycosis	1.000000	high	0.210526	low	1.000000	high	4	19
+mondo:0009130	mesh:C535726	Dyggve-Melchior-Clausen disease		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0006924	mesh:D001476	Bartonellaceae infectious disease	Bartonellaceae Infections	0.250000	low	0.375000	medium	1.000000	high	3	8
+mondo:0005619	mesh:D014435	typhoid fever	Typhoid Fever	1.000000	high	0.166667	low	1.000000	high	2	12
+mondo:0015288	mesh:D016849	herpes simplex virus keratitis	Keratitis, Herpetic	0.200000	low	0.363636	medium	1.000000	high	4	11
+mondo:0005842	mesh:D015523	maxillary sinusitis	Maxillary Sinusitis	1.000000	high	0.666667	high	1.000000	high	2	3
+mondo:0018661	mesh:D000071243	Zika virus infectious disease	Zika Virus Infection	0.400000	medium	0.666667	high	1.000000	high	8	12
+mondo:0025389	mesh:D002007	brucellosis, bovine	Brucellosis, Bovine	1.000000	high	1.000000	high	1.000000	high	7	7
+mondo:0006209	mesh:D005354	fibroblastic neoplasm	Fibrosarcoma	0.000000	zero	0.000000	zero	0.000000	zero	0	9
+mondo:0025484	mesh:D016097	simian acquired immunodeficiency syndrome	Simian Acquired Immunodeficiency Syndrome	1.000000	high	0.714286	high	1.000000	high	10	14
+mondo:0000262	mesh:D059249	otomycosis	Otomycosis	1.000000	high	0.090909	low	1.000000	high	1	11
+mondo:0100457	mesh:C536011	achalasia, familial esophageal		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0005708	mesh:D003121	Colorado tick fever	Colorado Tick Fever	1.000000	high	0.230769	low	1.000000	high	3	13
+mondo:0005755	mesh:D004859	equine infectious anemia	Equine Infectious Anemia	1.000000	high	0.428571	medium	1.000000	high	3	7
+mondo:0019107	mesh:C562717	Rh deficiency syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	12
+mondo:0005260	mesh:D001321	autism		0.000000	zero	0.000000	zero	0.000000	zero	0	14
+mondo:0016226	mesh:D000080888	specific language disorder	Specific Language Disorder	1.000000	high	0.428571	medium	1.000000	high	3	7
+mondo:0006671	mesh:D001442	Bacteroides infectious disease	Bacteroides Infections	0.250000	low	0.272727	low	1.000000	high	3	11
+mondo:0005294	mesh:D016481	peripheral vascular disease	Helicobacter Infections	0.000000	zero	0.000000	zero	0.000000	zero	0	9
+mondo:0017779	mesh:C536631	alpha-N-acetylgalactosaminidase deficiency		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0001153	mesh:D000068116	obsolete gender dysphoria		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0006644	mesh:D008104	alcoholic liver cirrhosis	Liver Cirrhosis, Alcoholic	1.000000	high	0.375000	medium	1.000000	high	3	8
+mondo:0004522	mesh:D010538	infectious peritonitis	Peritonitis	0.500000	medium	0.200000	low	0.666667	high	2	10
+mondo:0005135	mesh:D010272	parasitic infectious disease	Parasitic Diseases	0.250000	low	0.357143	medium	1.000000	high	5	14
+mondo:0008612	mesh:C565346	tuberous sclerosis 1		0.000000	zero	0.000000	zero	0.000000	zero	0	12
+mondo:0025149	mesh:D016643	encephalopathy, bovine spongiform	Encephalopathy, Bovine Spongiform	1.000000	high	1.000000	high	1.000000	high	9	9
+mondo:0009263	mesh:C535642	GAPO syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0010746	mesh:C562949	thumbs, congenital Clasped		0.000000	zero	0.000000	zero	0.000000	zero	0	5
+mondo:0100089	mesh:C564525	GATA1-Related X-Linked Cytopenia		0.000000	zero	0.000000	zero	0.000000	zero	0	5
+mondo:0005927	mesh:D027601	polyomavirus infectious disease	Polyomavirus Infections	0.250000	low	0.250000	low	0.250000	low	1	4
+mondo:0015993	mesh:D000071700	cone-rod dystrophy	Cone-Rod Dystrophies	0.500000	medium	0.500000	medium	1.000000	high	4	8
+mondo:0025159	mesh:D045729	pneumonia of swine, mycoplasmal	Pneumonia of Swine, Mycoplasmal	1.000000	high	1.000000	high	1.000000	high	7	7
+mondo:0002572	mesh:D011015	aspiration pneumonitis	Pneumonia, Aspiration	0.333333	medium	0.166667	low	1.000000	high	2	12
+mondo:0006929	mesh:D011512	Proteus infectious disease	Proteus Infections	0.250000	low	0.333333	medium	1.000000	high	3	9
+mondo:0006838	mesh:D008177	lupus vulgaris	Lupus Vulgaris	1.000000	high	1.000000	high	1.000000	high	2	2
+mondo:0007440	mesh:C565111	major affective disorder 1		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0020756	mesh:C536890	migraine, familial hemiplegic, 1		0.000000	zero	0.000000	zero	0.000000	zero	0	12
+mondo:0021682	mesh:D015229	viral sexually transmitted disease	Sexually Transmitted Diseases, Viral	0.600000	medium	1.000000	high	1.000000	high	6	6
+mondo:0011120	mesh:C536409	neural tube defects, folate-sensitive		0.000000	zero	0.000000	zero	0.000000	zero	0	11
+mondo:0000239	mesh:C000656784	adiaspiromycosis		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0015636	mesh:D004184	dirofilariasis	Dirofilariasis	1.000000	high	0.181818	low	1.000000	high	2	11
+mondo:0006923	mesh:D016863	Bacillaceae infectious disease	Bacillaceae Infections	0.250000	low	0.375000	medium	1.000000	high	3	8
+mondo:0002282	mesh:D014901	West Nile fever	West Nile Fever	1.000000	high	0.250000	low	1.000000	high	4	16
+mondo:0021839	mesh:D013145	spirochaetales infections	Spirochaetales Infections	1.000000	high	0.571429	medium	1.000000	high	4	7
+mondo:0019188	mesh:D012415	Rubinstein-Taybi syndrome	Rubinstein-Taybi Syndrome	1.000000	high	0.318182	low	1.000000	high	7	22
+mondo:0000758	mesh:D016917	bacillary angiomatosis	Angiomatosis, Bacillary	1.000000	high	0.500000	medium	1.000000	high	4	8
+mondo:0025371	mesh:D010322	Parvoviridae infectious disease	Parvoviridae Infections	0.250000	low	0.333333	medium	1.000000	high	4	12
+mondo:0019345	mesh:D004405	shigellosis	Dysentery, Bacillary	0.000000	zero	0.333333	medium	1.000000	high	7	21
+mondo:0021697	mesh:D023521	chlamydia infectious disease	Chlamydophila Infections	0.000000	zero	0.400000	medium	0.666667	high	4	10
+mondo:0004666	mesh:D014201	metagonimiasis	Trematode Infections	0.000000	zero	0.300000	low	1.000000	high	3	10
+mondo:0015986	mesh:C536482	bilateral renal agenesis		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0025453	mesh:D011021	pneumonia, progressive interstitial, of sheep	Pneumonia, Progressive Interstitial, of Sheep	1.000000	high	1.000000	high	1.000000	high	6	6
+mondo:0018755	mesh:D065008	scorpion envenomation	Scorpion Stings	0.333333	medium	0.125000	low	1.000000	high	2	16
+mondo:0018951	mesh:C565262	distal myopathy with vocal cord weakness		0.000000	zero	0.000000	zero	0.000000	zero	0	13
+mondo:0025491	mesh:D016766	feline infectious peritonitis	Feline Infectious Peritonitis	1.000000	high	0.800000	high	1.000000	high	4	5
+mondo:0005716	mesh:D011002	contagious pleuropneumonia	Pleuropneumonia, Contagious	1.000000	high	0.666667	high	1.000000	high	2	3
+mondo:0004049	mesh:D003130	combat disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0005967	mesh:D014400	splenic tuberculosis	Tuberculosis, Splenic	1.000000	high	0.666667	high	1.000000	high	2	3
+mondo:0018772	mesh:C536293	Joubert syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	15
+mondo:0005922	mesh:D014396	pleural tuberculosis	Tuberculosis, Pleural	1.000000	high	0.285714	low	1.000000	high	4	14
+mondo:0006011	mesh:D006524	viral hepatitis	Hepatitis, Viral, Animal	0.666667	high	0.181818	low	0.666667	high	2	11
+mondo:0015342	mesh:D009188	acute transverse myelitis	Myelitis, Transverse	0.666667	high	0.250000	low	1.000000	high	3	12
+mondo:0025135	mesh:D014379	tuberculosis, avian	Tuberculosis, Avian	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0000253	mesh:D010854	piedra	Piedra	1.000000	high	0.307692	low	1.000000	high	4	13
+mondo:0005766	mesh:D008172	fungal lung infectious disease	Lung Diseases, Fungal	0.400000	medium	0.700000	high	1.000000	high	7	10
+mondo:0005373	mesh:D008589	meningococcal infection	Meningococcal Infections	0.333333	medium	0.571429	medium	1.000000	high	4	7
+mondo:0004911	mesh:D013589	cardiovascular syphilis	Syphilis, Cardiovascular	1.000000	high	0.400000	medium	1.000000	high	2	5
+mondo:0005962	mesh:D014394	skeletal tuberculosis	Tuberculosis, Osteoarticular	0.333333	medium	0.333333	medium	1.000000	high	2	6
+mondo:0007661	mesh:D005879	Tourette syndrome	Tourette Syndrome	1.000000	high	0.500000	medium	1.000000	high	11	22
+mondo:0001627	mesh:D003704	dementia	Dementia	1.000000	high	0.142857	low	1.000000	high	1	7
+mondo:0016453	mesh:D001906	foodborne botulism	Botulism	0.500000	medium	0.181818	low	1.000000	high	2	11
+mondo:0005908	mesh:D029021	peste des petits ruminants infectious disease	Peste-des-Petits-Ruminants	0.666667	high	0.384615	medium	1.000000	high	5	13
+mondo:0006781	mesh:D016481	Helicobacter pylori infectious disease	Helicobacter Infections	0.200000	low	0.272727	low	1.000000	high	3	11
+mondo:0006681	mesh:D001899	Borrelia infectious disease	Borrelia Infections	0.250000	low	0.125000	low	0.250000	low	1	8
+mondo:0020572	mesh:D002422	complex regional pain syndrome type 2	Causalgia	0.000000	zero	0.727273	high	1.000000	high	8	11
+mondo:0000248	mesh:D019595	dengue shock syndrome	Severe Dengue	0.250000	low	0.272727	low	1.000000	high	3	11
+mondo:0008161	mesh:C563482	otodental syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0005870	mesh:D009332	necatoriasis	Necatoriasis	1.000000	high	0.500000	medium	1.000000	high	1	2
+mondo:0016567	mesh:D000080422	locked-in syndrome	Locked-In Syndrome	1.000000	high	0.625000	medium	1.000000	high	5	8
+mondo:0000819	mesh:D000757	anencephaly	Anencephaly	1.000000	high	0.153846	low	1.000000	high	2	13
+mondo:0006780	mesh:D006357	heartwater disease	Heartwater Disease	1.000000	high	1.000000	high	1.000000	high	2	2
+mondo:0006876	mesh:D014392	ocular tuberculosis	Tuberculosis, Ocular	1.000000	high	0.666667	high	1.000000	high	2	3
+mondo:0018801	mesh:C535984	congenital bilateral absence of vas deferens		0.000000	zero	0.000000	zero	0.000000	zero	0	8
+mondo:0005655	mesh:D001198	ascaridiasis	Ascaridiasis	1.000000	high	0.090909	low	1.000000	high	1	11
+mondo:0043004	mesh:D007922	Weil's disease	Leptospirosis	0.000000	zero	0.130435	low	0.500000	medium	3	23
+mondo:0001039	mesh:D014069	tonsillitis	Tonsillitis	1.000000	high	0.111111	low	1.000000	high	1	9
+mondo:0006669	mesh:D004697	bacterial endocarditis	Endocarditis, Bacterial	1.000000	high	0.333333	medium	1.000000	high	2	6
+mondo:0005662	mesh:D001447	balantidiasis	Balantidiasis	1.000000	high	0.461538	medium	1.000000	high	6	13
+mondo:0018135	mesh:C537728	oculocutaneous albinism type 1		0.000000	zero	0.000000	zero	0.000000	zero	0	8
+mondo:0005909	mesh:D018182	pestivirus infectious disease	Pestivirus Infections	0.250000	low	0.375000	medium	1.000000	high	3	8
+mondo:0025136	mesh:D014380	tuberculosis, bovine	Tuberculosis, Bovine	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0019760	mesh:C565681	terminal transverse defects of arm		0.000000	zero	0.000000	zero	0.000000	zero	0	8
+mondo:0000265	mesh:D011015	aspiration pneumonia	Pneumonia, Aspiration	1.000000	high	0.833333	high	1.000000	high	10	12
+mondo:0000744	mesh:D008169	lung abscess	Lung Abscess	1.000000	high	0.400000	medium	1.000000	high	2	5
+mondo:0002494	mesh:D019966	substance-related disorder	Substance-Related Disorders	0.500000	medium	0.294118	low	1.000000	high	5	17
+mondo:0016075	mesh:D005368	filariasis	Filariasis	1.000000	high	0.181818	low	1.000000	high	2	11
+mondo:0024270	mesh:D007411	parasitic intestinal disorder	Intestinal Diseases, Parasitic	0.500000	medium	0.571429	medium	1.000000	high	4	7
+mondo:0005911	mesh:D000258	pharyngoconjunctival fever	Adenovirus Infections, Human	0.000000	zero	0.300000	low	1.000000	high	3	10
+mondo:0004664	mesh:D006373	helminthiasis	Helminthiasis	1.000000	high	0.181818	low	1.000000	high	2	11
+mondo:0025129	mesh:D013554	swine erysipelas	Swine Erysipelas	1.000000	high	1.000000	high	1.000000	high	2	2
+mondo:0005658	mesh:D019350	Astroviridae infectious disease	Astroviridae Infections	0.250000	low	0.200000	low	0.250000	low	1	5
+mondo:0000813	mesh:D014381	cardiac tuberculosis	Tuberculosis, Cardiovascular	0.333333	medium	0.500000	medium	1.000000	high	2	4
+mondo:0001139	mesh:D008398	sexual masochism disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0005986	mesh:D018176	torovirus infectious disease	Torovirus Infections	0.250000	low	0.125000	low	0.250000	low	1	8
+mondo:0011786	mesh:D065631	allergic rhinitis	Rhinitis, Allergic	1.000000	high	0.166667	low	1.000000	high	2	12
+mondo:0005811	mesh:D009234	infectious myxomatosis	Myxomatosis, Infectious	1.000000	high	0.666667	high	1.000000	high	2	3
+mondo:0001449	mesh:D008216	lymphocytic choriomeningitis	Lymphocytic Choriomeningitis	1.000000	high	0.307692	low	1.000000	high	4	13
+mondo:0006865	mesh:D005892	necrotizing ulcerative gingivitis	Gingivitis, Necrotizing Ulcerative	1.000000	high	0.576923	medium	1.000000	high	15	26
+mondo:0031169	mesh:C535792	odontochondrodysplasia		0.000000	zero	0.000000	zero	0.000000	zero	0	1
+mondo:0005750	mesh:D004810	ephemeral fever	Ephemeral Fever	1.000000	high	0.400000	medium	1.000000	high	2	5
+mondo:0006766	mesh:D020235	gait apraxia	Gait Apraxia	1.000000	high	0.250000	low	1.000000	high	2	8
+mondo:0005715	mesh:D014125	congenital toxoplasmosis	Toxoplasmosis, Congenital	1.000000	high	0.176471	low	1.000000	high	3	17
+mondo:0011989	mesh:D007896	leishmaniasis	Leishmaniasis	1.000000	high	0.066667	low	1.000000	high	1	15
+mondo:0043479	mesh:D000257	adenoviridae infectious disease	Adenoviridae Infections	0.250000	low	0.333333	medium	1.000000	high	4	12
+mondo:0024417	mesh:D010468	perceptual disorders	Perceptual Disorders	1.000000	high	0.200000	low	1.000000	high	2	10
+mondo:0002258	mesh:D010612	pharyngitis	Pharyngitis	1.000000	high	0.187500	low	1.000000	high	3	16
+mondo:0015451	mesh:D000080039	univentricular heart	Univentricular Heart	1.000000	high	0.375000	medium	1.000000	high	3	8
+mondo:0009853	mesh:C538556	Imerslund-Grasbeck syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	22
+mondo:0025028	mesh:D054243	vesicular stomatitis	Vesicular Stomatitis	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0005984	mesh:D014008	tinea pedis	Tinea Pedis	1.000000	high	0.500000	medium	1.000000	high	5	10
+mondo:0001247	mesh:D000072861	social phobia		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0005859	mesh:D007897	mucocutaneous leishmaniasis	Leishmaniasis, Mucocutaneous	1.000000	high	0.285714	low	1.000000	high	2	7
+mondo:0005740	mesh:D004457	Echovirus infectious disease	Echovirus Infections	0.250000	low	0.500000	medium	1.000000	high	5	10
+mondo:0009175	mesh:C562487	eosinophilic fasciitis		0.000000	zero	0.000000	zero	0.000000	zero	0	9
+mondo:0017267	mesh:C565473	self-healing collodion baby		0.000000	zero	0.000000	zero	0.000000	zero	0	9
+mondo:0005704	mesh:D016770	Ciliophora infectious disease	Ciliophora Infections	0.250000	low	0.125000	low	0.250000	low	1	8
+mondo:0019136	mesh:D020096	Zygomycosis	Zygomycosis	1.000000	high	0.100000	low	1.000000	high	1	10
+mondo:0026404	mesh:C564716	X inactivation, familial skewed, 1		0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0021697	mesh:D002690	chlamydia infectious disease	Chlamydia Infections	0.250000	low	0.333333	medium	1.000000	high	3	9
+mondo:0006004	mesh:D012223	vasomotor rhinitis	Rhinitis, Vasomotor	1.000000	high	0.666667	high	1.000000	high	2	3
+mondo:0009503	mesh:C565447	pyruvate dehydrogenase E3-binding protein deficiency		0.000000	zero	0.000000	zero	0.000000	zero	0	36
+mondo:0021667	mesh:D009437	neuralgia	Neuralgia	1.000000	high	0.333333	medium	1.000000	high	5	15
+mondo:0006989	mesh:D010482	suppurative periapical periodontitis	Periapical Abscess	0.250000	low	0.600000	medium	1.000000	high	6	10
+mondo:0008527	mesh:D000070604	tarsal coalition	Tarsal Coalition	1.000000	high	0.400000	medium	1.000000	high	2	5
+mondo:0009649	mesh:C536991	moyamoya disease 1		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0005719	mesh:D018352	Coronavinae infectious disease	Coronavirus Infections	0.000000	zero	0.000000	zero	0.000000	zero	0	11
+mondo:0002885	mesh:D004894	erythrasma	Erythrasma	1.000000	high	0.166667	low	1.000000	high	1	6
+mondo:0005879	mesh:D014126	ocular toxoplasmosis	Toxoplasmosis, Ocular	1.000000	high	0.666667	high	1.000000	high	2	3
+mondo:0015467	mesh:C563368	craniosynostosis, Philadelphia type		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0002237	mesh:D002270	carbuncle	Carbuncle	1.000000	high	0.050000	low	1.000000	high	1	20
+mondo:0007079	mesh:D000437	alcohol dependence	Alcoholism	0.000000	zero	0.136364	low	1.000000	high	3	22
+mondo:0005923	mesh:D016720	Pneumocystis infectious disease	Pneumocystis Infections	0.250000	low	0.375000	medium	1.000000	high	3	8
+mondo:0001953	mesh:D011776	pyuria	Pyuria	1.000000	high	0.166667	low	1.000000	high	1	6
+mondo:0002904	mesh:D004454	echolalia	Echolalia	1.000000	high	0.142857	low	1.000000	high	1	7
+mondo:0005976	mesh:D013587	syphilis	Syphilis	1.000000	high	0.083333	low	1.000000	high	1	12
+mondo:0005738	mesh:D004443	echinococcosis	Echinococcosis	1.000000	high	0.208333	low	1.000000	high	5	24
+mondo:0011713	mesh:C563985	melanoma-pancreatic cancer syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	9
+mondo:0010535	mesh:C537663	Bazex-Dupre-Christol syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	23
+mondo:0005790	mesh:D006506	hepatitis A virus infection	Hepatitis A	0.500000	medium	0.250000	low	1.000000	high	2	8
+mondo:0006013	mesh:D016182	visna disease	Visna	0.500000	medium	0.090909	low	0.500000	medium	1	11
+mondo:0005731	mesh:D004154	obsolete dipetalonemiasis	Dipetalonema Infections	0.000000	zero	0.166667	low	0.500000	medium	1	6
+mondo:0037748	mesh:D006951	hyperlipoproteinemia	Hyperlipoproteinemias	0.000000	zero	0.000000	zero	0.000000	zero	0	2
+mondo:0005247	mesh:D014552	bacterial urinary tract infection	Urinary Tract Infections	0.400000	medium	0.333333	medium	1.000000	high	3	9
+mondo:0015200	mesh:D017129	anisakiasis	Anisakiasis	1.000000	high	0.555556	medium	1.000000	high	5	9
+mondo:0018077	mesh:D014406	tularemia	Tularemia	1.000000	high	0.210526	low	1.000000	high	4	19
+mondo:0005687	mesh:D017250	Caliciviridae infectious disease	Caliciviridae Infections	0.250000	low	0.571429	medium	1.000000	high	4	7
+mondo:0006033	mesh:D000080443	diffuse intrinsic pontine glioma	Diffuse Intrinsic Pontine Glioma	1.000000	high	0.500000	medium	1.000000	high	5	10
+mondo:0015766	mesh:D002771	cholera	Cholera	1.000000	high	0.333333	medium	1.000000	high	4	12
+mondo:0100096	mesh:D000086382	COVID-19	COVID-19	1.000000	high	0.714286	high	1.000000	high	15	21
+mondo:0004609	mesh:D006561	herpes simplex infectious disease	Herpes Simplex	0.500000	medium	0.214286	low	1.000000	high	3	14
+mondo:0006967	mesh:D000031	obsolete septic abortion	Abortion, Septic	0.666667	high	0.500000	medium	0.666667	high	2	4
+mondo:0010391	mesh:C536366	angioma serpiginosum, X-linked		0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0018544	mesh:D000326	adrenoleukodystrophy	Adrenoleukodystrophy	1.000000	high	0.413793	medium	1.000000	high	12	29
+mondo:0001249	mesh:D014141	trachoma	Trachoma	1.000000	high	0.166667	low	1.000000	high	1	6
+mondo:0005856	mesh:D018701	Mononegavirales infectious disease	Mononegavirales Infections	0.250000	low	0.125000	low	0.250000	low	1	8
+mondo:0021224	mesh:D015811	iris neoplasm	Iris Neoplasms	0.333333	medium	0.250000	low	1.000000	high	2	8
+mondo:0100001	mesh:C000655084	alpha-gal syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	14
+mondo:0006576	mesh:D008158	Ludwig's angina	Ludwig's Angina	1.000000	high	0.250000	low	1.000000	high	3	12
+mondo:0008681	mesh:D017624	WAGR syndrome	WAGR Syndrome	1.000000	high	0.500000	medium	1.000000	high	18	36
+mondo:0025263	mesh:D013319	strongyle infections, equine	Strongyle Infections, Equine	1.000000	high	1.000000	high	1.000000	high	6	6
+mondo:0005650	mesh:D001117	Arenaviridae infectious disease	Arenaviridae Infections	0.250000	low	0.333333	medium	1.000000	high	4	12
+mondo:0015279	mesh:D002178	chronic mucocutaneous candidiasis	Candidiasis, Chronic Mucocutaneous	1.000000	high	0.375000	medium	1.000000	high	3	8
+mondo:0020533	mesh:D011906	streptobacillary rat-bite fever	Rat-Bite Fever	0.750000	high	0.235294	low	1.000000	high	4	17
+mondo:0005978	mesh:D013801	theileriasis	Theileriasis	1.000000	high	0.166667	low	1.000000	high	2	12
+mondo:0005983	mesh:D014007	tinea favosa	Tinea Favosa	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0005323	mesh:D015231	bacterial sexually transmitted disease	Sexually Transmitted Diseases, Bacterial	0.600000	medium	0.666667	high	1.000000	high	4	6
+mondo:0100075	mesh:D007572	jaw fracture	Jaw Fractures	0.333333	medium	0.250000	low	1.000000	high	2	8
+mondo:0004577	mesh:D003320	corneal ulcer	Corneal Ulcer	1.000000	high	0.250000	low	1.000000	high	2	8
+mondo:0009349	mesh:C562573	holoprosencephaly 1		0.000000	zero	0.000000	zero	0.000000	zero	0	13
+mondo:0020501	mesh:D006479	Crimean-Congo hemorrhagic fever	Hemorrhagic Fever, Crimean	0.750000	high	0.666667	high	1.000000	high	6	9
+mondo:0006000	mesh:D014395	tuberculous peritonitis	Peritonitis, Tuberculous	1.000000	high	0.500000	medium	1.000000	high	3	6
+mondo:0004755	mesh:D008989	monieziasis	Monieziasis	1.000000	high	0.500000	medium	1.000000	high	1	2
+mondo:0006042	mesh:D014390	meningeal tuberculosis	Tuberculosis, Meningeal	1.000000	high	0.500000	medium	1.000000	high	6	12
+mondo:0005770	mesh:D006558	genital herpes	Herpes Genitalis	0.333333	medium	0.625000	medium	1.000000	high	5	8
+mondo:0005751	mesh:D011000	epidemic pleurodynia	Pleurodynia, Epidemic	1.000000	high	0.384615	medium	1.000000	high	5	13
+mondo:0000947	mesh:D020018	psychosexual disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0017775	mesh:D008554	melioidosis	Melioidosis	1.000000	high	0.333333	medium	1.000000	high	7	21
+mondo:0021183	mesh:D015491	HTLV-2 infection	HTLV-II Infections	0.200000	low	0.900000	high	1.000000	high	9	10
+mondo:0012521	mesh:D020803	herpes simplex encephalitis	Encephalitis, Herpes Simplex	1.000000	high	0.277778	low	1.000000	high	5	18
+mondo:0010651	mesh:D007706	Menkes disease	Menkes Kinky Hair Syndrome	0.200000	low	0.521739	medium	1.000000	high	12	23
+mondo:0005739	mesh:D004451	echinostomiasis	Echinostomiasis	1.000000	high	0.090909	low	1.000000	high	1	11
+mondo:0008273	mesh:C566780	actinic prurigo		0.000000	zero	0.000000	zero	0.000000	zero	0	18
+mondo:0025419	mesh:D005667	furunculosis, fish	Furunculosis	0.500000	medium	0.333333	medium	1.000000	high	2	6
+mondo:0043988	mesh:D031368	zoster sine herpete	Zoster Sine Herpete	1.000000	high	1.000000	high	1.000000	high	4	4
+mondo:0700058	mesh:D000070607	Morton neuroma	Morton Neuroma	1.000000	high	0.333333	medium	1.000000	high	5	15
+mondo:0007578	mesh:C049262	obsolete esterase B		0.000000	zero	0.000000	zero	0.000000	zero	0	5
+mondo:0024559	mesh:C562834	aortic aneurysm, familial thoracic 1		0.000000	zero	0.000000	zero	0.000000	zero	0	16
+mondo:0024332	mesh:D012221	perennial allergic rhinitis	Rhinitis, Allergic, Perennial	1.000000	high	0.666667	high	1.000000	high	4	6
+mondo:0018181	mesh:D013203	staphylococcal scalded skin syndrome	Staphylococcal Infections	0.200000	low	0.041667	low	0.200000	low	1	24
+mondo:0010131	mesh:C567936	thyroid hormone resistance, generalized, autosomal recessive		0.000000	zero	0.000000	zero	0.000000	zero	0	14
+mondo:0005367	mesh:D006556	heroin dependence	Heroin Dependence	1.000000	high	0.600000	medium	1.000000	high	3	5
+mondo:0005491	mesh:D002598	Chagas cardiomyopathy	Chagas Cardiomyopathy	1.000000	high	0.250000	low	1.000000	high	2	8
+mondo:0002025	mesh:D001523	psychiatric disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	8
+mondo:0005136	mesh:D008288	malaria	Malaria	1.000000	high	0.111111	low	1.000000	high	1	9
+mondo:0007014	mesh:D014735	vibrio infectious disease	Vibrio Infections	0.250000	low	0.083333	low	0.250000	low	1	12
+mondo:0010880	mesh:C537139	telangiectasia, hereditary hemorrhagic, type 2		0.000000	zero	0.000000	zero	0.000000	zero	0	20
+mondo:0006635	mesh:D000151	Acinetobacter infectious disease	Acinetobacter Infections	0.250000	low	0.444444	medium	1.000000	high	4	9
+mondo:0000306	mesh:D060586	trichosporonosis	Trichosporonosis	1.000000	high	0.117647	low	1.000000	high	2	17
+mondo:0005723	mesh:D016919	Cryptococcal meningitis	Meningitis, Cryptococcal	1.000000	high	0.166667	low	1.000000	high	2	12
+mondo:0005824	mesh:D007877	Legionnaires' disease	Legionnaires' Disease	1.000000	high	0.461538	medium	1.000000	high	6	13
+mondo:0005762	mesh:D018702	Filoviridae infectious disease	Filoviridae Infections	0.250000	low	0.111111	low	0.250000	low	1	9
+mondo:0018087	mesh:D006482	viral hemorrhagic fever	Hemorrhagic Fevers, Viral	0.500000	medium	0.666667	high	1.000000	high	4	6
+mondo:0021680	mesh:D013290	streptococcal infection	Streptococcal Infections	0.333333	medium	0.230769	low	1.000000	high	3	13
+mondo:0002103	mesh:D009110	factitious disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0016581	mesh:C535464	conotruncal heart malformations		0.000000	zero	0.000000	zero	0.000000	zero	0	25
+mondo:0009703	mesh:C562935	myopathy with abnormal lipid metabolism		0.000000	zero	0.000000	zero	0.000000	zero	0	14
+mondo:0000686	mesh:D020237	alexia without agraphia	Alexia, Pure	0.250000	low	1.000000	high	1.000000	high	14	14
+mondo:1010128	mesh:D010538	peritonitis	Peritonitis	1.000000	high	0.200000	low	1.000000	high	1	5
+mondo:0012048	mesh:D003866	endogenous depression		0.000000	zero	0.000000	zero	0.000000	zero	0	8
+mondo:0010323	mesh:C538195	Atkin-Flaitz syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	8
+mondo:0005657	mesh:D001228	aspergillosis	Aspergillosis	1.000000	high	0.428571	medium	1.000000	high	3	7
+mondo:0006800	mesh:D020240	ideomotor apraxia	Apraxia, Ideomotor	1.000000	high	0.583333	medium	1.000000	high	7	12
+mondo:0013205	mesh:C567676	corneal dystrophy, fuchs endothelial, 5		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0003227	mesh:D020238	prosopagnosia	Prosopagnosia	1.000000	high	0.166667	low	1.000000	high	2	12
+mondo:0018787	mesh:D059345	obsolete genetic cerebral small vessel disease	Cerebral Small Vessel Diseases	0.428571	medium	0.333333	medium	0.428571	medium	3	9
+mondo:0006877	mesh:D009869	oophoritis	Oophoritis	1.000000	high	0.200000	low	1.000000	high	1	5
+mondo:0006731	mesh:D017109	drug-induced akathisia	Akathisia, Drug-Induced	1.000000	high	0.500000	medium	1.000000	high	3	6
+mondo:0010674	mesh:D016532	mucopolysaccharidosis type 2	Mucopolysaccharidosis II	0.250000	low	0.352941	medium	1.000000	high	12	34
+mondo:0025377	mesh:D000357	African swine fever	African Swine Fever	1.000000	high	0.600000	medium	1.000000	high	6	10
+mondo:0005371	mesh:D019964	mood disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0001444	mesh:D014355	Chagas disease	Chagas Disease	1.000000	high	0.363636	medium	1.000000	high	8	22
+mondo:0005915	mesh:D014010	pityriasis versicolor	Tinea Versicolor	0.333333	medium	0.538462	medium	1.000000	high	7	13
+mondo:0005227	mesh:D000038	abscess	Abscess	1.000000	high	0.333333	medium	1.000000	high	1	3
+mondo:0005504	mesh:D004165	diphtheria	Diphtheria	1.000000	high	0.750000	high	1.000000	high	3	4
+mondo:0006825	mesh:D007729	kuru	Kuru	1.000000	high	1.000000	high	1.000000	high	2	2
+mondo:0001504	mesh:D005329	fetishistic disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0005670	mesh:D001742	blackwater fever	Blackwater Fever	1.000000	high	0.454545	medium	1.000000	high	5	11
+mondo:0025096	mesh:D008304	malignant catarrh	Malignant Catarrh	1.000000	high	1.000000	high	1.000000	high	6	6
+mondo:0001442	mesh:D019263	dysthymic disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0005366	mesh:D019694	chronic hepatitis B virus infection	Hepatitis B, Chronic	0.600000	medium	1.000000	high	1.000000	high	5	5
+mondo:0024954	mesh:D007816	larva migrans, visceral	Larva Migrans, Visceral	1.000000	high	1.000000	high	1.000000	high	5	5
+mondo:0020502	mesh:D015004	yellow fever	Yellow Fever	1.000000	high	0.111111	low	1.000000	high	2	18
+mondo:0001830	mesh:D013001	somatization disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0100184	mesh:C562656	GTP cyclohydrolase I deficiency		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0010261	mesh:C537465	microphthalmia, syndromic 2		0.000000	zero	0.000000	zero	0.000000	zero	0	23
+mondo:0006913	mesh:D008586	pneumococcal meningitis	Meningitis, Pneumococcal	1.000000	high	0.363636	medium	1.000000	high	4	11
+mondo:0005531	mesh:D009021	morphine dependence	Morphine Dependence	1.000000	high	0.500000	medium	1.000000	high	2	4
+mondo:0000685	mesh:D000377	visual agnosia	Agnosia	0.500000	medium	0.064516	low	1.000000	high	2	31
+mondo:0005721	mesh:D003384	coxsackievirus infectious disease	Coxsackievirus Infections	0.250000	low	0.142857	low	0.250000	low	1	7
+mondo:0001797	mesh:D002602	chancroid	Chancroid	1.000000	high	0.250000	low	1.000000	high	1	4
+mondo:0009809	mesh:C536051	multicentric osteolysis, nodulosis, and arthropathy		0.000000	zero	0.000000	zero	0.000000	zero	0	17
+mondo:0005530	mesh:D009293	opiate dependence	Opioid-Related Disorders	0.000000	zero	0.230769	low	1.000000	high	3	13
+mondo:0005808	mesh:D003235	inclusion conjunctivitis	Conjunctivitis, Inclusion	1.000000	high	0.153846	low	1.000000	high	2	13
+mondo:0005788	mesh:D016751	hepatitis E virus infection	Hepatitis E	0.500000	medium	0.111111	low	0.666667	high	2	18
+mondo:0009763	mesh:D010845	obesity-hypoventilation syndrome	Obesity Hypoventilation Syndrome	1.000000	high	1.000000	high	1.000000	high	4	4
+mondo:0001159	mesh:D009105	multiple personality disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	5
+mondo:0025089	mesh:D007241	infectious bovine rhinotracheitis	Infectious Bovine Rhinotracheitis	1.000000	high	1.000000	high	1.000000	high	4	4
+mondo:0007020	mesh:D014899	Wernicke encephalopathy	Wernicke Encephalopathy	1.000000	high	0.235294	low	1.000000	high	4	17
+mondo:0018957	mesh:D060545	pudendal neuralgia	Pudendal Neuralgia	1.000000	high	0.333333	medium	1.000000	high	5	15
+mondo:0005404	mesh:D015673	myalgic encephalomeyelitis/chronic fatigue syndrome	Fatigue Syndrome, Chronic	0.600000	medium	0.500000	medium	1.000000	high	12	24
+mondo:0012400	mesh:C567657	cortical dysplasia-focal epilepsy syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	12
+mondo:0007079	mesh:D019973	alcohol dependence	Alcohol-Related Disorders	0.250000	low	0.125000	low	0.333333	medium	2	16
+mondo:0002594	mesh:D045908	monkeypox	Mpox, Monkeypox	0.500000	medium	0.125000	low	1.000000	high	1	8
+mondo:0006011	mesh:D006525	viral hepatitis	Hepatitis, Viral, Human	0.666667	high	0.300000	low	1.000000	high	3	10
+mondo:0003969	mesh:D019969	amphetamine abuse	Amphetamine-Related Disorders	0.250000	low	0.285714	low	1.000000	high	2	7
+mondo:0001714	mesh:D014211	bejel	Treponemal Infections	0.000000	zero	0.052632	low	1.000000	high	1	19
+mondo:0030639	mesh:C536951	Teebi hypertelorism syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0005901	mesh:D010326	pasteurellosis	Pasteurella Infections	0.000000	zero	0.300000	low	1.000000	high	3	10
+mondo:0018338	mesh:C585640	activated PI3K-delta syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	15
+mondo:0005861	mesh:D018088	multidrug-resistant tuberculosis	Tuberculosis, Multidrug-Resistant	1.000000	high	0.571429	medium	1.000000	high	4	7
+mondo:0008163	mesh:C563481	otofaciocervical syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0005875	mesh:D009521	Newcastle disease	Newcastle Disease	1.000000	high	0.400000	medium	1.000000	high	2	5
+mondo:0006708	mesh:D045824	Desulfovibrionaceae infectious disease	Desulfovibrionaceae Infections	0.250000	low	0.500000	medium	1.000000	high	6	12
+mondo:0005734	mesh:D004313	dourine	Dourine	1.000000	high	1.000000	high	1.000000	high	1	1
+mondo:0024318	mesh:D020805	viral infection of central nervous system	Central Nervous System Viral Diseases	0.571429	medium	0.600000	medium	0.666667	high	6	10
+mondo:0006836	mesh:D008584	Listeria meningitis	Meningitis, Listeria	1.000000	high	0.800000	high	1.000000	high	8	10
+mondo:0001484	mesh:D012563	paranoid schizophrenia		0.000000	zero	0.000000	zero	0.000000	zero	0	9
+mondo:0018878	mesh:C537104	branchiootic syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	5
+mondo:0005717	mesh:D004474	contagious pustular dermatitis	Ecthyma, Contagious	0.250000	low	0.312500	low	1.000000	high	5	16
+mondo:0005773	mesh:D005862	Gerstmann syndrome	Gerstmann Syndrome	1.000000	high	0.190476	low	1.000000	high	4	21
+mondo:0017349	mesh:D000077777	myopericytoma	Myopericytoma	1.000000	high	0.200000	low	1.000000	high	1	5
+mondo:0012287	mesh:C563709	Stickler syndrome, type I, nonsyndromic ocular		0.000000	zero	0.000000	zero	0.000000	zero	0	13
+mondo:0002182	mesh:D003147	communication disorder	Communication Disorders	0.333333	medium	0.333333	medium	0.666667	high	4	12
+mondo:0006002	mesh:D014401	urogenital tuberculosis	Tuberculosis, Urogenital	1.000000	high	0.400000	medium	1.000000	high	2	5
+mondo:0000368	mesh:D000092225	extrapulmonary tuberculosis	Tuberculosis, Extrapulmonary	1.000000	high	0.400000	medium	1.000000	high	2	5
+mondo:0005946	mesh:D012227	rhinosporidiosis	Rhinosporidiosis	1.000000	high	0.454545	medium	1.000000	high	5	11
+mondo:0005607	mesh:D029481	chronic bronchitis	Bronchitis, Chronic	1.000000	high	1.000000	high	1.000000	high	2	2
+mondo:0005638	mesh:D000377	agnosia	Agnosia	1.000000	high	0.088235	low	1.000000	high	3	34
+mondo:0025510	mesh:D058968	pythiosis, non-human animal	Pythiosis	0.250000	low	0.111111	low	0.250000	low	1	9
+mondo:0009220	mesh:C536351	visceral steatosis, congenital		0.000000	zero	0.000000	zero	0.000000	zero	0	13
+mondo:0005855	mesh:D008976	molluscum contagiosum	Molluscum Contagiosum	1.000000	high	1.000000	high	1.000000	high	2	2
+mondo:0001160	mesh:D004213	dissociative disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0018869	mesh:D054222	cobblestone lissencephaly	Cobblestone Lissencephaly	1.000000	high	0.500000	medium	1.000000	high	4	8
+mondo:0005362	mesh:D007172	erectile dysfunction	Erectile Dysfunction	1.000000	high	0.625000	medium	1.000000	high	5	8
+mondo:0003117	mesh:D013001	somatoform disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0002330	mesh:D011604	alcoholic psychosis	Psychoses, Alcoholic	0.333333	medium	0.666667	high	1.000000	high	2	3
+mondo:0007079	mesh:D000435	alcohol dependence	Alcoholic Intoxication	0.000000	zero	0.000000	zero	0.000000	zero	0	17
+mondo:0008575	mesh:D014029	nicotine dependence	Tobacco Use Disorder	0.000000	zero	1.000000	high	1.000000	high	6	6
+mondo:0025506	mesh:D053570	porcine postweaning multisystemic wasting syndrome	Porcine Postweaning Multisystemic Wasting Syndrome	1.000000	high	1.000000	high	1.000000	high	5	5
+mondo:0022208	mesh:D000070657	crystal arthropathy	Crystal Arthropathies	0.333333	medium	0.500000	medium	1.000000	high	6	12
+mondo:0020067	mesh:D000069544	infectious encephalitis	Infectious Encephalitis	1.000000	high	0.750000	high	1.000000	high	3	4
+mondo:0957467	mesh:D014401	primary genito-urinary tuberculosis	Tuberculosis, Urogenital	0.200000	low	0.166667	low	0.200000	low	1	6
+mondo:0005567	mesh:D013375	substance withdrawal syndrome	Substance Withdrawal Syndrome	1.000000	high	0.500000	medium	1.000000	high	4	8
+mondo:0021092	mesh:D005185	fallopian tube neoplasm	Fallopian Tube Neoplasms	0.500000	medium	0.454545	medium	1.000000	high	5	11
+mondo:0002025	mesh:D011618	psychiatric disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	8
+mondo:0008412	mesh:D012555	intestinal schistosomiasis	Schistosomiasis mansoni	0.333333	medium	0.312500	low	1.000000	high	5	16
+mondo:0005929	mesh:D019052	postpartum depression	Depression, Postpartum	1.000000	high	0.400000	medium	1.000000	high	6	15
+mondo:0002154	mesh:D014245	trichomoniasis	Trichomonas Infections	0.000000	zero	0.800000	high	1.000000	high	4	5
+mondo:0000596	mesh:D010262	paraphilic disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	11
+mondo:0043693	mesh:D008108	alcoholic liver diseases	Liver Diseases, Alcoholic	1.000000	high	0.800000	high	1.000000	high	4	5
+mondo:0008412	mesh:D012552	intestinal schistosomiasis	Schistosomiasis	0.500000	medium	0.210526	low	1.000000	high	4	19
+mondo:0005445	mesh:D007898	visceral leishmaniasis	Leishmaniasis, Visceral	1.000000	high	0.363636	medium	1.000000	high	4	11
+mondo:0005316	mesh:D016585	bacterial vaginosis	Vaginosis, Bacterial	1.000000	high	0.285714	low	1.000000	high	2	7
+mondo:0020540	mesh:C538459	ovarian gynandroblastoma		0.000000	zero	0.000000	zero	0.000000	zero	0	5
+mondo:0015281	mesh:C563984	atrial standstill		0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0005857	mesh:D018185	morbillivirus infectious disease	Morbillivirus Infections	0.250000	low	0.125000	low	0.250000	low	1	8
+mondo:0026426	mesh:C564572	X inactivation, familial skewed, 2		0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0009573	mesh:C536140	megaepiphyseal dwarfism		0.000000	zero	0.000000	zero	0.000000	zero	0	2
+mondo:0006668	mesh:D003234	bacterial conjunctivitis	Conjunctivitis, Bacterial	1.000000	high	0.333333	medium	1.000000	high	3	9
+mondo:0005825	mesh:D007922	leptospirosis	Leptospirosis	1.000000	high	0.325581	low	1.000000	high	14	43
+mondo:0025087	mesh:D006691	classical swine fever	Classical Swine Fever	1.000000	high	1.000000	high	1.000000	high	5	5
+mondo:0024313	mesh:D013203	staphylococcal infection	Staphylococcal Infections	0.333333	medium	0.400000	medium	0.333333	medium	2	5
+mondo:0005961	mesh:D012852	sinusitis	Sinusitis	1.000000	high	0.200000	low	1.000000	high	1	5
+mondo:0002265	mesh:D019956	stereotypic movement disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0005780	mesh:D018778	hantavirus infectious disease	Hantavirus Infections	0.250000	low	0.250000	low	1.000000	high	3	12
+mondo:0005774	mesh:D005896	glanders	Glanders	1.000000	high	0.071429	low	1.000000	high	1	14
+mondo:0019095	mesh:D010930	plague	Plague	1.000000	high	0.375000	medium	1.000000	high	6	16
+mondo:0005974	mesh:D013322	strongyloidiasis	Strongyloidiasis	1.000000	high	0.222222	low	1.000000	high	2	9
+mondo:0020689	mesh:D015526	AIDS dementia complex	AIDS Dementia Complex	1.000000	high	0.653846	medium	1.000000	high	17	26
+mondo:0005828	mesh:D008088	listeriosis	Listeriosis	1.000000	high	0.333333	medium	1.000000	high	4	12
+mondo:0025425	mesh:D006522	hepatitis, infectious canine	Hepatitis, Infectious Canine	1.000000	high	1.000000	high	1.000000	high	4	4
+mondo:0000716	mesh:D000381	agraphia	Agraphia	1.000000	high	0.125000	low	1.000000	high	1	8
+mondo:0017609	mesh:C537048	renal tubular dysgenesis		0.000000	zero	0.000000	zero	0.000000	zero	0	7
+mondo:0020792	mesh:C535725	dwarfism with tall vertebrae		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0012548	mesh:C537592	Kostmann syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	13
+mondo:0016301	mesh:D000080041	congenitally corrected transposition of the great arteries	Congenitally Corrected Transposition of the Great Arteries	1.000000	high	0.400000	medium	1.000000	high	8	20
+mondo:0001867	mesh:D060446	phaeohyphomycosis	Phaeohyphomycosis	1.000000	high	0.111111	low	1.000000	high	1	9
+mondo:0005127	mesh:D015440	lepromatous leprosy	Leprosy, Lepromatous	1.000000	high	0.285714	low	1.000000	high	2	7
+mondo:0013204	mesh:C567677	corneal dystrophy, Fuchs endothelial, 4		0.000000	zero	0.000000	zero	0.000000	zero	0	14
+mondo:0004731	mesh:D020182	central sleep apnea syndrome	Sleep Apnea, Central	0.750000	high	0.882353	high	1.000000	high	15	17
+mondo:0006705	mesh:D016866	Bacteroidaceae infectious disease	Bacteroidaceae Infections	0.250000	low	0.375000	medium	1.000000	high	3	8
+mondo:0024288	mesh:D006932	hyperbilirubinemia	Hyperbilirubinemia	1.000000	high	1.000000	high	1.000000	high	2	2
+mondo:0005848	mesh:D014391	miliary tuberculosis	Tuberculosis, Miliary	1.000000	high	0.250000	low	1.000000	high	2	8
+mondo:0007000	mesh:D014211	Treponema infectious disease	Treponemal Infections	0.000000	zero	0.272727	low	1.000000	high	3	11
+mondo:0005880	mesh:D009814	oesophagostomiasis	Oesophagostomiasis	1.000000	high	0.100000	low	1.000000	high	1	10
+mondo:0005669	mesh:D010854	black piedra	Piedra	0.500000	medium	0.500000	medium	1.000000	high	2	4
+mondo:0006718	mesh:D013591	cutaneous syphilis	Syphilis, Cutaneous	1.000000	high	0.272727	low	1.000000	high	3	11
+mondo:0024429	mesh:D062026	Alice in Wonderland syndrome	Alice in Wonderland Syndrome	1.000000	high	1.000000	high	1.000000	high	4	4
+mondo:0100053	mesh:D000707	anaphylaxis	Anaphylaxis	1.000000	high	0.500000	medium	1.000000	high	3	6
+mondo:0100338	mesh:D014552	urinary tract infection	Urinary Tract Infections	0.500000	medium	0.600000	medium	1.000000	high	3	5
+mondo:0002039	mesh:D019965	cognitive disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	5
+mondo:0005925	mesh:D012766	pneumonic pasteurellosis	Pasteurellosis, Pneumonic	1.000000	high	0.500000	medium	1.000000	high	2	4
+mondo:0006747	mesh:D004767	enterotoxemia	Enterotoxemia	1.000000	high	1.000000	high	1.000000	high	1	1
+mondo:0007942	mesh:C060120	Mammastatin		0.000000	zero	0.000000	zero	0.000000	zero	0	1
+mondo:0000495	mesh:D019958	oppositional defiant disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0005895	mesh:D010237	paragonimiasis	Paragonimiasis	1.000000	high	0.266667	low	1.000000	high	4	15
+mondo:0005671	mesh:D016776	Blastocystis infectious disease	Blastocystis Infections	0.250000	low	0.500000	medium	1.000000	high	3	6
+mondo:0002648	mesh:D010144	mammary Paget disease	Paget's Disease, Mammary	0.750000	high	0.500000	medium	1.000000	high	7	14
+mondo:0005664	mesh:D001474	bartonellosis	Bartonella Infections	0.000000	zero	0.263158	low	1.000000	high	5	19
+mondo:0005817	mesh:D020232	Kluver-Bucy syndrome	Kluver-Bucy Syndrome	1.000000	high	0.230769	low	1.000000	high	6	26
+mondo:0005659	mesh:D012222	atrophic rhinitis	Rhinitis, Atrophic	1.000000	high	0.428571	medium	1.000000	high	3	7
+mondo:0001688	mesh:D000081028	toxic optic neuropathy	Toxic Optic Neuropathy	1.000000	high	0.500000	medium	1.000000	high	3	6
+mondo:0044351	mesh:D012552	Schistosoma intercalatum infectious disease	Schistosomiasis	0.000000	zero	0.058824	low	0.200000	low	1	17
+mondo:0018830	mesh:D000082242	Kimura disease	Kimura Disease	1.000000	high	0.666667	high	1.000000	high	12	18
+mondo:0005765	mesh:D005536	foot and mouth disease	Foot-and-Mouth Disease	1.000000	high	0.800000	high	1.000000	high	4	5
+mondo:0015264	mesh:D018549	cryptogenic organizing pneumonia	Cryptogenic Organizing Pneumonia	1.000000	high	0.428571	medium	1.000000	high	6	14
+mondo:0010808	mesh:D034062	fatal familial insomnia	Insomnia, Fatal Familial	1.000000	high	0.500000	medium	1.000000	high	3	6
+mondo:0012310	mesh:C566508	fibrosis of extraocular muscles, congenital, with synergistic divergence		0.000000	zero	0.000000	zero	0.000000	zero	0	16
+mondo:0005641	mesh:D000453	aleutian mink disease	Aleutian Mink Disease	1.000000	high	0.333333	medium	1.000000	high	3	9
+mondo:0021702	mesh:D000425	alcohol amnestic disorder	Alcohol Amnestic Disorder	1.000000	high	0.769231	high	1.000000	high	10	13
+mondo:0008608	mesh:D004314	Down syndrome	Down Syndrome	1.000000	high	0.225806	low	1.000000	high	7	31
+mondo:0025404	mesh:D004753	coronaviral enteritis of turkeys	Enteritis, Transmissible, of Turkeys	0.600000	medium	0.833333	high	1.000000	high	5	6
+mondo:0018500	mesh:D007815	cutaneous larva migrans	Larva Migrans	0.666667	high	0.666667	high	1.000000	high	8	12
+mondo:0005866	mesh:D015270	Mycobacterium avium complex disease	Mycobacterium avium-intracellulare Infection	0.333333	medium	0.235294	low	0.750000	high	4	17
+mondo:0025062	mesh:D004682	encephalomyelitis, enzootic porcine	Encephalomyelitis, Enzootic Porcine	1.000000	high	1.000000	high	1.000000	high	7	7
+mondo:0017941	mesh:D065632	chikungunya	Chikungunya Fever	0.500000	medium	0.250000	low	1.000000	high	4	16
+mondo:0004648	mesh:D015140	vascular dementia	Dementia, Vascular	1.000000	high	0.100000	low	1.000000	high	2	20
+mondo:0043237	mesh:D005926	glossodynia	Glossalgia	0.000000	zero	0.333333	medium	1.000000	high	3	9
+mondo:0006925	mesh:D045825	Fusobacteriaceae infectious disease	Fusobacteriaceae Infections	0.250000	low	0.375000	medium	1.000000	high	3	8
+mondo:0017568	mesh:C538180	Prata-Liberal-Goncalves syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	9
+mondo:0012217	mesh:C537407	Bruck syndrome 2		0.000000	zero	0.000000	zero	0.000000	zero	0	16
+mondo:0000455	mesh:D000077765	cone dystrophy	Cone Dystrophy	1.000000	high	0.666667	high	1.000000	high	4	6
+mondo:0006893	mesh:D006483	Pasteurella hemorrhagic septicemia	Hemorrhagic Septicemia	0.666667	high	0.833333	high	1.000000	high	5	6
+mondo:0014945	mesh:C536816	myopathy, distal, with rimmed vacuoles		0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0006630	mesh:D055013	osteoarthritis, spine	Osteoarthritis, Spine	1.000000	high	0.333333	medium	1.000000	high	2	6
+mondo:0006764	mesh:D016921	fungal meningitis	Meningitis, Fungal	1.000000	high	0.250000	low	1.000000	high	2	8
+mondo:0005692	mesh:D002372	cat-scratch disease	Cat-Scratch Disease	1.000000	high	0.347826	medium	1.000000	high	8	23
+mondo:0019045	mesh:D012893	obsolete rare sleep disorder	Sleep Wake Disorders	0.166667	low	0.166667	low	0.750000	high	3	18
+mondo:0007243	mesh:D002051	Burkitt lymphoma	Burkitt Lymphoma	1.000000	high	0.350000	medium	1.000000	high	7	20
+mondo:0005896	mesh:D018184	Paramyxoviridae infectious disease	Paramyxoviridae Infections	0.250000	low	0.076923	low	0.250000	low	1	13
+mondo:0015995	mesh:C563593	melorheostosis with osteopoikilosis		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0001315	mesh:D009449	neurocirculatory asthenia		0.000000	zero	0.000000	zero	0.000000	zero	0	15
+mondo:0800105	mesh:D002389	catatonia	Catatonia	1.000000	high	0.111111	low	1.000000	high	1	9
+mondo:0037872	mesh:D001885	bordetellosis	Bordetella Infections	0.000000	zero	0.300000	low	1.000000	high	3	10
+mondo:0004985	mesh:D001714	bipolar disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	14
+mondo:0001196	mesh:D004414	psychologic dyspareunia	Dyspareunia	0.500000	medium	0.200000	low	0.500000	medium	1	5
+mondo:0005975	mesh:D010035	suppurative otitis media	Otitis Media, Suppurative	1.000000	high	0.666667	high	1.000000	high	4	6
+mondo:0037872	mesh:D014917	bordetellosis	Whooping Cough	0.000000	zero	0.133333	low	0.500000	medium	2	15
+mondo:0005701	mesh:D002690	chlamydia trachomatis infectious disease	Chlamydia Infections	0.200000	low	0.200000	low	0.500000	medium	2	10
+mondo:0006956	mesh:D012282	Rickettsiosis	Rickettsia Infections	0.000000	zero	0.500000	medium	1.000000	high	6	12
+mondo:0005730	mesh:D004022	Dictyocaulus infectious disease	Dictyocaulus Infections	0.250000	low	0.500000	medium	1.000000	high	5	10
+mondo:0005630	mesh:D000187	actinobacillosis	Actinobacillosis	1.000000	high	0.500000	medium	1.000000	high	1	2
+mondo:0003406	mesh:D012893	sleep-wake disorder	Sleep Wake Disorders	0.500000	medium	0.727273	high	1.000000	high	16	22
+mondo:0005249	mesh:D011014	pneumonia	Pneumonia	1.000000	high	0.090909	low	1.000000	high	1	11
+mondo:0100192	mesh:D017093	liver failure	Liver Failure	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0004592	mesh:D007169	impetigo	Impetigo	1.000000	high	0.333333	medium	1.000000	high	1	3
+mondo:0005352	mesh:D019955	conduct disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	2
+mondo:0008678	mesh:D018980	Williams syndrome	Williams Syndrome	1.000000	high	0.291667	low	1.000000	high	7	24
+mondo:0007329	mesh:C566123	cirrhosis, familial		0.000000	zero	0.000000	zero	0.000000	zero	0	23
+mondo:0000330	mesh:D012282	endemic typhus	Rickettsia Infections	0.000000	zero	0.086957	low	0.333333	medium	2	23
+mondo:0005695	mesh:D020943	central nervous system AIDS arteritis	AIDS Arteritis, Central Nervous System	1.000000	high	1.000000	high	1.000000	high	16	16
+mondo:0025130	mesh:D013555	swine vesicular disease	Swine Vesicular Disease	1.000000	high	1.000000	high	1.000000	high	4	4
+mondo:0000598	mesh:D001037	aphasia	Aphasia	1.000000	high	0.031250	low	1.000000	high	1	32
+mondo:0005801	mesh:D015490	human T-lymphotropic virus 1 infectious disease	HTLV-I Infections	0.000000	zero	0.400000	medium	0.714286	high	6	15
+mondo:0018769	mesh:D021865	isosporiasis	Isosporiasis	1.000000	high	0.187500	low	1.000000	high	3	16
+mondo:0025457	mesh:D011648	pulmonary adenomatosis, ovine	Pulmonary Adenomatosis, Ovine	1.000000	high	1.000000	high	1.000000	high	7	7
+mondo:0019100	mesh:D009471	neuromyelitis optica	Neuromyelitis Optica	1.000000	high	0.818182	high	1.000000	high	9	11
+mondo:0022140	mesh:D000075562	Charles bonnet syndrome	Charles Bonnet Syndrome	1.000000	high	0.750000	high	1.000000	high	3	4
+mondo:0011786	mesh:D006255	allergic rhinitis	Rhinitis, Allergic, Seasonal	0.666667	high	0.150000	low	1.000000	high	3	20
+mondo:0001692	mesh:D010378	pedophilia		0.000000	zero	0.000000	zero	0.000000	zero	0	2
+mondo:0005119	mesh:D000881	anthrax infection	Anthrax	0.500000	medium	0.444444	medium	1.000000	high	4	9
+mondo:0019376	mesh:D014901	West-Nile encephalitis	West Nile Fever	0.500000	medium	0.357143	medium	1.000000	high	5	14
+mondo:0006758	mesh:D014384	female genital tuberculosis	Tuberculosis, Female Genital	1.000000	high	0.750000	high	1.000000	high	3	4
+mondo:0011662	mesh:D005715	pathological gambling		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0001266	mesh:D004886	erysipelas	Erysipelas	1.000000	high	1.000000	high	1.000000	high	1	1
+mondo:0018903	mesh:D012523	sarcocystosis	Sarcocystosis	1.000000	high	0.500000	medium	1.000000	high	2	4
+mondo:0005990	mesh:D014136	tracheitis	Tracheitis	1.000000	high	0.125000	low	1.000000	high	1	8
+mondo:0024333	mesh:D012585	sciatica	Sciatica	1.000000	high	1.000000	high	1.000000	high	5	5
+mondo:0005748	mesh:D048089	enzootic pneumonia of calves	Pneumonia of Calves, Enzootic	1.000000	high	0.666667	high	1.000000	high	4	6
+mondo:0005683	mesh:D002006	brucellosis	Brucellosis	1.000000	high	0.437500	medium	1.000000	high	7	16
+mondo:0025488	mesh:D016582	leukemia, feline	Leukemia, Feline	1.000000	high	0.750000	high	1.000000	high	3	4
+mondo:0015908	mesh:D002862	chromomycosis	Chromoblastomycosis	0.000000	zero	0.666667	high	1.000000	high	6	9
+mondo:0043953	mesh:D019121	burkholderia infectious disease	Burkholderia Infections	0.250000	low	0.230769	low	1.000000	high	3	13
+mondo:0005932	mesh:D011557	pseudorabies	Pseudorabies	1.000000	high	0.200000	low	1.000000	high	1	5
+mondo:0027026	mesh:D062688	Buschke Lowenstein tumor	Buschke-Lowenstein Tumor	1.000000	high	0.590909	medium	1.000000	high	13	22
+mondo:0005794	mesh:D006566	Herpesviridae infectious disease	Herpesviridae Infections	0.250000	low	0.333333	medium	1.000000	high	4	12
+mondo:0024969	mesh:D010273	parasitic disease, non-human animal	Parasitic Diseases, Animal	0.333333	medium	0.444444	medium	1.000000	high	4	9
+mondo:0005831	mesh:D014388	lymph node tuberculosis	Tuberculosis, Lymph Node	1.000000	high	0.357143	medium	1.000000	high	5	14
+mondo:0000878	mesh:D017726	cytomegalovirus retinitis	Cytomegalovirus Retinitis	1.000000	high	0.600000	medium	1.000000	high	3	5
+mondo:0010644	mesh:C545036	proteinuria, low molecular weight, with hypercalciuria and nephrocalcinosis		0.000000	zero	0.000000	zero	0.000000	zero	0	12
+mondo:0019169	mesh:D015325	pyruvate dehydrogenase deficiency	Pyruvate Dehydrogenase Complex Deficiency Disease	0.600000	medium	0.363636	medium	1.000000	high	8	22
+mondo:0005677	mesh:D001907	Rickettsia conorii infectious disease	Boutonneuse Fever	0.000000	zero	0.181818	low	0.400000	medium	2	11
+mondo:0021699	mesh:D020751	alcohol-induced disorders	Alcohol-Induced Disorders	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0017137	mesh:D009855	onchocerciasis	Onchocerciasis	1.000000	high	0.076923	low	1.000000	high	1	13
+mondo:0006636	mesh:D000189	Actinobacillus infectious disease	Actinobacillus Infections	0.250000	low	0.375000	medium	1.000000	high	3	8
+mondo:0010743	mesh:C564052	thrombocytopenia 1		0.000000	zero	0.000000	zero	0.000000	zero	0	13
+mondo:0001149	mesh:D008831	microcephaly	Microcephaly	1.000000	high	0.111111	low	1.000000	high	1	9
+mondo:0043541	mesh:D003236	viral conjunctivitis	Conjunctivitis, Viral	1.000000	high	0.500000	medium	1.000000	high	3	6
+mondo:0004678	mesh:D014005	dermatophytosis	Tinea	0.000000	zero	0.117647	low	1.000000	high	2	17
+mondo:0001441	mesh:D010842	pica disease	Pica	0.500000	medium	0.125000	low	1.000000	high	1	8
+mondo:0021253	mesh:D005706	gallbladder neoplasm	Gallbladder Neoplasms	0.333333	medium	0.500000	medium	1.000000	high	6	12
+mondo:0005699	mesh:D000197	cervicofacial actinomycosis	Actinomycosis, Cervicofacial	1.000000	high	0.333333	medium	1.000000	high	2	6
+mondo:0024982	mesh:D012481	salmonella infections, animal	Salmonella Infections, Animal	1.000000	high	0.571429	medium	1.000000	high	4	7
+mondo:0018076	mesh:D014376	tuberculosis	Tuberculosis	1.000000	high	0.272727	low	1.000000	high	3	11
+mondo:0005753	mesh:D004826	epiglottitis	Epiglottitis	1.000000	high	0.111111	low	1.000000	high	1	9
+mondo:0015450	mesh:D003310	triatrial heart	Cor Triatriatum	0.000000	zero	0.400000	medium	1.000000	high	4	10
+mondo:0011885	mesh:C536922	tubulointerstitial nephritis and uveitis syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	9
+mondo:0044070	mesh:D058387	candidemia	Candidemia	1.000000	high	1.000000	high	1.000000	high	1	1
+mondo:0045037	mesh:D060605	hyalohyphomycosis	Hyalohyphomycosis	1.000000	high	0.125000	low	1.000000	high	1	8
+mondo:0024294	mesh:D012874	skin disorder caused by infection	Skin Diseases, Infectious	0.142857	low	0.500000	medium	1.000000	high	4	8
+mondo:0005819	mesh:D014387	laryngeal tuberculosis	Tuberculosis, Laryngeal	1.000000	high	0.428571	medium	1.000000	high	3	7
+mondo:0007774	mesh:D012021	hyperreflexia	Reflex, Abnormal	0.000000	zero	0.035714	low	1.000000	high	1	28
+mondo:0005822	mesh:D013592	latent syphilis	Syphilis, Latent	1.000000	high	0.666667	high	1.000000	high	2	3
+mondo:0030602	mesh:D007710	Klebsiella pneumonia	Klebsiella Infections	0.333333	medium	0.100000	low	0.333333	medium	1	10
+mondo:0000724	mesh:D000080888	specific language impairment	Specific Language Disorder	0.500000	medium	0.428571	medium	1.000000	high	3	7
+mondo:0000743	mesh:D017733	oral hairy leukoplakia	Leukoplakia, Hairy	0.666667	high	0.300000	low	1.000000	high	3	10
+mondo:0021641	mesh:D002044	Bunyaviridae infectious disease	Bunyaviridae Infections	0.250000	low	0.312500	low	1.000000	high	5	16
+mondo:0002009	mesh:D003866	major depressive disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	21
+mondo:0005306	mesh:D013167	ankylosing spondylitis	Spondylitis, Ankylosing	1.000000	high	0.352941	medium	1.000000	high	6	17
+mondo:0005230	mesh:D002481	cellulitis	Cellulitis	1.000000	high	0.333333	medium	1.000000	high	1	3
+mondo:0021234	mesh:D013120	spinal cord neoplasm	Spinal Cord Neoplasms	0.500000	medium	0.250000	low	1.000000	high	4	16
+mondo:0005746	mesh:D017229	enterobiasis	Enterobiasis	1.000000	high	0.400000	medium	1.000000	high	6	15
+mondo:0007863	mesh:D017593	Kleine-Levin syndrome	Kleine-Levin Syndrome	1.000000	high	0.625000	medium	1.000000	high	5	8
+mondo:0100115	mesh:C000629404	acute flaccid myelitis		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+mondo:0018484	mesh:D000084322	semicircular canal dehiscence syndrome	Semicircular Canal Dehiscence	0.750000	high	0.437500	medium	1.000000	high	7	16
+mondo:0005618	mesh:D001008	anxiety disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0005049	mesh:D002690	obsolete intracranial hemorrhage	Chlamydia Infections	0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0006884	mesh:D010202	panophthalmitis	Panophthalmitis	1.000000	high	0.500000	medium	1.000000	high	1	2
+mondo:0005688	mesh:D002169	campylobacteriosis	Campylobacter Infections	0.000000	zero	0.200000	low	1.000000	high	1	5
+mondo:0005784	mesh:D006480	hantavirus hemorrhagic fever with renal syndrome	Hemorrhagic Fever with Renal Syndrome	0.833333	high	0.300000	low	1.000000	high	6	20
+mondo:0002420	mesh:D013981	tic disorder	Tic Disorders	0.333333	medium	0.181818	low	0.666667	high	2	11
+mondo:0005768	mesh:D014385	gastrointestinal tuberculosis	Tuberculosis, Gastrointestinal	1.000000	high	0.222222	low	1.000000	high	2	9
+mondo:0043885	mesh:D015817	eye infectious disorder	Eye Infections	0.250000	low	0.666667	high	1.000000	high	4	6
+mondo:0017776	mesh:D009617	nocardiosis	Nocardia Infections	0.000000	zero	0.187500	low	1.000000	high	3	16
+mondo:0043836	mesh:D014399	tuberculosis, spinal	Tuberculosis, Spinal	1.000000	high	0.571429	medium	1.000000	high	8	14
+mondo:0005526	mesh:D013742	tetanus	Tetanus	1.000000	high	0.250000	low	1.000000	high	4	16
+mondo:0007024	mesh:D015012	Yersinia pseudotuberculosis infectious disease	Yersinia pseudotuberculosis Infections	0.400000	medium	0.357143	medium	1.000000	high	5	14
+mondo:0005451	mesh:D001068	eating disorder	Feeding and Eating Disorders	0.200000	low	0.666667	high	1.000000	high	4	6
+mondo:0005459	mesh:D014353	human African trypanosomiasis	Trypanosomiasis, African	0.666667	high	0.444444	medium	1.000000	high	4	9
+mondo:0700065	mesh:D014314	trisomy	Trisomy	1.000000	high	0.600000	medium	1.000000	high	3	5
+mondo:0019378	mesh:D004670	la Crosse encephalitis	Encephalitis, California	0.250000	low	0.400000	medium	1.000000	high	6	15
+mondo:0025481	mesh:D015047	obsolete zoonosis	Zoonoses	0.000000	zero	0.636364	medium	1.000000	high	7	11
+mondo:0023203	mesh:C538071	Fuchs atrophia gyrata chorioideae et retinae		0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0005995	mesh:D014253	trichostrongylosis	Trichostrongylosis	1.000000	high	0.083333	low	1.000000	high	1	12
+mondo:0000827	mesh:D012480	salmonellosis	Salmonella Infections	0.000000	zero	0.500000	medium	1.000000	high	4	8
+mondo:0005913	mesh:D010217	phlebotomus fever	Phlebotomus Fever	1.000000	high	0.444444	medium	1.000000	high	4	9
+mondo:0025412	mesh:D005254	feline panleukopenia	Feline Panleukopenia	1.000000	high	1.000000	high	1.000000	high	18	18
+mondo:0004359	mesh:D012563	delusional disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	2
+mondo:0021104	mesh:D005235	alcoholic fatty liver disease	Fatty Liver, Alcoholic	0.750000	high	0.800000	high	1.000000	high	4	5
+mondo:0025381	mesh:D001353	avian leukosis	Avian Leukosis	1.000000	high	0.750000	high	1.000000	high	3	4
+mondo:0011552	mesh:D012560	schizophrenia 10		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0001712	mesh:D004411	alexia	Dyslexia, Acquired	0.000000	zero	0.916667	high	1.000000	high	11	12
+mondo:0001157	mesh:D003859	dependent personality disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	3
+mondo:0005689	mesh:D002189	cannabis dependence	Marijuana Abuse	0.000000	zero	0.500000	medium	1.000000	high	4	8
+mondo:0001164	mesh:D000987	antisocial personality disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+mondo:0005631	mesh:D000196	actinomycosis	Actinomycosis	1.000000	high	0.190476	low	1.000000	high	4	21
+mondo:0011544	mesh:C565335	pheochromocytoma/paraganglioma syndrome 3		0.000000	zero	0.000000	zero	0.000000	zero	0	19
+mondo:0006927	mesh:D012288	Rickettsiaceae infectious disease	Rickettsiaceae Infections	0.250000	low	0.333333	medium	1.000000	high	3	9
+mondo:0009612	mesh:C565390	methylmalonic aciduria due to methylmalonyl-CoA mutase deficiency		0.000000	zero	0.000000	zero	0.000000	zero	0	19
+mondo:0018815	mesh:D017824	aneurysmal bone cyst	Bone Cysts, Aneurysmal	0.500000	medium	0.375000	medium	1.000000	high	3	8
+mondo:0005324	mesh:D006255	seasonal allergic rhinitis	Rhinitis, Allergic, Seasonal	1.000000	high	0.416667	medium	1.000000	high	5	12
+mondo:0017715	mesh:C535310	3-hydroxyacyl-CoA dehydrogenase deficiency		0.000000	zero	0.000000	zero	0.000000	zero	0	5
+mondo:0005943	mesh:D017196	Rhabditida infectious disease	Rhabditida Infections	0.250000	low	0.600000	medium	1.000000	high	3	5
+mondo:0005797	mesh:D019247	HIV wasting syndrome	HIV Wasting Syndrome	1.000000	high	0.500000	medium	1.000000	high	3	6
+mondo:0016003	mesh:D016873	ehrlichiosis	Ehrlichiosis	1.000000	high	0.222222	low	1.000000	high	2	9
+mondo:0009003	mesh:C536128	achromatopsia 2		0.000000	zero	0.000000	zero	0.000000	zero	0	15
+mondo:0017198	mesh:D010022	osteopetrosis	Osteopetrosis	1.000000	high	0.434783	medium	1.000000	high	10	23
+mondo:0010056	mesh:C563948	spinal muscular atrophy, type IV		0.000000	zero	0.000000	zero	0.000000	zero	0	16
+mondo:0007390	mesh:C563039	coumarin resistance		0.000000	zero	0.000000	zero	0.000000	zero	0	7
+mondo:0043544	mesh:D003428	nosocomial infection	Cross Infection	0.333333	medium	0.642857	medium	1.000000	high	9	14
+mondo:0042485	mesh:D001170	infective arthritis	Arthritis, Infectious	0.333333	medium	0.250000	low	1.000000	high	2	8
+mondo:0036591	mesh:D000306	adrenal cortex neoplasm	Adrenal Cortex Neoplasms	0.500000	medium	0.454545	medium	1.000000	high	5	11
+mondo:0025369	mesh:D009265	Nairobi sheep disease	Nairobi Sheep Disease	1.000000	high	1.000000	high	1.000000	high	3	3
+mondo:0001357	mesh:D000747	hypochromic anemia	Anemia, Hypochromic	1.000000	high	0.285714	low	1.000000	high	2	7
+mondo:0700064	mesh:D000782	aneuploidy	Aneuploidy	1.000000	high	0.125000	low	1.000000	high	1	8
+mondo:0005675	mesh:D001882	border disease	Border Disease	1.000000	high	1.000000	high	1.000000	high	2	2
+mondo:0021678	mesh:D016905	gram-negative bacterial infections	Gram-Negative Bacterial Infections	1.000000	high	0.833333	high	1.000000	high	5	6
+mondo:0015588	mesh:D020363	limbic encephalitis	Limbic Encephalitis	1.000000	high	0.500000	medium	1.000000	high	2	4
+mondo:0005379	mesh:D003866	neurotic disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	13
+mondo:0005358	mesh:D019595	Dengue hemorrhagic fever	Severe Dengue	0.250000	low	0.250000	low	1.000000	high	3	12
+mondo:0019186	mesh:D011778	Q fever	Q Fever	1.000000	high	0.291667	low	1.000000	high	7	24
+mondo:0044877	mesh:D020362	paraneoplastic cerebellar degeneration	Paraneoplastic Cerebellar Degeneration	1.000000	high	0.375000	medium	1.000000	high	3	8
+mondo:0017672	mesh:C538682	focal palmoplantar keratoderma		0.000000	zero	0.000000	zero	0.000000	zero	0	7
+mondo:0019669	mesh:C563007	hypochondrogenesis		0.000000	zero	0.000000	zero	0.000000	zero	0	1
+mondo:0005114	mesh:D011008	pneumococcal infection	Pneumococcal Infections	0.333333	medium	0.545455	medium	1.000000	high	6	11
+mondo:0002104	mesh:D003291	conversion disorder		0.000000	zero	0.000000	zero	0.000000	zero	0	12
+mondo:0005607	mesh:D001991	chronic bronchitis	Bronchitis	0.500000	medium	0.333333	medium	0.500000	medium	1	3
+mondo:0005906	mesh:D000039	peritonsillar abscess	Peritonsillar Abscess	1.000000	high	0.500000	medium	1.000000	high	2	4
+mondo:0018215	mesh:D020361	paraneoplastic neurologic syndrome	Paraneoplastic Syndromes, Nervous System	0.166667	low	0.312500	low	1.000000	high	5	16
+mondo:0015564	mesh:D005871	Castleman disease	Castleman Disease	1.000000	high	0.588235	medium	1.000000	high	10	17
+mondo:0007015	mesh:D008587	viral meningitis	Meningitis, Viral	1.000000	high	0.666667	high	1.000000	high	2	3
+mondo:0019362	mesh:D012282	epidemic louse-borne typhus	Rickettsia Infections	0.000000	zero	0.000000	zero	0.000000	zero	0	13
+mondo:0001209	mesh:D014860	common wart	Warts	0.000000	zero	0.200000	low	0.500000	medium	2	10
+mondo:0009835	mesh:D013344	subacute sclerosing panencephalitis	Subacute Sclerosing Panencephalitis	1.000000	high	0.571429	medium	1.000000	high	12	21
+mondo:0017376	mesh:D016918	reactive arthritis	Arthritis, Reactive	1.000000	high	0.380952	medium	1.000000	high	8	21
+mondo:0012270	mesh:C536925	Tukel syndrome		0.000000	zero	0.000000	zero	0.000000	zero	0	15
+mondo:0017169	mesh:D009377	multiple endocrine neoplasia	Multiple Endocrine Neoplasia	1.000000	high	0.416667	medium	1.000000	high	5	12
+mondo:0041752	mesh:D056005	paucibacillary leprosy	Leprosy, Paucibacillary	1.000000	high	0.428571	medium	1.000000	high	3	7
+mondo:0006010	mesh:D031941	salmonid viral hemorrhagic septicemia	Hemorrhagic Septicemia, Viral	0.750000	high	0.500000	medium	0.750000	high	3	6
+mondo:0006990	mesh:D015829	suppurative uveitis	Uveitis, Suppurative	1.000000	high	0.666667	high	1.000000	high	2	3
+mondo:0005550	mesh:D003141	infectious disease	Communicable Diseases	0.000000	zero	0.333333	medium	1.000000	high	4	12
+mondo:0006878	mesh:D045828	Moraxellaceae infectious disease	Moraxellaceae Infections	0.250000	low	0.500000	medium	1.000000	high	5	10
+mondo:0006752	mesh:D004887	Erysipelothrix rhusiopathiae infectious disease	Erysipeloid	0.000000	zero	0.125000	low	1.000000	high	1	8
+mondo:0010693	mesh:C537853	nystagmus 1, congenital, X-linked		0.000000	zero	0.000000	zero	0.000000	zero	0	18
+mondo:0007023	mesh:D015009	Yersinia infectious disease	Yersinia Infections	0.250000	low	0.444444	medium	1.000000	high	4	9
+mondo:0008328	mesh:C566748	glaucoma 1, open angle, P		0.000000	zero	0.000000	zero	0.000000	zero	0	7
+mondo:0005940	mesh:D010253	respirovirus infectious disease	Respirovirus Infections	0.250000	low	0.500000	medium	1.000000	high	2	4
+mondo:0005787	mesh:D014386	hepatic tuberculosis	Tuberculosis, Hepatic	1.000000	high	0.400000	medium	1.000000	high	2	5
+mondo:0001881	mesh:D012772	toxic shock syndrome	Shock, Septic	0.250000	low	0.300000	low	1.000000	high	3	10
+mondo:0024361	mesh:D020178	circadian rhythm sleep disorder	Sleep Disorders, Circadian Rhythm	0.600000	medium	0.190476	low	1.000000	high	4	21
+mondo:0006984	mesh:D013354	subdural empyema	Empyema, Subdural	1.000000	high	0.750000	high	1.000000	high	3	4
+mondo:0024290	mesh:D004775	enuresis	Enuresis	1.000000	high	1.000000	high	1.000000	high	1	1
+mondo:0005980	mesh:D013984	tick infestation	Tick Infestations	0.333333	medium	0.222222	low	1.000000	high	2	9
+mondo:0003709	mesh:D000379	agoraphobia		0.000000	zero	0.000000	zero	0.000000	zero	0	6
+mondo:0015254	mesh:D012552	schistosomiasis	Schistosomiasis	1.000000	high	0.272727	low	1.000000	high	3	11
+mondo:0025417	mesh:D005586	fowlpox	Fowlpox	1.000000	high	1.000000	high	1.000000	high	11	11
+mondo:1010000	mesh:D058968	pythiosis	Pythiosis	1.000000	high	0.571429	medium	1.000000	high	4	7
+mondo:0012408	mesh:C566447	microphthalmia, isolated, with coloboma 3		0.000000	zero	0.000000	zero	0.000000	zero	0	17
+mondo:0008751	mesh:C537806	corticosterone methyloxidase type 1 deficiency		0.000000	zero	0.000000	zero	0.000000	zero	0	28
+mondo:0043969	mesh:D020183	nocturnal paroxysmal dystonia	Nocturnal Paroxysmal Dystonia	1.000000	high	1.000000	high	1.000000	high	7	7
+mondo:0024314	mesh:D018512	parasitemia	Parasitemia	1.000000	high	1.000000	high	1.000000	high	1	1
+mondo:0027091	mesh:C536763	xanthogranulomatous sialadenitis		0.000000	zero	0.000000	zero	0.000000	zero	0	5
+mondo:0005545	mesh:D013203	staphylococcus aureus infection	Staphylococcal Infections	0.000000	zero	0.600000	medium	1.000000	high	3	5
+mondo:0000889	mesh:D008583	haemophilus meningitis	Meningitis, Haemophilus	1.000000	high	0.230769	low	1.000000	high	3	13
+mondo:0043224	mesh:D015140	multi-infarct dementia	Dementia, Vascular	0.250000	low	0.272727	low	1.000000	high	6	22
+mondo:0000914	mesh:D046589	cerebral arteriopathy, autosomal dominant, with subcortical infarcts and leukoencephalopathy, type 1	CADASIL	0.000000	zero	0.681818	high	1.000000	high	15	22
+mondo:0009097	mesh:C566966	persistent hyperplastic primary vitreous, autosomal recessive		0.000000	zero	0.000000	zero	0.000000	zero	0	17
+mondo:0018154	mesh:C562398	Madelung deformity		0.000000	zero	0.000000	zero	0.000000	zero	0	2
+mondo:0015484	mesh:D003551	cysticercosis	Cysticercosis	1.000000	high	0.190476	low	1.000000	high	4	21
+mondo:0006941	mesh:D011906	rat-bite fever	Rat-Bite Fever	1.000000	high	0.176471	low	1.000000	high	3	17

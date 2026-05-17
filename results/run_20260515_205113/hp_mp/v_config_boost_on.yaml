@@ -1,0 +1,54 @@
+build:
+  enable_boost: true
+collections:
+  hp:
+    source: owl
+    model: ft
+    owl_path: hp_enriched.owl
+    id_prefixes:
+    - HP_
+  mp:
+    source: owl
+    model: ft
+    owl_path: mp_enriched.owl
+    id_prefixes:
+    - MP_
+  hp_base:
+    source: owl
+    model: base
+    owl_path: hp_enriched.owl
+    id_prefixes:
+    - HP_
+  mp_base:
+    source: owl
+    model: base
+    owl_path: mp_enriched.owl
+    id_prefixes:
+    - MP_
+ablations:
+  _emnlp_scenario:
+    src_collection: hp
+    tgt_collection: mp
+    gold_file: /Users/hsoni/Downloads/Projects/leonmap_abs/mapnet/data/hp_mp_gold.tsv
+    src_col: src_id
+    tgt_col: tgt_id
+    ks:
+    - 1
+    - 50
+    - 100
+    - 200
+    models:
+    - ft
+    modes:
+    - full_src
+    reverse: false
+mappings:
+  _emnlp_scenario:
+    src_collection: hp
+    tgt_collection: mp
+    gold_file: /Users/hsoni/Downloads/Projects/leonmap_abs/mapnet/data/hp_mp_gold.tsv
+    src_col: src_id
+    tgt_col: tgt_id
+    threshold: 0.9
+    top_k: 1
+    reverse: false

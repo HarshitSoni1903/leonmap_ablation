@@ -1,0 +1,54 @@
+build:
+  enable_boost: false
+collections:
+  mondo:
+    source: owl
+    model: ft
+    owl_path: mondo.owl
+    id_prefixes:
+    - MONDO_
+  mesh:
+    source: owl
+    model: ft
+    owl_path: mesh_disease.owl
+    id_prefixes:
+    - mesh_
+  mondo_base:
+    source: owl
+    model: base
+    owl_path: mondo.owl
+    id_prefixes:
+    - MONDO_
+  mesh_base:
+    source: owl
+    model: base
+    owl_path: mesh_disease.owl
+    id_prefixes:
+    - mesh_
+ablations:
+  _emnlp_scenario:
+    src_collection: mesh
+    tgt_collection: mondo
+    gold_file: /Users/hsoni/Downloads/Projects/leonmap_abs/mapnet/data/evidence_mondo_mesh.tsv
+    src_col: object_id
+    tgt_col: subject_id
+    ks:
+    - 1
+    - 50
+    - 100
+    - 200
+    models:
+    - ft
+    modes:
+    - full_src
+    reverse: false
+mappings:
+  _emnlp_scenario:
+    src_collection: mesh
+    tgt_collection: mondo
+    gold_file: /Users/hsoni/Downloads/Projects/leonmap_abs/mapnet/data/evidence_mondo_mesh.tsv
+    src_col: object_id
+    tgt_col: subject_id
+    threshold: 0.9
+    top_k: 1
+    reverse: false

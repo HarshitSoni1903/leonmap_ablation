@@ -1,0 +1,1565 @@
+src_id	tgt_id	src_label	tgt_label	j_label	b_label	j_pooled	b_pooled	j_max_syn	b_max_syn	n_inter_pooled	n_union_pooled
+hp:0000016	mp:0003622	Urinary retention	ischuria	0.000000	zero	0.153846	low	1.000000	high	2	13
+hp:0000023	mp:0006077	Inguinal hernia	inguinal hernia	1.000000	high	1.000000	high	1.000000	high	2	2
+hp:0000028	mp:0002286	Cryptorchidism	cryptorchism	0.000000	zero	0.444444	medium	1.000000	high	4	9
+hp:0000033	mp:0009198	Ambiguous genitalia, male	abnormal male genitalia morphology	0.400000	medium	0.166667	low	0.400000	medium	2	12
+hp:0000034	mp:0003623	Hydrocele testis	hydrocele	0.500000	medium	0.666667	high	1.000000	high	2	3
+hp:0000039	mp:0003598	Epispadias	epispadia	0.000000	zero	0.000000	zero	0.000000	zero	0	5
+hp:0000041	mp:0003555	Chordee	chordee	1.000000	high	0.714286	high	1.000000	high	5	7
+hp:0000047	mp:0003124	Hypospadias	hypospadia	0.000000	zero	0.000000	zero	0.000000	zero	0	3
+hp:0000048	mp:0003612	Bifid scrotum	bifid scrotum	1.000000	high	0.500000	medium	1.000000	high	3	6
+hp:0000049	mp:0002669	Shawl scrotum	abnormal scrotum morphology	0.250000	low	0.090909	low	0.333333	medium	1	11
+hp:0000054	mp:0005188	Micropenis	small penis	0.000000	zero	0.428571	medium	1.000000	high	3	7
+hp:0000070	mp:0011767	Ureterocele	ureterocele	1.000000	high	0.400000	medium	1.000000	high	2	5
+hp:0000074	mp:0011491	Ureteropelvic junction obstruction	ureteropelvic junction obstruction	1.000000	high	0.800000	high	1.000000	high	4	5
+hp:0000075	mp:0004017	Renal duplication	duplex kidney	0.000000	zero	0.222222	low	1.000000	high	2	9
+hp:0000077	mp:0005367	Abnormality of the kidney	renal/urinary system phenotype	0.000000	zero	0.090909	low	0.200000	low	1	11
+hp:0000079	mp:0005367	Abnormality of the urinary system	renal/urinary system phenotype	0.285714	low	0.200000	low	0.285714	low	2	10
+hp:0000081	mp:0011803	Duplicated collecting system	double kidney pelvis	0.000000	zero	0.250000	low	0.250000	low	4	16
+hp:0000083	mp:0003606	Renal insufficiency	kidney failure	0.000000	zero	0.500000	medium	1.000000	high	3	6
+hp:0000085	mp:0003605	Horseshoe kidney	fused kidneys	0.000000	zero	0.444444	medium	1.000000	high	4	9
+hp:0000086	mp:0003600	Ectopic kidney	ectopic kidney	1.000000	high	0.571429	medium	1.000000	high	4	7
+hp:0000089	mp:0003446	Renal hypoplasia	renal hypoplasia	1.000000	high	0.428571	medium	1.000000	high	3	7
+hp:0000093	mp:0002962	Proteinuria	increased urine protein level	0.000000	zero	0.333333	medium	1.000000	high	3	9
+hp:0000104	mp:0000520	Renal agenesis	absent kidney	0.000000	zero	0.400000	medium	1.000000	high	4	10
+hp:0000104	mp:0003604	Renal agenesis	single kidney	0.000000	zero	0.375000	medium	0.666667	high	3	8
+hp:0000105	mp:0003068	Enlarged kidney	enlarged kidney	1.000000	high	0.555556	medium	1.000000	high	5	9
+hp:0000107	mp:0003675	Renal cyst	kidney cyst	0.333333	medium	0.666667	high	1.000000	high	4	6
+hp:0000110	mp:0000527	Renal dysplasia	abnormal kidney development	0.000000	zero	0.100000	low	0.250000	low	1	10
+hp:0000110	mp:0002135	Renal dysplasia	abnormal kidney morphology	0.000000	zero	0.181818	low	1.000000	high	2	11
+hp:0000113	mp:0008528	Polycystic kidney dysplasia	polycystic kidney	0.666667	high	0.444444	medium	1.000000	high	4	9
+hp:0000118	mp:0000001	Phenotypic abnormality	mammalian phenotype	0.000000	zero	0.000000	zero	0.000000	zero	0	5
+hp:0000122	mp:0003604	Unilateral renal agenesis	single kidney	0.000000	zero	0.500000	medium	1.000000	high	5	10
+hp:0000123	mp:0001859	Nephritis	kidney inflammation	0.000000	zero	0.750000	high	1.000000	high	3	4
+hp:0000125	mp:0011361	Pelvic kidney	pelvic kidney	1.000000	high	0.333333	medium	1.000000	high	2	6
+hp:0000126	mp:0000519	Hydronephrosis	hydronephrosis	1.000000	high	0.166667	low	1.000000	high	2	12
+hp:0000133	mp:0002211	Gonadal dysgenesis	abnormal primary sex determination	0.000000	zero	0.000000	zero	0.000000	zero	0	10
+hp:0000158	mp:0009906	Macroglossia	increased tongue size	0.000000	zero	0.285714	low	1.000000	high	4	14
+hp:0000174	mp:0003755	Abnormal palate morphology	abnormal palate morphology	1.000000	high	0.250000	low	1.000000	high	4	16
+hp:0000175	mp:0000111	Cleft palate	cleft palate	1.000000	high	0.272727	low	1.000000	high	3	11
+hp:0000185	mp:0013546	Cleft soft palate	cleft soft palate	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0000218	mp:0003757	High palate	high palate	1.000000	high	0.250000	low	1.000000	high	2	8
+hp:0000219	mp:0030168	Thin upper lip vermilion	thin upper lip	0.750000	high	0.307692	low	1.000000	high	4	13
+hp:0000224	mp:0031091	Hypogeusia	hypogeusia	1.000000	high	0.272727	low	1.000000	high	3	11
+hp:0000238	mp:0001891	Hydrocephalus	hydrocephaly	0.000000	zero	0.181818	low	1.000000	high	2	11
+hp:0000243	mp:0030368	Trigonocephaly	trigonocephaly	1.000000	high	0.888889	high	1.000000	high	8	9
+hp:0000252	mp:0000433	Microcephaly	microcephaly	1.000000	high	0.500000	medium	1.000000	high	6	12
+hp:0000256	mp:0000434	Macrocephaly	megacephaly	0.000000	zero	0.466667	medium	1.000000	high	7	15
+hp:0000268	mp:0003742	Dolichocephaly	narrow head	0.000000	zero	0.250000	low	1.000000	high	3	12
+hp:0000271	mp:0003743	Abnormality of the face	abnormal facial morphology	0.000000	zero	0.166667	low	0.250000	low	2	12
+hp:0000286	mp:0006168	Epicanthus	epicanthus inversus	0.500000	medium	0.187500	low	0.500000	medium	3	16
+hp:0000316	mp:0001300	Hypertelorism	ocular hypertelorism	0.500000	medium	0.894737	high	1.000000	high	17	19
+hp:0000322	mp:0030193	Short philtrum	short philtrum	1.000000	high	0.615385	medium	1.000000	high	8	13
+hp:0000324	mp:0030099	Facial asymmetry	facial asymmetry	1.000000	high	0.833333	high	1.000000	high	15	18
+hp:0000329	mp:0031292	Facial hemangioma	increased facial hemangioma incidence	0.500000	medium	0.250000	low	1.000000	high	2	8
+hp:0000340	mp:0030048	Sloping forehead	sloping forehead	1.000000	high	1.000000	high	1.000000	high	5	5
+hp:0000341	mp:0030045	Narrow forehead	abnormal forehead shape	0.250000	low	0.062500	low	0.250000	low	1	16
+hp:0000347	mp:0002639	Micrognathia	micrognathia	1.000000	high	0.260870	low	1.000000	high	6	23
+hp:0000358	mp:0003715	Posteriorly rotated ears	posteriorly rotated ears	1.000000	high	0.266667	low	1.000000	high	4	15
+hp:0000359	mp:0000026	Abnormality of the inner ear	abnormal inner ear morphology	0.285714	low	0.153846	low	0.500000	medium	2	13
+hp:0000360	mp:0003741	Tinnitus	tinnitus	1.000000	high	0.500000	medium	1.000000	high	5	10
+hp:0000364	mp:0001963	Hearing abnormality	abnormal hearing physiology	0.250000	low	0.200000	low	0.666667	high	2	10
+hp:0000365	mp:0006325	Hearing impairment	impaired hearing	0.333333	medium	0.230769	low	1.000000	high	3	13
+hp:0000369	mp:0000024	Low-set ears	lowered ear position	0.000000	zero	0.555556	medium	1.000000	high	5	9
+hp:0000372	mp:0006033	Abnormal auditory canal morphology	abnormal external auditory canal morphology	0.800000	high	0.444444	medium	0.800000	high	4	9
+hp:0000378	mp:0003735	Cupped ear	cup-shaped ears	0.000000	zero	0.571429	medium	1.000000	high	4	7
+hp:0000384	mp:0031305	Preauricular skin tag	preauricular skin tag	1.000000	high	0.562500	medium	1.000000	high	9	16
+hp:0000396	mp:0030092	Overfolded helix	abnormal outer ear helix morphology	0.166667	low	0.200000	low	0.200000	low	2	10
+hp:0000402	mp:0031285	Stenosis of the external auditory canal	external auditory canal stenosis	0.666667	high	0.500000	medium	1.000000	high	9	18
+hp:0000405	mp:0006326	Conductive hearing impairment	conductive hearing impairment	1.000000	high	0.500000	medium	1.000000	high	3	6
+hp:0000407	mp:0006329	Sensorineural hearing impairment	sensorineural hearing impairment	1.000000	high	0.833333	high	1.000000	high	5	6
+hp:0000411	mp:0000021	Protruding ear	prominent ears	0.000000	zero	0.400000	medium	0.333333	medium	2	5
+hp:0000413	mp:0009707	Atresia of the external auditory canal	absent external auditory canal	0.428571	medium	0.461538	medium	1.000000	high	6	13
+hp:0000431	mp:0000449	Wide nasal bridge	broad nasal bridge	0.500000	medium	0.461538	medium	1.000000	high	6	13
+hp:0000453	mp:0008970	Choanal atresia	choanal atresia	1.000000	high	0.181818	low	1.000000	high	2	11
+hp:0000458	mp:0004512	Anosmia	anosmia	1.000000	high	0.266667	low	1.000000	high	4	15
+hp:0000464	mp:0012719	Abnormality of the neck	abnormal neck morphology	0.166667	low	0.200000	low	0.500000	medium	2	10
+hp:0000465	mp:0012077	Webbed neck	webbed neck	1.000000	high	0.666667	high	1.000000	high	4	6
+hp:0000470	mp:0012721	Short neck	short neck	1.000000	high	0.800000	high	1.000000	high	4	5
+hp:0000473	mp:0030126	Torticollis	torticollis	1.000000	high	0.875000	high	1.000000	high	7	8
+hp:0000476	mp:0031310	Cystic hygroma	abnormal cyst	0.000000	zero	0.000000	zero	0.000000	zero	0	8
+hp:0000486	mp:0005254	Strabismus	strabismus	1.000000	high	0.200000	low	1.000000	high	1	5
+hp:0000508	mp:0001344	Ptosis	blepharoptosis	0.000000	zero	0.307692	low	1.000000	high	4	13
+hp:0000509	mp:0001311	Conjunctivitis		0.000000	zero	0.000000	zero	0.000000	zero	0	4
+hp:0000519	mp:0031345	Developmental cataract	developmental cataract	1.000000	high	0.250000	low	1.000000	high	3	12
+hp:0000520	mp:0002750	Proptosis	exophthalmos	0.000000	zero	0.352941	medium	1.000000	high	6	17
+hp:0000527	mp:0031288	Long eyelashes	long eyelid cilia	0.250000	low	0.384615	medium	1.000000	high	5	13
+hp:0000528	mp:0001293	Anophthalmia	anophthalmia	1.000000	high	0.210526	low	1.000000	high	4	19
+hp:0000565	mp:0005256	Esotropia	esotropia	1.000000	high	0.600000	medium	1.000000	high	3	5
+hp:0000568	mp:0001297	Microphthalmia	microphthalmia	1.000000	high	0.500000	medium	1.000000	high	6	12
+hp:0000577	mp:0005255	Exotropia	exotropia	1.000000	high	0.200000	low	1.000000	high	1	5
+hp:0000579	mp:0013451	Nasolacrimal duct obstruction	nasolacrimal duct obstruction	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0000582	mp:0001340	Upslanted palpebral fissure	abnormal eyelid morphology	0.000000	zero	0.038462	low	0.111111	low	1	26
+hp:0000587	mp:0001330	Abnormal optic nerve morphology	abnormal optic nerve morphology	1.000000	high	0.416667	medium	1.000000	high	5	12
+hp:0000588	mp:0010717	Optic disc coloboma	optic nerve coloboma	0.500000	medium	0.666667	high	1.000000	high	4	6
+hp:0000601	mp:0006197	Hypotelorism	ocular hypotelorism	0.500000	medium	0.789474	high	1.000000	high	15	19
+hp:0000609	mp:0006221	Optic nerve hypoplasia	optic nerve hypoplasia	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0000613	mp:0013787	Photophobia	photophobia	1.000000	high	0.214286	low	1.000000	high	3	14
+hp:0000622	mp:0006149	Blurred vision	decreased visual acuity	0.000000	zero	0.200000	low	1.000000	high	2	10
+hp:0000627	mp:0006250	Posterior embryotoxon	abnormal line of Schwalbe morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	9
+hp:0000639	mp:0004844	Nystagmus	abnormal vestibuloocular reflex	0.000000	zero	0.166667	low	0.500000	medium	2	12
+hp:0000646	mp:0006149	Amblyopia	decreased visual acuity	0.000000	zero	0.000000	zero	0.000000	zero	0	15
+hp:0000648	mp:0001059	Optic atrophy	optic nerve atrophy	0.666667	high	0.500000	medium	1.000000	high	3	6
+hp:0000651	mp:0006150	Diplopia	double vision	0.000000	zero	1.000000	high	1.000000	high	3	3
+hp:0000682	mp:0002576	Abnormal dental enamel morphology	abnormal enamel morphology	0.750000	high	0.250000	low	0.750000	high	3	12
+hp:0000698	mp:0030499	Conical tooth	conical tooth	1.000000	high	0.700000	high	1.000000	high	7	10
+hp:0000707	mp:0003631	Abnormality of the nervous system	nervous system phenotype	0.333333	medium	0.105263	low	0.333333	medium	2	19
+hp:0000708	mp:0004924	Atypical behavior	abnormal behavior	0.333333	medium	0.066667	low	0.333333	medium	1	15
+hp:0000713	mp:0008912	Agitation	nervous	0.000000	zero	0.000000	zero	0.000000	zero	0	6
+hp:0000716	mp:0002573	Depression	behavioral despair	0.000000	zero	0.000000	zero	0.000000	zero	0	8
+hp:0000716	mp:0003360	Depression	abnormal depression-related behavior	0.250000	low	0.111111	low	0.250000	low	1	9
+hp:0000739	mp:0001363	Anxiety	increased anxiety-related response	0.250000	low	0.083333	low	0.500000	medium	1	12
+hp:0000739	mp:0001363	Anxiety	increased anxiety-related response	0.250000	low	0.083333	low	0.500000	medium	1	12
+hp:0000766	mp:0000157	Abnormal sternum morphology	abnormal sternum morphology	1.000000	high	0.187500	low	1.000000	high	3	16
+hp:0000766	mp:0004322	Abnormal sternum morphology	abnormal sternebra morphology	0.500000	medium	0.125000	low	0.500000	medium	2	16
+hp:0000766	mp:0010082	Abnormal sternum morphology	sternebra fusion	0.000000	zero	0.000000	zero	0.000000	zero	0	19
+hp:0000767	mp:0012514	Pectus excavatum	pectus excavatum	1.000000	high	0.500000	medium	1.000000	high	4	8
+hp:0000768	mp:0031277	Pectus carinatum	pectus carinatum	1.000000	high	0.363636	medium	1.000000	high	4	11
+hp:0000775	mp:0002279	Abnormality of the diaphragm	abnormal diaphragm morphology	0.166667	low	0.090909	low	0.250000	low	1	11
+hp:0000776	mp:0003924	Congenital diaphragmatic hernia	diaphragmatic hernia	0.666667	high	0.600000	medium	1.000000	high	3	5
+hp:0000778	mp:0001823	Hypoplasia of the thymus	thymus hypoplasia	0.500000	medium	0.333333	medium	1.000000	high	3	9
+hp:0000787	mp:0002708	Nephrolithiasis	nephrolithiasis	1.000000	high	0.625000	medium	1.000000	high	5	8
+hp:0000790	mp:0005161	Hematuria	hematuria	1.000000	high	0.142857	low	1.000000	high	1	7
+hp:0000807	mp:0031295	Glanular hypospadias	glanular hypospadia	0.333333	medium	0.400000	medium	0.500000	medium	2	5
+hp:0000808	mp:0031296	Penoscrotal hypospadias	penoscrotal hypospadia	0.333333	medium	0.333333	medium	0.333333	medium	1	3
+hp:0000821	mp:0003503	Hypothyroidism	decreased activity of thyroid gland	0.000000	zero	0.200000	low	1.000000	high	2	10
+hp:0000823	mp:0001938	Delayed puberty	delayed sexual maturation	0.250000	low	0.090909	low	0.250000	low	1	11
+hp:0000824	mp:0005120	Decreased response to growth hormone stimulation test	decreased circulating growth hormone level	0.333333	medium	0.176471	low	0.428571	medium	3	17
+hp:0000889	mp:0005298	Abnormal clavicle morphology	abnormal clavicle morphology	1.000000	high	0.272727	low	1.000000	high	3	11
+hp:0000921	mp:0003345	Missing ribs	decreased rib number	0.000000	zero	0.500000	medium	1.000000	high	4	8
+hp:0000924	mp:0005390	Abnormality of the skeletal system	skeleton phenotype	0.000000	zero	0.000000	zero	0.000000	zero	0	9
+hp:0000925	mp:0004703	Abnormality of the vertebral column	abnormal vertebral column morphology	0.285714	low	0.500000	medium	0.750000	high	5	10
+hp:0000929	mp:0000438	Abnormal skull morphology	abnormal cranium morphology	0.500000	medium	0.230769	low	1.000000	high	3	13
+hp:0000957	mp:0002095	Cafe-au-lait spot	abnormal skin pigmentation	0.000000	zero	0.062500	low	0.125000	low	1	16
+hp:0000958	mp:0003853	Dry skin	dry skin	1.000000	high	1.000000	high	1.000000	high	3	3
+hp:0000961	mp:0001575	Cyanosis	cyanosis	1.000000	high	0.142857	low	1.000000	high	1	7
+hp:0000967	mp:0008816	Petechiae	petechiae	1.000000	high	0.666667	high	1.000000	high	4	6
+hp:0000979	mp:0011515	Purpura	purpura	1.000000	high	0.100000	low	1.000000	high	1	10
+hp:0000988	mp:0031103	Skin rash	skin rash	1.000000	high	0.500000	medium	1.000000	high	2	4
+hp:0000989	mp:0010072	Pruritus	increased pruritus	0.500000	medium	0.125000	low	0.500000	medium	1	8
+hp:0001000	mp:0002095	Abnormality of skin pigmentation	abnormal skin pigmentation	0.400000	medium	0.250000	low	1.000000	high	3	12
+hp:0001028	mp:0002947	Hemangioma	increased hemangioma incidence	0.333333	medium	0.111111	low	1.000000	high	1	9
+hp:0001063	mp:0001575	Acrocyanosis	cyanosis	0.000000	zero	0.000000	zero	0.000000	zero	0	11
+hp:0001067	mp:0010314	Neurofibroma	increased neurofibroma incidence	0.333333	medium	0.125000	low	0.333333	medium	1	8
+hp:0001096	mp:0006194	Keratoconjunctivitis	keratoconjunctivitis	1.000000	high	0.200000	low	1.000000	high	1	5
+hp:0001097	mp:0001337	Keratoconjunctivitis sicca	dry eyes	0.000000	zero	0.375000	medium	1.000000	high	3	8
+hp:0001159	mp:0000564	Syndactyly	syndactyly	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0001161	mp:0000562	Hand polydactyly	polydactyly	0.500000	medium	0.166667	low	0.500000	medium	2	12
+hp:0001191	mp:0000554	Abnormal carpal morphology	abnormal carpal bone morphology	0.750000	high	0.307692	low	0.750000	high	4	13
+hp:0001195	mp:0003230	Single umbilical artery	abnormal umbilical artery morphology	0.400000	medium	0.187500	low	0.400000	medium	3	16
+hp:0001250	mp:0002064	Seizure	seizures	0.000000	zero	0.111111	low	1.000000	high	1	9
+hp:0001251	mp:0001393	Ataxia	ataxia	1.000000	high	0.200000	low	1.000000	high	1	5
+hp:0001252	mp:0004144	Hypotonia	hypotonia	1.000000	high	0.090909	low	1.000000	high	1	11
+hp:0001254	mp:0005202	Lethargy	lethargy	1.000000	high	0.333333	medium	1.000000	high	3	9
+hp:0001260	mp:0001529	Dysarthria	abnormal vocalization	0.000000	zero	0.000000	zero	0.000000	zero	0	7
+hp:0001269	mp:0031201	Hemiparesis	hemiparesis	1.000000	high	0.125000	low	1.000000	high	1	8
+hp:0001272	mp:0014185	Cerebellar atrophy	cerebellum atrophy	0.333333	medium	0.571429	medium	1.000000	high	4	7
+hp:0001276	mp:0012052	Hypertonia	hypertonicity	0.000000	zero	0.153846	low	1.000000	high	2	13
+hp:0001279	mp:0031302	Syncope	syncope	1.000000	high	0.750000	high	1.000000	high	3	4
+hp:0001284	mp:0031122	Areflexia	areflexia	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0001287	mp:0031110	Meningitis	meningitis	1.000000	high	0.750000	high	1.000000	high	6	8
+hp:0001288	mp:0001406	Gait disturbance	abnormal gait	0.333333	medium	0.153846	low	1.000000	high	2	13
+hp:0001290	mp:0004144	Generalized hypotonia	hypotonia	0.500000	medium	0.111111	low	0.500000	medium	1	9
+hp:0001298	mp:0013806	Encephalopathy	encephalopathy	1.000000	high	0.250000	low	1.000000	high	1	4
+hp:0001320	mp:0000866	Cerebellar vermis hypoplasia	cerebellum vermis hypoplasia	0.500000	medium	0.625000	medium	1.000000	high	5	8
+hp:0001321	mp:0000851	Cerebellar hypoplasia	cerebellum hypoplasia	0.333333	medium	0.400000	medium	1.000000	high	4	10
+hp:0001324	mp:0000747	Muscle weakness	muscle weakness	1.000000	high	0.666667	high	1.000000	high	2	3
+hp:0001336	mp:0000243	Myoclonus	myoclonus	1.000000	high	0.333333	medium	1.000000	high	3	9
+hp:0001342	mp:0001916	Cerebral hemorrhage	intracerebral hemorrhage	0.333333	medium	0.555556	medium	1.000000	high	5	9
+hp:0001355	mp:0012139	Megalencephaly	increased forebrain size	0.000000	zero	0.111111	low	0.333333	medium	1	9
+hp:0001363	mp:0000081	Craniosynostosis	premature cranial suture closure	0.000000	zero	0.625000	medium	1.000000	high	10	16
+hp:0001374	mp:0030796	Congenital hip dislocation	hip dislocation	0.666667	high	0.272727	low	0.666667	high	3	11
+hp:0001385	mp:0004509	Hip dysplasia	abnormal pelvic girdle bone morphology	0.000000	zero	0.117647	low	0.200000	low	2	17
+hp:0001388	mp:0030797	obsolete Joint laxity	joint laxity	0.666667	high	0.333333	medium	0.666667	high	2	6
+hp:0001397	mp:0002628	Hepatic steatosis	hepatic steatosis	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0001399	mp:0003326	Hepatic failure	liver failure	0.333333	medium	0.750000	high	1.000000	high	3	4
+hp:0001410	mp:0003325	Decreased liver function	decreased liver function	1.000000	high	0.375000	medium	1.000000	high	3	8
+hp:0001414	mp:0031116	Microvesicular hepatic steatosis	microvesicular hepatic steatosis	1.000000	high	0.600000	medium	1.000000	high	3	5
+hp:0001507	mp:0001265	Growth abnormality	decreased body size	0.000000	zero	0.000000	zero	0.000000	zero	0	16
+hp:0001511	mp:0010865	Intrauterine growth retardation	prenatal growth retardation	0.500000	medium	0.277778	low	1.000000	high	5	18
+hp:0001537	mp:0010146	Umbilical hernia	umbilical hernia	1.000000	high	1.000000	high	1.000000	high	2	2
+hp:0001539	mp:0003052	Omphalocele	omphalocele	1.000000	high	0.400000	medium	1.000000	high	2	5
+hp:0001601	mp:0002249	Laryngomalacia	abnormal larynx morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	12
+hp:0001609	mp:0001529	Hoarse voice	abnormal vocalization	0.000000	zero	0.000000	zero	0.000000	zero	0	6
+hp:0001618	mp:0001529	Dysphonia	abnormal vocalization	0.000000	zero	0.000000	zero	0.000000	zero	0	9
+hp:0001626	mp:0005385	Abnormality of the cardiovascular system	cardiovascular system phenotype	0.333333	medium	0.166667	low	0.333333	medium	2	12
+hp:0001627	mp:0000266	Abnormal heart morphology	abnormal heart morphology	1.000000	high	0.250000	low	1.000000	high	4	16
+hp:0001629	mp:0010402	Ventricular septal defect	ventricular septal defect	1.000000	high	0.250000	low	1.000000	high	4	16
+hp:0001631	mp:0010403	Atrial septal defect	atrial septal defect	1.000000	high	0.227273	low	1.000000	high	5	22
+hp:0001633	mp:0000286	Abnormal mitral valve morphology	abnormal mitral valve morphology	1.000000	high	0.307692	low	1.000000	high	4	13
+hp:0001635	mp:0006138	Congestive heart failure	congestive heart failure	1.000000	high	0.333333	medium	1.000000	high	3	9
+hp:0001636	mp:0002127	Tetralogy of Fallot	abnormal cardiovascular system morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	21
+hp:0001638	mp:0005330	Cardiomyopathy	cardiomyopathy	1.000000	high	0.111111	low	1.000000	high	1	9
+hp:0001641	mp:0002748	Abnormal pulmonary valve morphology	abnormal pulmonary valve morphology	1.000000	high	0.294118	low	1.000000	high	5	17
+hp:0001642	mp:0006128	Pulmonic stenosis	pulmonary valve stenosis	0.250000	low	0.333333	medium	1.000000	high	4	12
+hp:0001642	mp:0010449	Pulmonic stenosis	heart right ventricle outflow tract stenosis	0.142857	low	0.181818	low	0.666667	high	4	22
+hp:0001643	mp:0003139	Patent ductus arteriosus	patent ductus arteriosus	1.000000	high	0.777778	high	1.000000	high	7	9
+hp:0001646	mp:0002747	Abnormal aortic valve morphology	abnormal aortic valve morphology	1.000000	high	0.312500	low	1.000000	high	5	16
+hp:0001647	mp:0010484	Bicuspid aortic valve	bicuspid aortic valve	1.000000	high	0.300000	low	1.000000	high	3	10
+hp:0001649	mp:0002626	Tachycardia	increased heart rate	0.000000	zero	0.444444	medium	1.000000	high	4	9
+hp:0001651	mp:0000644	Dextrocardia	dextrocardia	1.000000	high	0.176471	low	1.000000	high	3	17
+hp:0001653	mp:0006045	Mitral regurgitation	mitral valve regurgitation	0.666667	high	0.400000	medium	1.000000	high	4	10
+hp:0001655	mp:0004225	Patent foramen ovale	patent cardiac foramen ovale	0.750000	high	0.833333	high	1.000000	high	5	6
+hp:0001658	mp:0031217	Myocardial infarction	increased susceptibility to myocardial ischemic injury	0.142857	low	0.071429	low	0.142857	low	1	14
+hp:0001659	mp:0006047	Aortic regurgitation	aortic valve regurgitation	0.666667	high	0.363636	medium	1.000000	high	4	11
+hp:0001663	mp:0006110	Ventricular fibrillation	ventricular fibrillation	1.000000	high	1.000000	high	1.000000	high	3	3
+hp:0001679	mp:0000272	Abnormal aortic morphology	abnormal aorta morphology	0.500000	medium	0.300000	low	1.000000	high	3	10
+hp:0001680	mp:0003387	Coarctation of aorta	aorta coarctation	0.666667	high	0.666667	high	1.000000	high	4	6
+hp:0001682	mp:0010463	Subvalvular aortic stenosis	aorta stenosis	0.250000	low	0.230769	low	0.666667	high	3	13
+hp:0001684	mp:0010405	Secundum atrial septal defect	ostium secundum atrial septal defect	0.800000	high	0.625000	medium	1.000000	high	5	8
+hp:0001696	mp:0011252	Situs inversus totalis	situs inversus totalis	1.000000	high	0.214286	low	1.000000	high	3	14
+hp:0001698	mp:0005312	Pericardial effusion	pericardial effusion	1.000000	high	0.250000	low	1.000000	high	2	8
+hp:0001700	mp:0006085	Myocardial necrosis	myocardium necrosis	0.333333	medium	0.333333	medium	1.000000	high	2	6
+hp:0001701	mp:0001857	Pericarditis	pericarditis	1.000000	high	0.125000	low	1.000000	high	1	8
+hp:0001702	mp:0002624	Abnormal tricuspid valve morphology	abnormal tricuspid valve morphology	1.000000	high	0.333333	medium	1.000000	high	4	12
+hp:0001707	mp:0003920	Abnormal right ventricle morphology	abnormal heart right ventricle morphology	0.800000	high	0.500000	medium	1.000000	high	5	10
+hp:0001710	mp:0006126	Conotruncal defect	abnormal cardiac outflow tract development	0.000000	zero	0.000000	zero	0.000000	zero	0	12
+hp:0001711	mp:0003921	Abnormal left ventricle morphology	abnormal heart left ventricle morphology	0.800000	high	0.600000	medium	1.000000	high	6	10
+hp:0001719	mp:0000284	Double outlet right ventricle	double outlet right ventricle	1.000000	high	0.500000	medium	1.000000	high	5	10
+hp:0001734	mp:0006261	Annular pancreas	annular pancreas	1.000000	high	1.000000	high	1.000000	high	5	5
+hp:0001741	mp:0003554	Phimosis	phimosis	1.000000	high	0.333333	medium	1.000000	high	1	3
+hp:0001742	mp:0031101	Nasal congestion	nasal obstruction	0.333333	medium	0.714286	high	1.000000	high	5	7
+hp:0001743	mp:0000689	Abnormality of the spleen	abnormal spleen morphology	0.166667	low	0.100000	low	0.200000	low	1	10
+hp:0001743	mp:0008737	Abnormality of the spleen	abnormal spleen physiology	0.166667	low	0.166667	low	0.166667	low	1	6
+hp:0001746	mp:0000690	Asplenia	absent spleen	0.000000	zero	0.428571	medium	1.000000	high	3	7
+hp:0001748	mp:0003342	Polysplenia	accessory spleen	0.000000	zero	0.222222	low	1.000000	high	2	9
+hp:0001750	mp:0010432	Single ventricle	common ventricle	0.333333	medium	0.375000	medium	1.000000	high	3	8
+hp:0001762	mp:0000576	Talipes equinovarus	clubfoot	0.000000	zero	0.352941	medium	1.000000	high	6	17
+hp:0001776	mp:0000576	Bilateral talipes equinovarus	clubfoot	0.000000	zero	0.357143	medium	0.666667	high	5	14
+hp:0001780	mp:0002110	Abnormal toe morphology	abnormal digit morphology	0.500000	medium	0.307692	low	1.000000	high	4	13
+hp:0001824	mp:0001263	Weight loss	weight loss	1.000000	high	0.666667	high	1.000000	high	2	3
+hp:0001829	mp:0000562	Foot polydactyly	polydactyly	0.500000	medium	0.153846	low	0.500000	medium	2	13
+hp:0001832	mp:0003072	Abnormal metatarsal morphology	abnormal metatarsal bone morphology	0.750000	high	0.666667	high	1.000000	high	6	9
+hp:0001840	mp:0003072	Metatarsus adductus	abnormal metatarsal bone morphology	0.000000	zero	0.050000	low	0.111111	low	1	20
+hp:0001873	mp:0003179	Thrombocytopenia	thrombocytopenia	1.000000	high	0.300000	low	1.000000	high	3	10
+hp:0001882	mp:0000221	Decreased total leukocyte count	decreased leukocyte cell number	0.333333	medium	0.470588	medium	1.000000	high	8	17
+hp:0001888	mp:0005016	Decreased total lymphocyte count	decreased lymphocyte cell number	0.333333	medium	0.357143	medium	1.000000	high	5	14
+hp:0001902	mp:0030025	Giant platelets	giant platelets	1.000000	high	0.666667	high	1.000000	high	2	3
+hp:0001907	mp:0031158	Thromboembolism	abnormal venous thrombosis	0.000000	zero	0.222222	low	0.375000	medium	4	18
+hp:0001928	mp:0002551	Abnormality of coagulation	abnormal blood coagulation	0.200000	low	0.214286	low	0.750000	high	3	14
+hp:0001939	mp:0005376	Abnormality of metabolism/homeostasis	homeostasis/metabolism phenotype	0.400000	medium	0.333333	medium	0.400000	medium	2	6
+hp:0001941	mp:0003031	Acidosis	acidosis	1.000000	high	0.250000	low	1.000000	high	1	4
+hp:0001942	mp:0012551	Metabolic acidosis	metabolic acidosis	1.000000	high	1.000000	high	1.000000	high	3	3
+hp:0001943	mp:0005560	Hypoglycemia	decreased circulating glucose level	0.000000	zero	0.000000	zero	0.000000	zero	0	10
+hp:0001945	mp:0005533	Fever	increased body temperature	0.000000	zero	0.250000	low	1.000000	high	3	12
+hp:0001974	mp:0000218	Increased total leukocyte count	increased leukocyte cell number	0.333333	medium	0.500000	medium	1.000000	high	7	14
+hp:0001977	mp:0005048	Abnormal thrombosis	abnormal thrombosis	1.000000	high	0.400000	medium	1.000000	high	2	5
+hp:0001999	mp:0030071	Abnormal facial shape	abnormal face shape	0.500000	medium	0.200000	low	1.000000	high	4	20
+hp:0002013	mp:0003260	Vomiting	vomiting	1.000000	high	0.400000	medium	1.000000	high	2	5
+hp:0002014	mp:0005036	Diarrhea	diarrhea	1.000000	high	0.500000	medium	1.000000	high	2	4
+hp:0002015	mp:0003158	Dysphagia	dysphagia	1.000000	high	0.250000	low	1.000000	high	2	8
+hp:0002018	mp:0003259	Nausea	nausea	1.000000	high	0.333333	medium	1.000000	high	1	3
+hp:0002020	mp:0003286	Gastroesophageal reflux	gastroesophageal reflux	1.000000	high	0.400000	medium	1.000000	high	4	10
+hp:0002021	mp:0003307	Pyloric stenosis	pyloric stenosis	1.000000	high	0.666667	high	1.000000	high	4	6
+hp:0002023	mp:0003130	Anal atresia	anal atresia	1.000000	high	0.571429	medium	1.000000	high	4	7
+hp:0002032	mp:0003276	Esophageal atresia	esophageal atresia	1.000000	high	0.142857	low	1.000000	high	2	14
+hp:0002039	mp:0011940	Anorexia	decreased food intake	0.000000	zero	0.058824	low	1.000000	high	1	17
+hp:0002059	mp:0012508	Cerebral atrophy	forebrain atrophy	0.333333	medium	0.111111	low	0.333333	medium	1	9
+hp:0002084	mp:0012260	Encephalocele	encephalomeningocele	0.000000	zero	0.444444	medium	1.000000	high	4	9
+hp:0002089	mp:0001178	Pulmonary hypoplasia	pulmonary hypoplasia	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0002090	mp:0001861	Pneumonia	lung inflammation	0.000000	zero	0.250000	low	1.000000	high	1	4
+hp:0002094	mp:0001954	Dyspnea	respiratory distress	0.000000	zero	0.333333	medium	1.000000	high	6	18
+hp:0002097	mp:0001958	Emphysema	emphysema	1.000000	high	0.500000	medium	1.000000	high	3	6
+hp:0002098	mp:0001954	Respiratory distress	respiratory distress	1.000000	high	0.416667	medium	1.000000	high	5	12
+hp:0002102	mp:0031053	Pleuritis	pleuritis	1.000000	high	0.300000	low	1.000000	high	3	10
+hp:0002105	mp:0031100	Hemoptysis	hemoptysis	1.000000	high	0.666667	high	1.000000	high	8	12
+hp:0002107	mp:0010822	Pneumothorax	pneumothorax	1.000000	high	1.000000	high	1.000000	high	3	3
+hp:0002110	mp:0011012	Bronchiectasis	bronchiectasis	1.000000	high	0.125000	low	1.000000	high	1	8
+hp:0002119	mp:0011380	Ventriculomegaly	enlarged brain ventricles	0.000000	zero	0.222222	low	1.000000	high	4	18
+hp:0002138	mp:0031109	Subarachnoid hemorrhage	subarachnoid hemorrhage	1.000000	high	0.500000	medium	1.000000	high	2	4
+hp:0002140	mp:0003076	Ischemic stroke	increased susceptibility to ischemic brain injury	0.142857	low	0.214286	low	0.250000	low	3	14
+hp:0002148	mp:0000198	Hypophosphatemia	decreased circulating phosphate level	0.000000	zero	0.400000	medium	1.000000	high	4	10
+hp:0002151	mp:0013405	Increased circulating lactate concentration	increased circulating lactate level	0.600000	medium	0.230769	low	0.600000	medium	3	13
+hp:0002170	mp:0001915	Intracranial hemorrhage	intracranial hemorrhage	1.000000	high	0.571429	medium	1.000000	high	4	7
+hp:0002171	mp:0002183	Gliosis	gliosis	1.000000	high	0.111111	low	1.000000	high	1	9
+hp:0002181	mp:0011854	Cerebral edema	cerebral edema	1.000000	high	0.750000	high	1.000000	high	6	8
+hp:0002185	mp:0003214	Neurofibrillary tangles	neurofibrillary tangles	1.000000	high	0.157895	low	1.000000	high	3	19
+hp:0002202	mp:0010334	Pleural effusion	pleural effusion	1.000000	high	0.333333	medium	1.000000	high	2	6
+hp:0002204	mp:0031080	Pulmonary embolism	pulmonary embolism	1.000000	high	0.888889	high	1.000000	high	8	9
+hp:0002206	mp:0003426	Pulmonary fibrosis	pulmonary interstitial fibrosis	0.666667	high	0.500000	medium	0.666667	high	2	4
+hp:0002206	mp:0006050	Pulmonary fibrosis	pulmonary fibrosis	1.000000	high	0.500000	medium	1.000000	high	2	4
+hp:0002239	mp:0000465	Gastrointestinal hemorrhage	gastrointestinal hemorrhage	1.000000	high	0.666667	high	1.000000	high	4	6
+hp:0002240	mp:0000599	Hepatomegaly	enlarged liver	0.000000	zero	0.600000	medium	1.000000	high	3	5
+hp:0002247	mp:0003272	Duodenal atresia	duodenal atresia	1.000000	high	0.200000	low	1.000000	high	2	10
+hp:0002248	mp:0003261	Hematemesis	hematemesis	1.000000	high	1.000000	high	1.000000	high	3	3
+hp:0002249	mp:0003292	Melena	melena	1.000000	high	0.285714	low	1.000000	high	4	14
+hp:0002283	mp:0012506	Global brain atrophy	brain atrophy	0.666667	high	0.222222	low	0.666667	high	2	9
+hp:0002301	mp:0031202	Hemiplegia	hemiplegia	1.000000	high	1.000000	high	1.000000	high	7	7
+hp:0002321	mp:0001525	Vertigo	impaired balance	0.000000	zero	0.000000	zero	0.000000	zero	0	6
+hp:0002374	mp:0001402	Diminished movement	decreased locomotor activity	0.000000	zero	0.000000	zero	0.000000	zero	0	14
+hp:0002383	mp:0001847	Infectious encephalitis	brain inflammation	0.000000	zero	0.750000	high	1.000000	high	3	4
+hp:0002408	mp:0010530	Cerebral arteriovenous malformation	cerebral arteriovenous malformation	1.000000	high	0.600000	medium	1.000000	high	3	5
+hp:0002414	mp:0003054	Spina bifida	spina bifida	1.000000	high	0.416667	medium	1.000000	high	5	12
+hp:0002435	mp:0012259	Meningocele	meningocele	1.000000	high	0.333333	medium	1.000000	high	1	3
+hp:0002446	mp:0003354	Astrocytosis	astrocytosis	1.000000	high	0.111111	low	1.000000	high	1	9
+hp:0002475	mp:0009929	Myelomeningocele	meningomyelocele	0.000000	zero	0.222222	low	1.000000	high	2	9
+hp:0002500	mp:0008026	Abnormal cerebral white matter morphology	abnormal brain white matter morphology	0.666667	high	0.210526	low	0.666667	high	4	19
+hp:0002539	mp:0000788	Cortical dysplasia	abnormal cerebral cortex morphology	0.000000	zero	0.125000	low	0.333333	medium	1	8
+hp:0002566	mp:0014023	Intestinal malrotation	abnormal intestine placement	0.000000	zero	0.125000	low	0.250000	low	1	8
+hp:0002575	mp:0003321	Tracheoesophageal fistula	tracheoesophageal fistula	1.000000	high	0.105263	low	1.000000	high	2	19
+hp:0002605	mp:0001654	Hepatic necrosis	hepatic necrosis	1.000000	high	0.500000	medium	1.000000	high	3	6
+hp:0002615	mp:0001596	Hypotension	hypotension	1.000000	high	0.166667	low	1.000000	high	1	6
+hp:0002616	mp:0011575	Aortic root aneurysm	dilated aorta bulb	0.000000	zero	0.115385	low	0.500000	medium	3	26
+hp:0002624	mp:0002725	Abnormal venous morphology	abnormal vein morphology	0.500000	medium	0.666667	high	1.000000	high	4	6
+hp:0002625	mp:0031158	Deep venous thrombosis	abnormal venous thrombosis	0.500000	medium	0.428571	medium	0.500000	medium	6	14
+hp:0002633	mp:0001863	Vasculitis	blood vessel inflammation	0.000000	zero	0.857143	high	1.000000	high	6	7
+hp:0002637	mp:0006080	Cerebral ischemia	brain ischemia	0.333333	medium	0.214286	low	1.000000	high	3	14
+hp:0002648	mp:0030315	obsolete Abnormality of calvarial morphology	small neurocranium	0.000000	zero	0.000000	zero	0.000000	zero	0	14
+hp:0002650	mp:0000161	Scoliosis	scoliosis	1.000000	high	0.166667	low	1.000000	high	3	18
+hp:0002659	mp:0000061	Increased susceptibility to fractures	fragile skeleton	0.000000	zero	0.352941	medium	1.000000	high	6	17
+hp:0002672	mp:0010279	Gastrointestinal carcinoma	increased gastrointestinal tumor incidence	0.200000	low	0.083333	low	0.200000	low	1	12
+hp:0002716	mp:0000702	Lymphadenopathy	enlarged lymph nodes	0.000000	zero	0.400000	medium	1.000000	high	4	10
+hp:0002732	mp:0031071	Lymph node hypoplasia	lymph node atrophy	0.500000	medium	0.200000	low	0.500000	medium	2	10
+hp:0002744	mp:0000111	obsolete Bilateral cleft lip and palate	cleft palate	0.333333	medium	0.285714	low	0.500000	medium	2	7
+hp:0002744	mp:0005170	obsolete Bilateral cleft lip and palate	cleft upper lip	0.285714	low	0.222222	low	0.666667	high	2	9
+hp:0002751	mp:0000069	Kyphoscoliosis	kyphoscoliosis	1.000000	high	0.250000	low	1.000000	high	1	4
+hp:0002753	mp:0000135	Thin bony cortex	decreased compact bone thickness	0.000000	zero	0.100000	low	0.250000	low	1	10
+hp:0002763	mp:0003409	Abnormal cartilage morphology	decreased width of hypertrophic chondrocyte zone	0.000000	zero	0.083333	low	0.111111	low	1	12
+hp:0002763	mp:0003869	Abnormal cartilage morphology	ectopic cartilage	0.250000	low	0.142857	low	0.250000	low	1	7
+hp:0002777	mp:0010883	Tracheal stenosis	trachea stenosis	0.333333	medium	0.250000	low	1.000000	high	2	8
+hp:0002779	mp:0013753	Tracheomalacia	tracheomalacia	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0002786	mp:0031308	Tracheobronchomalacia	tracheobronchomalacia	1.000000	high	0.500000	medium	1.000000	high	3	6
+hp:0002789	mp:0005426	Tachypnea	tachypnea	1.000000	high	0.222222	low	1.000000	high	2	9
+hp:0002789	mp:0005573	Tachypnea	increased pulmonary respiratory rate	0.000000	zero	0.285714	low	0.428571	medium	4	14
+hp:0002808	mp:0000160	Kyphosis	kyphosis	1.000000	high	0.111111	low	1.000000	high	1	9
+hp:0002815	mp:0030837	Abnormality of the knee	abnormal knee joint morphology	0.142857	low	0.111111	low	0.166667	low	1	9
+hp:0002823	mp:0008152	Abnormal femur morphology	decreased diameter of femur	0.166667	low	0.142857	low	0.333333	medium	2	14
+hp:0002836	mp:0013282	Bladder exstrophy	urinary bladder exstrophy	0.666667	high	0.571429	medium	1.000000	high	4	7
+hp:0002860	mp:0009704	Squamous cell carcinoma	increased skin squamous cell carcinoma incidence	0.500000	medium	0.400000	medium	1.000000	high	6	15
+hp:0002878	mp:0001953	Respiratory failure	respiratory failure	1.000000	high	1.000000	high	1.000000	high	2	2
+hp:0002890	mp:0010346	Thyroid carcinoma	increased thyroid carcinoma incidence	0.500000	medium	0.333333	medium	0.500000	medium	2	6
+hp:0002895	mp:0010346	Papillary thyroid carcinoma	increased thyroid carcinoma incidence	0.400000	medium	0.333333	medium	0.400000	medium	2	6
+hp:0002900	mp:0004119	Hypokalemia	hypokalemia	1.000000	high	0.125000	low	1.000000	high	1	8
+hp:0002901	mp:0000195	Hypocalcemia	decreased circulating calcium level	0.000000	zero	0.300000	low	1.000000	high	3	10
+hp:0002902	mp:0005634	Hyponatremia	decreased circulating sodium level	0.000000	zero	0.200000	low	1.000000	high	2	10
+hp:0002904	mp:0005344	Hyperbilirubinemia	increased circulating bilirubin level	0.000000	zero	0.200000	low	1.000000	high	2	10
+hp:0002937	mp:0008832	Hemivertebrae	hemivertebra	0.000000	zero	0.500000	medium	1.000000	high	4	8
+hp:0002948	mp:0004609	Vertebral fusion	vertebral fusion	1.000000	high	0.454545	medium	1.000000	high	5	11
+hp:0002948	mp:0004612	Vertebral fusion	fusion of vertebral bodies	0.500000	medium	0.600000	medium	1.000000	high	6	10
+hp:0002948	mp:0004613	Vertebral fusion	fusion of vertebral arches	0.500000	medium	0.285714	low	0.666667	high	4	14
+hp:0002982	mp:0004358	Tibial bowing	bowed tibia	0.000000	zero	0.222222	low	1.000000	high	2	9
+hp:0002986	mp:0004374	Radial bowing	bowed radius	0.000000	zero	0.166667	low	1.000000	high	2	12
+hp:0003003	mp:0012436	Colon cancer	increased colon tumor incidence	0.200000	low	0.125000	low	0.200000	low	1	8
+hp:0003005	mp:0010362	Ganglioneuroma	increased ganglioneuroma incidence	0.333333	medium	0.200000	low	0.500000	medium	1	5
+hp:0003006	mp:0002039	Neuroblastoma	increased neuroblastoma incidence	0.333333	medium	0.125000	low	1.000000	high	1	8
+hp:0003026	mp:0004686	Short long bone	decreased length of long bones	0.142857	low	0.272727	low	0.500000	medium	3	11
+hp:0003073	mp:0005419	Hypoalbuminemia	decreased circulating serum albumin level	0.000000	zero	0.300000	low	1.000000	high	3	10
+hp:0003074	mp:0001559	Hyperglycemia	hyperglycemia	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0003074	mp:0005559	Hyperglycemia	increased circulating glucose level	0.000000	zero	0.500000	medium	1.000000	high	5	10
+hp:0003097	mp:0003109	Short femur	short femur	1.000000	high	0.200000	low	1.000000	high	2	10
+hp:0003103	mp:0010965	Abnormal cortical bone morphology	decreased compact bone volume	0.142857	low	0.300000	low	0.333333	medium	3	10
+hp:0003116	mp:0011925	obsolete Abnormal echocardiogram	abnormal heart echocardiography feature	0.166667	low	0.125000	low	0.166667	low	1	8
+hp:0003118	mp:0014161	Increased circulating cortisol level	increased circulating cortisol level	1.000000	high	0.363636	medium	1.000000	high	4	11
+hp:0003138	mp:0005565	Increased blood urea nitrogen	increased blood urea nitrogen level	0.800000	high	0.833333	high	1.000000	high	5	6
+hp:0003155	mp:0002968	Elevated circulating alkaline phosphatase concentration	increased circulating alkaline phosphatase level	0.428571	medium	0.437500	medium	0.800000	high	7	16
+hp:0003201	mp:0031112	Rhabdomyolysis	rhabdomyolysis	1.000000	high	0.285714	low	1.000000	high	2	7
+hp:0003236	mp:0010090	Elevated circulating creatine kinase concentration	increased circulating creatine kinase level	0.428571	medium	0.533333	medium	0.800000	high	8	15
+hp:0003244	mp:0031294	Penile hypospadias	penile hypospadia	0.333333	medium	0.333333	medium	0.333333	medium	1	3
+hp:0003256	mp:0002551	Abnormality of the coagulation cascade	abnormal blood coagulation	0.142857	low	0.181818	low	1.000000	high	2	11
+hp:0003259	mp:0010064	Elevated circulating creatinine concentration	increased circulating creatine level	0.142857	low	0.363636	medium	0.333333	medium	4	11
+hp:0003270	mp:0001270	Abdominal distention	distended abdomen	0.000000	zero	0.200000	low	1.000000	high	2	10
+hp:0003281	mp:0011890	Increased circulating ferritin concentration	increased circulating ferritin level	0.600000	medium	0.545455	medium	1.000000	high	6	11
+hp:0003298	mp:0005297	Spina bifida occulta	spina bifida occulta	1.000000	high	0.500000	medium	1.000000	high	4	8
+hp:0003302	mp:0031313	Spondylolisthesis	spondylolisthesis	1.000000	high	0.076923	low	1.000000	high	1	13
+hp:0003304	mp:0031312	Spondylolysis	spondylolysis	1.000000	high	1.000000	high	1.000000	high	3	3
+hp:0003307	mp:0000162	Hyperlordosis	lordosis	0.000000	zero	0.166667	low	1.000000	high	1	6
+hp:0003312	mp:0000141	Abnormal form of the vertebral bodies	abnormal vertebral body morphology	0.250000	low	0.200000	low	1.000000	high	3	15
+hp:0003312	mp:0005227	Abnormal form of the vertebral bodies	abnormal vertebral body development	0.250000	low	0.181818	low	0.400000	medium	2	11
+hp:0003316	mp:0000141	Butterfly vertebrae	abnormal vertebral body morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	16
+hp:0003330	mp:0004016	Abnormal bone structure	decreased bone mass	0.200000	low	0.071429	low	0.200000	low	1	14
+hp:0003330	mp:0004989	Abnormal bone structure	decreased osteoblast cell number	0.000000	zero	0.062500	low	0.200000	low	1	16
+hp:0003330	mp:0010124	Abnormal bone structure	decreased bone mineral content	0.166667	low	0.062500	low	0.166667	low	1	16
+hp:0003330	mp:0010876	Abnormal bone structure	decreased bone volume	0.200000	low	0.071429	low	0.200000	low	1	14
+hp:0003336	mp:0008272	Abnormal enchondral ossification	abnormal endochondral bone ossification	0.400000	medium	0.272727	low	0.400000	medium	3	11
+hp:0003468	mp:0000137	Abnormal vertebral morphology	abnormal vertebrae morphology	0.500000	medium	0.307692	low	0.666667	high	4	13
+hp:0003468	mp:0003049	Abnormal vertebral morphology	abnormal lumbar vertebrae morphology	0.400000	medium	0.363636	medium	0.750000	high	4	11
+hp:0003468	mp:0004610	Abnormal vertebral morphology	small vertebrae	0.000000	zero	0.076923	low	0.333333	medium	1	13
+hp:0003468	mp:0006394	Abnormal vertebral morphology	abnormal vertebral epiphyseal plate morphology	0.600000	medium	0.230769	low	0.600000	medium	3	13
+hp:0003470	mp:0000753	Paralysis	paralysis	1.000000	high	0.166667	low	1.000000	high	1	6
+hp:0003546	mp:0012106	Exercise intolerance	impaired exercise endurance	0.250000	low	0.250000	low	0.500000	medium	3	12
+hp:0003558	mp:0031112	Viral infection-induced rhabdomyolysis	rhabdomyolysis	0.250000	low	0.111111	low	0.250000	low	1	9
+hp:0003563	mp:0000183	Decreased LDL cholesterol concentration	decreased circulating LDL cholesterol level	0.500000	medium	0.428571	medium	0.600000	medium	6	14
+hp:0003565	mp:0031063	Elevated erythrocyte sedimentation rate	increased erythrocyte sedimentation rate	0.600000	medium	0.777778	high	1.000000	high	7	9
+hp:0003572	mp:0020837	Low plasma citrulline	decreased circulating citrulline level	0.166667	low	0.181818	low	0.500000	medium	2	11
+hp:0003645	mp:0012359	Prolonged partial thromboplastin time	increased partial thromboplastin time	0.600000	medium	0.454545	medium	1.000000	high	5	11
+hp:0003713	mp:0010632	Muscle fiber necrosis	cardiac muscle necrosis	0.500000	medium	0.285714	low	0.500000	medium	2	7
+hp:0003750	mp:0003646	Increased muscle fatiguability	increased muscle fatigability	0.500000	medium	0.235294	low	1.000000	high	4	17
+hp:0004209	mp:0006253	Clinodactyly of the 5th finger	clinodactyly	0.200000	low	0.062500	low	0.333333	medium	1	16
+hp:0004307	mp:0006065	Abnormal anatomic location of the heart	abnormal heart position or orientation	0.222222	low	0.187500	low	0.600000	medium	3	16
+hp:0004322	mp:0001255	Short stature	decreased body height	0.000000	zero	0.416667	medium	1.000000	high	5	12
+hp:0004322	mp:0001258	Short stature	decreased body length	0.000000	zero	0.214286	low	0.500000	medium	3	14
+hp:0004322	mp:0001265	Short stature	decreased body size	0.000000	zero	0.176471	low	0.500000	medium	3	17
+hp:0004323	mp:0003961	Abnormality of body weight	decreased lean body mass	0.142857	low	0.111111	low	0.142857	low	1	9
+hp:0004325	mp:0001262	Decreased body weight	decreased body weight	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0004348	mp:0002896	Abnormality of bone mineral density	abnormal bone mineralization	0.142857	low	0.083333	low	0.142857	low	1	12
+hp:0004349	mp:0000063	Reduced bone mineral density	decreased bone mineral density	0.600000	medium	0.312500	low	1.000000	high	5	16
+hp:0004349	mp:0013616	Reduced bone mineral density	decreased volumetric bone mineral density	0.500000	medium	0.250000	low	0.800000	high	5	20
+hp:0004383	mp:0002740	Hypoplastic left heart	heart hypoplasia	0.250000	low	0.375000	medium	0.666667	high	3	8
+hp:0004408	mp:0030988	Abnormality of the sense of smell	dysosmia	0.000000	zero	0.000000	zero	0.000000	zero	0	12
+hp:0004409	mp:0008544	Hyposmia	impaired olfaction	0.000000	zero	0.200000	low	1.000000	high	2	10
+hp:0004415	mp:0010457	Pulmonary artery stenosis	pulmonary artery stenosis	1.000000	high	0.428571	medium	1.000000	high	3	7
+hp:0004420	mp:0031157	Arterial thrombosis	abnormal arterial thrombosis	0.666667	high	0.545455	medium	0.666667	high	6	11
+hp:0004936	mp:0031158	Venous thrombosis	abnormal venous thrombosis	0.666667	high	0.545455	medium	0.666667	high	6	11
+hp:0004942	mp:0006278	Aortic aneurysm	aortic aneurysm	1.000000	high	0.117647	low	1.000000	high	2	17
+hp:0004969	mp:0010457	Peripheral pulmonary artery stenosis	pulmonary artery stenosis	0.750000	high	0.250000	low	0.750000	high	3	12
+hp:0004970	mp:0010483	Ascending tubular aorta aneurysm	aortic sinus aneurysm	0.166667	low	0.157895	low	0.500000	medium	3	19
+hp:0005107	mp:0003050	Abnormal sacrum morphology	abnormal sacral vertebrae morphology	0.400000	medium	0.200000	low	0.400000	medium	2	10
+hp:0005107	mp:0010113	Abnormal sacrum morphology	abnormal sacrum morphology	1.000000	high	0.375000	medium	1.000000	high	3	8
+hp:0005108	mp:0004173	Abnormal intervertebral disk morphology	abnormal intervertebral disk morphology	1.000000	high	0.625000	medium	1.000000	high	5	8
+hp:0005108	mp:0004682	Abnormal intervertebral disk morphology	small intervertebral disk	0.400000	medium	0.333333	medium	0.400000	medium	3	9
+hp:0005108	mp:0005229	Abnormal intervertebral disk morphology	abnormal intervertebral disk development	0.600000	medium	0.400000	medium	0.600000	medium	4	10
+hp:0005108	mp:0006392	Abnormal intervertebral disk morphology	abnormal nucleus pulposus morphology	0.333333	medium	0.200000	low	0.333333	medium	2	10
+hp:0005110	mp:0008543	Atrial fibrillation	atrial fibrillation	1.000000	high	0.133333	low	1.000000	high	2	15
+hp:0005116	mp:0031132	Arterial tortuosity	increased artery tortuosity	0.250000	low	0.666667	high	0.666667	high	4	6
+hp:0005133	mp:0002754	Right ventricular dilatation	dilated heart right ventricle	0.166667	low	0.625000	medium	1.000000	high	5	8
+hp:0005160	mp:0010441	Total anomalous pulmonary venous return	total anomalous pulmonary venous connection	0.666667	high	0.909091	high	1.000000	high	10	11
+hp:0005262	mp:0008148	Abnormal synovial membrane morphology	abnormal sternocostal joint morphology	0.333333	medium	0.222222	low	0.333333	medium	2	9
+hp:0005301	mp:0006064	Persistent left superior vena cava	abnormal superior vena cava morphology	0.428571	medium	0.250000	low	0.428571	medium	3	12
+hp:0005305	mp:0031160	Cerebral venous thrombosis	abnormal cerebral venous thrombosis	0.750000	high	0.875000	high	1.000000	high	7	8
+hp:0005344	mp:0004181	Abnormal carotid artery morphology	abnormal carotid artery morphology	1.000000	high	0.500000	medium	1.000000	high	4	8
+hp:0005415	mp:0008079	Decreased CD8+ T cell proportion	decreased CD8-positive, alpha-beta T cell number	0.444444	medium	0.538462	medium	0.666667	high	7	13
+hp:0005521	mp:0031214	Disseminated intravascular coagulation	hypercoagulability	0.000000	zero	0.000000	zero	0.000000	zero	0	12
+hp:0005561	mp:0002398	Abnormal bone marrow cell morphology	abnormal bone marrow cell morphology/development	0.833333	high	0.384615	medium	0.833333	high	5	13
+hp:0005645	mp:0004685	Intervertebral disk calcification	calcified intervertebral disk	0.500000	medium	0.571429	medium	0.666667	high	4	7
+hp:0005792	mp:0004351	Short humerus	short humerus	1.000000	high	0.133333	low	1.000000	high	2	15
+hp:0005815	mp:0000480	Supernumerary ribs	increased rib number	0.000000	zero	0.142857	low	0.200000	low	1	7
+hp:0005972	mp:0012550	Respiratory acidosis	respiratory acidosis	1.000000	high	0.333333	medium	1.000000	high	2	6
+hp:0006515	mp:0001862	Interstitial pneumonitis	interstitial pneumonia	0.333333	medium	0.400000	medium	1.000000	high	2	5
+hp:0006517	mp:0010998	Intraalveolar phospholipid accumulation	pulmonary alveolar proteinosis	0.000000	zero	0.157895	low	1.000000	high	3	19
+hp:0006687	mp:0031133	Aortic tortuosity	increased aorta tortuosity	0.250000	low	0.375000	medium	0.666667	high	3	8
+hp:0006704	mp:0004111	Abnormal coronary artery morphology	abnormal coronary artery morphology	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0006707	mp:0009820	Abnormality of the hepatic vasculature	abnormal liver vasculature morphology	0.125000	low	0.272727	low	0.333333	medium	3	11
+hp:0006743	mp:0002036	Embryonal rhabdomyosarcoma	increased rhabdomyosarcoma incidence	0.250000	low	0.250000	low	0.500000	medium	1	4
+hp:0007009	mp:0002229	Central nervous system degeneration	neurodegeneration	0.000000	zero	0.090909	low	0.333333	medium	1	11
+hp:0007033	mp:0000849	Cerebellar dysplasia	abnormal cerebellum morphology	0.000000	zero	0.285714	low	1.000000	high	2	7
+hp:0007033	mp:0000854	Cerebellar dysplasia	abnormal cerebellum development	0.000000	zero	0.142857	low	0.250000	low	1	7
+hp:0007112	mp:0021008	Temporal cortical atrophy	temporal lobe atrophy	0.500000	medium	0.600000	medium	1.000000	high	3	5
+hp:0007222	mp:0000921		demyelination	0.000000	zero	0.000000	zero	0.000000	zero	0	4
+hp:0007628	mp:0030259	Mandibular condyle hypoplasia	mandibular condyloid process hypoplasia	0.400000	medium	0.222222	low	0.500000	medium	4	18
+hp:0007633	mp:0031290	Bilateral microphthalmos	bilateral microphthalmia	0.333333	medium	0.187500	low	1.000000	high	3	16
+hp:0007970	mp:0001344	Congenital ptosis	blepharoptosis	0.000000	zero	0.166667	low	1.000000	high	2	12
+hp:0008066	mp:0001208	Abnormal blistering of the skin	blistering	0.200000	low	0.272727	low	1.000000	high	3	11
+hp:0008081	mp:0031291	Pes valgus	pes valgus	1.000000	high	1.000000	high	1.000000	high	4	4
+hp:0008151	mp:0012356	Prolonged prothrombin time	increased prothrombin time	0.500000	medium	0.266667	low	1.000000	high	4	15
+hp:0008165	mp:0013764	obsolete Decreased helper T cell proportion	decreased T-helper cell number	0.571429	medium	0.444444	medium	0.666667	high	4	9
+hp:0008438	mp:0004600	Vertebral arch anomaly	abnormal vertebral transverse process morphology	0.142857	low	0.125000	low	0.142857	low	1	8
+hp:0008438	mp:0004602	Vertebral arch anomaly	abnormal vertebral articular process morphology	0.142857	low	0.071429	low	0.200000	low	1	14
+hp:0008516	mp:0004601	Abnormality of the vertebral spinous processes	abnormal vertebral spinous process morphology	0.222222	low	0.181818	low	0.222222	low	2	11
+hp:0008551	mp:0000018	Microtia	small ears	0.000000	zero	0.312500	low	1.000000	high	5	16
+hp:0008551	mp:0030297	Microtia	outer ear hypoplasia	0.000000	zero	0.352941	medium	0.333333	medium	6	17
+hp:0008682	mp:0004154	Renal tubular epithelial necrosis	renal tubular necrosis	0.750000	high	0.428571	medium	1.000000	high	3	7
+hp:0008780	mp:0030796	Congenital bilateral hip dislocation	hip dislocation	0.500000	medium	0.222222	low	0.500000	medium	2	9
+hp:0009121	mp:0002114	Abnormal axial skeleton morphology	abnormal axial skeleton morphology	1.000000	high	0.500000	medium	1.000000	high	5	10
+hp:0009792	mp:0002627	Teratoma	increased teratoma incidence	0.333333	medium	0.200000	low	1.000000	high	1	5
+hp:0009926	mp:0001349	Epiphora	excessive tearing	0.000000	zero	0.250000	low	1.000000	high	3	12
+hp:0010296	mp:0013264	Ankyloglossia	tongue ankylosis	0.000000	zero	0.375000	medium	1.000000	high	3	8
+hp:0010305	mp:0004656	Absence of the sacrum	absent sacral vertebrae	0.000000	zero	0.333333	medium	1.000000	high	3	9
+hp:0010305	mp:0010113	Absence of the sacrum	abnormal sacrum morphology	0.166667	low	0.083333	low	0.250000	low	1	12
+hp:0010309	mp:0004320	Bifid sternum	split sternum	0.333333	medium	0.333333	medium	1.000000	high	2	6
+hp:0010438	mp:0000281	Abnormal ventricular septum morphology	abnormal interventricular septum morphology	0.600000	medium	0.555556	medium	1.000000	high	5	9
+hp:0010445	mp:0010404	Primum atrial septal defect	ostium primum atrial septal defect	0.800000	high	0.600000	medium	1.000000	high	6	10
+hp:0010448	mp:0031343	Colonic atresia	colon atresia	0.333333	medium	0.250000	low	1.000000	high	2	8
+hp:0010478	mp:0003616	Abnormality of the urachus	abnormal urachus morphology	0.166667	low	0.166667	low	0.166667	low	1	6
+hp:0010492	mp:0008730	Osseous finger syndactyly	fused phalanges	0.000000	zero	0.100000	low	0.142857	low	1	10
+hp:0010614	mp:0003580	Fibroma	increased fibroma incidence	0.333333	medium	0.500000	medium	1.000000	high	2	4
+hp:0010674	mp:0004174	Abnormal curvature of the vertebral column	abnormal spine curvature	0.285714	low	0.250000	low	0.500000	medium	3	12
+hp:0010735	mp:0031350	Polyostotic fibrous dysplasia	polyostotic fibrous dysplasia	1.000000	high	0.750000	high	1.000000	high	3	4
+hp:0010773	mp:0010442	Partial anomalous pulmonary venous return	partial anomalous pulmonary venous connection	0.666667	high	0.666667	high	1.000000	high	8	12
+hp:0010775	mp:0010466	Vascular ring	vascular ring	1.000000	high	0.400000	medium	1.000000	high	2	5
+hp:0010796	mp:0010278	Brainstem glioma	increased glioma incidence	0.250000	low	0.200000	low	0.250000	low	1	5
+hp:0010880	mp:0012723	Increased nuchal translucency	abnormal nuchal region morphology	0.166667	low	0.071429	low	0.166667	low	1	14
+hp:0010945	mp:0000519	Fetal pyelectasis	hydronephrosis	0.000000	zero	0.272727	low	0.400000	medium	3	11
+hp:0010959	mp:0004880	Congenital pulmonary airway malformation	lung cyst	0.000000	zero	0.230769	low	0.200000	low	3	13
+hp:0010960	mp:0004880	obsolete Bronchopulmonary sequestration	lung cyst	0.000000	zero	0.000000	zero	0.000000	zero	0	8
+hp:0011035	mp:0000521	Abnormal renal cortex morphology	abnormal kidney cortex morphology	0.600000	medium	0.500000	medium	1.000000	high	4	8
+hp:0011037	mp:0003620	Decreased urine output	oliguria	0.000000	zero	0.500000	medium	1.000000	high	3	6
+hp:0011102	mp:0011879	Ileal atresia	ileum atresia	0.333333	medium	0.500000	medium	1.000000	high	2	4
+hp:0011106	mp:0010128	Hypovolemia	hypovolemia	1.000000	high	0.285714	low	1.000000	high	2	7
+hp:0011112	mp:0008553	Abnormal circulating cytokine concentration	increased circulating tumor necrosis factor level	0.111111	low	0.117647	low	0.142857	low	2	17
+hp:0011112	mp:0010210	Abnormal circulating cytokine concentration	abnormal circulating cytokine level	0.600000	medium	0.500000	medium	0.600000	medium	4	8
+hp:0011112	mp:0031220	Abnormal circulating cytokine concentration	increased circulating CXCL10 level	0.142857	low	0.111111	low	0.222222	low	3	27
+hp:0011227	mp:0031059	Elevated circulating C-reactive protein concentration	increased circulating C-reactive protein level	0.500000	medium	0.777778	high	0.571429	medium	7	9
+hp:0011227	mp:0031059	Elevated circulating C-reactive protein concentration	increased circulating C-reactive protein level	0.500000	medium	0.777778	high	0.571429	medium	7	9
+hp:0011297	mp:0002110	Abnormal digit morphology	abnormal digit morphology	1.000000	high	0.187500	low	1.000000	high	3	16
+hp:0011297	mp:0005306	Abnormal digit morphology	abnormal phalanx morphology	0.500000	medium	0.142857	low	0.500000	medium	2	14
+hp:0011390	mp:0000026	Abnormal inner ear morphology	abnormal inner ear morphology	1.000000	high	0.285714	low	1.000000	high	4	14
+hp:0011420	mp:0002083	Age of death	premature death	0.250000	low	0.200000	low	0.500000	medium	4	20
+hp:0011420	mp:0011100	Age of death	preweaning lethality, complete penetrance	0.000000	zero	0.000000	zero	0.000000	zero	0	17
+hp:0011480	mp:0031289	Unilateral microphthalmos	unilateral microphthalmia	0.333333	medium	0.200000	low	1.000000	high	2	10
+hp:0011546	mp:0010435	Abnormal atrioventricular connection	abnormal heart atrium and ventricle connection	0.285714	low	0.272727	low	1.000000	high	3	11
+hp:0011563	mp:0010426	Abnormal ventriculoarterial connection	abnormal heart and great artery attachment	0.125000	low	0.181818	low	0.333333	medium	2	11
+hp:0011570	mp:0006122	Congenital mitral stenosis	mitral valve stenosis	0.500000	medium	0.250000	low	0.666667	high	2	8
+hp:0011590	mp:0004159	Double aortic arch	double aortic arch	1.000000	high	0.428571	medium	1.000000	high	3	7
+hp:0011611	mp:0004157	Interrupted aortic arch	interrupted aortic arch	1.000000	high	0.428571	medium	1.000000	high	3	7
+hp:0011620	mp:0031284	Abnormality of abdominal situs	abdominal situs abnormality	0.750000	high	0.750000	high	0.750000	high	3	4
+hp:0011623	mp:0010420	Muscular ventricular septal defect	muscular ventricular septal defect	1.000000	high	0.500000	medium	1.000000	high	6	12
+hp:0011675	mp:0001636	Arrhythmia	irregular heartbeat	0.000000	zero	0.384615	medium	1.000000	high	5	13
+hp:0011821	mp:0005274	Abnormal facial skeleton morphology	abnormal viscerocranium morphology	0.400000	medium	0.294118	low	1.000000	high	5	17
+hp:0011842	mp:0002113	Abnormal skeletal morphology	abnormal skeleton development	0.200000	low	0.125000	low	0.250000	low	2	16
+hp:0011842	mp:0005508	Abnormal skeletal morphology	abnormal skeleton morphology	0.500000	medium	0.300000	low	0.500000	medium	3	10
+hp:0011844	mp:0009250	Abnormal appendicular skeleton morphology	abnormal appendicular skeleton morphology	1.000000	high	0.500000	medium	1.000000	high	4	8
+hp:0011849	mp:0000060	Abnormal bone ossification	delayed bone ossification	0.500000	medium	0.571429	medium	1.000000	high	4	7
+hp:0011849	mp:0003419	Abnormal bone ossification	delayed endochondral bone ossification	0.400000	medium	0.428571	medium	0.750000	high	3	7
+hp:0011849	mp:0008271	Abnormal bone ossification	abnormal bone ossification	1.000000	high	0.300000	low	1.000000	high	3	10
+hp:0011877	mp:0002599	Increased mean platelet volume	increased mean platelet volume	1.000000	high	0.666667	high	1.000000	high	6	9
+hp:0011892	mp:0031263	Decreased circulating vitamin K concentration	decreased vitamin K level	0.500000	medium	0.400000	medium	0.500000	medium	4	10
+hp:0011897	mp:0000219	Increased total neutrophil count	increased neutrophil cell number	0.333333	medium	0.444444	medium	1.000000	high	4	9
+hp:0011899	mp:0012331	Hyperfibrinogenemia	increased circulating fibrinogen level	0.000000	zero	0.142857	low	1.000000	high	1	7
+hp:0011900	mp:0012330	Hypofibrinogenemia	decreased circulating fibrinogen level	0.000000	zero	0.333333	medium	1.000000	high	3	9
+hp:0011950	mp:0031054	Bronchiolitis	bronchiolitis	1.000000	high	0.333333	medium	1.000000	high	1	3
+hp:0011969	mp:0001751	Elevated circulating luteinizing hormone level	increased circulating luteinizing hormone level	0.666667	high	0.500000	medium	1.000000	high	6	12
+hp:0011970	mp:0004254	Cerebral amyloid angiopathy	cerebral amyloid angiopathy	1.000000	high	1.000000	high	1.000000	high	6	6
+hp:0011970	mp:0004254	Cerebral amyloid angiopathy	cerebral amyloid angiopathy	1.000000	high	1.000000	high	1.000000	high	6	6
+hp:0011994	mp:0000282	Abnormal atrial septum morphology	abnormal interatrial septum morphology	0.600000	medium	0.555556	medium	1.000000	high	5	9
+hp:0012020	mp:0004158	Right aortic arch	right aortic arch	1.000000	high	1.000000	high	1.000000	high	4	4
+hp:0012084	mp:0009400	Abnormality of skeletal muscle fiber size	decreased skeletal muscle fiber size	0.571429	medium	0.555556	medium	0.571429	medium	5	9
+hp:0012104	mp:0021011	Parietal cortical atrophy	parietal cortex atrophy	0.500000	medium	0.285714	low	0.500000	medium	2	7
+hp:0012146	mp:0031165	Abnormality of von Willebrand factor	increased circulating von Willebrand factor level	0.375000	medium	0.300000	low	0.375000	medium	3	10
+hp:0012156	mp:0031070	Hemophagocytosis	hemophagocytosis	1.000000	high	0.500000	medium	1.000000	high	1	2
+hp:0012189	mp:0012431	Hodgkin lymphoma	increased lymphoma incidence	0.250000	low	0.100000	low	0.250000	low	1	10
+hp:0012211	mp:0002136	Abnormal renal physiology	abnormal kidney physiology	0.500000	medium	0.470588	medium	1.000000	high	8	17
+hp:0012226	mp:0009442	Ovarian teratoma	increased ovarian teratoma incidence	0.500000	medium	0.666667	high	1.000000	high	4	6
+hp:0012254	mp:0002032	Ewing sarcoma	increased sarcoma incidence	0.250000	low	0.200000	low	0.500000	medium	1	5
+hp:0012282	mp:0031103	Morbilliform rash	skin rash	0.333333	medium	0.400000	medium	0.500000	medium	2	5
+hp:0012303	mp:0004113	Abnormal aortic arch morphology	abnormal aortic arch morphology	1.000000	high	0.777778	high	1.000000	high	7	9
+hp:0012312	mp:0000223	Decreased total monocyte count	decreased monocyte cell number	0.333333	medium	0.500000	medium	1.000000	high	5	10
+hp:0012332	mp:0006276	Abnormal autonomic nervous system physiology	abnormal autonomic nervous system physiology	1.000000	high	0.625000	medium	1.000000	high	5	8
+hp:0012375	mp:0031097	Chemosis	conjunctival chemosis	0.500000	medium	0.166667	low	0.500000	medium	1	6
+hp:0012378	mp:0002899	Fatigue	fatigue	1.000000	high	0.200000	low	1.000000	high	1	5
+hp:0012384	mp:0001867	Rhinitis	rhinitis	1.000000	high	0.500000	medium	1.000000	high	2	4
+hp:0012387	mp:0031055	Bronchitis	bronchitis	1.000000	high	0.111111	low	1.000000	high	1	9
+hp:0012416	mp:0002318	Hypercapnia	hypercapnia	1.000000	high	0.200000	low	1.000000	high	2	10
+hp:0012417	mp:0003032	Hypocapnia	hypocapnia	1.000000	high	0.083333	low	1.000000	high	1	12
+hp:0012418	mp:0005039	Hypoxemia	hypoxia	0.000000	zero	0.200000	low	1.000000	high	2	10
+hp:0012418	mp:0012549	Hypoxemia	hypoxemia	1.000000	high	0.300000	low	1.000000	high	3	10
+hp:0012418	mp:0031068	Hypoxemia	decreased blood oxygen saturation level	0.000000	zero	0.444444	medium	0.800000	high	4	9
+hp:0012443	mp:0002152	Abnormal brain morphology	abnormal brain morphology	1.000000	high	0.214286	low	1.000000	high	3	14
+hp:0012486	mp:0030987	Myelitis	spinal cord inflammation	0.000000	zero	0.800000	high	1.000000	high	4	5
+hp:0012516	mp:0002127	Tetralogy of Fallot with pulmonary atresia	abnormal cardiovascular system morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	23
+hp:0012541	mp:0001915	Cephalohematoma	intracranial hemorrhage	0.000000	zero	0.000000	zero	0.000000	zero	0	6
+hp:0012583	mp:0003446	Unilateral renal hypoplasia	renal hypoplasia	0.666667	high	0.300000	low	0.666667	high	3	10
+hp:0012592	mp:0002871	Albuminuria	albuminuria	1.000000	high	0.166667	low	1.000000	high	1	6
+hp:0012638	mp:0003633	Abnormal nervous system physiology	abnormal nervous system physiology	1.000000	high	0.285714	low	1.000000	high	4	14
+hp:0012664	mp:0005598	Reduced left ventricular ejection fraction	decreased heart ventricle muscle contractility	0.000000	zero	0.333333	medium	0.428571	medium	4	12
+hp:0012735	mp:0031088	Cough	coughing	0.000000	zero	0.666667	high	1.000000	high	2	3
+hp:0012741	mp:0031286	Unilateral cryptorchidism	unilateral cryptorchism	0.333333	medium	0.666667	high	1.000000	high	2	3
+hp:0012757	mp:0004297	Abnormal neuron morphology	abnormal proprioceptive neuron morphology	0.750000	high	0.500000	medium	0.750000	high	3	6
+hp:0012757	mp:0008467	Abnormal neuron morphology	absent proprioceptive neurons	0.000000	zero	0.000000	zero	0.000000	zero	0	8
+hp:0012790	mp:0008273	Abnormal intramembranous ossification	abnormal intramembranous bone ossification	0.750000	high	1.000000	high	1.000000	high	4	4
+hp:0012795	mp:0008259	Abnormal optic disc morphology	abnormal optic disk morphology	0.600000	medium	0.363636	medium	1.000000	high	4	11
+hp:0012819	mp:0001856	Myocarditis	myocarditis	1.000000	high	0.142857	low	1.000000	high	1	7
+hp:0020060	mp:0002875	Decreased red blood cell count	decreased erythrocyte cell number	0.285714	low	0.500000	medium	1.000000	high	6	12
+hp:0020062	mp:0002874	Decreased hemoglobin concentration	decreased hemoglobin content	0.500000	medium	0.428571	medium	0.500000	medium	3	7
+hp:0020113	mp:0004974	Decreased proportion of regulatory T cells	decreased regulatory T cell number	0.375000	medium	0.333333	medium	0.375000	medium	5	15
+hp:0025031	mp:0005381	Abnormality of the digestive system	digestive/alimentary phenotype	0.142857	low	0.111111	low	0.200000	low	1	9
+hp:0025095	mp:0031089	Sneeze	sneezing	0.000000	zero	0.750000	high	1.000000	high	3	4
+hp:0025144	mp:0000745	Shivering	tremors	0.000000	zero	0.166667	low	1.000000	high	1	6
+hp:0025247	mp:0031309	Dermoid cyst	skin cyst	0.333333	medium	0.166667	low	0.333333	medium	1	6
+hp:0025337	mp:0031347	Red eye	red eye	1.000000	high	1.000000	high	1.000000	high	2	2
+hp:0025406	mp:0000746	Asthenia	weakness	0.000000	zero	0.111111	low	1.000000	high	1	9
+hp:0025407	mp:0011786	Rectourethral fistula	rectourethral fistula	1.000000	high	0.428571	medium	1.000000	high	3	7
+hp:0025420	mp:0010909	Diffuse alveolar hemorrhage	pulmonary alveolar hemorrhage	0.500000	medium	0.375000	medium	0.666667	high	3	8
+hp:0025426	mp:0002264	Abnormal bronchus morphology	abnormal bronchus morphology	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0025435	mp:0011971	Increased circulating lactate dehydrogenase concentration	increased circulating lactate dehydrogenase level	0.666667	high	0.857143	high	0.800000	high	6	7
+hp:0025439	mp:0031095	Pharyngitis	pharyngitis	1.000000	high	0.363636	medium	1.000000	high	4	11
+hp:0025480	mp:0009929	Lipomyelomeningocele	meningomyelocele	0.000000	zero	0.000000	zero	0.000000	zero	0	10
+hp:0025579	mp:0003923	Abnormal left atrium morphology	abnormal heart left atrium morphology	0.800000	high	0.500000	medium	1.000000	high	4	8
+hp:0025580	mp:0003922	Abnormal right atrium morphology	abnormal heart right atrium morphology	0.800000	high	0.571429	medium	1.000000	high	4	7
+hp:0030038	mp:0031283	Enchondroma	increased enchondroma incidence	0.333333	medium	0.166667	low	1.000000	high	1	6
+hp:0030040	mp:0004621	Fused lumbar vertebrae	lumbar vertebral fusion	0.200000	low	0.285714	low	0.400000	medium	2	7
+hp:0030043	mp:0030829	Hip subluxation	abnormal hip joint morphology	0.200000	low	0.105263	low	0.285714	low	2	19
+hp:0030319	mp:0031314	Weakness of facial musculature	facial muscle weakness	0.400000	medium	0.583333	medium	1.000000	high	7	12
+hp:0030319	mp:0031314	Weakness of facial musculature	facial muscle weakness	0.400000	medium	0.583333	medium	1.000000	high	7	12
+hp:0030356	mp:0008577	Increased circulating interferon-gamma concentration	increased circulating interferon-gamma level	0.666667	high	0.500000	medium	0.666667	high	5	10
+hp:0030431	mp:0010079	Osteochondroma	increased osteochondroma incidence	0.333333	medium	0.200000	low	1.000000	high	1	5
+hp:0030434	mp:0002013	Pilomatrixoma	increased pilomatricoma incidence	0.000000	zero	0.111111	low	1.000000	high	1	9
+hp:0030708	mp:0009929	Myeloschisis	meningomyelocele	0.000000	zero	0.000000	zero	0.000000	zero	0	10
+hp:0030782	mp:0008588	obsolete Abnormal circulating interleukin concentration	abnormal circulating interleukin level	0.500000	medium	0.428571	medium	0.500000	medium	3	7
+hp:0030782	mp:0008591	obsolete Abnormal circulating interleukin concentration	increased circulating interleukin-1 level	0.250000	low	0.100000	low	0.250000	low	2	20
+hp:0030782	mp:0008599	obsolete Abnormal circulating interleukin concentration	increased circulating interleukin-2 level	0.250000	low	0.074074	low	0.250000	low	2	27
+hp:0030782	mp:0008605	obsolete Abnormal circulating interleukin concentration	increased circulating interleukin-7 level	0.250000	low	0.166667	low	0.250000	low	2	12
+hp:0030782	mp:0008611	obsolete Abnormal circulating interleukin concentration	increased circulating interleukin-15 level	0.250000	low	0.200000	low	0.250000	low	2	10
+hp:0030782	mp:0008614	obsolete Abnormal circulating interleukin concentration	increased circulating interleukin-17 level	0.250000	low	0.090909	low	0.250000	low	2	22
+hp:0030782	mp:0008629	obsolete Abnormal circulating interleukin concentration	increased circulating interleukin-9 level	0.250000	low	0.133333	low	0.250000	low	2	15
+hp:0030782	mp:0008635	obsolete Abnormal circulating interleukin concentration	increased circulating interleukin-18 level	0.250000	low	0.133333	low	0.250000	low	2	15
+hp:0030782	mp:0008641	obsolete Abnormal circulating interleukin concentration	increased circulating interleukin-1 beta level	0.222222	low	0.153846	low	0.222222	low	2	13
+hp:0030783	mp:0008596	Increased circulating interleukin 6 concentration	increased circulating interleukin-6 level	0.666667	high	0.185185	low	0.666667	high	5	27
+hp:0030799	mp:0003742	Scaphocephaly	narrow head	0.000000	zero	0.166667	low	1.000000	high	1	6
+hp:0030828	mp:0031086	Wheezing	wheezing	1.000000	high	0.500000	medium	1.000000	high	1	2
+hp:0030829	mp:0001950	Abnormal breath sound	abnormal respiratory sounds	0.200000	low	0.125000	low	0.200000	low	1	8
+hp:0030830	mp:0031104	Crackles	crackles	1.000000	high	0.750000	high	1.000000	high	3	4
+hp:0030831	mp:0031105	Rhonchi	rhonchi	1.000000	high	0.500000	medium	1.000000	high	1	2
+hp:0030853	mp:0004133	Heterotaxy	heterotaxia	0.000000	zero	0.285714	low	1.000000	high	2	7
+hp:0030875	mp:0002295	Abnormality of pulmonary circulation	abnormal pulmonary circulation	0.400000	medium	0.571429	medium	1.000000	high	4	7
+hp:0030879	mp:0002276	Interlobular septal thickening	abnormal lung interstitium morphology	0.000000	zero	0.058824	low	0.125000	low	1	17
+hp:0030948	mp:0031114	Elevated gamma-glutamyltransferase level	increased circulating gamma-glutamyl transferase level	0.250000	low	0.250000	low	0.285714	low	3	12
+hp:0030953	mp:0031096	Conjunctival hyperemia	conjunctival hyperemia	1.000000	high	1.000000	high	1.000000	high	6	6
+hp:0030966	mp:0000484	Abnormal pulmonary artery morphology	abnormal pulmonary artery morphology	1.000000	high	0.555556	medium	1.000000	high	5	9
+hp:0030968	mp:0002726	Abnormal pulmonary vein morphology	abnormal pulmonary vein morphology	1.000000	high	0.666667	high	1.000000	high	4	6
+hp:0031045	mp:0001208	Acral blistering	blistering	0.500000	medium	0.200000	low	0.500000	medium	1	5
+hp:0031098	mp:0005119	Decreased thyroid-stimulating hormone level	decreased circulating thyroid-stimulating hormone level	0.833333	high	0.466667	medium	0.833333	high	7	15
+hp:0031245	mp:0031088	Productive cough	coughing	0.000000	zero	0.125000	low	0.500000	medium	1	8
+hp:0031246	mp:0031088	Nonproductive cough	coughing	0.000000	zero	0.400000	medium	0.500000	medium	2	5
+hp:0031249	mp:0031092	Parageusia	dysgeusia	0.000000	zero	0.363636	medium	1.000000	high	4	11
+hp:0031266	mp:0008140	Podocyte foot process effacement	podocyte foot process effacement	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0031411	mp:0003702	Abnormal chromosome morphology	abnormal chromosome morphology	1.000000	high	0.500000	medium	1.000000	high	3	6
+hp:0031417	mp:0031102	Rhinorrhea	rhinorrhea	1.000000	high	0.300000	low	1.000000	high	3	10
+hp:0031703	mp:0002102	Abnormal ear morphology	abnormal ear morphology	1.000000	high	0.187500	low	1.000000	high	3	16
+hp:0031805	mp:0006185	Intraretinal hemorrhage	retina hemorrhage	0.333333	medium	0.400000	medium	0.333333	medium	2	5
+hp:0031826	mp:0001961	Abnormal reflex	abnormal reflex	1.000000	high	0.333333	medium	1.000000	high	2	6
+hp:0031831	mp:0031172	Decreased serum zinc	decreased circulating zinc level	0.400000	medium	0.250000	low	0.400000	medium	2	8
+hp:0031851	mp:0000208	Reduced hematocrit	decreased hematocrit	0.333333	medium	0.333333	medium	1.000000	high	2	6
+hp:0031891	mp:0005012	Decreased total eosinophil count	decreased eosinophil cell number	0.333333	medium	0.428571	medium	1.000000	high	3	7
+hp:0031956	mp:0005343	Elevated circulating aspartate aminotransferase concentration	increased circulating aspartate transaminase level	0.250000	low	0.666667	high	0.714286	high	10	15
+hp:0031964	mp:0002941	Elevated circulating alanine aminotransferase concentration	increased circulating alanine transaminase level	0.250000	low	0.562500	medium	0.666667	high	9	16
+hp:0031965	mp:0010067	Increased RBC distribution width	increased red blood cell distribution width	0.428571	medium	0.583333	medium	1.000000	high	7	12
+hp:0032044	mp:0020224	Decreased vigilance	decreased alertness	0.333333	medium	0.400000	medium	1.000000	high	2	5
+hp:0032092	mp:0010429	Left ventricular outflow tract obstruction	abnormal heart left ventricle outflow tract morphology	0.333333	medium	0.294118	low	0.375000	medium	5	17
+hp:0032177	mp:0031113	Parenchymal consolidation	pulmonary parenchymal consolidation	0.666667	high	0.181818	low	0.666667	high	2	11
+hp:0032198	mp:0012355	Decreased prothrombin time	decreased prothrombin time	1.000000	high	0.300000	low	1.000000	high	3	10
+hp:0032210	mp:0005479	Decreased circulating free T3	decreased circulating triiodothyronine level	0.333333	medium	0.500000	medium	0.600000	medium	4	8
+hp:0032218	mp:0008075	Decreased proportion of CD4+ T cells	decreased CD4-positive, alpha-beta T cell number	0.272727	low	0.533333	medium	0.545455	medium	8	15
+hp:0032263	mp:0002842	Increased blood pressure	increased systemic arterial blood pressure	0.600000	medium	0.428571	medium	0.600000	medium	3	7
+hp:0032308	mp:0031065	Increased circulating procalcitonin concentration	increased circulating procalcitonin level	0.600000	medium	0.666667	high	1.000000	high	4	6
+hp:0032623	mp:0011402	Renal intratubular casts	renal cast	0.250000	low	0.285714	low	0.250000	low	2	7
+hp:0032892	mp:0000947	Infection-related seizure	convulsive seizures	0.000000	zero	0.071429	low	0.200000	low	1	14
+hp:0032929	mp:0000166	Abnormal chondrocyte morphology	abnormal chondrocyte morphology	1.000000	high	0.500000	medium	1.000000	high	3	6
+hp:0033006	mp:0031237	Diffuse alveolar damage	diffuse alveolar damage	1.000000	high	0.428571	medium	1.000000	high	3	7
+hp:0033031	mp:0011016	Hyperpyrexia	increased core body temperature	0.000000	zero	0.230769	low	1.000000	high	3	13
+hp:0033041	mp:0031066	Cytokine storm	cytokine storm	1.000000	high	0.750000	high	1.000000	high	3	4
+hp:0033050	mp:0031095	Pharyngalgia	pharyngitis	0.000000	zero	0.200000	low	1.000000	high	2	10
+hp:0033106	mp:0031083	Elevated circulating D-dimer concentration	increased circulating D-dimer level	0.428571	medium	0.363636	medium	0.500000	medium	4	11
+hp:0033178	mp:0011714	Increased circulating interleukin 8 concentration	increased circulating interleukin-8 level	0.666667	high	0.500000	medium	0.666667	high	4	8
+hp:0033199	mp:0008593	Increased circulating interleukin 10 concentration	increased circulating interleukin-10 level	0.666667	high	0.285714	low	0.666667	high	4	14
+hp:0033328	mp:0031238	Type II pneumocyte hyperplasia	reactive type II pneumocyte hyperplasia	0.800000	high	0.571429	medium	0.800000	high	4	7
+hp:0033332	mp:0031234	Elevated circulating amyloid A concentration	increased circulating serum amyloid protein level	0.222222	low	0.400000	medium	0.428571	medium	4	10
+hp:0033363	mp:0011018	Hyaline membranes	pulmonary hyaline membrane formation	0.200000	low	0.181818	low	0.250000	low	2	11
+hp:0033376	mp:0001179	Alveolar septal thickening	thick pulmonary interalveolar septum	0.000000	zero	0.200000	low	0.500000	medium	2	10
+hp:0033438	mp:0031108	Elevated circulating myoglobin concentration	increased circulating myoglobin level	0.333333	medium	0.428571	medium	0.500000	medium	3	7
+hp:0033655	mp:0031119	Pulmonary cavity	pulmonary cavitation	0.333333	medium	0.200000	low	1.000000	high	2	10
+hp:0033977	mp:0005110	Talar aplasia	absent talus	0.000000	zero	0.500000	medium	1.000000	high	2	4
+hp:0033993	mp:0006082	Viral encephalitis	CNS inflammation	0.000000	zero	0.000000	zero	0.000000	zero	0	8
+hp:0040064	mp:0000546	Abnormality of limbs		0.000000	zero	0.000000	zero	0.000000	zero	0	10
+hp:0040071	mp:0004359	Abnormal morphology of ulna	short ulna	0.200000	low	0.142857	low	0.200000	low	1	7
+hp:0040106	mp:0000037	Abnormal lateral semicircular canal morphology	abnormal lateral semicircular canal morphology	1.000000	high	0.500000	medium	1.000000	high	6	12
+hp:0040186	mp:0031103	Maculopapular exanthema	skin rash	0.000000	zero	0.166667	low	0.500000	medium	1	6
+hp:0040218	mp:0008045	Reduced total natural killer cell count	decreased NK cell number	0.111111	low	0.666667	high	1.000000	high	6	9
+hp:0040223	mp:0001182	Pulmonary hemorrhage	lung hemorrhage	0.333333	medium	0.500000	medium	1.000000	high	3	6
+hp:0040246	mp:0012325	Reduced antithrombin antigen	decreased circulating antithrombin level	0.166667	low	0.285714	low	0.500000	medium	2	7
+hp:0040303	mp:0004151	Decreased circulating iron concentration	decreased circulating iron level	0.600000	medium	0.454545	medium	1.000000	high	5	11
+hp:0041051	mp:0031090	Ageusia	ageusia	1.000000	high	0.090909	low	1.000000	high	1	11
+hp:0041079	mp:0014143	Decreased body fat percentage	decreased body fat mass	0.600000	medium	0.428571	medium	0.600000	medium	3	7
+hp:0045005	mp:0003720	Neural tube defect	abnormal neural tube closure	0.400000	medium	0.300000	low	0.500000	medium	3	10
+hp:0045014	mp:0031206	Hypolipidemia	hypolipidemia	1.000000	high	0.250000	low	1.000000	high	2	8
+hp:0100240	mp:0003189	Synostosis of joints	fused joints	0.250000	low	0.375000	medium	1.000000	high	3	8
+hp:0100256	mp:0003329	Senile plaques	amyloid beta deposits	0.000000	zero	0.100000	low	0.250000	low	1	10
+hp:0100309	mp:0031117	Subdural hemorrhage	subdural hemorrhage	1.000000	high	1.000000	high	1.000000	high	5	5
+hp:0100315	mp:0014065	Lewy bodies	Lewy bodies	1.000000	high	0.600000	medium	1.000000	high	3	5
+hp:0100333	mp:0005170	Unilateral cleft lip	cleft upper lip	0.500000	medium	0.500000	medium	0.750000	high	4	8
+hp:0100336	mp:0005170	Bilateral cleft lip	cleft upper lip	0.500000	medium	0.272727	low	0.666667	high	3	11
+hp:0100520	mp:0003620	Oliguria	oliguria	1.000000	high	0.375000	medium	1.000000	high	3	8
+hp:0100540	mp:0006167	Palpebral edema	eyelid edema	0.333333	medium	0.333333	medium	1.000000	high	6	18
+hp:0100542	mp:0003600	Abnormal localization of kidney	ectopic kidney	0.200000	low	0.111111	low	0.200000	low	1	9
+hp:0100543	mp:0002571	Cognitive impairment	senility	0.000000	zero	0.000000	zero	0.000000	zero	0	9
+hp:0100543	mp:0014114	Cognitive impairment	abnormal cognition	0.000000	zero	0.181818	low	0.333333	medium	2	11
+hp:0100545	mp:0006135	Arterial stenosis	artery stenosis	0.333333	medium	0.500000	medium	1.000000	high	3	6
+hp:0100588	mp:0010033	Paraphimosis	paraphimosis	1.000000	high	1.000000	high	1.000000	high	2	2
+hp:0100598	mp:0003828	Pulmonary edema	pulmonary edema	1.000000	high	0.555556	medium	1.000000	high	5	9
+hp:0100598	mp:0010894	Pulmonary edema	pulmonary alveolar edema	0.666667	high	0.300000	low	0.666667	high	3	10
+hp:0100614	mp:0004510	Myositis	myositis	1.000000	high	0.600000	medium	1.000000	high	3	5
+hp:0100633	mp:0003278	Esophagitis	esophageal inflammation	0.000000	zero	0.666667	high	1.000000	high	6	9
+hp:0100659	mp:0004950	Abnormal cerebral vascular morphology	abnormal brain vasculature morphology	0.333333	medium	0.416667	medium	0.400000	medium	5	12
+hp:0100671	mp:0000130	Abnormal trabecular bone morphology	abnormal trabecular bone morphology	1.000000	high	0.357143	medium	1.000000	high	5	14
+hp:0100671	mp:0009346	Abnormal trabecular bone morphology	decreased trabecular bone thickness	0.333333	medium	0.176471	low	0.333333	medium	3	17
+hp:0100671	mp:0010879	Abnormal trabecular bone morphology	decreased trabecular bone volume	0.333333	medium	0.176471	low	0.333333	medium	3	17
+hp:0100711	mp:0004703	Abnormal thoracic spine morphology	abnormal vertebral column morphology	0.333333	medium	0.272727	low	0.750000	high	3	11
+hp:0100712	mp:0003049	Abnormal lumbar spine morphology	abnormal lumbar vertebrae morphology	0.600000	medium	0.444444	medium	1.000000	high	4	9
+hp:0100724	mp:0031214	Hypercoagulability	hypercoagulability	1.000000	high	0.333333	medium	1.000000	high	3	9
+hp:0100750	mp:0001177	Atelectasis	atelectasis	1.000000	high	0.363636	medium	1.000000	high	4	11
+hp:0100758	mp:0031126	Gangrene	gangrene	1.000000	high	0.071429	low	1.000000	high	1	14
+hp:0100758	mp:0031127	Gangrene	dry gangrene	0.500000	medium	0.076923	low	1.000000	high	1	13
+hp:0100777	mp:0009877	Exostoses	exostosis	0.000000	zero	0.000000	zero	0.000000	zero	0	10
+hp:0100802	mp:0010807	Malposition of the stomach	abnormal stomach position or orientation	0.125000	low	0.181818	low	0.333333	medium	2	11
+hp:0100806	mp:0005044	Sepsis	sepsis	1.000000	high	0.100000	low	1.000000	high	1	10
+hp:0200012	mp:0000781	Short corpus callosum	decreased corpus callosum size	0.400000	medium	0.285714	low	0.400000	medium	2	7
+hp:0200023	mp:0003415	Priapism	priapism	1.000000	high	0.125000	low	1.000000	high	1	8
+hp:0200029	mp:0001863	Vasculitis in the skin	blood vessel inflammation	0.000000	zero	0.090909	low	0.500000	medium	1	11
+hp:0200037	mp:0001208	Skin vesicle	blistering	0.000000	zero	0.500000	medium	1.000000	high	2	4
+hp:0200151	mp:0000324	Cutaneous mastocytosis	increased mast cell number	0.000000	zero	0.125000	low	0.500000	medium	1	8
+hp:0410030	mp:0005170	Cleft lip	cleft upper lip	0.666667	high	0.285714	low	1.000000	high	2	7
+hp:0410042	mp:0000598	Abnormal liver morphology	abnormal liver morphology	1.000000	high	0.428571	medium	1.000000	high	3	7
+hp:0410170	mp:0030003	Hippocampal atrophy	hippocampus atrophy	0.333333	medium	0.428571	medium	1.000000	high	3	7
+hp:0410173	mp:0031079	Increased circulating troponin I concentration	increased circulating troponin I level	0.666667	high	0.500000	medium	0.666667	high	5	10
+hp:0410174	mp:0031078	Increased circulating troponin T concentration	increased circulating troponin T level	0.666667	high	0.312500	low	0.666667	high	5	16
+hp:0410264	mp:0002947	Subglottic hemangioma	increased hemangioma incidence	0.250000	low	0.125000	low	0.500000	medium	1	8
+hp:0410271	mp:0002947	Laryngeal hemangioma	increased hemangioma incidence	0.250000	low	0.125000	low	0.500000	medium	1	8
+hp:0410275	mp:0002947	Lumbosacral hemangioma	increased hemangioma incidence	0.250000	low	0.111111	low	0.500000	medium	1	9
+hp:0000174	mp:0009886	Abnormal palate morphology	failure of palatal shelf elevation	0.000000	zero	0.153846	low	0.200000	low	2	13
+hp:0000174	mp:0009653	Abnormal palate morphology	abnormal palate development	0.500000	medium	0.166667	low	0.500000	medium	2	12
+hp:0000157	mp:0031443	Abnormality of the tongue	abnormal tongue position	0.166667	low	0.300000	low	0.666667	high	3	10
+hp:0008872	mp:0009546	Feeding difficulties in infancy	absent gastric milk in neonates	0.125000	low	0.071429	low	0.125000	low	1	14
+hp:0001522	mp:0011110	Death in infancy	preweaning lethality, incomplete penetrance	0.000000	zero	0.000000	zero	0.000000	zero	0	12
+hp:0003819	mp:0011110	Death in childhood	preweaning lethality, incomplete penetrance	0.000000	zero	0.000000	zero	0.000000	zero	0	8
+hp:0000271	mp:0000445	Abnormality of the face	short snout	0.000000	zero	0.000000	zero	0.000000	zero	0	19
+hp:0000929	mp:0002116	Abnormal skull morphology	abnormal craniofacial bone morphology	0.400000	medium	0.142857	low	0.400000	medium	2	14
+hp:0430000	mp:0000107	Abnormal frontal bone morphology	abnormal frontal bone morphology	1.000000	high	0.384615	medium	1.000000	high	5	13
+hp:0000419	mp:0002239	Abnormal nasal septum morphology	abnormal nasal septum morphology	1.000000	high	0.400000	medium	1.000000	high	4	10
+hp:0010291	mp:0009652	Prominent palatine ridges	abnormal palatal rugae morphology	0.000000	zero	0.120000	low	0.333333	medium	3	25
+hp:0000174	mp:0031460	Abnormal palate morphology	abnormal palatal shelf morphology	0.400000	medium	0.200000	low	0.400000	medium	3	15
+hp:0010758	mp:0002820	Abnormality of the premaxilla	abnormal premaxilla morphology	0.166667	low	0.187500	low	0.285714	low	3	16
+hp:0410000	mp:0000098	Abnormal vomer morphology	abnormal vomer bone morphology	0.750000	high	0.500000	medium	0.750000	high	4	8
+hp:0000589	mp:0005262	Coloboma	coloboma	1.000000	high	0.250000	low	1.000000	high	1	4
+hp:0430003	mp:0009895	Abnormal palatine bone morphology	decreased palatine bone horizontal plate size	0.250000	low	0.166667	low	0.333333	medium	3	18
+hp:0000174	mp:0021166	Abnormal palate morphology	delayed palatal shelf elevation	0.000000	zero	0.076923	low	0.200000	low	1	13
+hp:0000252	mp:0000433	Microcephaly	microcephaly	1.000000	high	0.500000	medium	1.000000	high	6	12
+hp:0003811	mp:0011087	Neonatal death	neonatal lethality, complete penetrance	0.200000	low	0.166667	low	0.250000	low	1	6
+hp:0000174	mp:0009888	Abnormal palate morphology	palatal shelves fail to meet at midline	0.000000	zero	0.047619	low	0.166667	low	1	21
+hp:0000174	mp:0009892	Abnormal palate morphology	palate bone hypoplasia	0.200000	low	0.142857	low	0.250000	low	2	14
+hp:0003811	mp:0011090	Neonatal death	perinatal lethality, incomplete penetrance	0.000000	zero	0.000000	zero	0.000000	zero	0	8
+hp:0011830	mp:0030183	Abnormal oral mucosa morphology	persistent oronasal membrane	0.000000	zero	0.117647	low	0.250000	low	2	17
+hp:0000347	mp:0000088	Micrognathia	short mandible	0.000000	zero	0.041667	low	0.333333	medium	1	24
+hp:0000326	mp:0000097	Abnormal maxilla morphology	short maxilla	0.250000	low	0.176471	low	0.250000	low	3	17
+hp:0010758	mp:0000091	Abnormality of the premaxilla	short premaxilla	0.200000	low	0.142857	low	0.200000	low	2	14
+hp:0000347	mp:0004592	Micrognathia	small mandible	0.000000	zero	0.285714	low	1.000000	high	6	21
+hp:0006477	mp:0004189	Abnormal alveolar ridge morphology	abnormal alveolar process morphology	0.600000	medium	0.222222	low	1.000000	high	4	18
+hp:0012303	mp:0010464	Abnormal aortic arch morphology	abnormal aortic arch and aortic arch branch attachment	0.428571	medium	0.400000	medium	0.500000	medium	4	10
+hp:0000234	mp:0003935	Abnormality of the head	abnormal craniofacial development	0.000000	zero	0.125000	low	0.333333	medium	2	16
+hp:0100737	mp:0003756	Abnormal hard palate morphology	abnormal hard palate morphology	1.000000	high	0.500000	medium	1.000000	high	4	8
+hp:0011063	mp:0005358	Abnormal incisor morphology	abnormal incisor morphology	1.000000	high	0.375000	medium	1.000000	high	3	8
+hp:0030791	mp:0000454	Abnormal jaw morphology	abnormal jaw morphology	1.000000	high	0.333333	medium	1.000000	high	3	9
+hp:0000277	mp:0000458	Abnormal mandible morphology	abnormal mandible morphology	1.000000	high	0.384615	medium	1.000000	high	5	13
+hp:0000326	mp:0004538	Abnormal maxilla morphology	abnormal maxillary shelf morphology	0.400000	medium	0.222222	low	0.400000	medium	4	18
+hp:0000234	mp:0009903	Abnormality of the head	abnormal medial nasal prominence morphology	0.000000	zero	0.090909	low	0.166667	low	1	11
+hp:0010939	mp:0000102	Abnormal nasal bone morphology	abnormal nasal bone morphology	1.000000	high	0.222222	low	1.000000	high	4	18
+hp:0005105	mp:0004726	Abnormal nasal morphology	abnormal nasal capsule morphology	0.750000	high	0.300000	low	0.750000	high	3	10
+hp:0100737	mp:0009887	Abnormal hard palate morphology	abnormal palatal shelf fusion at midline	0.111111	low	0.071429	low	0.111111	low	1	14
+hp:0430003	mp:0005249	Abnormal palatine bone morphology	abnormal palatine bone morphology	1.000000	high	0.363636	medium	1.000000	high	4	11
+hp:0000174	mp:0009654	Abnormal palate morphology	abnormal primary palate development	0.400000	medium	0.142857	low	0.400000	medium	2	14
+hp:0100737	mp:0009655	Abnormal hard palate morphology	abnormal secondary palate development	0.333333	medium	0.300000	low	0.400000	medium	3	10
+hp:0004303	mp:0003084	Abnormal muscle fiber morphology	abnormal skeletal muscle fiber morphology	0.800000	high	0.600000	medium	1.000000	high	6	10
+hp:0100736	mp:0003154	Abnormal soft palate morphology	abnormal soft palate morphology	1.000000	high	0.600000	medium	1.000000	high	6	10
+hp:0430014	mp:0030224	Abnormality of musculature of soft palate	abnormal soft palate muscle morphology	0.250000	low	0.200000	low	0.250000	low	2	10
+hp:0000174	mp:0009882	Abnormal palate morphology	absent palatal shelf	0.000000	zero	0.133333	low	0.250000	low	2	15
+hp:0430003	mp:0000431	Abnormal palatine bone morphology	absent palatine bone horizontal plate	0.285714	low	0.187500	low	0.375000	medium	3	16
+hp:0000324	mp:0008862	Facial asymmetry	asymmetric snout	0.000000	zero	0.117647	low	0.333333	medium	2	17
+hp:0001156	mp:0002544	Brachydactyly	brachydactyly	1.000000	high	0.571429	medium	1.000000	high	4	7
+hp:0003687	mp:0009404	Centrally nucleated skeletal muscle fibers	centrally nucleated skeletal muscle fibers	1.000000	high	0.411765	medium	1.000000	high	7	17
+hp:0000185	mp:0013546	Cleft soft palate	cleft soft palate	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0001762	mp:0000576	Talipes equinovarus	clubfoot	0.000000	zero	0.352941	medium	1.000000	high	6	17
+hp:0000175	mp:0021213	Cleft palate	complete cleft palate	0.666667	high	0.166667	low	1.000000	high	2	12
+hp:0010295	mp:0009907	Aplasia/Hypoplasia of the tongue	decreased tongue size	0.142857	low	0.090909	low	0.166667	low	1	11
+hp:0000929	mp:0000440	Abnormal skull morphology	domed cranium	0.000000	zero	0.090909	low	0.250000	low	1	11
+hp:0002006	mp:0008797	Tessier cleft	facial cleft	0.333333	medium	0.444444	medium	1.000000	high	4	9
+hp:0001712	mp:0002625	Left ventricular hypertrophy	heart left ventricle hypertrophy	0.400000	medium	0.714286	high	1.000000	high	5	7
+hp:0001667	mp:0000276	Right ventricular hypertrophy	heart right ventricle hypertrophy	0.400000	medium	0.833333	high	1.000000	high	5	6
+hp:0000326	mp:0009898	Abnormal maxilla morphology	maxillary shelf hypoplasia	0.000000	zero	0.105263	low	0.285714	low	2	19
+hp:0000347	mp:0002639	Micrognathia	micrognathia	1.000000	high	0.260870	low	1.000000	high	6	23
+hp:0000160	mp:0009880	Narrow mouth	decreased mouth size	0.250000	low	0.333333	medium	1.000000	high	3	9
+hp:0003811	mp:0002058	Neonatal death	neonatal lethality	0.333333	medium	0.500000	medium	1.000000	high	2	4
+hp:0003811	mp:0011088	Neonatal death	neonatal lethality, incomplete penetrance	0.200000	low	0.142857	low	0.250000	low	1	7
+hp:0430003	mp:0009896	Abnormal palatine bone morphology	palatine bone horizontal plate hypoplasia	0.285714	low	0.176471	low	0.375000	medium	3	17
+hp:0010442	mp:0000562	Polydactyly	polydactyly	1.000000	high	0.214286	low	1.000000	high	3	14
+hp:0011849	mp:0003416	Abnormal bone ossification	premature bone ossification	0.500000	medium	0.250000	low	0.500000	medium	2	8
+hp:0010650	mp:0004871	Hypoplasia of the premaxilla	premaxilla hypoplasia	0.500000	medium	0.125000	low	0.500000	medium	2	16
+hp:0430000	mp:0004380	Abnormal frontal bone morphology	short frontal bone	0.400000	medium	0.133333	low	0.400000	medium	2	15
+hp:0011063	mp:0004830	Abnormal incisor morphology	short incisors	0.000000	zero	0.100000	low	0.200000	low	1	10
+hp:0011063	mp:0030089	Abnormal incisor morphology	short lower incisors	0.000000	zero	0.076923	low	0.166667	low	1	13
+hp:0010295	mp:0020301	Aplasia/Hypoplasia of the tongue	short tongue	0.166667	low	0.111111	low	0.166667	low	1	9
+hp:0011063	mp:0030090	Abnormal incisor morphology	short upper incisors	0.000000	zero	0.076923	low	0.166667	low	1	13
+hp:0000248	mp:0000435	Brachycephaly	shortened head	0.000000	zero	0.200000	low	1.000000	high	2	10
+hp:0430000	mp:0004377	Abnormal frontal bone morphology	small frontal bone	0.400000	medium	0.133333	low	0.400000	medium	2	15
+hp:3000073	mp:0030295	Abnormality of levator veli palatini muscle	small levator veli palatini muscle	0.571429	medium	0.333333	medium	0.666667	high	5	15
+hp:0000327	mp:0004540	Hypoplasia of the maxilla	small maxilla	0.200000	low	0.210526	low	1.000000	high	4	19
+hp:0010650	mp:0004870	Hypoplasia of the premaxilla	small premaxilla	0.200000	low	0.133333	low	1.000000	high	2	15
+hp:0430016	mp:0030292	Abnormality of tensor veli palatini muscle	abnormal tensor veli palatini muscle morphology	0.500000	medium	0.384615	medium	0.500000	medium	5	13
+hp:0410000	mp:0030266	Abnormal vomer morphology	small vomer bone	0.200000	low	0.181818	low	0.400000	medium	2	11
+hp:0010775	mp:0010466	Vascular ring	vascular ring	1.000000	high	0.400000	medium	1.000000	high	2	5
+hp:0005556	mp:0030431	Abnormality of the metopic suture	wide metopic suture	0.333333	medium	0.117647	low	0.500000	medium	2	17
+hp:0009911	mp:0000074	Abnormal temporal bone morphology	abnormal neurocranium morphology	0.400000	medium	0.166667	low	0.400000	medium	2	12
+hp:0011821	mp:0000104	Abnormal facial skeleton morphology	abnormal sphenoid bone morphology	0.333333	medium	0.200000	low	0.333333	medium	3	15
+hp:0000772	mp:0000150	Abnormal rib morphology	abnormal rib morphology	1.000000	high	0.363636	medium	1.000000	high	4	11
+hp:0000234	mp:0000432	Abnormality of the head	abnormal head morphology	0.166667	low	0.285714	low	0.666667	high	2	7
+hp:0010958	mp:0000520	Bilateral renal agenesis	absent kidney	0.000000	zero	0.300000	low	1.000000	high	3	10
+hp:0009826	mp:0000547	Limb undergrowth	short limbs	0.000000	zero	0.200000	low	1.000000	high	3	15
+hp:0012443	mp:0000774	Abnormal brain morphology	decreased brain size	0.200000	low	0.071429	low	0.250000	low	1	14
+hp:0001317	mp:0000849	Abnormal cerebellum morphology	abnormal cerebellum morphology	1.000000	high	0.363636	medium	1.000000	high	4	11
+hp:0025028	mp:0001044	Abnormal enteric nervous system morphology	abnormal enteric nervous system morphology	1.000000	high	0.384615	medium	1.000000	high	5	13
+hp:5200069	mp:0001411	Spinning	spinning	1.000000	high	0.500000	medium	1.000000	high	1	2
+hp:5200069	mp:0001394	Spinning	circling	0.000000	zero	0.000000	zero	0.000000	zero	0	3
+hp:0000752	mp:0001399	Hyperactivity	hyperactivity	1.000000	high	0.142857	low	1.000000	high	2	14
+hp:0031826	mp:0001513	Abnormal reflex	limb grasping	0.000000	zero	0.142857	low	0.666667	high	2	14
+hp:0100767	mp:0001716	Abnormal placenta morphology	abnormal placenta labyrinth morphology	0.750000	high	0.333333	medium	0.750000	high	4	12
+hp:0001507	mp:0001731	Growth abnormality	abnormal postnatal growth	0.250000	low	0.200000	low	0.666667	high	2	10
+hp:0008897	mp:0001732	Postnatal growth retardation	postnatal growth retardation	1.000000	high	0.166667	low	1.000000	high	3	18
+hp:0040063	mp:0001780	Decreased adipose tissue	decreased brown adipose tissue amount	0.600000	medium	0.571429	medium	0.600000	medium	4	7
+hp:0040063	mp:0001783	Decreased adipose tissue	decreased white adipose tissue amount	0.600000	medium	0.571429	medium	0.600000	medium	4	7
+hp:0012647	mp:0001845	Abnormal inflammatory response	abnormal inflammatory response	1.000000	high	0.750000	high	1.000000	high	3	4
+hp:0100533	mp:0001851	Inflammatory abnormality of the eye	eye inflammation	0.166667	low	0.125000	low	0.333333	medium	2	16
+hp:0001522	mp:0002082	Death in infancy	postnatal lethality	0.000000	zero	0.090909	low	0.333333	medium	1	11
+hp:0012372	mp:0002092	Abnormal eye morphology	abnormal eye morphology	1.000000	high	0.136364	low	1.000000	high	3	22
+hp:0001274	mp:0002196	Agenesis of corpus callosum	absent corpus callosum	0.400000	medium	0.545455	medium	1.000000	high	6	11
+hp:0012790	mp:0003420	Abnormal intramembranous ossification	delayed intramembranous bone ossification	0.400000	medium	0.600000	medium	0.600000	medium	3	5
+hp:0000270	mp:0003420	Delayed cranial suture closure	delayed intramembranous bone ossification	0.142857	low	0.058824	low	0.166667	low	1	17
+hp:0004762	mp:0003649	Hypoplasia of right ventricle	decreased heart right ventricle size	0.285714	low	0.272727	low	0.500000	medium	3	11
+hp:0031411	mp:0004023	Abnormal chromosome morphology	abnormal chromosome number	0.500000	medium	0.285714	low	0.500000	medium	2	7
+hp:0005156	mp:0004055	Hypoplastic left atrium	heart atrium hypoplasia	0.200000	low	0.444444	medium	0.500000	medium	4	9
+hp:0031294	mp:0004055	Hypoplastic right atrium	heart atrium hypoplasia	0.200000	low	0.500000	medium	0.500000	medium	4	8
+hp:0001637	mp:0004056	Abnormal myocardium morphology	abnormal myocardium compact layer morphology	0.600000	medium	0.250000	low	0.600000	medium	3	12
+hp:0001518	mp:0004200	Small for gestational age	decreased fetal size	0.000000	zero	0.000000	zero	0.000000	zero	0	16
+hp:0000095	mp:0004505	Abnormal renal glomerulus morphology	decreased renal glomerulus number	0.333333	medium	0.250000	low	0.333333	medium	3	12
+hp:0003319	mp:0004607	Abnormality of the cervical spine	abnormal cervical atlas morphology	0.125000	low	0.200000	low	0.400000	medium	3	15
+hp:0003319	mp:0004615	Abnormality of the cervical spine	cervical vertebral transformation	0.142857	low	0.214286	low	0.500000	medium	3	14
+hp:0003319	mp:0004620	Abnormality of the cervical spine	cervical vertebral fusion	0.142857	low	0.200000	low	0.500000	medium	3	15
+hp:0006958	mp:0004738	Abnormal auditory evoked potentials	abnormal auditory brainstem response	0.333333	medium	0.363636	medium	0.666667	high	4	11
+hp:0006267	mp:0004920	Large placenta	increased placenta weight	0.250000	low	0.166667	low	0.250000	low	1	6
+hp:0002011	mp:0004998	Morphological central nervous system abnormality	decreased CNS synapse formation	0.000000	zero	0.076923	low	0.125000	low	1	13
+hp:0011017	mp:0005076	Abnormal cellular physiology	abnormal cell differentiation	0.200000	low	0.285714	low	0.200000	low	2	7
+hp:0001507	mp:0005378	Growth abnormality	growth/size/body region phenotype	0.166667	low	0.090909	low	0.166667	low	1	11
+hp:0000078	mp:0005389	Abnormality of the genital system	reproductive system phenotype	0.142857	low	0.181818	low	0.333333	medium	2	11
+hp:0001671	mp:0006113	Abnormal cardiac septum morphology	abnormal heart septum morphology	0.600000	medium	0.416667	medium	0.600000	medium	5	12
+hp:0000271	mp:0006411	Abnormality of the face	upturned snout	0.000000	zero	0.000000	zero	0.000000	zero	0	14
+hp:0003254	mp:0008058	Abnormality of DNA repair	abnormal DNA repair	0.400000	medium	0.625000	medium	1.000000	high	5	8
+hp:0100767	mp:0008957	Abnormal placenta morphology	abnormal placenta junctional zone morphology	0.600000	medium	0.363636	medium	0.600000	medium	4	11
+hp:0100767	mp:0008959	Abnormal placenta morphology	abnormal spongiotrophoblast cell morphology	0.400000	medium	0.200000	low	0.400000	medium	2	10
+hp:0001518	mp:0009429	Small for gestational age	decreased embryo weight	0.000000	zero	0.071429	low	0.200000	low	1	14
+hp:0001518	mp:0009431	Small for gestational age	decreased fetal weight	0.000000	zero	0.066667	low	0.200000	low	1	15
+hp:0001518	mp:0009674	Small for gestational age	decreased birth weight	0.000000	zero	0.153846	low	0.500000	medium	2	13
+hp:0001518	mp:0009703	Small for gestational age	decreased birth body size	0.000000	zero	0.066667	low	0.166667	low	1	15
+hp:0500261	mp:0009777	Triggered by anesthetics	abnormal behavioral response to anesthetic	0.000000	zero	0.000000	zero	0.000000	zero	0	14
+hp:0001194	mp:0010038	Abnormalities of placenta or umbilical cord	abnormal placenta physiology	0.125000	low	0.125000	low	0.125000	low	1	8
+hp:0006695	mp:0010412	Atrioventricular canal defect	atrioventricular septal defect	0.500000	medium	0.352941	medium	1.000000	high	6	17
+hp:0011682	mp:0010418	Perimembranous ventricular septal defect	perimembraneous ventricular septal defect	0.600000	medium	0.555556	medium	1.000000	high	10	18
+hp:0031316	mp:0010499	Abnormal ventricular myocardium morphology	abnormal ventricle myocardium morphology	0.600000	medium	0.500000	medium	0.600000	medium	4	8
+hp:0001522	mp:0011086	Death in infancy	postnatal lethality, incomplete penetrance	0.000000	zero	0.000000	zero	0.000000	zero	0	13
+hp:0006958	mp:0011966	Abnormal auditory evoked potentials	abnormal auditory brainstem response waveform shape	0.250000	low	0.375000	medium	0.428571	medium	3	8
+hp:0011800	mp:0009855	Midface retrusion	obsolete midface retrusion	0.666667	high	0.142857	low	1.000000	high	2	14
+hp:0011800	mp:0012085	Midface retrusion	midface hypoplasia	0.333333	medium	0.176471	low	1.000000	high	3	17
+hp:0011849	mp:0020040	Abnormal bone ossification	decreased bone ossification	0.500000	medium	0.375000	medium	1.000000	high	3	8
+hp:0012757	mp:0020337	Abnormal neuron morphology	abnormal pyramidal neuron dendrite morphology	0.600000	medium	0.333333	medium	0.600000	medium	3	9
+hp:0500032	mp:0020508	Abnormal neuron branching	decreased dendritic spine density	0.000000	zero	0.000000	zero	0.000000	zero	0	10
+hp:0500032	mp:0020510	Abnormal neuron branching	increased dendritic spine length	0.000000	zero	0.000000	zero	0.000000	zero	0	9
+hp:0012757	mp:0020512	Abnormal neuron morphology	abnormal dendritic mushroom spine morphology	0.333333	medium	0.200000	low	0.333333	medium	2	10
+hp:0012757	mp:0020514	Abnormal neuron morphology	abnormal dendritic thin spine morphology	0.333333	medium	0.222222	low	0.400000	medium	2	9
+hp:0012757	mp:0020551	Abnormal neuron morphology	abnormal postsynaptic density morphology	0.400000	medium	0.272727	low	0.600000	medium	3	11
+hp:0430005	mp:0030303	Abnormal ethmoid bone morphology	small ethmoid bone	0.400000	medium	0.133333	low	0.400000	medium	2	15
+hp:0000003	mp:0008528	Multicystic kidney dysplasia	polycystic kidney	0.250000	low	0.400000	medium	1.000000	high	4	10
+hp:0000050	mp:0009203	Hypoplastic male external genitalia	external male genitalia hypoplasia	0.600000	medium	0.307692	low	1.000000	high	4	13
+hp:0000059	mp:0001139	Hypoplastic labia majora	abnormal vagina morphology	0.000000	zero	0.076923	low	0.250000	low	1	13
+hp:0000072	mp:0000536	Hydroureter	hydroureter	1.000000	high	0.071429	low	1.000000	high	1	14
+hp:0000076	mp:0001948	Vesicoureteral reflux	vesicoureteral reflux	1.000000	high	0.625000	medium	1.000000	high	5	8
+hp:0000130	mp:0001120	Abnormality of the uterus	abnormal uterus morphology	0.166667	low	0.181818	low	0.333333	medium	2	11
+hp:0000135	mp:0005647	Hypogonadism	abnormal sex gland physiology	0.000000	zero	0.076923	low	0.125000	low	1	13
+hp:0000176	mp:0013548	Submucous cleft hard palate	submucous cleft hard palate	1.000000	high	0.666667	high	1.000000	high	4	6
+hp:0000204	mp:0005170	Cleft upper lip	cleft upper lip	1.000000	high	0.833333	high	1.000000	high	5	6
+hp:0000220	mp:0003154	Velopharyngeal insufficiency	abnormal soft palate morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	10
+hp:0000233	mp:0003784	Thin vermilion border	thin lip vermilion border	0.750000	high	0.400000	medium	1.000000	high	4	10
+hp:0000248	mp:0000435	Brachycephaly	shortened head	0.000000	zero	0.200000	low	1.000000	high	2	10
+hp:0000278	mp:0030273	Retrognathia	mandibular retrognathia	0.500000	medium	0.538462	medium	1.000000	high	7	13
+hp:0000294	mp:0030031	Low anterior hairline	abnormal forehead morphology	0.000000	zero	0.055556	low	0.125000	low	1	18
+hp:0000319	mp:0012256	Smooth philtrum	abnormal philtrum morphology	0.250000	low	0.090909	low	0.250000	low	1	11
+hp:0000343	mp:0012256	Long philtrum	abnormal philtrum morphology	0.250000	low	0.083333	low	0.250000	low	1	12
+hp:0000368	mp:0000024	obsolete Low-set, posteriorly rotated ears	lowered ear position	0.000000	zero	0.272727	low	1.000000	high	3	11
+hp:0000368	mp:0003715	obsolete Low-set, posteriorly rotated ears	posteriorly rotated ears	0.500000	medium	0.333333	medium	1.000000	high	3	9
+hp:0000381	mp:0005107	Stapes ankylosis	abnormal stapes morphology	0.250000	low	0.200000	low	0.333333	medium	1	5
+hp:0000400	mp:0000017	Macrotia	big ears	0.000000	zero	0.300000	low	1.000000	high	3	10
+hp:0000426	mp:0030037	Prominent nasal bridge	prominent nasal bridge	1.000000	high	1.000000	high	1.000000	high	10	10
+hp:0000455	mp:0030115	Broad nasal tip	abnormal nasal tip morphology	0.400000	medium	0.230769	low	0.500000	medium	3	13
+hp:0000463	mp:0002235	Anteverted nares	abnormal external nares morphology	0.200000	low	0.076923	low	0.250000	low	1	13
+hp:0000482	mp:0001312	Microcornea	abnormal cornea morphology	0.000000	zero	0.200000	low	0.250000	low	4	20
+hp:0000483	mp:0006151	Astigmatism	cornea astigmatism	0.500000	medium	0.200000	low	1.000000	high	2	10
+hp:0000490	mp:0006198	Deeply set eye	enophthalmos	0.000000	zero	0.500000	medium	1.000000	high	5	10
+hp:0000494	mp:0003671	Downslanted palpebral fissures	abnormal eyelid aperture	0.000000	zero	0.173913	low	0.400000	medium	4	23
+hp:0000498	mp:0005251	Blepharitis	blepharitis	1.000000	high	0.333333	medium	1.000000	high	3	9
+hp:0000501	mp:0008067	Glaucoma	retina ganglion cell degeneration	0.000000	zero	0.000000	zero	0.000000	zero	0	8
+hp:0000506	mp:0030166	Telecanthus	increased inner canthal distance	0.000000	zero	0.722222	high	1.000000	high	13	18
+hp:0000518	mp:0001304	Cataract	cataract	1.000000	high	0.300000	low	1.000000	high	3	10
+hp:0000545	mp:0003100	Myopia	myopia	1.000000	high	0.333333	medium	1.000000	high	3	9
+hp:0000574	mp:0000367	Thick eyebrow	abnormal coat/ hair morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	17
+hp:0000664	mp:0000367	Synophrys	abnormal coat/ hair morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	11
+hp:0000667	mp:0006249	Phthisis bulbi	phthisis bulbi	1.000000	high	0.428571	medium	1.000000	high	3	7
+hp:0000684	mp:0003053	Delayed eruption of teeth	delayed tooth eruption	0.400000	medium	0.375000	medium	1.000000	high	3	8
+hp:0000687	mp:0030540	Widely spaced teeth	misaligned teeth	0.250000	low	0.190476	low	0.600000	medium	4	21
+hp:0000691	mp:0030088	Microdontia	microdontia	1.000000	high	0.466667	medium	1.000000	high	7	15
+hp:0000717	mp:0002572	Autism	abnormal emotion/affect behavior	0.000000	zero	0.000000	zero	0.000000	zero	0	10
+hp:0000717	mp:0002557	Autism	abnormal social/conspecific interaction behavior	0.000000	zero	0.000000	zero	0.000000	zero	0	12
+hp:0000722	mp:0001408	Compulsive behaviors	stereotypic behavior	0.000000	zero	0.250000	low	0.250000	low	2	8
+hp:0000750	mp:0001529	Delayed speech and language development	abnormal vocalization	0.000000	zero	0.000000	zero	0.000000	zero	0	17
+hp:0000750	mp:0021165	Delayed speech and language development	behavioral developmental delay	0.000000	zero	0.176471	low	0.666667	high	3	17
+hp:0000786	mp:0009009	Primary amenorrhea	absent estrous cycle	0.000000	zero	0.000000	zero	0.000000	zero	0	17
+hp:0000786	mp:0003376	Primary amenorrhea	amenorrhea	0.500000	medium	0.200000	low	1.000000	high	1	5
+hp:0000879	mp:0004321	Short sternum	short sternum	1.000000	high	0.400000	medium	1.000000	high	2	5
+hp:0000954	mp:0000572	Single transverse palmar crease	abnormal autopod morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	20
+hp:0000965	mp:0009931	Cutis marmorata	abnormal skin appearance	0.000000	zero	0.142857	low	0.250000	low	1	7
+hp:0001007	mp:0000412	Hirsutism	excessive hair	0.000000	zero	0.200000	low	0.333333	medium	1	5
+hp:0001052	mp:0001212	Nevus flammeus	skin lesions	0.000000	zero	0.000000	zero	0.000000	zero	0	9
+hp:0001156	mp:0002544	Brachydactyly	brachydactyly	1.000000	high	0.571429	medium	1.000000	high	4	7
+hp:0001180	mp:0000565	obsolete Hand oligodactyly	oligodactyly	0.333333	medium	0.250000	low	0.333333	medium	1	4
+hp:0001249	mp:0014114	Intellectual disability	abnormal cognition	0.000000	zero	0.000000	zero	0.000000	zero	0	18
+hp:0001263	mp:0021165	Global developmental delay	behavioral developmental delay	0.500000	medium	0.166667	low	1.000000	high	4	24
+hp:0001357	mp:0012174	Plagiocephaly	flat head	0.000000	zero	0.166667	low	1.000000	high	3	18
+hp:0001377	mp:0013945	Limited elbow extension	abnormal elbow joint morphology	0.166667	low	0.055556	low	0.166667	low	1	18
+hp:0001387	mp:0030863	Joint stiffness	decreased joint mobility	0.250000	low	0.125000	low	0.250000	low	1	8
+hp:0001476	mp:0030393	Delayed closure of the anterior fontanelle	delayed fontanelle closure	0.500000	medium	0.380952	medium	0.750000	high	8	21
+hp:0001488	mp:0001344	Bilateral ptosis	blepharoptosis	0.000000	zero	0.307692	low	1.000000	high	4	13
+hp:0001508	mp:0001732	Failure to thrive	postnatal growth retardation	0.000000	zero	0.047619	low	0.166667	low	1	21
+hp:0001551	mp:0003257	Abnormal umbilicus morphology	abnormal abdominal wall morphology	0.400000	medium	0.250000	low	0.400000	medium	2	8
+hp:0001557	mp:0002066	Prenatal movement abnormality	abnormal motor capabilities/coordination/movement	0.142857	low	0.153846	low	0.142857	low	2	13
+hp:0001612	mp:0001529	Weak cry	abnormal vocalization	0.000000	zero	0.000000	zero	0.000000	zero	0	4
+hp:0001622	mp:0002294	Premature birth	short gestation period	0.000000	zero	0.071429	low	0.200000	low	1	14
+hp:0001639	mp:0002952	Hypertrophic cardiomyopathy	ventricular cardiomyopathy	0.333333	medium	0.111111	low	0.333333	medium	1	9
+hp:0001639	mp:0002953	Hypertrophic cardiomyopathy	thick ventricular wall	0.000000	zero	0.000000	zero	0.000000	zero	0	11
+hp:0001770	mp:0000564	Toe syndactyly	syndactyly	0.500000	medium	0.333333	medium	1.000000	high	4	12
+hp:0001773	mp:0002772	Short foot	brachypodia	0.000000	zero	0.222222	low	1.000000	high	2	9
+hp:0001883	mp:0000576	Talipes	clubfoot	0.000000	zero	0.300000	low	1.000000	high	3	10
+hp:0001956	mp:0001261	Truncal obesity	obese	0.000000	zero	0.250000	low	0.500000	medium	1	4
+hp:0002007	mp:0030262	Frontal bossing	frontal bossing	1.000000	high	0.750000	high	1.000000	high	3	4
+hp:0002036	mp:0003258	Hiatus hernia	hiatal hernia	0.333333	medium	0.200000	low	1.000000	high	2	10
+hp:0002120	mp:0003241	Cerebral cortical atrophy	loss of cortex neurons	0.000000	zero	0.176471	low	0.166667	low	3	17
+hp:0002120	mp:0006254	Cerebral cortical atrophy	thin cerebral cortex	0.200000	low	0.117647	low	0.500000	medium	2	17
+hp:0002162	mp:0000367	Low posterior hairline	abnormal coat/ hair morphology	0.000000	zero	0.066667	low	0.166667	low	1	15
+hp:0002167	mp:0001529	Abnormal speech pattern	abnormal vocalization	0.250000	low	0.250000	low	1.000000	high	2	8
+hp:0002230	mp:0000412	Generalized hirsutism	excessive hair	0.000000	zero	0.111111	low	0.200000	low	1	9
+hp:0002360	mp:0011396	Sleep abnormality	abnormal sleep behavior	0.250000	low	0.100000	low	0.250000	low	1	10
+hp:0002465	mp:0001529	Poor speech	abnormal vocalization	0.000000	zero	0.000000	zero	0.000000	zero	0	7
+hp:0002553	mp:0000367	Highly arched eyebrow	abnormal coat/ hair morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	20
+hp:0002557	mp:0013713	Hypoplastic nipples	decreased nipple size	0.000000	zero	0.153846	low	0.333333	medium	2	13
+hp:0002566	mp:0014279	Intestinal malrotation	abnormal intestinal rotation	0.250000	low	0.400000	medium	1.000000	high	2	5
+hp:0002580	mp:0000477	Volvulus	abnormal intestine morphology	0.000000	zero	0.181818	low	0.333333	medium	2	11
+hp:0002678	mp:0000438	Skull asymmetry	abnormal cranium morphology	0.000000	zero	0.117647	low	0.333333	medium	2	17
+hp:0002705	mp:0003757	High, narrow palate	high palate	0.666667	high	0.181818	low	0.666667	high	2	11
+hp:0002705	mp:0003758	High, narrow palate	narrow palate	0.666667	high	0.153846	low	0.666667	high	2	13
+hp:0002714	mp:0003749	Downturned corners of mouth	down-turned corners of mouth	0.500000	medium	0.300000	low	0.500000	medium	3	10
+hp:0002750	mp:0002113	Delayed skeletal maturation	abnormal skeleton development	0.000000	zero	0.157895	low	0.200000	low	3	19
+hp:0002812	mp:0030790	Coxa vara	coxa vara	1.000000	high	0.625000	medium	1.000000	high	5	8
+hp:0002827	mp:0030796	Hip dislocation	hip dislocation	1.000000	high	0.333333	medium	1.000000	high	3	9
+hp:0002974	mp:0011530	Radioulnar synostosis	fused radius and ulna	0.000000	zero	0.100000	low	0.166667	low	1	10
+hp:0002983	mp:0000547	Micromelia	short limbs	0.000000	zero	0.076923	low	0.142857	low	1	13
+hp:0002984	mp:0004356	Hypoplasia of the radius	radius hypoplasia	0.500000	medium	0.200000	low	1.000000	high	3	15
+hp:0002987	mp:0030798	Elbow flexion contracture	joint contracture	0.250000	low	0.375000	medium	0.666667	high	3	8
+hp:0002996	mp:0030863	Limited elbow movement	decreased joint mobility	0.000000	zero	0.300000	low	0.500000	medium	3	10
+hp:0003042	mp:0030843	Elbow dislocation	elbow dislocation	1.000000	high	0.200000	low	1.000000	high	2	10
+hp:0003083	mp:0030883	Dislocated radial head	dislocated radius head	0.500000	medium	0.555556	medium	1.000000	high	5	9
+hp:0003196	mp:0000445	Short nose	short snout	0.333333	medium	0.384615	medium	1.000000	high	5	13
+hp:0003764	mp:0001212	Nevus	skin lesions	0.000000	zero	0.000000	zero	0.000000	zero	0	8
+hp:0003997	mp:0030882	Hypoplastic radial head	abnormal radius head morphology	0.166667	low	0.181818	low	0.400000	medium	2	11
+hp:0003997	mp:0004356	Hypoplastic radial head	radius hypoplasia	0.000000	zero	0.333333	medium	0.250000	low	2	6
+hp:0004691	mp:0000564	2-3 toe syndactyly	syndactyly	0.250000	low	0.130435	low	0.250000	low	3	23
+hp:0004785	mp:0000495	Malrotation of colon	abnormal colon morphology	0.200000	low	0.100000	low	0.250000	low	1	10
+hp:0005280	mp:0030034	Depressed nasal bridge	depressed nasal bridge	1.000000	high	1.000000	high	1.000000	high	11	11
+hp:0005484	mp:0000433	Secondary microcephaly	microcephaly	0.500000	medium	0.150000	low	0.500000	medium	3	20
+hp:0005565	mp:0002135	Reduced renal corticomedullary differentiation	abnormal kidney morphology	0.000000	zero	0.071429	low	0.200000	low	1	14
+hp:0006870	mp:0005157	Lobar holoprosencephaly	holoprosencephaly	0.500000	medium	0.333333	medium	1.000000	high	1	3
+hp:0007018	mp:0001399	Attention deficit hyperactivity disorder	hyperactivity	0.250000	low	0.083333	low	0.250000	low	1	12
+hp:0007360	mp:0000852	Aplasia/Hypoplasia of the cerebellum	small cerebellum	0.166667	low	0.222222	low	0.666667	high	4	18
+hp:0007360	mp:0000850	Aplasia/Hypoplasia of the cerebellum	absent cerebellum	0.166667	low	0.166667	low	0.666667	high	3	18
+hp:0007598	mp:0000572	Bilateral single transverse palmar creases	abnormal autopod morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	17
+hp:0007665	mp:0013895	Curly eyelashes	abnormal eyelid cilium morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	9
+hp:0008428	mp:0004687	Vertebral clefting	split vertebrae	0.000000	zero	0.000000	zero	0.000000	zero	0	8
+hp:0008734	mp:0001147	Decreased testicular size	small testis	0.000000	zero	0.333333	medium	1.000000	high	5	15
+hp:0008736	mp:0005188	Hypoplasia of penis	small penis	0.250000	low	0.200000	low	1.000000	high	2	10
+hp:0008850	mp:0001732	Severe postnatal growth retardation	postnatal growth retardation	0.750000	high	0.157895	low	0.750000	high	3	19
+hp:0008872	mp:0001436	Feeding difficulties in infancy	abnormal suckling behavior	0.000000	zero	0.000000	zero	0.000000	zero	0	11
+hp:0008897	mp:0001732	Postnatal growth retardation	postnatal growth retardation	1.000000	high	0.166667	low	1.000000	high	3	18
+hp:0009237	mp:0002544	Short 5th finger	brachydactyly	0.000000	zero	0.187500	low	0.666667	high	3	16
+hp:0009623	mp:0010772	Proximal placement of thumb	abnormal pollex morphology	0.000000	zero	0.050000	low	0.200000	low	1	20
+hp:0009829	mp:0011504	Phocomelia	abnormal limb long bone morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	6
+hp:0010034	mp:0004634	Short 1st metacarpal	short metacarpal bones	0.500000	medium	0.200000	low	0.500000	medium	3	15
+hp:0010300	mp:0001529	Abnormally low-pitched voice	abnormal vocalization	0.000000	zero	0.000000	zero	0.000000	zero	0	6
+hp:0010864	mp:0014114	Intellectual disability, severe	abnormal cognition	0.000000	zero	0.000000	zero	0.000000	zero	0	12
+hp:0011230	mp:0000367	Laterally extended eyebrow	abnormal coat/ hair morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	15
+hp:0011451	mp:0000433	Primary microcephaly	microcephaly	0.500000	medium	0.235294	low	0.666667	high	4	17
+hp:0012165	mp:0000565	Oligodactyly	oligodactyly	1.000000	high	0.142857	low	1.000000	high	1	7
+hp:0012210	mp:0002135	Abnormal renal morphology	abnormal kidney morphology	0.500000	medium	0.277778	low	1.000000	high	5	18
+hp:0012368	mp:0012175	Flat face	flat face	1.000000	high	0.285714	low	1.000000	high	2	7
+hp:0030084	mp:0006253	Clinodactyly	clinodactyly	1.000000	high	0.100000	low	1.000000	high	1	10
+hp:0030680	mp:0002127	Abnormal cardiovascular system morphology	abnormal cardiovascular system morphology	1.000000	high	0.200000	low	1.000000	high	4	20
+hp:0030820	mp:0001340	Hooded eyelid	abnormal eyelid morphology	0.250000	low	0.066667	low	0.333333	medium	1	15
+hp:0031228	mp:0002177	Abnormal incisura morphology	abnormal outer ear morphology	0.400000	medium	0.200000	low	0.500000	medium	2	10
+hp:0033785	mp:0003404	Enamel agenesis	absent enamel	0.333333	medium	0.428571	medium	1.000000	high	3	7
+hp:0040082	mp:0002572	Happy demeanor	abnormal emotion/affect behavior	0.000000	zero	0.000000	zero	0.000000	zero	0	12
+hp:0100716	mp:0005655	Self-injurious behavior	increased aggression	0.000000	zero	0.000000	zero	0.000000	zero	0	9
+hp:0100864	mp:0030793	Short femoral neck	short femur neck	0.500000	medium	0.272727	low	1.000000	high	3	11
+hp:0100874	mp:0002073	Thick hair	abnormal hair growth	0.250000	low	0.100000	low	0.250000	low	1	10
+hp:0200055	mp:0000572	Small hand	abnormal autopod morphology	0.000000	zero	0.066667	low	0.250000	low	1	15
+hp:0011454	mp:0000029	Abnormal malleus morphology	abnormal malleus morphology	1.000000	high	0.500000	medium	1.000000	high	3	6
+hp:0000375	mp:0000031	Abnormal cochlea morphology	abnormal cochlea morphology	1.000000	high	0.428571	medium	1.000000	high	3	7
+hp:0011376	mp:0000034	Abnormal morphology of the vestibule of the inner ear	abnormal inner ear vestibule morphology	0.714286	high	0.466667	medium	0.714286	high	7	15
+hp:0011390	mp:0000039	Abnormal inner ear morphology	abnormal otic capsule morphology	0.333333	medium	0.166667	low	0.333333	medium	2	12
+hp:0001627	mp:0000267	Abnormal heart morphology	abnormal heart development	0.500000	medium	0.200000	low	0.500000	medium	3	15
+hp:0001713	mp:0000280	Abnormal cardiac ventricle morphology	thin ventricular wall	0.000000	zero	0.100000	low	0.200000	low	1	10
+hp:0001627	mp:0000297	Abnormal heart morphology	abnormal atrioventricular cushion morphology	0.400000	medium	0.210526	low	0.400000	medium	4	19
+hp:0031377	mp:0000352	Abnormal cell proliferation	decreased cell proliferation	0.500000	medium	0.285714	low	0.500000	medium	2	7
+hp:0000234	mp:0000428	Abnormality of the head	abnormal craniofacial morphology	0.000000	zero	0.066667	low	0.250000	low	1	15
+hp:0000271	mp:0000446	Abnormality of the face	long snout	0.000000	zero	0.000000	zero	0.000000	zero	0	16
+hp:0030966	mp:0000486	Abnormal pulmonary artery morphology	abnormal pulmonary trunk morphology	0.600000	medium	0.333333	medium	0.600000	medium	3	9
+hp:0002814	mp:0000556	Abnormality of the lower limb	abnormal hindlimb morphology	0.000000	zero	0.153846	low	0.200000	low	2	13
+hp:0000778	mp:0000706	Hypoplasia of the thymus	small thymus	0.200000	low	0.222222	low	1.000000	high	2	9
+hp:0001273	mp:0000780	Abnormal corpus callosum morphology	abnormal corpus callosum morphology	1.000000	high	0.500000	medium	1.000000	high	4	8
+hp:0100547	mp:0000787	Abnormal forebrain morphology	abnormal telencephalon morphology	0.500000	medium	0.222222	low	0.500000	medium	2	9
+hp:0002060	mp:0000787	Abnormal cerebral morphology	abnormal telencephalon morphology	0.500000	medium	0.300000	low	0.500000	medium	3	10
+hp:0002060	mp:0000794	Abnormal cerebral morphology	abnormal parietal lobe morphology	0.400000	medium	0.166667	low	0.400000	medium	2	12
+hp:0002538	mp:0000798	Abnormal cerebral cortex morphology	abnormal frontal lobe morphology	0.333333	medium	0.200000	low	0.333333	medium	2	10
+hp:0007333	mp:0000798	Hypoplasia of the frontal lobes	abnormal frontal lobe morphology	0.125000	low	0.181818	low	0.500000	medium	2	11
+hp:0025100	mp:0000807	Abnormal hippocampus morphology	abnormal hippocampus morphology	1.000000	high	0.272727	low	1.000000	high	3	11
+hp:0025100	mp:0000809	Abnormal hippocampus morphology	absent hippocampus	0.250000	low	0.250000	low	0.400000	medium	2	8
+hp:0025057	mp:0000819	Abnormal olfactory lobe morphology	abnormal olfactory bulb morphology	0.600000	medium	0.428571	medium	0.600000	medium	3	7
+hp:0006956	mp:0000825	Lateral ventricle dilatation	dilated lateral ventricle	0.500000	medium	0.400000	medium	0.500000	medium	6	15
+hp:0007082	mp:0000827	Dilated third ventricle	dilated third ventricle	1.000000	high	0.250000	low	1.000000	high	3	12
+hp:0001317	mp:0000857	Abnormal cerebellum morphology	abnormal cerebellar foliation	0.200000	low	0.181818	low	0.250000	low	2	11
+hp:0001317	mp:0000877	Abnormal cerebellum morphology	abnormal Purkinje cell morphology	0.400000	medium	0.142857	low	0.400000	medium	2	14
+hp:0001317	mp:0000880	Abnormal cerebellum morphology	decreased Purkinje cell number	0.000000	zero	0.000000	zero	0.000000	zero	0	15
+hp:0012443	mp:0000913	Abnormal brain morphology	abnormal brain development	0.500000	medium	0.222222	low	0.500000	medium	2	9
+hp:0030769	mp:0000914	Exencephaly	exencephaly	1.000000	high	0.125000	low	1.000000	high	1	8
+hp:0100547	mp:0000934	Abnormal forebrain morphology	abnormal telencephalon development	0.200000	low	0.111111	low	0.200000	low	1	9
+hp:0100705	mp:0000952	Abnormal glial cell morphology	abnormal CNS glial cell morphology	0.800000	high	0.363636	medium	0.800000	high	4	11
+hp:0100705	mp:0000953	Abnormal glial cell morphology	abnormal oligodendrocyte morphology	0.400000	medium	0.214286	low	0.600000	medium	3	14
+hp:0012639	mp:0000968	Abnormal nervous system morphology	abnormal sensory neuron innervation pattern	0.125000	low	0.083333	low	0.142857	low	1	12
+hp:0001291	mp:0001056	Abnormal cranial nerve morphology	abnormal cranial nerve morphology	1.000000	high	0.416667	medium	1.000000	high	5	12
+hp:0010827	mp:0001071	Abnormal seventh cranial physiology	abnormal facial nerve morphology	0.142857	low	0.214286	low	0.333333	medium	3	14
+hp:0001291	mp:0001074	Abnormal cranial nerve morphology	abnormal vagus nerve morphology	0.600000	medium	0.187500	low	0.600000	medium	3	16
+hp:0410016	mp:0001092	Abnormal cranial ganglion morphology	abnormal trigeminal ganglion morphology	0.600000	medium	0.333333	medium	0.800000	high	5	15
+hp:0008724	mp:0001127	Hypoplasia of the ovary	small ovary	0.200000	low	0.090909	low	0.333333	medium	1	11
+hp:0031065	mp:0001129	Abnormal ovarian morphology	impaired ovarian folliculogenesis	0.200000	low	0.142857	low	0.250000	low	1	7
+hp:0000022	mp:0001157	Abnormal male internal genitalia morphology	small seminal vesicle	0.000000	zero	0.000000	zero	0.000000	zero	0	11
+hp:0012372	mp:0001286	Abnormal eye morphology	abnormal eye development	0.500000	medium	0.166667	low	0.500000	medium	2	12
+hp:0012376	mp:0001306	Microphakia	small lens	0.000000	zero	0.500000	medium	1.000000	high	3	6
+hp:0000615	mp:0001317	Abnormal pupil morphology	abnormal pupil morphology	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0012433	mp:0001386	Abnormal social behavior	abnormal maternal nurturing	0.200000	low	0.100000	low	0.200000	low	1	10
+hp:0100022	mp:0001388	Abnormality of movement	abnormal stationary movement	0.200000	low	0.100000	low	0.250000	low	1	10
+hp:5200069	mp:0001395	Spinning	bidirectional circling	0.000000	zero	0.000000	zero	0.000000	zero	0	4
+hp:0002275	mp:0001405	obsolete Poor motor coordination	impaired coordination	0.200000	low	0.133333	low	0.500000	medium	2	15
+hp:0002457	mp:0001410	Abnormal head movements	head bobbing	0.250000	low	0.200000	low	0.250000	low	1	5
+hp:0002071	mp:0001489	Abnormality of extrapyramidal motor function	decreased startle reflex	0.000000	zero	0.000000	zero	0.000000	zero	0	14
+hp:0025403	mp:0001512	Stooped posture	trunk curl	0.000000	zero	0.000000	zero	0.000000	zero	0	14
+hp:0011443	mp:0001516	Abnormality of coordination	abnormal motor coordination/balance	0.166667	low	0.100000	low	0.200000	low	1	10
+hp:0007015	mp:0001522	Poor gross motor coordination	impaired swimming	0.000000	zero	0.000000	zero	0.000000	zero	0	12
+hp:0002275	mp:0001523	obsolete Poor motor coordination	impaired righting response	0.000000	zero	0.000000	zero	0.000000	zero	0	7
+hp:0011443	mp:0001526	Abnormality of coordination	abnormal placing response	0.000000	zero	0.000000	zero	0.000000	zero	0	11
+hp:0012379	mp:0001570	Abnormal circulating enzyme concentration or activity	abnormal circulating enzyme level	0.428571	medium	0.375000	medium	0.600000	medium	3	8
+hp:0033353	mp:0001614	Abnormal blood vessel morphology	abnormal blood vessel morphology	1.000000	high	0.625000	medium	1.000000	high	5	8
+hp:0000969	mp:0001785	Edema	edema	1.000000	high	0.200000	low	1.000000	high	2	10
+hp:0000388	mp:0001850	Otitis media	increased susceptibility to otitis media	0.400000	medium	0.250000	low	0.400000	medium	2	8
+hp:0000509	mp:0001852	Conjunctivitis	conjunctivitis	1.000000	high	0.100000	low	1.000000	high	1	10
+hp:0011029	mp:0001914	Internal hemorrhage	hemorrhage	0.500000	medium	0.750000	high	0.500000	medium	3	4
+hp:0000144	mp:0001921	Decreased fertility	reduced fertility	0.333333	medium	0.266667	low	1.000000	high	4	15
+hp:0012041	mp:0001922	Decreased fertility in males	reduced male fertility	0.166667	low	0.250000	low	0.500000	medium	2	8
+hp:0000868	mp:0001923	Decreased fertility in females	reduced female fertility	0.166667	low	0.200000	low	0.400000	medium	2	10
+hp:0000140	mp:0001927	Abnormality of the menstrual cycle	abnormal estrous cycle	0.142857	low	0.100000	low	0.142857	low	1	10
+hp:0008734	mp:0001940	Decreased testicular size	testis hypoplasia	0.000000	zero	0.555556	medium	1.000000	high	5	9
+hp:0010829	mp:0001973	Impaired temperature sensation	increased thermal nociceptive threshold	0.000000	zero	0.050000	low	0.250000	low	1	20
+hp:0004408	mp:0001983	Abnormality of the sense of smell	abnormal olfactory system physiology	0.000000	zero	0.071429	low	0.142857	low	1	14
+hp:0012639	mp:0002184	Abnormal nervous system morphology	abnormal innervation	0.200000	low	0.083333	low	0.200000	low	1	12
+hp:0030681	mp:0002189	Abnormal morphology of myocardial trabeculae	abnormal myocardial trabeculae morphology	0.800000	high	0.555556	medium	1.000000	high	5	9
+hp:0000035	mp:0002216	Abnormal testis morphology	abnormal seminiferous tubule morphology	0.400000	medium	0.166667	low	0.400000	medium	2	12
+hp:0005288	mp:0002236	Abnormal nostril morphology	abnormal internal nares morphology	0.400000	medium	0.187500	low	0.500000	medium	3	16
+hp:0033151	mp:0002252	Abnormal pharynx morphology	abnormal oropharynx morphology	0.500000	medium	0.200000	low	1.000000	high	3	15
+hp:0011380	mp:0002428	Abnormal semicircular canal morphology	abnormal semicircular canal morphology	1.000000	high	0.500000	medium	1.000000	high	4	8
+hp:0000375	mp:0002622	Abnormal cochlea morphology	abnormal cochlear hair cell morphology	0.333333	medium	0.333333	medium	0.500000	medium	3	9
+hp:0001660	mp:0002633	Truncus arteriosus	persistent truncus arteriosus	0.666667	high	0.545455	medium	1.000000	high	6	11
+hp:0000823	mp:0002636	Delayed puberty	delayed vaginal opening	0.250000	low	0.083333	low	0.250000	low	1	12
+hp:0012153	mp:0002644	Hypotriglyceridemia	decreased circulating triglyceride level	0.000000	zero	0.384615	medium	0.333333	medium	5	13
+hp:0001637	mp:0002652	Abnormal myocardium morphology	thin myocardium	0.250000	low	0.111111	low	0.250000	low	1	9
+hp:0010948	mp:0002672	Abnormal fetal cardiovascular morphology	abnormal pharyngeal arch artery morphology	0.285714	low	0.105263	low	0.285714	low	2	19
+hp:0000823	mp:0002683	Delayed puberty	delayed fertility	0.333333	medium	0.111111	low	0.333333	medium	1	9
+hp:0040299	mp:0002702	Decreased circulating free fatty acid level	decreased circulating free fatty acids level	0.714286	high	0.388889	medium	1.000000	high	7	18
+hp:0040216	mp:0002727	Hypoinsulinemia	decreased circulating insulin level	0.000000	zero	0.111111	low	1.000000	high	1	9
+hp:0002457	mp:0002730	Abnormal head movements	head shaking	0.250000	low	0.250000	low	0.250000	low	1	4
+hp:0040326	mp:0002741	Hypoplasia of the olfactory bulb	small olfactory bulb	0.333333	medium	0.200000	low	0.500000	medium	2	10
+hp:0031422	mp:0002762	Abnormal cerebellar cortex morphology	ectopic cerebellar granule cells	0.142857	low	0.090909	low	0.142857	low	1	11
+hp:0030344	mp:0002773	Decreased circulating luteinizing hormone level	decreased circulating luteinizing hormone level	1.000000	high	0.500000	medium	1.000000	high	6	12
+hp:0030341	mp:0002790	Decreased circulating follicle stimulating hormone concentration	decreased circulating follicle stimulating hormone level	0.714286	high	0.428571	medium	1.000000	high	6	14
+hp:0001640	mp:0002833	Cardiomegaly	increased heart weight	0.000000	zero	0.333333	medium	0.500000	medium	2	6
+hp:0040107	mp:0002858	Abnormal posterior semicircular canal morphology	abnormal posterior semicircular canal morphology	1.000000	high	0.555556	medium	1.000000	high	5	9
+hp:0011384	mp:0002859	Abnormality of the internal auditory canal	abnormal inner ear canal fusion	0.100000	low	0.083333	low	0.125000	low	1	12
+hp:0012379	mp:0002942	Abnormal circulating enzyme concentration or activity	decreased circulating alanine transaminase level	0.100000	low	0.052632	low	0.125000	low	1	19
+hp:0000089	mp:0002989	Renal hypoplasia	small kidney	0.000000	zero	0.100000	low	0.333333	medium	1	10
+hp:0010517	mp:0003007	Ectopic thymus tissue	ectopic thymus	0.666667	high	0.400000	medium	0.666667	high	2	5
+hp:0040108	mp:0003069	Abnormal anterior semicircular canal morphology	abnormal superior semicircular canal morphology	0.666667	high	0.500000	medium	0.800000	high	5	10
+hp:0000055	mp:0003126	Abnormal female external genitalia morphology	abnormal external female genitalia morphology	1.000000	high	0.277778	low	1.000000	high	5	18
+hp:0000375	mp:0003148	Abnormal cochlea morphology	decreased cochlea coiling	0.200000	low	0.111111	low	0.200000	low	1	9
+hp:0040106	mp:0003161	Abnormal lateral semicircular canal morphology	absent lateral semicircular canal	0.500000	medium	0.272727	low	0.500000	medium	3	11
+hp:0011381	mp:0003161	Aplasia of the semicircular canal	absent lateral semicircular canal	0.285714	low	0.428571	medium	0.750000	high	3	7
+hp:0040106	mp:0003162	Abnormal lateral semicircular canal morphology	decreased lateral semicircular canal size	0.428571	medium	0.307692	low	0.444444	medium	4	13
+hp:0011381	mp:0003163	Aplasia of the semicircular canal	absent posterior semicircular canal	0.285714	low	0.714286	high	0.750000	high	5	7
+hp:0040107	mp:0003163	Abnormal posterior semicircular canal morphology	absent posterior semicircular canal	0.500000	medium	0.363636	medium	0.500000	medium	4	11
+hp:0040107	mp:0003164	Abnormal posterior semicircular canal morphology	decreased posterior semicircular canal size	0.428571	medium	0.333333	medium	0.444444	medium	4	12
+hp:0040108	mp:0003166	Abnormal anterior semicircular canal morphology	decreased superior semicircular canal size	0.250000	low	0.307692	low	0.444444	medium	4	13
+hp:0002529	mp:0003203	Neuronal loss in central nervous system	increased neuron apoptosis	0.000000	zero	0.133333	low	0.250000	low	2	15
+hp:4000056	mp:0003222	Abnormal apoptosis	increased cardiomyocyte apoptosis	0.250000	low	0.111111	low	0.250000	low	1	9
+hp:0040115	mp:0003330	Abnormal Eustachian tube morphology	abnormal auditory tube morphology	0.600000	medium	0.444444	medium	0.750000	high	4	9
+hp:0031251	mp:0003395	Abnormal subclavian artery morphology	abnormal subclavian artery morphology	1.000000	high	0.800000	high	1.000000	high	4	5
+hp:0031794	mp:0003442	Decreased circulating glycerol level	decreased circulating glycerol level	1.000000	high	0.571429	medium	1.000000	high	4	7
+hp:0032466	mp:0003451	Aplasia of the olfactory bulb	absent olfactory bulb	0.333333	medium	0.428571	medium	1.000000	high	3	7
+hp:0410016	mp:0003703	Abnormal cranial ganglion morphology	abnormal vestibulocochlear ganglion morphology	0.600000	medium	0.272727	low	0.600000	medium	3	11
+hp:0003103	mp:0003797	Abnormal cortical bone morphology	abnormal compact bone morphology	0.600000	medium	0.555556	medium	1.000000	high	5	9
+hp:0031703	mp:0003938	Abnormal ear morphology	abnormal ear development	0.500000	medium	0.285714	low	0.500000	medium	2	7
+hp:0003119	mp:0003949	Abnormal circulating lipid concentration	abnormal circulating lipid level	0.600000	medium	0.714286	high	1.000000	high	5	7
+hp:0001511	mp:0003984	Intrauterine growth retardation	embryonic growth retardation	0.500000	medium	0.095238	low	0.500000	medium	2	21
+hp:0033334	mp:0004188	Abnormal embryonic development	delayed embryo turning	0.000000	zero	0.062500	low	0.200000	low	1	16
+hp:0011380	mp:0004249	Abnormal semicircular canal morphology	abnormal crista ampullaris morphology	0.333333	medium	0.181818	low	0.400000	medium	2	11
+hp:0410043	mp:0004261	Abnormal neural tube morphology	abnormal embryonic neuroepithelium morphology	0.333333	medium	0.444444	medium	0.800000	high	4	9
+hp:0012372	mp:0004269	Abnormal eye morphology	abnormal optic cup morphology	0.400000	medium	0.200000	low	0.750000	high	3	15
+hp:0008628	mp:0004290	Abnormal stapes morphology	abnormal stapes footplate morphology	0.750000	high	0.300000	low	0.750000	high	3	10
+hp:0000359	mp:0004310	Abnormality of the inner ear	small otic vesicle	0.000000	zero	0.000000	zero	0.000000	zero	0	11
+hp:0030999	mp:0004315	Abnormal vestibular saccule morphology	absent vestibular saccule	0.400000	medium	0.222222	low	0.400000	medium	2	9
+hp:0040109	mp:0004369	Abnormal utricle morphology	absent utricle	0.250000	low	0.125000	low	0.250000	low	1	8
+hp:0000375	mp:0004395	Abnormal cochlea morphology	increased cochlear inner hair cell number	0.000000	zero	0.111111	low	0.285714	low	2	18
+hp:0000375	mp:0004401	Abnormal cochlea morphology	increased cochlear outer hair cell number	0.000000	zero	0.111111	low	0.285714	low	2	18
+hp:0011380	mp:0004409	Abnormal semicircular canal morphology	abnormal crista ampullaris neuroepithelium morphology	0.285714	low	0.230769	low	0.285714	low	3	13
+hp:0011389	mp:0004413	Functional abnormality of the inner ear	absent cochlear microphonics	0.000000	zero	0.000000	zero	0.000000	zero	0	10
+hp:0011389	mp:0004417	Functional abnormality of the inner ear	decreased cochlear nerve compound action potential	0.000000	zero	0.000000	zero	0.000000	zero	0	14
+hp:0040100	mp:0004479	Abnormality of the vestibular window	abnormal oval window morphology	0.125000	low	0.500000	medium	1.000000	high	6	12
+hp:0040099	mp:0004480	Abnormality of the round window	abnormal round window morphology	0.285714	low	0.333333	medium	0.285714	low	4	12
+hp:3000047	mp:0004568	Abnormal glossopharyngeal nerve morphology	fusion of glossopharyngeal and vagus nerve	0.250000	low	0.272727	low	0.428571	medium	3	11
+hp:0030305	mp:0004647	Decreased number of vertebrae	decreased lumbar vertebrae number	0.600000	medium	0.666667	high	0.800000	high	4	6
+hp:0011392	mp:0004718	Abnormality of the vestibular nerve	abnormal vestibular nerve morphology	0.285714	low	0.200000	low	0.600000	medium	4	20
+hp:0011389	mp:0004736	Functional abnormality of the inner ear	abnormal distortion product otoacoustic emission	0.000000	zero	0.000000	zero	0.000000	zero	0	13
+hp:0011389	mp:0004737	Functional abnormality of the inner ear	absent distortion product otoacoustic emissions	0.000000	zero	0.000000	zero	0.000000	zero	0	12
+hp:0012638	mp:0004811	Abnormal nervous system physiology	abnormal neuron physiology	0.400000	medium	0.285714	low	0.400000	medium	2	7
+hp:0008734	mp:0004852	Decreased testicular size	decreased testis weight	0.200000	low	0.200000	low	0.250000	low	2	10
+hp:0008724	mp:0004856	Hypoplasia of the ovary	decreased ovary weight	0.166667	low	0.111111	low	0.250000	low	1	9
+hp:0000362	mp:0004897	Otosclerosis	otosclerosis	1.000000	high	1.000000	high	1.000000	high	1	1
+hp:0011380	mp:0004922	Abnormal semicircular canal morphology	abnormal common crus morphology	0.333333	medium	0.235294	low	0.333333	medium	4	17
+hp:0000364	mp:0004925	Hearing abnormality	decreased susceptibility to noise-induced hearing loss	0.125000	low	0.083333	low	0.125000	low	1	12
+hp:0004452	mp:0005105	Abnormality of the middle ear ossicles	abnormal middle ear ossicle morphology	0.222222	low	0.200000	low	0.375000	medium	3	15
+hp:0011453	mp:0005106	Abnormal incus morphology	abnormal incus morphology	1.000000	high	0.428571	medium	1.000000	high	3	7
+hp:0005599	mp:0005171	Hypopigmentation of hair	absent coat pigmentation	0.000000	zero	0.166667	low	0.250000	low	2	12
+hp:0003146	mp:0005179	Hypocholesterolemia	decreased circulating cholesterol level	0.000000	zero	0.454545	medium	1.000000	high	5	11
+hp:0002457	mp:0005191	Abnormal head movements	head tilt	0.250000	low	0.250000	low	0.250000	low	1	4
+hp:0045025	mp:0005287	Narrow palpebral fissure	narrow eye opening	0.200000	low	0.391304	medium	1.000000	high	9	23
+hp:0001952	mp:0005291	Glucose intolerance	abnormal glucose tolerance	0.250000	low	0.750000	high	1.000000	high	3	4
+hp:0002457	mp:0005307	Abnormal head movements	head tossing	0.250000	low	0.250000	low	0.250000	low	1	4
+hp:0002457	mp:0005376	Abnormal head movements	homeostasis/metabolism phenotype	0.000000	zero	0.000000	zero	0.000000	zero	0	6
+hp:0000598	mp:0005377	Abnormality of the ear	hearing/vestibular/ear phenotype	0.142857	low	0.125000	low	0.200000	low	1	8
+hp:0000818	mp:0005379	Abnormality of the endocrine system	endocrine/exocrine gland phenotype	0.125000	low	0.071429	low	0.200000	low	1	14
+hp:0001197	mp:0005380	Abnormality of prenatal development or birth	embryo phenotype	0.000000	zero	0.153846	low	0.333333	medium	2	13
+hp:0011446	mp:0005386	Abnormality of mental function	behavior/neurological phenotype	0.000000	zero	0.000000	zero	0.000000	zero	0	9
+hp:0000478	mp:0005391	Abnormality of the eye	vision/eye phenotype	0.166667	low	0.125000	low	0.250000	low	1	8
+hp:0010876	mp:0005416	Abnormal circulating protein concentration	abnormal circulating protein level	0.600000	medium	0.500000	medium	1.000000	high	5	10
+hp:0041079	mp:0005459	Decreased body fat percentage	decreased percent body fat/body weight	0.500000	medium	0.444444	medium	1.000000	high	4	9
+hp:0000517	mp:0005545	Abnormal lens morphology	abnormal lens development	0.500000	medium	0.222222	low	0.500000	medium	2	9
+hp:0003075	mp:0005567	Hypoproteinemia	decreased circulating total protein level	0.000000	zero	0.250000	low	1.000000	high	3	12
+hp:0002900	mp:0005628	Hypokalemia	decreased circulating potassium level	0.000000	zero	0.222222	low	0.333333	medium	2	9
+hp:0012379	mp:0005632	Abnormal circulating enzyme concentration or activity	decreased circulating aspartate transaminase level	0.100000	low	0.052632	low	0.142857	low	1	19
+hp:0012285	mp:0005645	Abnormal hypothalamus physiology	abnormal hypothalamus physiology	1.000000	high	0.500000	medium	1.000000	high	3	6
+hp:0012638	mp:0005646	Abnormal nervous system physiology	abnormal pituitary gland physiology	0.333333	medium	0.250000	low	0.400000	medium	2	8
+hp:0012245	mp:0005652	Sex reversal	sex reversal	1.000000	high	0.400000	medium	1.000000	high	2	5
+hp:0031703	mp:0006030	Abnormal ear morphology	abnormal otic vesicle development	0.166667	low	0.076923	low	0.200000	low	1	13
+hp:4000056	mp:0006042	Abnormal apoptosis	increased apoptosis	0.333333	medium	0.250000	low	0.333333	medium	1	4
+hp:4000056	mp:0006043	Abnormal apoptosis	decreased apoptosis	0.333333	medium	0.200000	low	0.333333	medium	1	5
+hp:0012757	mp:0006092	Abnormal neuron morphology	abnormal olfactory sensory neuron morphology	0.600000	medium	0.375000	medium	0.750000	high	3	8
+hp:0011297	mp:0006280	Abnormal digit morphology	abnormal digit development	0.500000	medium	0.181818	low	0.500000	medium	2	11
+hp:0012372	mp:0006305	Abnormal eye morphology	abnormal optic eminence morphology	0.400000	medium	0.133333	low	0.400000	medium	2	15
+hp:0010948	mp:0006354	Abnormal fetal cardiovascular morphology	abnormal fourth pharyngeal arch artery morphology	0.250000	low	0.117647	low	0.250000	low	2	17
+hp:0010948	mp:0006355	Abnormal fetal cardiovascular morphology	abnormal sixth pharyngeal arch artery morphology	0.250000	low	0.117647	low	0.250000	low	2	17
+hp:0003111	mp:0006357	Abnormal blood ion concentration	abnormal circulating mineral level	0.142857	low	0.142857	low	0.333333	medium	2	14
+hp:0005930	mp:0006396	Abnormal epiphysis morphology	decreased long bone epiphyseal plate size	0.000000	zero	0.105263	low	0.166667	low	2	19
+hp:0040218	mp:0008039	Reduced total natural killer cell count	increased NK T cell number	0.100000	low	0.416667	medium	0.571429	medium	5	12
+hp:0011376	mp:0008066	Abnormal morphology of the vestibule of the inner ear	small endolymphatic duct	0.000000	zero	0.000000	zero	0.000000	zero	0	13
+hp:0025517	mp:0008283	Hypoplastic hippocampus	small hippocampus	0.333333	medium	0.333333	medium	1.000000	high	2	6
+hp:0011454	mp:0008374	Abnormal malleus morphology	abnormal malleus manubrium morphology	0.750000	high	0.400000	medium	0.750000	high	4	10
+hp:0000479	mp:0008446	Abnormal retinal morphology	decreased retina cone cell number	0.000000	zero	0.187500	low	0.166667	low	3	16
+hp:0000479	mp:0008449	Abnormal retinal morphology	abnormal retina cone cell outer segment morphology	0.250000	low	0.266667	low	0.500000	medium	4	15
+hp:0000479	mp:0008456	Abnormal retinal morphology	abnormal retina rod cell outer segment morphology	0.250000	low	0.266667	low	0.500000	medium	4	15
+hp:0007082	mp:0008536	Dilated third ventricle	enlarged third ventricle	0.500000	medium	0.272727	low	1.000000	high	3	11
+hp:0002538	mp:0008547	Abnormal cerebral cortex morphology	abnormal neocortex morphology	0.400000	medium	0.230769	low	0.600000	medium	3	13
+hp:0031295	mp:0008725	Left atrial enlargement	increased heart atrium size	0.000000	zero	0.400000	medium	0.750000	high	4	10
+hp:0030718	mp:0008725	Right atrial enlargement	increased heart atrium size	0.000000	zero	0.333333	medium	0.750000	high	4	12
+hp:0005105	mp:0008789	Abnormal nasal morphology	abnormal olfactory epithelium morphology	0.400000	medium	0.300000	low	0.750000	high	3	10
+hp:0002149	mp:0008821	Hyperuricemia	increased blood uric acid level	0.000000	zero	0.666667	high	1.000000	high	6	9
+hp:0007485	mp:0008843	Absence of subcutaneous fat	absent subcutaneous adipose tissue	0.142857	low	0.235294	low	0.333333	medium	4	17
+hp:0003758	mp:0008844	Reduced subcutaneous adipose tissue	decreased subcutaneous adipose tissue amount	0.500000	medium	0.454545	medium	0.800000	high	5	11
+hp:0012638	mp:0008917	Abnormal nervous system physiology	abnormal oligodendrocyte physiology	0.400000	medium	0.166667	low	0.400000	medium	2	12
+hp:0031422	mp:0008924	Abnormal cerebellar cortex morphology	decreased cerebellar granule cell number	0.125000	low	0.083333	low	0.125000	low	1	12
+hp:0012757	mp:0008946	Abnormal neuron morphology	abnormal neuron number	0.500000	medium	0.333333	medium	0.500000	medium	2	6
+hp:0012757	mp:0008947	Abnormal neuron morphology	increased neuron number	0.200000	low	0.142857	low	0.200000	low	1	7
+hp:0012757	mp:0008948	Abnormal neuron morphology	decreased neuron number	0.200000	low	0.125000	low	0.200000	low	1	8
+hp:0002795	mp:0008963	Abnormal respiratory system physiology	increased carbon dioxide production	0.000000	zero	0.000000	zero	0.000000	zero	0	16
+hp:0012569	mp:0009008	Delayed menarche	delayed estrous cycle	0.250000	low	0.166667	low	0.250000	low	2	12
+hp:0034967	mp:0009082	Uterine cyst	uterus cyst	0.333333	medium	0.285714	low	0.333333	medium	2	7
+hp:0031105	mp:0009085	Abnormal uterus morphology	abnormal uterine horn morphology	0.400000	medium	0.333333	medium	0.750000	high	3	9
+hp:0040298	mp:0009092	Hyperplasia of the endometrium	endometrium hyperplasia	0.500000	medium	0.666667	high	1.000000	high	4	6
+hp:0040254	mp:0009101	Decreased size of the clitoris	clitoris hypoplasia	0.166667	low	0.083333	low	0.166667	low	1	12
+hp:0011751	mp:0009229	Abnormal posterior pituitary morphogenesis	abnormal neurohypophysis median eminence morphology	0.125000	low	0.250000	low	0.300000	low	5	20
+hp:0031422	mp:0009267	Abnormal cerebellar cortex morphology	abnormal cerebellum fissure morphology	0.333333	medium	0.375000	medium	0.600000	medium	3	8
+hp:0001871	mp:0009278	Abnormality of blood and blood-forming tissues	abnormal bone marrow cell physiology	0.000000	zero	0.000000	zero	0.000000	zero	0	19
+hp:0100705	mp:0009808	Abnormal glial cell morphology	decreased oligodendrocyte number	0.000000	zero	0.062500	low	0.142857	low	1	16
+hp:0000175	mp:0009890	Cleft palate	cleft secondary palate	0.666667	high	0.250000	low	1.000000	high	3	12
+hp:0010808	mp:0009908	Protruding tongue	protruding tongue	1.000000	high	0.272727	low	1.000000	high	3	11
+hp:0012757	mp:0009937	Abnormal neuron morphology	abnormal neuron differentiation	0.500000	medium	0.500000	medium	0.500000	medium	3	6
+hp:0025057	mp:0009944	Abnormal olfactory lobe morphology	abnormal olfactory lobe morphology	1.000000	high	0.625000	medium	1.000000	high	5	8
+hp:0002334	mp:0009957	Abnormal cerebellar vermis morphology	abnormal cerebellum vermis lobule morphology	0.500000	medium	0.333333	medium	0.500000	medium	3	9
+hp:0031422	mp:0009959	Abnormal cerebellar cortex morphology	abnormal cerebellar hemisphere morphology	0.600000	medium	0.428571	medium	0.600000	medium	3	7
+hp:0031422	mp:0009963	Abnormal cerebellar cortex morphology	abnormal cerebellum hemisphere lobule morphology	0.285714	low	0.250000	low	0.750000	high	3	12
+hp:0031422	mp:0009991	Abnormal cerebellar cortex morphology	abnormal cerebellum vermis lobule IV morphology	0.250000	low	0.153846	low	0.250000	low	2	13
+hp:0031422	mp:0013616	Abnormal cerebellar cortex morphology	decreased volumetric bone mineral density	0.000000	zero	0.000000	zero	0.000000	zero	0	17
+hp:0031422	mp:0009992	Abnormal cerebellar cortex morphology	abnormal cerebellum vermis lobule IX morphology	0.250000	low	0.166667	low	0.333333	medium	2	12
+hp:0031422	mp:0009993	Abnormal cerebellar cortex morphology	abnormal cerebellum vermis lobule V morphology	0.250000	low	0.153846	low	0.250000	low	2	13
+hp:0031422	mp:0009996	Abnormal cerebellar cortex morphology	abnormal cerebellum vermis lobule VIII morphology	0.250000	low	0.307692	low	0.600000	medium	4	13
+hp:0031422	mp:0010005	Abnormal cerebellar cortex morphology	abnormal lobule simplex morphology	0.333333	medium	0.200000	low	0.400000	medium	2	10
+hp:0041079	mp:0010025	Decreased body fat percentage	decreased total body fat amount	0.500000	medium	0.500000	medium	0.750000	high	5	10
+hp:0012754	mp:0010050	CNS hypermyelination	hypermyelination	0.500000	medium	0.250000	low	0.500000	medium	1	4
+hp:0030173	mp:0010050	Peripheral hypermyelination	hypermyelination	0.500000	medium	0.750000	high	0.666667	high	3	4
+hp:0003690	mp:0010053	Limb muscle weakness	decreased grip strength	0.000000	zero	0.000000	zero	0.000000	zero	0	7
+hp:0040326	mp:0010059	Hypoplasia of the olfactory bulb	olfactory bulb hypoplasia	0.600000	medium	0.666667	high	1.000000	high	4	6
+hp:0001877	mp:0010068	Abnormal erythrocyte morphology	decreased red blood cell distribution width	0.000000	zero	0.190476	low	0.222222	low	4	21
+hp:0002917	mp:0010093	Hypomagnesemia	decreased circulating magnesium level	0.000000	zero	0.181818	low	1.000000	high	2	11
+hp:0004370	mp:0010165	Abnormality of temperature regulation	abnormal response to stress-induced hyperthermia	0.000000	zero	0.052632	low	0.111111	low	1	19
+hp:0012638	mp:0010205	Abnormal nervous system physiology	abnormal oligodendrocyte apoptosis	0.166667	low	0.076923	low	0.166667	low	1	13
+hp:0010979	mp:0010330	Abnormality of lipoprotein cholesterol concentration	abnormal circulating lipoprotein level	0.125000	low	0.222222	low	0.250000	low	2	9
+hp:0011555	mp:0010433	Double inlet left ventricle	double inlet heart left ventricle	0.800000	high	0.666667	high	1.000000	high	4	6
+hp:0002624	mp:0010453	Abnormal venous morphology	abnormal coronary vein morphology	0.400000	medium	0.375000	medium	0.500000	medium	3	8
+hp:0001660	mp:0010454	Truncus arteriosus	abnormal truncus arteriosus septation	0.500000	medium	0.416667	medium	0.600000	medium	5	12
+hp:0011604	mp:0010455	Aortopulmonary window	aortopulmonary window	1.000000	high	0.250000	low	1.000000	high	2	8
+hp:0012305	mp:0010526	Coarctation of the descending aortic arch	aortic arch coarctation	0.500000	medium	0.500000	medium	0.750000	high	4	8
+hp:0001713	mp:0010556	Abnormal cardiac ventricle morphology	thin ventricle myocardium compact layer	0.125000	low	0.076923	low	0.125000	low	1	13
+hp:0006705	mp:0010607	Abnormal atrioventricular valve morphology	common atrioventricular valve	0.400000	medium	0.250000	low	0.400000	medium	3	12
+hp:0000480	mp:0010715	Retinal coloboma	retina coloboma	0.333333	medium	0.444444	medium	1.000000	high	4	9
+hp:0002752	mp:0010869	Sparse bone trabeculae	decreased bone trabecula number	0.166667	low	0.125000	low	0.166667	low	1	8
+hp:0030313	mp:0010973	Abnormal periosteum morphology	increased periosteum thickness	0.200000	low	0.125000	low	0.333333	medium	1	8
+hp:0003811	mp:0011089	Neonatal death	perinatal lethality, complete penetrance	0.000000	zero	0.000000	zero	0.000000	zero	0	7
+hp:0034241	mp:0011092	Prenatal death	embryonic lethality, complete penetrance	0.000000	zero	0.000000	zero	0.000000	zero	0	9
+hp:0034241	mp:0011098	Prenatal death	embryonic lethality during organogenesis, complete penetrance	0.000000	zero	0.000000	zero	0.000000	zero	0	11
+hp:0034241	mp:0011099	Prenatal death	lethality throughout fetal growth and development, complete penetrance	0.000000	zero	0.000000	zero	0.000000	zero	0	14
+hp:0034241	mp:0011108	Prenatal death	embryonic lethality during organogenesis, incomplete penetrance	0.000000	zero	0.000000	zero	0.000000	zero	0	12
+hp:0034241	mp:0011109	Prenatal death	lethality throughout fetal growth and development, incomplete penetrance	0.000000	zero	0.000000	zero	0.000000	zero	0	15
+hp:0005105	mp:0011281	Abnormal nasal morphology	abnormal olfactory epithelium cilium morphology	0.333333	medium	0.181818	low	0.333333	medium	2	11
+hp:0034190	mp:0011390	Abnormal fetal cardiovascular physiology	abnormal fetal cardiomyocyte physiology	0.600000	medium	0.333333	medium	0.600000	medium	3	9
+hp:0034190	mp:0011395	Abnormal fetal cardiovascular physiology	decreased fetal cardiomyocyte proliferation	0.142857	low	0.083333	low	0.166667	low	1	12
+hp:0011420	mp:0011400	Age of death	lethality, complete penetrance	0.000000	zero	0.000000	zero	0.000000	zero	0	16
+hp:0011613	mp:0011659	Interrupted aortic arch type B	interrupted aortic arch, type b	1.000000	high	1.000000	high	1.000000	high	5	5
+hp:0012447	mp:0011731	Abnormal myelination	decreased myelin sheath thickness	0.000000	zero	0.250000	low	0.400000	medium	2	8
+hp:0000240	mp:0011861	Abnormality of skull size	increased cranium height	0.000000	zero	0.125000	low	0.166667	low	1	8
+hp:0004463	mp:0011967	Absent brainstem auditory responses	increased or absent threshold for auditory brainstem response	0.333333	medium	0.333333	medium	0.600000	medium	5	15
+hp:0012638	mp:0012020	Abnormal nervous system physiology	abnormal olfactory epithelium physiology	0.333333	medium	0.222222	low	0.333333	medium	2	9
+hp:0012757	mp:0012203	Abnormal neuron morphology	abnormal neuronal stem cell morphology	0.333333	medium	0.375000	medium	0.600000	medium	3	8
+hp:0031422	mp:0012451	Abnormal cerebellar cortex morphology	abnormal retrosplenial granular cortex morphology	0.500000	medium	0.375000	medium	0.600000	medium	3	8
+hp:0012502	mp:0012462	Abnormality of the internal capsule	decreased brain internal capsule size	0.250000	low	0.300000	low	0.428571	medium	3	10
+hp:0010662	mp:0012481	Abnormal diencephalon morphology	increased habenula size	0.000000	zero	0.000000	zero	0.000000	zero	0	12
+hp:0045005	mp:0012703	Neural tube defect	decreased embryonic neuroepithelium thickness	0.000000	zero	0.125000	low	0.400000	medium	2	16
+hp:0430021	mp:0012729	Abnormal common carotid artery morphology	abnormal common carotid artery morphology	1.000000	high	0.666667	high	1.000000	high	6	9
+hp:0033334	mp:0012741	Abnormal embryonic development	decreased neural crest cell proliferation	0.000000	zero	0.000000	zero	0.000000	zero	0	13
+hp:0033334	mp:0012744	Abnormal embryonic development	increased neural crest cell apoptosis	0.000000	zero	0.000000	zero	0.000000	zero	0	13
+hp:0011747	mp:0013350	Abnormality of the anterior pituitary	Rathke's pouch hypoplasia	0.000000	zero	0.000000	zero	0.000000	zero	0	11
+hp:0003429	mp:0013438	CNS hypomyelination	dysmyelination	0.000000	zero	0.142857	low	1.000000	high	1	7
+hp:0007182	mp:0013438	Peripheral hypomyelination	dysmyelination	0.000000	zero	0.076923	low	0.500000	medium	1	13
+hp:0001097	mp:0013466	Keratoconjunctivitis sicca	keratoconjunctivitis sicca	1.000000	high	0.750000	high	1.000000	high	6	8
+hp:0031066	mp:0013508	Abnormal ovarian physiology	increased granulosa cell apoptosis	0.000000	zero	0.000000	zero	0.000000	zero	0	9
+hp:0003103	mp:0013624	Abnormal cortical bone morphology	decreased femur compact bone thickness	0.125000	low	0.307692	low	0.428571	medium	4	13
+hp:0100671	mp:0013630	Abnormal trabecular bone morphology	increased bone trabecular spacing	0.333333	medium	0.181818	low	0.333333	medium	2	11
+hp:0000174	mp:0013767	Abnormal palate morphology	decreased palatal rugae number	0.000000	zero	0.107143	low	0.285714	low	3	28
+hp:0012372	mp:0013820	Abnormal eye morphology	absent optic cup	0.000000	zero	0.062500	low	0.200000	low	1	16
+hp:0041079	mp:0014143	Decreased body fat percentage	decreased body fat mass	0.600000	medium	0.428571	medium	0.600000	medium	3	7
+hp:0004349	mp:0020010	Reduced bone mineral density	decreased bone mineral density of femur	0.428571	medium	0.312500	low	0.800000	high	5	16
+hp:0004349	mp:0020137	Reduced bone mineral density	decreased bone mineralization	0.166667	low	0.133333	low	0.400000	medium	2	15
+hp:0012757	mp:0020348	Abnormal neuron morphology	decreased olfactory sensory neuron number	0.142857	low	0.100000	low	0.142857	low	1	10
+hp:0008609	mp:0020900	Abnormal middle ear morphology	abnormal middle ear epithelium morphology	0.800000	high	0.333333	medium	0.800000	high	4	12
+hp:0008609	mp:0020903	Abnormal middle ear morphology	increased middle ear goblet cell number	0.250000	low	0.153846	low	0.285714	low	2	13
+hp:0004349	mp:0021184	Reduced bone mineral density	decreased bone mineral density of humerus	0.428571	medium	0.375000	medium	0.800000	high	6	16
+hp:0005561	mp:0030009	Abnormal bone marrow cell morphology	increased bone marrow adipose tissue amount	0.222222	low	0.105263	low	0.400000	medium	2	19
+hp:0000321	mp:0030073	Square face	square face	1.000000	high	0.800000	high	1.000000	high	4	5
+hp:0001367	mp:0030109	Abnormal joint morphology	abnormal incudomalleolar joint morphology	0.750000	high	0.230769	low	0.750000	high	3	13
+hp:0008628	mp:0030127	Abnormal stapes morphology	small stapes	0.250000	low	0.111111	low	0.250000	low	1	9
+hp:0011453	mp:0030394	Abnormal incus morphology	abnormal incus short process morphology	0.600000	medium	0.250000	low	0.600000	medium	3	12
+hp:0011453	mp:0030396	Abnormal incus morphology	abnormal incus long process morphology	0.600000	medium	0.250000	low	0.600000	medium	3	12
+hp:0008628	mp:0030402	Abnormal stapes morphology	abnormal stapes head morphology	0.750000	high	0.500000	medium	0.750000	high	4	8
+hp:0008628	mp:0030405	Abnormal stapes morphology	small stapes obturator foramen	0.166667	low	0.153846	low	0.250000	low	2	13
+hp:0008628	mp:0030407	Abnormal stapes morphology	abnormal stapes crus morpholgy	0.400000	medium	0.333333	medium	0.750000	high	3	9
+hp:0040099	mp:0030411	Abnormality of the round window	decreased round window size	0.285714	low	0.285714	low	0.333333	medium	4	14
+hp:0011912	mp:0030831	Abnormality of the glenoid fossa	abnormal glenoid fossa morphology	0.285714	low	0.333333	medium	0.375000	medium	3	9
+hp:0010948	mp:0030992	Abnormal fetal cardiovascular morphology	atrioventricular cushion hypoplasia	0.000000	zero	0.000000	zero	0.000000	zero	0	15
+hp:0031065	mp:0031239	Abnormal ovarian morphology	increased atretic ovarian follicle number	0.142857	low	0.111111	low	0.166667	low	1	9
+hp:0003307	mp:0031253	Hyperlordosis	lordokyphosis	0.000000	zero	0.000000	zero	0.000000	zero	0	6
+hp:0002808	mp:0031253	Kyphosis	lordokyphosis	0.000000	zero	0.000000	zero	0.000000	zero	0	9
+hp:0031065	mp:0031381	Abnormal ovarian morphology	decreased secondary ovarian follicle number	0.142857	low	0.066667	low	0.166667	low	1	15
+hp:0000752	mp:0031391	Hyperactivity	increased locomotor activity	0.000000	zero	0.000000	zero	0.000000	zero	0	23
+hp:0000394	mp:0000022	Lop ear	abnormal ear shape	0.250000	low	0.250000	low	0.250000	low	1	4
+hp:0011381	mp:0000036	Aplasia of the semicircular canal	absent semicircular canals	0.142857	low	0.571429	medium	0.600000	medium	4	7
+hp:0000772	mp:0000150	Abnormal rib morphology	abnormal rib morphology	1.000000	high	0.363636	medium	1.000000	high	4	11
+hp:0002623	mp:0000273	Overriding aorta	overriding aortic valve	0.250000	low	0.750000	high	1.000000	high	6	8
+hp:0000160	mp:0000452	Narrow mouth	abnormal mouth morphology	0.250000	low	0.090909	low	0.333333	medium	1	11
+hp:0003974	mp:0000553	Absent radius	absent radius	1.000000	high	0.266667	low	1.000000	high	4	15
+hp:0002992	mp:0000558	Abnormal tibia morphology	abnormal tibia morphology	1.000000	high	0.333333	medium	1.000000	high	3	9
+hp:0010443	mp:0000559	Bifid femur	abnormal femur morphology	0.250000	low	0.125000	low	0.333333	medium	1	8
+hp:0001018	mp:0000572	Abnormal palmar dermatoglyphics	abnormal autopod morphology	0.200000	low	0.071429	low	0.250000	low	1	14
+hp:0000834	mp:0000639	Abnormality of the adrenal glands	abnormal adrenal gland morphology	0.125000	low	0.230769	low	0.500000	medium	3	13
+hp:0010515	mp:0000705	Aplasia/Hypoplasia of the thymus	athymia	0.000000	zero	0.230769	low	0.666667	high	3	13
+hp:0001305	mp:0000849	Dandy-Walker malformation	abnormal cerebellum morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	10
+hp:0001291	mp:0001056	Abnormal cranial nerve morphology	abnormal cranial nerve morphology	1.000000	high	0.416667	medium	1.000000	high	5	12
+hp:0000625	mp:0001340	Eyelid coloboma	abnormal eyelid morphology	0.250000	low	0.050000	low	0.333333	medium	1	20
+hp:0011968	mp:0001431	Feeding difficulties	abnormal eating behavior	0.000000	zero	0.090909	low	0.333333	medium	1	11
+hp:0010978	mp:0001790	Abnormality of immune system physiology	abnormal immune system physiology	0.500000	medium	0.454545	medium	0.500000	medium	5	11
+hp:0010515	mp:0001823	Aplasia/Hypoplasia of the thymus	thymus hypoplasia	0.400000	medium	0.230769	low	0.500000	medium	3	13
+hp:0002093	mp:0001943	Respiratory insufficiency	abnormal respiration	0.000000	zero	0.100000	low	0.333333	medium	1	10
+hp:0000504	mp:0002090	Abnormality of vision	abnormal vision	0.250000	low	0.100000	low	0.333333	medium	1	10
+hp:0008572	mp:0002177	obsolete External ear malformation	abnormal outer ear morphology	0.142857	low	0.100000	low	0.166667	low	1	10
+hp:0011382	mp:0002428	Hypoplasia of the semicircular canal	abnormal semicircular canal morphology	0.285714	low	0.250000	low	0.400000	medium	2	8
+hp:0000742	mp:0002572	Self-mutilation	abnormal emotion/affect behavior	0.000000	zero	0.000000	zero	0.000000	zero	0	13
+hp:0000347	mp:0002639	Micrognathia	micrognathia	1.000000	high	0.260870	low	1.000000	high	6	23
+hp:0009556	mp:0002728	Absent tibia	absent tibia	1.000000	high	0.375000	medium	1.000000	high	3	8
+hp:0000834	mp:0002909	Abnormality of the adrenal glands	abnormal adrenal gland physiology	0.125000	low	0.181818	low	0.400000	medium	2	11
+hp:0002410	mp:0002958	Aqueductal stenosis	cerebral aqueductal stenosis	0.666667	high	0.500000	medium	1.000000	high	5	10
+hp:0003241	mp:0003126	External genital hypoplasia	abnormal external female genitalia morphology	0.142857	low	0.181818	low	0.285714	low	4	22
+hp:0100736	mp:0003154	Abnormal soft palate morphology	abnormal soft palate morphology	1.000000	high	0.600000	medium	1.000000	high	6	10
+hp:0011382	mp:0003162	Hypoplasia of the semicircular canal	decreased lateral semicircular canal size	0.250000	low	0.300000	low	0.375000	medium	3	10
+hp:0011382	mp:0003164	Hypoplasia of the semicircular canal	decreased posterior semicircular canal size	0.250000	low	0.300000	low	0.375000	medium	3	10
+hp:0011382	mp:0003166	Hypoplasia of the semicircular canal	decreased superior semicircular canal size	0.250000	low	0.272727	low	0.375000	medium	3	11
+hp:0002139	mp:0003232	Arrhinencephaly	abnormal forebrain development	0.000000	zero	0.000000	zero	0.000000	zero	0	6
+hp:0000830	mp:0003348	Anterior hypopituitarism	hypopituitarism	0.500000	medium	0.125000	low	1.000000	high	1	8
+hp:0008213	mp:0003348	Gonadotropin deficiency	hypopituitarism	0.000000	zero	0.125000	low	0.250000	low	1	8
+hp:0008213	mp:0003363	Gonadotropin deficiency	decreased circulating gonadotropin level	0.200000	low	0.142857	low	0.200000	low	1	7
+hp:0000829	mp:0003433	Hypoparathyroidism	decreased activity of parathyroid	0.000000	zero	0.333333	medium	1.000000	high	3	9
+hp:0002139	mp:0003451	Arrhinencephaly	absent olfactory bulb	0.000000	zero	0.000000	zero	0.000000	zero	0	6
+hp:0000860	mp:0003494	Parathyroid hypoplasia	parathyroid hypoplasia	1.000000	high	0.285714	low	1.000000	high	2	7
+hp:0000066	mp:0003513	Labial hypoplasia	small labia	0.000000	zero	0.076923	low	0.333333	medium	1	13
+hp:0009906	mp:0003678	Aplasia/Hypoplasia of the earlobes	absent ear lobes	0.000000	zero	0.363636	medium	0.750000	high	4	11
+hp:0009906	mp:0003679	Aplasia/Hypoplasia of the earlobes	ear lobe hypoplasia	0.142857	low	0.250000	low	0.400000	medium	3	12
+hp:0004058	mp:0003800	Hand monodactyly	monodactyly	0.500000	medium	0.200000	low	0.500000	medium	1	5
+hp:0001561	mp:0004020	Polyhydramnios	polyhydramnios	1.000000	high	0.181818	low	1.000000	high	2	11
+hp:0001360	mp:0005157	Holoprosencephaly	holoprosencephaly	1.000000	high	0.200000	low	1.000000	high	1	5
+hp:0000567	mp:0005262	Chorioretinal coloboma	coloboma	0.500000	medium	0.052632	low	0.500000	medium	1	19
+hp:0000589	mp:0005262	Coloboma	coloboma	1.000000	high	0.250000	low	1.000000	high	1	4
+hp:0000272	mp:0005270	Malar flattening	abnormal zygomatic bone morphology	0.000000	zero	0.150000	low	0.400000	medium	3	20
+hp:0000478	mp:0005391	Abnormality of the eye	vision/eye phenotype	0.166667	low	0.125000	low	0.250000	low	1	8
+hp:0000044	mp:0005647	Hypogonadotropic hypogonadism	abnormal sex gland physiology	0.000000	zero	0.000000	zero	0.000000	zero	0	16
+hp:0001671	mp:0006113	Abnormal cardiac septum morphology	abnormal heart septum morphology	0.600000	medium	0.416667	medium	0.600000	medium	5	12
+hp:0000410	mp:0006327	Mixed hearing impairment	mixed hearing impairment	1.000000	high	0.750000	high	1.000000	high	3	4
+hp:0002025	mp:0009052	Anal stenosis	anal stenosis	1.000000	high	0.333333	medium	1.000000	high	3	9
+hp:0003241	mp:0009203	External genital hypoplasia	external male genitalia hypoplasia	0.400000	medium	0.235294	low	0.750000	high	4	17
+hp:0000008	mp:0009209	Abnormal morphology of female internal genitalia	abnormal internal female genitalia morphology	0.833333	high	0.538462	medium	1.000000	high	7	13
+hp:0004935	mp:0010521	Pulmonary artery atresia	absent pulmonary artery	0.500000	medium	0.500000	medium	1.000000	high	3	6
+hp:0005113	mp:0010575	Aortic arch aneurysm	aortic arch dilation	0.500000	medium	0.375000	medium	0.500000	medium	3	8
+hp:0030732	mp:0002624	Dysplastic tricuspid valve	abnormal tricuspid valve morphology	0.400000	medium	0.300000	low	1.000000	high	3	10
+hp:0000612	mp:0010714	Iris coloboma	iris coloboma	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0000480	mp:0010715	Retinal coloboma	retina coloboma	0.333333	medium	0.444444	medium	1.000000	high	4	9
+hp:0009778	mp:0010772	Short thumb	abnormal pollex morphology	0.000000	zero	0.083333	low	0.250000	low	1	12
+hp:0000632	mp:0020218	Lacrimation abnormality	abnormal tear production	0.000000	zero	0.500000	medium	1.000000	high	4	8
+hp:0001270	mp:0021165	Motor delay	behavioral developmental delay	0.250000	low	0.235294	low	0.666667	high	4	17
+hp:0005280	mp:0030034	Depressed nasal bridge	depressed nasal bridge	1.000000	high	1.000000	high	1.000000	high	11	11
+hp:0000275	mp:0030071	Narrow face	abnormal face shape	0.250000	low	0.055556	low	0.250000	low	1	18
+hp:0000321	mp:0030073	Square face	square face	1.000000	high	0.800000	high	1.000000	high	4	5
+hp:0010669	mp:0030112	Hypoplasia of the zygomatic bone	zygomatic bone hypoplasia	0.600000	medium	0.187500	low	0.600000	medium	3	16
+hp:0010628	mp:0030141	Facial palsy	facial paralysis	0.333333	medium	0.227273	low	0.666667	high	5	22
+hp:0010751	mp:0030243	Dimple chin	abnormal chin morphology	0.250000	low	0.071429	low	0.333333	medium	1	14
+hp:0200021	mp:0030816	Down-sloping shoulders	abnormal shoulder joint morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	8
+hp:0003048	mp:0030882	Radial head subluxation	abnormal radius head morphology	0.166667	low	0.222222	low	0.400000	medium	2	9
+hp:0003022	mp:0030900	Hypoplasia of the ulna	decreased ulna size	0.166667	low	0.058824	low	0.333333	medium	1	17
+hp:0000144	mp:0001921	Decreased fertility	reduced fertility	0.333333	medium	0.266667	low	1.000000	high	4	15
+hp:0000160	mp:0009880	Narrow mouth	decreased mouth size	0.250000	low	0.333333	medium	1.000000	high	3	9
+hp:0000164	mp:0002100	Abnormality of the dentition	abnormal tooth morphology	0.000000	zero	0.266667	low	0.666667	high	4	15
+hp:0000179	mp:0003774	Thick lower lip vermilion	thick lip	0.500000	medium	0.500000	medium	0.800000	high	8	16
+hp:0000189	mp:0003758	Narrow palate	narrow palate	1.000000	high	0.400000	medium	1.000000	high	4	10
+hp:0000194	mp:0031502	Open mouth	open mouth	1.000000	high	0.250000	low	1.000000	high	2	8
+hp:0000235	mp:0000084	Abnormal cranial suture/fontanelle morphology	abnormal fontanelle morphology	0.600000	medium	0.230769	low	0.600000	medium	3	13
+hp:0000235	mp:0002835	Abnormal cranial suture/fontanelle morphology	abnormal cranial suture morphology	0.800000	high	0.454545	medium	0.800000	high	5	11
+hp:0000248	mp:0000435	Brachycephaly	shortened head	0.000000	zero	0.200000	low	1.000000	high	2	10
+hp:0000272	mp:0005270	Malar flattening	abnormal zygomatic bone morphology	0.000000	zero	0.150000	low	0.400000	medium	3	20
+hp:0000457	mp:0030033	Depressed nasal ridge	abnormal nasal bridge morphology	0.166667	low	0.071429	low	0.200000	low	1	14
+hp:0000474	mp:0012723	Thickened nuchal skin fold	abnormal nuchal region morphology	0.142857	low	0.086957	low	0.166667	low	2	23
+hp:0000518	mp:0001304	Cataract	cataract	1.000000	high	0.300000	low	1.000000	high	3	10
+hp:0000545	mp:0003100	Myopia	myopia	1.000000	high	0.333333	medium	1.000000	high	3	9
+hp:0000691	mp:0030088	Microdontia	microdontia	1.000000	high	0.466667	medium	1.000000	high	7	15
+hp:0000954	mp:0000572	Single transverse palmar crease	abnormal autopod morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	20
+hp:0001088	mp:0005102	Brushfield spots	abnormal iris pigmentation	0.000000	zero	0.166667	low	0.250000	low	1	6
+hp:0001156	mp:0002544	Brachydactyly	brachydactyly	1.000000	high	0.571429	medium	1.000000	high	4	7
+hp:0001169	mp:0020242	Broad palm	increased autopod size	0.000000	zero	0.000000	zero	0.000000	zero	0	10
+hp:0001249	mp:0014114	Intellectual disability	abnormal cognition	0.000000	zero	0.000000	zero	0.000000	zero	0	18
+hp:0001513	mp:0001261	Obesity	obese	0.000000	zero	0.142857	low	1.000000	high	1	7
+hp:0001674	mp:0010413	Complete atrioventricular canal defect	complete atrioventricular septal defect	0.600000	medium	0.583333	medium	1.000000	high	7	12
+hp:0001852	mp:0002110	Sandal gap	abnormal digit morphology	0.000000	zero	0.038462	low	0.166667	low	1	26
+hp:0002251	mp:0002926	Aganglionic megacolon	aganglionic megacolon	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0002376	mp:0004924	Developmental regression	abnormal behavior	0.000000	zero	0.000000	zero	0.000000	zero	0	20
+hp:0002511	mp:0012508	Alzheimer disease	forebrain atrophy	0.000000	zero	0.000000	zero	0.000000	zero	0	11
+hp:0002511	mp:0003329	Alzheimer disease	amyloid beta deposits	0.000000	zero	0.000000	zero	0.000000	zero	0	13
+hp:0002511	mp:0003214	Alzheimer disease	neurofibrillary tangles	0.000000	zero	0.000000	zero	0.000000	zero	0	14
+hp:0002714	mp:0003749	Downturned corners of mouth	down-turned corners of mouth	0.500000	medium	0.300000	low	0.500000	medium	3	10
+hp:0002866	mp:0030852	Hypoplastic iliac wing	abnormal ilium wing morphology	0.166667	low	0.181818	low	0.166667	low	2	11
+hp:0003182	mp:0030830	Shallow acetabular fossae	abnormal acetabulum morphology	0.000000	zero	0.142857	low	0.250000	low	2	14
+hp:0003196	mp:0000445	Short nose	short snout	0.333333	medium	0.384615	medium	1.000000	high	5	13
+hp:0003467	mp:0003048	Atlantoaxial instability	abnormal cervical vertebrae morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	9
+hp:0004220	mp:0002544	Short middle phalanx of the 5th finger	brachydactyly	0.000000	zero	0.076923	low	0.333333	medium	2	26
+hp:0004279	mp:0014291	Short palm	decreased autopod size	0.000000	zero	0.000000	zero	0.000000	zero	0	10
+hp:0004415	mp:0010457	Pulmonary artery stenosis	pulmonary artery stenosis	1.000000	high	0.428571	medium	1.000000	high	3	7
+hp:0005280	mp:0030034	Depressed nasal bridge	depressed nasal bridge	1.000000	high	1.000000	high	1.000000	high	11	11
+hp:0005547	mp:0010373	Myeloproliferative disorder	myeloid hyperplasia	0.000000	zero	0.000000	zero	0.000000	zero	0	10
+hp:0005978	mp:0005331	Type II diabetes mellitus	insulin resistance	0.000000	zero	0.066667	low	0.200000	low	1	15
+hp:0005978	mp:0002079	Type II diabetes mellitus	increased circulating insulin level	0.000000	zero	0.062500	low	0.142857	low	1	16
+hp:0005989	mp:0030528	Redundant neck skin	abnormal neck skin morphology	0.400000	medium	0.142857	low	0.400000	medium	2	14
+hp:0006695	mp:0010412	Atrioventricular canal defect	atrioventricular septal defect	0.500000	medium	0.352941	medium	1.000000	high	6	17
+hp:0006733	mp:0002026	Acute megakaryocytic leukemia	increased leukemia incidence	0.200000	low	0.250000	low	0.333333	medium	2	8
+hp:0007328	mp:0003043	Impaired pain sensation	hypoalgesia	0.000000	zero	0.125000	low	0.200000	low	1	8
+hp:0007495	mp:0003786	Prematurely aged appearance	premature aging	0.000000	zero	0.000000	zero	0.000000	zero	0	8
+hp:0007598	mp:0000572	Bilateral single transverse palmar creases	abnormal autopod morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	17
+hp:0008070	mp:0000416	Sparse hair	sparse hair	1.000000	high	0.266667	low	1.000000	high	4	15
+hp:0008678	mp:0003446	Renal hypoplasia/aplasia	renal hypoplasia	0.666667	high	0.333333	medium	0.666667	high	3	9
+hp:0008678	mp:0003604	Renal hypoplasia/aplasia	single kidney	0.000000	zero	0.300000	low	0.500000	medium	3	10
+hp:0008678	mp:0000520	Renal hypoplasia/aplasia	absent kidney	0.000000	zero	0.333333	medium	0.666667	high	4	12
+hp:0010316	mp:0010536	Ebstein anomaly of the tricuspid valve	Ebstein's malformation of tricuspid valve	0.500000	medium	0.666667	high	1.000000	high	8	12
+hp:0010978	mp:0001790	Abnormality of immune system physiology	abnormal immune system physiology	0.500000	medium	0.454545	medium	0.500000	medium	5	11
+hp:0012368	mp:0012175	Flat face	flat face	1.000000	high	0.285714	low	1.000000	high	2	7
+hp:0025656	mp:0011881	Prenatal double bubble sign	distended duodenum	0.000000	zero	0.100000	low	0.250000	low	1	10
+hp:0025705	mp:0000102	Abnormal fetal nasal bone visualization	abnormal nasal bone morphology	0.500000	medium	0.285714	low	0.800000	high	4	14
+hp:0030084	mp:0006253	Clinodactyly	clinodactyly	1.000000	high	0.100000	low	1.000000	high	1	10
+hp:0030680	mp:0002127	Abnormal cardiovascular system morphology	abnormal cardiovascular system morphology	1.000000	high	0.200000	low	1.000000	high	4	20
+hp:0100763	mp:0010368	Abnormality of the lymphatic system	abnormal lymphatic system physiology	0.285714	low	0.300000	low	0.750000	high	3	10
+hp:0100763	mp:0001879	Abnormality of the lymphatic system	abnormal lymphatic vessel morphology	0.125000	low	0.250000	low	0.500000	medium	3	12
+hp:0100830	mp:0000022	Round ear	abnormal ear shape	0.250000	low	0.250000	low	0.250000	low	1	4
+hp:0100867	mp:0003271	Duodenal stenosis	abnormal duodenum morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	6
+hp:0001640	mp:0000274	Cardiomegaly	enlarged heart	0.000000	zero	0.625000	medium	1.000000	high	5	8
+hp:0001697	mp:0000291	Abnormal pericardium morphology	enlarged pericardium	0.250000	low	0.090909	low	0.250000	low	1	11
+hp:0030681	mp:0000295	Abnormal morphology of myocardial trabeculae	trabecula carnea hypoplasia	0.000000	zero	0.071429	low	0.142857	low	1	14
+hp:0006695	mp:0000299	Atrioventricular canal defect	failure of atrioventricular cushion closure	0.142857	low	0.222222	low	0.333333	medium	4	18
+hp:0011805	mp:0000759	Abnormal skeletal muscle morphology	abnormal skeletal muscle morphology	1.000000	high	0.266667	low	1.000000	high	4	15
+hp:0006891	mp:0000789	Thick cerebral cortex	thickened cerebral cortex	0.500000	medium	0.666667	high	1.000000	high	4	6
+hp:0025100	mp:0000812	Abnormal hippocampus morphology	abnormal dentate gyrus morphology	0.400000	medium	0.214286	low	0.400000	medium	3	14
+hp:0030047	mp:0000823	Abnormal lateral ventricle morphology	abnormal lateral ventricle morphology	1.000000	high	0.416667	medium	1.000000	high	5	12
+hp:0010951	mp:0000826	Abnormal third ventricle morphology	abnormal third ventricle morphology	1.000000	high	0.363636	medium	1.000000	high	4	11
+hp:0010663	mp:0000832	Abnormal thalamus morphology	abnormal thalamus morphology	1.000000	high	0.375000	medium	1.000000	high	3	8
+hp:0002538	mp:0000859	Abnormal cerebral cortex morphology	abnormal somatosensory cortex morphology	0.600000	medium	0.230769	low	0.600000	medium	3	13
+hp:0010953	mp:0000917	Noncommunicating hydrocephalus	obstructive hydrocephaly	0.000000	zero	0.666667	high	1.000000	high	4	6
+hp:0010824	mp:0001065	Abnormal fifth cranial nerve morphology	abnormal trigeminal nerve morphology	0.500000	medium	0.400000	medium	1.000000	high	6	15
+hp:0031038	mp:0001155	Spermatogenesis maturation arrest	arrest of spermatogenesis	0.500000	medium	0.600000	medium	0.600000	medium	3	5
+hp:0008669	mp:0001156	Abnormal spermatogenesis	abnormal spermatogenesis	1.000000	high	0.800000	high	1.000000	high	4	5
+hp:0004324	mp:0001260	Increased body weight	increased body weight	1.000000	high	0.600000	medium	1.000000	high	3	5
+hp:0100852	mp:0001364	Abnormal fear-induced behavior	decreased anxiety-related response	0.000000	zero	0.100000	low	0.285714	low	2	20
+hp:0100022	mp:0001392	Abnormality of movement	abnormal locomotor behavior	0.000000	zero	0.000000	zero	0.000000	zero	0	12
+hp:0000733	mp:0001409	Motor stereotypy	increased stereotypic behavior	0.000000	zero	0.200000	low	0.500000	medium	3	15
+hp:0012433	mp:0001447	Abnormal social behavior	abnormal nest building behavior	0.400000	medium	0.285714	low	0.400000	medium	2	7
+hp:0002354	mp:0001458	Memory impairment	abnormal object recognition memory	0.200000	low	0.090909	low	0.200000	low	1	11
+hp:0001328	mp:0001463	Specific learning disability	abnormal spatial learning	0.200000	low	0.083333	low	0.250000	low	1	12
+hp:0012535	mp:0001473	Abnormal synaptic transmission	reduced long-term potentiation	0.000000	zero	0.000000	zero	0.000000	zero	0	13
+hp:0012535	mp:0001475	Abnormal synaptic transmission	reduced long-term depression	0.000000	zero	0.000000	zero	0.000000	zero	0	13
+hp:0004325	mp:0001698	Decreased body weight	decreased embryo size	0.200000	low	0.083333	low	0.250000	low	1	12
+hp:0011733	mp:0001739	Abnormality of adrenal physiology	abnormal adrenal gland secretion	0.142857	low	0.125000	low	0.500000	medium	2	16
+hp:0012535	mp:0001898	Abnormal synaptic transmission	abnormal long-term depression	0.166667	low	0.090909	low	0.250000	low	1	11
+hp:0012638	mp:0001900	Abnormal nervous system physiology	impaired synaptic plasticity	0.000000	zero	0.000000	zero	0.000000	zero	0	13
+hp:0003251	mp:0001925	Male infertility	male infertility	1.000000	high	0.285714	low	1.000000	high	2	7
+hp:0002664	mp:0002006	Neoplasm	neoplasm	1.000000	high	0.090909	low	1.000000	high	2	22
+hp:0002664	mp:0002018	Neoplasm	increased malignant tumor incidence	0.000000	zero	0.125000	low	0.250000	low	2	16
+hp:0011446	mp:0002063	Abnormality of mental function	abnormal learning/memory/conditioning	0.000000	zero	0.000000	zero	0.000000	zero	0	14
+hp:0001328	mp:0002063	Specific learning disability	abnormal learning/memory/conditioning	0.166667	low	0.058824	low	0.250000	low	1	17
+hp:0012443	mp:0002176	Abnormal brain morphology	increased brain weight	0.200000	low	0.100000	low	0.200000	low	1	10
+hp:0001311	mp:0002272	Abnormal nervous system electrophysiology	abnormal nervous system electrophysiology	1.000000	high	0.625000	medium	1.000000	high	5	8
+hp:0025408	mp:0002356	Abnormal spleen morphology	abnormal spleen red pulp morphology	0.600000	medium	0.444444	medium	0.600000	medium	4	9
+hp:0005561	mp:0002413	Abnormal bone marrow cell morphology	abnormal megakaryocyte progenitor cell morphology	0.428571	medium	0.120000	low	0.428571	medium	3	25
+hp:0000752	mp:0002574	Hyperactivity	increased vertical activity	0.000000	zero	0.133333	low	0.250000	low	2	15
+hp:0012206	mp:0002675	Abnormal sperm motility	asthenozoospermia	0.000000	zero	0.333333	medium	0.500000	medium	2	6
+hp:0000798	mp:0002687	Oligozoospermia	oligozoospermia	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0000708	mp:0002757	Atypical behavior	decreased vertical activity	0.000000	zero	0.043478	low	0.250000	low	1	23
+hp:0040171	mp:0002780	Decreased serum testosterone concentration	decreased circulating testosterone level	0.333333	medium	0.454545	medium	0.800000	high	5	11
+hp:0000035	mp:0002784	Abnormal testis morphology	abnormal Sertoli cell morphology	0.400000	medium	0.181818	low	0.400000	medium	2	11
+hp:0000739	mp:0002797	Anxiety	increased thigmotaxis	0.000000	zero	0.000000	zero	0.000000	zero	0	10
+hp:0002354	mp:0002800	Memory impairment	abnormal short-term object recognition memory	0.142857	low	0.076923	low	0.166667	low	1	13
+hp:0012757	mp:0002882	Abnormal neuron morphology	abnormal neuron morphology	1.000000	high	0.500000	medium	1.000000	high	3	6
+hp:0002251	mp:0002926	Aganglionic megacolon	aganglionic megacolon	1.000000	high	0.444444	medium	1.000000	high	4	9
+hp:0012535	mp:0003008	Abnormal synaptic transmission	enhanced long-term potentiation	0.000000	zero	0.000000	zero	0.000000	zero	0	12
+hp:0025015	mp:0003229	Abnormal vascular morphology	abnormal vitelline vasculature morphology	0.400000	medium	0.125000	low	0.400000	medium	2	16
+hp:0025100	mp:0003240	Abnormal hippocampus morphology	loss of hippocampal neurons	0.000000	zero	0.111111	low	0.142857	low	1	9
+hp:0002374	mp:0003313	Diminished movement	abnormal locomotor activation	0.000000	zero	0.000000	zero	0.000000	zero	0	5
+hp:0002664	mp:0003447	Neoplasm	decreased tumor growth/size	0.000000	zero	0.200000	low	0.250000	low	3	15
+hp:0100851	mp:0003461	Abnormal emotional state	abnormal response to novel object	0.142857	low	0.066667	low	0.142857	low	1	15
+hp:0012639	mp:0003861	Abnormal nervous system morphology	abnormal nervous system development	0.600000	medium	0.375000	medium	0.600000	medium	3	8
+hp:0000733	mp:0003908	Motor stereotypy	decreased stereotypic behavior	0.000000	zero	0.187500	low	0.500000	medium	3	16
+hp:0003117	mp:0003953	Abnormal circulating hormone concentration	abnormal hormone level	0.400000	medium	0.428571	medium	0.750000	high	3	7
+hp:0012535	mp:0004008	Abnormal synaptic transmission	abnormal GABA-mediated receptor currents	0.142857	low	0.062500	low	0.142857	low	1	16
+hp:0031422	mp:0004098	Abnormal cerebellar cortex morphology	abnormal cerebellar granule cell morphology	0.500000	medium	0.333333	medium	0.500000	medium	3	9
+hp:0005557	mp:0004469	Abnormal zygomatic arch morphology	abnormal zygomatic arch morphology	1.000000	high	0.416667	medium	1.000000	high	5	12
+hp:0012535	mp:0004807	Abnormal synaptic transmission	abnormal paired-pulse inhibition	0.166667	low	0.076923	low	0.250000	low	1	13
+hp:0001871	mp:0004809	Abnormality of blood and blood-forming tissues	increased hematopoietic stem cell number	0.000000	zero	0.125000	low	0.222222	low	3	24
+hp:0003712	mp:0004818	Skeletal muscle hypertrophy	increased skeletal muscle mass	0.400000	medium	0.300000	low	0.600000	medium	3	10
+hp:0012638	mp:0004948	Abnormal nervous system physiology	abnormal neuronal precursor proliferation	0.142857	low	0.090909	low	0.166667	low	1	11
+hp:0012639	mp:0004996	Abnormal nervous system morphology	abnormal CNS synapse formation	0.142857	low	0.100000	low	0.142857	low	1	10
+hp:0012443	mp:0005238	Abnormal brain morphology	increased brain size	0.200000	low	0.066667	low	0.250000	low	1	15
+hp:0011021	mp:0005319	Abnormal circulating enzyme concentration	abnormal enzyme/coenzyme level	0.333333	medium	0.375000	medium	0.333333	medium	3	8
+hp:0040195	mp:0005352	Decreased head circumference	small cranium	0.000000	zero	0.125000	low	0.200000	low	1	8
+hp:0001894	mp:0005505	Thrombocytosis	thrombocytosis	1.000000	high	0.384615	medium	1.000000	high	5	13
+hp:0003287	mp:0006036	Abnormality of mitochondrial metabolism	abnormal mitochondrial physiology	0.166667	low	0.142857	low	0.400000	medium	2	14
+hp:0012863	mp:0006362	Abnormal male germ cell morphology	abnormal male germ cell morphology	1.000000	high	0.714286	high	1.000000	high	5	7
+hp:0012863	mp:0006378	Abnormal male germ cell morphology	abnormal spermatogonia morphology	0.333333	medium	0.222222	low	0.500000	medium	2	9
+hp:0020047	mp:0006410	Abnormal myeloid cell morphology	abnormal common myeloid progenitor cell morphology	0.666667	high	0.153846	low	0.800000	high	4	26
+hp:0500032	mp:0008143	Abnormal neuron branching	abnormal dendrite morphology	0.200000	low	0.100000	low	0.200000	low	1	10
+hp:0005513	mp:0008254	Increased megakaryocyte count	increased megakaryocyte cell number	0.400000	medium	0.153846	low	0.400000	medium	2	13
+hp:0031515	mp:0008261	Abnormal meiosis	arrest of male meiosis	0.200000	low	0.142857	low	0.200000	low	1	7
+hp:0025100	mp:0008263	Abnormal hippocampus morphology	abnormal hippocampus CA1 region morphology	0.600000	medium	0.263158	low	0.600000	medium	5	19
+hp:0100961	mp:0008282	Enlarged hippocampus	enlarged hippocampus	1.000000	high	0.333333	medium	1.000000	high	2	6
+hp:0025100	mp:0008285	Abnormal hippocampus morphology	abnormal hippocampus granule cell layer	0.333333	medium	0.272727	low	0.400000	medium	3	11
+hp:0025100	mp:0008286	Abnormal hippocampus morphology	abnormal hippocampus molecular cell layer	0.333333	medium	0.272727	low	0.400000	medium	3	11
+hp:0002354	mp:0008414	Memory impairment	abnormal spatial reference memory	0.200000	low	0.090909	low	0.200000	low	1	11
+hp:0002354	mp:0008428	Memory impairment	abnormal spatial working memory	0.200000	low	0.090909	low	0.200000	low	1	11
+hp:0033687	mp:0008431	Short term memory impairment	abnormal short-term spatial reference memory	0.428571	medium	0.333333	medium	0.428571	medium	3	9
+hp:0033688	mp:0008432	Long term memory impairment	abnormal long-term spatial reference memory	0.428571	medium	0.333333	medium	0.428571	medium	3	9
+hp:0025408	mp:0008470	Abnormal spleen morphology	abnormal spleen B cell follicle morphology	0.500000	medium	0.363636	medium	0.500000	medium	4	11
+hp:0011420	mp:0008770	Age of death	decreased survivor rate	0.000000	zero	0.111111	low	0.250000	low	2	18
+hp:0100767	mp:0008803	Abnormal placenta morphology	abnormal placental labyrinth vasculature morphology	0.333333	medium	0.333333	medium	0.333333	medium	4	12
+hp:0025729	mp:0008803	Fetal vascular malperfusion	abnormal placental labyrinth vasculature morphology	0.000000	zero	0.083333	low	0.166667	low	1	12
+hp:0025719	mp:0008803	Maternal vascular malperfusion	abnormal placental labyrinth vasculature morphology	0.000000	zero	0.083333	low	0.166667	low	1	12
+hp:0033125	mp:0009317	Follicular lymphoma	increased follicular lymphoma incidence	0.500000	medium	0.181818	low	1.000000	high	2	11
+hp:0033684	mp:0009409	Abnormal muscle fiber-type distribution	abnormal skeletal muscle fiber type ratio	0.571429	medium	0.555556	medium	0.800000	high	5	9
+hp:0100543	mp:0009454	Cognitive impairment	impaired contextual conditioning behavior	0.000000	zero	0.000000	zero	0.000000	zero	0	13
+hp:0100543	mp:0009456	Cognitive impairment	impaired cued conditioning behavior	0.000000	zero	0.000000	zero	0.000000	zero	0	15
+hp:0011397	mp:0009677	Abnormality of the dorsal column of the spinal cord	abnormal spinal cord dorsal column morphology	0.444444	medium	0.363636	medium	0.444444	medium	4	11
+hp:0030347	mp:0009819	Abnormal circulating androgen level	abnormal circulating androgen level	1.000000	high	0.500000	medium	1.000000	high	4	8
+hp:0012757	mp:0009936	Abnormal neuron morphology	abnormal dendritic spine morphology	0.400000	medium	0.285714	low	0.400000	medium	2	7
+hp:0012638	mp:0009967	Abnormal nervous system physiology	abnormal neuron proliferation	0.166667	low	0.125000	low	0.166667	low	1	8
+hp:0011420	mp:0010831	Age of death	lethality, incomplete penetrance	0.000000	zero	0.000000	zero	0.000000	zero	0	20
+hp:0011017	mp:0010954	Abnormal cellular physiology	abnormal cellular respiration	0.500000	medium	0.181818	low	0.500000	medium	2	11
+hp:0012638	mp:0011069	Abnormal nervous system physiology	abnormal brain ependyma motile cilium physiology	0.250000	low	0.133333	low	0.250000	low	2	15
+hp:0025100	mp:0011150	Abnormal hippocampus morphology	abnormal hippocampus stratum oriens morphology	0.600000	medium	0.375000	medium	0.600000	medium	3	8
+hp:0100543	mp:0011620	Cognitive impairment	abnormal habituation to a new environment	0.000000	zero	0.000000	zero	0.000000	zero	0	14
+hp:0008322	mp:0011639	Abnormal mitochondrial morphology	decreased mitochondrial DNA content	0.166667	low	0.083333	low	0.166667	low	1	12
+hp:0003546	mp:0012106	Exercise intolerance	impaired exercise endurance	0.250000	low	0.250000	low	0.500000	medium	3	12
+hp:0033353	mp:0012253	Abnormal blood vessel morphology	abnormal intersomitic vessel morphology	0.600000	medium	0.444444	medium	0.800000	high	4	9
+hp:0100543	mp:0012307	Cognitive impairment	impaired spatial learning	0.000000	zero	0.052632	low	0.111111	low	1	19
+hp:0020222	mp:0012334	Hypohomocysteinemia	decreased circulating homocysteine level	0.000000	zero	0.333333	medium	1.000000	high	3	9
+hp:0100961	mp:0020082	Enlarged hippocampus	increased hippocampus volume	0.250000	low	0.166667	low	0.250000	low	1	6
+hp:0034011	mp:0020451	Reduced progressive sperm motility	decreased sperm progressive motility	0.600000	medium	0.571429	medium	1.000000	high	4	7
+hp:0100961	mp:0008282	Enlarged hippocampus	enlarged hippocampus	1.000000	high	0.333333	medium	1.000000	high	2	6
+hp:0000069	mp:0000534	Abnormality of the ureter	abnormal ureter morphology	0.166667	low	0.090909	low	0.333333	medium	1	11
+hp:0000069	mp:0003589	Abnormality of the ureter	abnormal ureter physiology	0.166667	low	0.111111	low	0.250000	low	1	9
+hp:0001760	mp:0000572	Abnormal foot morphology	abnormal autopod morphology	0.500000	medium	0.157895	low	1.000000	high	3	19
+hp:0002101	mp:0011011	Abnormal lung lobation	impaired lung lobe morphogenesis	0.166667	low	0.076923	low	0.166667	low	1	13
+hp:0002245	mp:0002581	Meckel diverticulum	abnormal ileum morphology	0.000000	zero	0.000000	zero	0.000000	zero	0	8
+hp:0002594	mp:0009111	Pancreatic hypoplasia	pancreas hypoplasia	0.333333	medium	0.800000	high	1.000000	high	4	5
+hp:0003115	mp:0010508	Abnormal EKG	abnormal heart electrocardiography waveform feature	0.166667	low	0.272727	low	1.000000	high	3	11
+hp:0004414	mp:0000484	Abnormality of the pulmonary artery	abnormal pulmonary artery morphology	0.285714	low	0.250000	low	0.333333	medium	3	12
+hp:0008771	mp:0003679	Aplasia/Hypoplasia of the ear	ear lobe hypoplasia	0.333333	medium	0.181818	low	0.333333	medium	2	11
+hp:0008771	mp:0006286	Aplasia/Hypoplasia of the ear	inner ear hypoplasia	0.333333	medium	0.200000	low	0.333333	medium	2	10
+hp:0010872	mp:0010505	T-wave inversion	abnormal T wave	0.500000	medium	0.400000	medium	0.500000	medium	2	5
+hp:0011603	mp:0002191	Congenital malformation of the great arteries	abnormal artery morphology	0.000000	zero	0.066667	low	0.125000	low	1	15
+hp:0011615	mp:0010853	Abnormal pulmonary situs morphology	abnormal lung position or orientation	0.125000	low	0.100000	low	0.125000	low	1	10
+hp:0012243	mp:0002160	Abnormal reproductive system morphology	abnormal reproductive system morphology	1.000000	high	0.400000	medium	1.000000	high	4	10
+hp:0010948	mp:0000267	Abnormal fetal cardiovascular morphology	abnormal heart development	0.166667	low	0.071429	low	0.166667	low	1	14
+hp:0010948	mp:0000269	Abnormal fetal cardiovascular morphology	abnormal heart looping	0.166667	low	0.071429	low	0.166667	low	1	14
+hp:0003811	mp:0002081	Neonatal death	perinatal lethality	0.000000	zero	0.142857	low	0.333333	medium	1	7
+hp:0006705	mp:0002745	Abnormal atrioventricular valve morphology	abnormal atrioventricular valve morphology	1.000000	high	0.500000	medium	1.000000	high	5	10
+hp:0001646	mp:0002746	Abnormal aortic valve morphology	abnormal semilunar valve morphology	0.600000	medium	0.214286	low	0.600000	medium	3	14
+hp:0001641	mp:0002746	Abnormal pulmonary valve morphology	abnormal semilunar valve morphology	0.600000	medium	0.200000	low	0.600000	medium	3	15
+hp:0001696	mp:0002766	Situs inversus totalis	situs inversus	0.666667	high	0.133333	low	1.000000	high	2	15
+hp:0031592	mp:0002766	Situs inversus with levocardia	situs inversus	0.500000	medium	0.285714	low	0.500000	medium	2	7
+hp:0005120	mp:0003105	Abnormal cardiac atrium morphology	abnormal heart atrium morphology	0.600000	medium	0.400000	medium	0.600000	medium	4	10
+hp:0001669	mp:0004110	Transposition of the great arteries	transposition of great arteries	0.800000	high	0.545455	medium	1.000000	high	6	11
+hp:0001713	mp:0005294	Abnormal cardiac ventricle morphology	abnormal heart ventricle morphology	0.600000	medium	0.333333	medium	0.600000	medium	3	9
+hp:0010883	mp:0006115	Aortic valve atresia	aortic valve atresia	1.000000	high	0.272727	low	1.000000	high	3	11
+hp:0006677	mp:0010392	Prolonged QRS complex	prolonged QRS complex duration	0.750000	high	0.230769	low	0.750000	high	3	13
+hp:0004762	mp:0010422	Hypoplasia of right ventricle	heart right ventricle hypoplasia	0.600000	medium	0.363636	medium	1.000000	high	4	11
+hp:0001711	mp:0010446	Abnormal left ventricle morphology	heart left ventricle hypoplasia	0.333333	medium	0.250000	low	0.500000	medium	3	12
+hp:0030962	mp:0010458	Abnormal morphology of the great vessels	pulmonary trunk hypoplasia	0.000000	zero	0.000000	zero	0.000000	zero	0	12
+hp:0004971	mp:0010460	Pulmonary artery hypoplasia	pulmonary artery hypoplasia	1.000000	high	0.375000	medium	1.000000	high	3	8
+hp:0012304	mp:0010485	Hypoplastic aortic arch	aortic arch hypoplasia	0.500000	medium	0.800000	high	1.000000	high	4	5
+hp:0001679	mp:0010541	Abnormal aortic morphology	aorta hypoplasia	0.000000	zero	0.222222	low	0.250000	low	2	9
+hp:0001711	mp:0010580	Abnormal left ventricle morphology	decreased heart left ventricle size	0.285714	low	0.250000	low	0.428571	medium	3	12
+hp:0003819	mp:0011085	Death in childhood	postnatal lethality, complete penetrance	0.000000	zero	0.000000	zero	0.000000	zero	0	8
+hp:0011573	mp:0011680	Hypoplastic tricuspid valve	tricuspid valve hypoplasia	0.500000	medium	0.500000	medium	1.000000	high	4	8
+hp:0001627	mp:0012515	Abnormal heart morphology	abnormal heart apex morphology	0.750000	high	0.266667	low	0.750000	high	4	15
+hp:0001633	mp:0031523	Abnormal mitral valve morphology	mitral valve hypoplasia	0.400000	medium	0.153846	low	0.400000	medium	2	13
+hp:0002669	mp:0003789	Osteosarcoma	increased osteosarcoma incidence	0.333333	medium	0.375000	medium	1.000000	high	3	8
+hp:0002664	mp:0001272	Neoplasm	increased metastatic potential	0.000000	zero	0.000000	zero	0.000000	zero	0	21
+hp:0040006	mp:0014237	Mortality/Aging	decreased tumor-free survival time	0.000000	zero	0.000000	zero	0.000000	zero	0	8
+hp:0008897	mp:0001732	Postnatal growth retardation	postnatal growth retardation	1.000000	high	0.166667	low	1.000000	high	3	18
+hp:0002664	mp:0002020	Neoplasm	increased tumor incidence	0.000000	zero	0.214286	low	0.500000	medium	3	14
+hp:0010622	mp:0010280	Neoplasm of the skeletal system	increased skeletal tumor incidence	0.125000	low	0.272727	low	0.500000	medium	3	11
+hp:0012032	mp:0010344	Lipoma	increased hibernoma incidence	0.000000	zero	0.000000	zero	0.000000	zero	0	11
+hp:0011017	mp:0011804	Abnormal cellular physiology	increased cell migration	0.000000	zero	0.125000	low	0.166667	low	1	8
+hp:0033513	mp:0002556	Addictive cocaine use	abnormal cocaine consumption	0.200000	low	0.142857	low	0.333333	medium	1	7
+hp:0030858	mp:0002555	Addictive behavior	addiction	0.000000	zero	0.000000	zero	0.000000	zero	0	4
+hp:0430037	mp:0001425	Abnormal alcohol consumption	abnormal alcohol consumption	1.000000	high	0.500000	medium	1.000000	high	3	6
