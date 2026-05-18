@@ -33,6 +33,8 @@ import argparse
 import ast
 import csv
 import json
+import re
+import subprocess
 import sys
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
@@ -69,6 +71,39 @@ SWEEP_GRID: List[float] = [round(0.50 + 0.05 * i, 2) for i in range(10)]
 # min(TASK_THRESHOLDS.values()) and <= DEFAULT_THRESHOLD.
 MAPPER_FLOOR_THRESHOLD = 0.5
 
+# SNOMED labels in Bio-ML come wrapped with semantic-type markers and
+# structural noise that defeat LeonMap's lexical boost on what would otherwise
+# be exact label matches. We strip, in order:
+#   1. trailing parenthetical: " (body structure)", " (disorder)", etc.
+#   2. leading "Structure of " (8k+ of 34k SNOMED Body labels start this way)
+#   3. trailing " structure" / " part" / " region" / " area" left over after
+#      paren removal (e.g. "Lateral meniscus structure" -> "Lateral meniscus")
+# Applied to labels and synonyms of any collection whose OWL filename starts
+# with "snomed". Requires --rebuild on first run to refresh cached FAISS DBs.
+STRIP_SNOMED_SUFFIXES = True
+_SNOMED_TRAILING_PAREN_RE = re.compile(r"\s*\([^()]+\)\s*$")
+_SNOMED_LEADING_RE = re.compile(r"^Structure of\s+", re.IGNORECASE)
+_SNOMED_TRAILING_NOISE_RE = re.compile(r"\s+(structure|part|region|area)\s*$", re.IGNORECASE)
+
+# OMIM labels in Bio-ML 2024 OMIM-ORDO have a data-prep artifact: the literal
+# token "TYPE" has been replaced with "  iia" (two spaces plus 'iia') in both
+# rdfs:label and skos:exactMatch synonyms. Affects 928/9622 OMIM concepts
+# (10%). Examples:
+#   "ACROFACIAL DYSOSTOSIS, CATANIA TYPE"  -> "acrofacial dysostosis, catania  iia"
+#   "NEUROFIBROMATOSIS, TYPE 2"            -> "neurofibromatosis,  iia 2"
+#   "AMELOGENESIS IMPERFECTA, TYPE 1B"     -> "amelogenesis imperfecta,  iia 1b"
+# Without correction, SapBERT embeds the corrupted string and the lexical boost
+# never fires against ORDO (which has clean labels). Test F1 on the affected
+# slice is 0.29 vs 0.62 on the clean slice.
+#
+# Signature is unambiguous: every double-space in the OMIM OWL is part of
+# "  iia"; every legitimate subtype suffix ("iiia", "iiib", "iiic", "iiid",
+# real single-space "iia" in CDG-IIa) uses one space and is left alone.
+# Applied to labels and synonyms of any collection whose OWL filename starts
+# with "omim". Requires --rebuild on first run to refresh cached FAISS DBs.
+STRIP_OMIM_TYPE_ARTIFACT = True
+_OMIM_TYPE_ARTIFACT_RE = re.compile(r"  iia\b")  # exactly two spaces, exactly 'iia'
+
 TASKS = [
     "omim-ordo",
     "ncit-doid",
@@ -97,6 +132,40 @@ def _owl_files(task: str) -> Tuple[str, str]:
         tgt_short, subdomain = tgt_part.split(".", 1)
         return f"{src_part}.{subdomain}.owl", f"{tgt_short}.{subdomain}.owl"
     return f"{src_part}.owl", f"{tgt_part}.owl"
+
+
+def _strip_paren_suffix(s: str) -> str:
+    """
+    Clean a SNOMED label/synonym in three passes:
+      "Structure of base of lung (body structure)"  -> "base of lung"
+      "Lateral meniscus structure (body structure)" -> "Lateral meniscus"
+      "Medulla oblongata part (body structure)"     -> "Medulla oblongata"
+      "Acquired pericardial cyst (disorder)"        -> "Acquired pericardial cyst"
+    """
+    if not s:
+        return s
+    s = _SNOMED_TRAILING_PAREN_RE.sub("", s)
+    s = _SNOMED_LEADING_RE.sub("", s)
+    s = _SNOMED_TRAILING_NOISE_RE.sub("", s)
+    return s.strip()
+
+
+def _restore_omim_type(s: str) -> str:
+    """
+    Reverse the Bio-ML 2024 OMIM 'TYPE' -> '  iia' substitution. Matches the
+    artifact strictly (exactly two spaces, exactly the token 'iia'), so
+    legitimate subtype tokens with one space ('iiia', 'iiib', 'iiic', 'iiid',
+    real ' iia' in CDG-IIa) are left alone.
+      "acrofacial dysostosis, catania  iia"   -> "acrofacial dysostosis, catania type"
+      "neurofibromatosis,  iia 2"             -> "neurofibromatosis, type 2"
+      "congenital disorder of glycosylation,  iia iia"
+                                              -> "congenital disorder of glycosylation, type iia"
+      "glycogen storage disease iiia"         -> unchanged
+    """
+    if not s:
+        return s
+    s = _OMIM_TYPE_ARTIFACT_RE.sub(" type", s)
+    return re.sub(r"\s+", " ", s).strip()
 
 
 def _iri_to_id(iri: str) -> str:
@@ -365,7 +434,7 @@ def _eval_global_match_file(match_path: Path, refs_path: Path, restrict_to_refs_
 
 # Per-task driver
 
-def run_task(task: str, year_dir: Path, out_dir: Path, sweep: bool) -> Optional[Dict]:
+def run_task(task: str, year_dir: Path, out_dir: Path, sweep: bool, rebuild: bool) -> Optional[Dict]:
     task_dir = year_dir / task
     if not task_dir.is_dir():
         print(f"[SKIP] Task data not found: {task_dir}")
@@ -395,8 +464,11 @@ def run_task(task: str, year_dir: Path, out_dir: Path, sweep: bool) -> Optional[
 
     src_col, tgt_col, mapping_key = _register_task(task, src_owl, tgt_owl)
 
-    # Build FAISS collections (no-op if already built).
-    _run(_LM["build_main"], "leonmap-build", ["--collections", src_col, tgt_col])
+    # Build FAISS collections (no-op if already built, unless --rebuild).
+    build_argv = ["--collections", src_col, tgt_col]
+    if rebuild:
+        build_argv.append("--rebuild")
+    _run(_LM["build_main"], "leonmap-build", build_argv)
 
     # Mapper at the floor threshold so we keep every candidate.
     _run(_LM["mapper_main"], "leonmap-map",
@@ -491,9 +563,68 @@ if __name__ == "__main__":
     ap.add_argument("--sweep", action="store_true",
                     help="Tune threshold per task on refs_equiv/train.tsv, evaluate on test.tsv. "
                          "Default: fixed threshold per TASK_THRESHOLDS (or DEFAULT_THRESHOLD), eval on full.tsv.")
+    ap.add_argument("--rebuild", action="store_true",
+                    help="Pass --rebuild to build_vdb so existing FAISS DBs are overwritten. "
+                         "Needed after enabling STRIP_SNOMED_SUFFIXES if SNOMED collections were built earlier.")
     args = ap.parse_args()
 
     root = Path(LEONMAP_ROOT)
+
+    # Multi-task mode: shell out per task to give each one a fresh interpreter.
+    # LeonMap's build_vdb.main / mapper.main carry process-level state (model
+    # cache, owlready2 default world, faiss thread state) that doesn't reliably
+    # reset between in-process calls. Running each task in its own subprocess
+    # is the difference between (e.g.) neoplas F1=0.528 (stale state) and
+    # F1=0.798 (clean state). Single-task mode below does the actual work.
+    if args.task is None:
+        suffix = "sweep" if args.sweep else "fixed"
+        out_root = root / "oaei_results" / RECORD_ID / suffix
+        out_root.mkdir(parents=True, exist_ok=True)
+
+        print(f"\n[ORCHESTRATOR] Running {len(TASKS)} tasks as subprocesses.")
+        for task in TASKS:
+            cmd = [sys.executable, str(Path(__file__).resolve()), "--task", task]
+            if args.sweep:
+                cmd.append("--sweep")
+            if args.rebuild:
+                cmd.append("--rebuild")
+            print(f"\n[ORCHESTRATOR] -> {' '.join(cmd)}")
+            rc = subprocess.run(cmd).returncode
+            if rc != 0:
+                print(f"[ORCHESTRATOR] Task {task} exited with code {rc}; continuing.")
+
+        # Stitch per-task metrics.json into a single summary table.
+        merged: List[Dict] = []
+        for task in TASKS:
+            mj = out_root / task / "metrics.json"
+            if mj.exists():
+                merged.append(json.loads(mj.read_text(encoding="utf-8")))
+        if merged:
+            summary_path = out_root / "results_summary.tsv"
+            cols = ["task", "mode", "threshold", "eval_on",
+                    "P", "R", "F1", "MRR", "Hits@1", "Hits@5", "Hits@10",
+                    "n_preds", "n_refs", "tp", "n_test", "src_missing"]
+            with open(summary_path, "w", encoding="utf-8", newline="") as f:
+                w = csv.DictWriter(f, fieldnames=cols, delimiter="\t", extrasaction="ignore")
+                w.writeheader()
+                for m in merged:
+                    w.writerow(m)
+            print(f"\nSummary -> {summary_path}\n")
+
+            hdr = (f"{'task':<24} {'thr':>5} {'on':<10} "
+                   f"{'P':>6} {'R':>6} {'F1':>6} {'MRR':>6} {'H@1':>6} {'H@5':>6} {'H@10':>6}")
+            print(hdr)
+            print("-" * len(hdr))
+            for m in merged:
+                print(f"{m['task']:<24} {m['threshold']:>5.2f} {m['eval_on']:<10} "
+                      f"{m['P']:>6.3f} {m['R']:>6.3f} {m['F1']:>6.3f} "
+                      f"{m['MRR']:>6.3f} {m['Hits@1']:>6.3f} {m['Hits@5']:>6.3f} {m['Hits@10']:>6.3f}")
+        print("\n[ORCHESTRATOR] Done.")
+        sys.exit(0)
+
+    # ----------------------------------------------------------------------
+    # Single-task mode below. Runs exactly one task in this interpreter.
+    # ----------------------------------------------------------------------
 
     # Patch PROJECT_ROOT before importing anything else from leonmap.
     import leonmap.config as _cfg
@@ -501,8 +632,78 @@ if __name__ == "__main__":
 
     from leonmap.config import BuildConfig, COLLECTIONS, MAPPINGS, resolve_path
     from leonmap.utils import load_collection, rank_pool, canonicalize_id
+
+    # Disable the interactive build preview ("Proceed with building all? [y/n]")
+    # for our runs without touching LeonMap's config.py. build_vdb.main reads
+    # cfg.monitor_samples from a freshly-instantiated BuildConfig, so we wrap
+    # BuildConfig.__init__ to inject monitor_samples=0 by default. Explicit
+    # overrides (BuildConfig(monitor_samples=5)) still win.
+    _orig_buildcfg_init = BuildConfig.__init__
+
+    def _patched_buildcfg_init(self, *a, **kw):
+        kw.setdefault("monitor_samples", 0)
+        _orig_buildcfg_init(self, *a, **kw)
+
+    BuildConfig.__init__ = _patched_buildcfg_init
+
+    # Monkey-patch load_owl_concepts to strip SNOMED label noise. This has to
+    # patch build_vdb's already-bound reference, NOT leonmap.utils. build_vdb
+    # does `from leonmap.utils import load_owl_concepts` at import time, so the
+    # name in build_vdb's namespace points to the original function object;
+    # patching leonmap.utils.load_owl_concepts after that doesn't reach the
+    # caller. We import build_vdb here, then overwrite its bound name.
     from leonmap.build_vdb import main as build_main
     from leonmap.mapper import main as mapper_main
+    import leonmap.build_vdb as _build_vdb
+    _orig_load_owl_concepts = _build_vdb.load_owl_concepts
+
+    def _patched_load_owl_concepts(owl_path, id_prefixes=None):
+        concepts = _orig_load_owl_concepts(owl_path, id_prefixes=id_prefixes)
+        if STRIP_SNOMED_SUFFIXES and "snomed" in Path(owl_path).name.lower():
+            n_label_changed = 0
+            n_syn_changed = 0
+            n_syns_total = 0
+            for c in concepts:
+                lbl = c.get("label", "")
+                cleaned = _strip_paren_suffix(lbl)
+                if cleaned != lbl:
+                    c["label"] = cleaned
+                    n_label_changed += 1
+                syns = c.get("synonyms", []) or []
+                new_syns = []
+                for s in syns:
+                    n_syns_total += 1
+                    s2 = _strip_paren_suffix(s)
+                    if s2 != s:
+                        n_syn_changed += 1
+                    new_syns.append(s2)
+                c["synonyms"] = new_syns
+            print(f"  [SNOMED] Stripped suffixes from {n_label_changed}/{len(concepts)} labels "
+                  f"and {n_syn_changed}/{n_syns_total} synonyms in {Path(owl_path).name}")
+        if STRIP_OMIM_TYPE_ARTIFACT and "omim" in Path(owl_path).name.lower():
+            n_label_changed = 0
+            n_syn_changed = 0
+            n_syns_total = 0
+            for c in concepts:
+                lbl = c.get("label", "")
+                cleaned = _restore_omim_type(lbl)
+                if cleaned != lbl:
+                    c["label"] = cleaned
+                    n_label_changed += 1
+                syns = c.get("synonyms", []) or []
+                new_syns = []
+                for s in syns:
+                    n_syns_total += 1
+                    s2 = _restore_omim_type(s)
+                    if s2 != s:
+                        n_syn_changed += 1
+                    new_syns.append(s2)
+                c["synonyms"] = new_syns
+            print(f"  [OMIM] Restored 'type' in {n_label_changed}/{len(concepts)} labels "
+                  f"and {n_syn_changed}/{n_syns_total} synonyms in {Path(owl_path).name}")
+        return concepts
+
+    _build_vdb.load_owl_concepts = _patched_load_owl_concepts
 
     _LM.update({
         "cfg_mod": _cfg,
@@ -525,6 +726,13 @@ if __name__ == "__main__":
     if not year_dir.is_dir():
         raise SystemExit(f"Bio-ML data directory not found: {year_dir}")
 
+    if STRIP_SNOMED_SUFFIXES and not args.rebuild:
+        print("[NOTE] STRIP_SNOMED_SUFFIXES is ON. If SNOMED FAISS DBs were built before this "
+              "feature was enabled, pass --rebuild on this run to refresh them.")
+    if STRIP_OMIM_TYPE_ARTIFACT and not args.rebuild:
+        print("[NOTE] STRIP_OMIM_TYPE_ARTIFACT is ON. If OMIM FAISS DB was built before this "
+              "feature was enabled, pass --rebuild on this run to refresh it.")
+
     if args.task and args.task not in TASKS:
         raise SystemExit(f"Unknown task: {args.task}. One of: {TASKS}")
     tasks_to_run = [args.task] if args.task else list(TASKS)
@@ -535,7 +743,7 @@ if __name__ == "__main__":
 
     all_metrics: List[Dict] = []
     for task in tasks_to_run:
-        m = run_task(task, year_dir, out_root / task, sweep=args.sweep)
+        m = run_task(task, year_dir, out_root / task, sweep=args.sweep, rebuild=args.rebuild)
         if m:
             all_metrics.append(m)
 
