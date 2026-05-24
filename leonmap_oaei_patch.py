@@ -79,10 +79,13 @@ _SNOMED_TRAILING_NOISE_RE = re.compile(r"\s+(structure|part|region|area)\s*$", r
 STRIP_OMIM_TYPE_ARTIFACT = True
 _OMIM_TYPE_ARTIFACT_RE = re.compile(r"  iia\b")
 
-# Contamination filter (label-disjoint eval): drop test pairs whose src or tgt
-# label appears in sapbert_all.csv. Applied at scoring time; on-disk artifacts
-# (match.result.tsv, rank.result.tsv) are unchanged.
+# Contamination filter.
+# Modes:
+#   "exact_pair"      : drop eval pairs whose (src_label, tgt_label) appeared in sapbert_all.csv
+#   "label_disjoint"  : drop eval pairs if either src_label or tgt_label appeared anywhere in sapbert_all.csv
+#   "both"            : require both exact-pair-clean and label-disjoint-clean
 ENABLE_CONTAMINATION_FILTER = True
+CONTAMINATION_FILTER_MODE = "both"
 SAPBERT_CSV_PATH = "data/sapbert_all.csv"
 
 TASKS = [
@@ -148,24 +151,61 @@ def _get_ignored_iris(owl_path: Path) -> set:
 # Contamination filter
 
 _SEEN_LABELS: Optional[frozenset] = None
+_SEEN_PAIRS: Optional[frozenset] = None
 
 
 def _norm_label(s: str) -> str:
     return " ".join(str(s).lower().split())
 
 
+def _clean_seen_label(s: str) -> str:
+    """Apply the same lightweight label cleanup used by the ontology loader."""
+    s = str(s)
+    s = _restore_omim_type(s)
+    s = _strip_paren_suffix(s)
+    return _norm_label(s)
+
+
 def _load_seen_labels() -> frozenset:
-    """Cached set of normalized labels from sapbert_all.csv (both columns)."""
-    global _SEEN_LABELS
+    """Cached set of normalized labels from sapbert_all.csv."""
+    global _SEEN_LABELS, _SEEN_PAIRS
     if _SEEN_LABELS is not None:
         return _SEEN_LABELS
+
     import pandas as pd
+
     csv_path = LEONMAP_ROOT / SAPBERT_CSV_PATH
     df = pd.read_csv(csv_path)
-    labels = pd.concat([df["subject_label"], df["object_label"]])
-    _SEEN_LABELS = frozenset(_norm_label(x) for x in labels if pd.notna(x))
+
+    subj = df["subject_label"].dropna().map(_clean_seen_label)
+    obj = df["object_label"].dropna().map(_clean_seen_label)
+
+    _SEEN_LABELS = frozenset(pd.concat([subj, obj]).dropna().tolist())
+
+    pairs = []
+    for _, row in df.iterrows():
+        if pd.isna(row.get("subject_label")) or pd.isna(row.get("object_label")):
+            continue
+        s = _clean_seen_label(row["subject_label"])
+        t = _clean_seen_label(row["object_label"])
+        if s and t:
+            pairs.append((s, t))
+            pairs.append((t, s))
+
+    _SEEN_PAIRS = frozenset(pairs)
+
     print(f"  [FILTER] Loaded {len(_SEEN_LABELS)} unique seen labels from {csv_path.name}")
+    print(f"  [FILTER] Loaded {len(_SEEN_PAIRS)} directional seen label-pairs from {csv_path.name}")
+    print(f"  [FILTER] Mode: {CONTAMINATION_FILTER_MODE}")
+
     return _SEEN_LABELS
+
+
+def _load_seen_pairs() -> frozenset:
+    global _SEEN_PAIRS
+    if _SEEN_PAIRS is None:
+        _load_seen_labels()
+    return _SEEN_PAIRS or frozenset()
 
 
 def _label_for_iri(iri: str, db) -> str:
@@ -173,13 +213,67 @@ def _label_for_iri(iri: str, db) -> str:
     return payload.get("label", "")
 
 
-def _is_clean_pair(src_iri: str, tgt_iri: str, src_db, tgt_db, seen: frozenset) -> bool:
-    """True iff neither label is in sapbert_all.csv."""
-    if _norm_label(_label_for_iri(src_iri, src_db)) in seen:
-        return False
-    if _norm_label(_label_for_iri(tgt_iri, tgt_db)) in seen:
-        return False
-    return True
+def _clean_label_for_filter(s: str) -> str:
+    s = _restore_omim_type(str(s))
+    s = _strip_paren_suffix(s)
+    return _norm_label(s)
+
+
+def _label_pair_for_iris(src_iri: str, tgt_iri: str, src_db, tgt_db) -> Tuple[str, str]:
+    src_label = _clean_label_for_filter(_label_for_iri(src_iri, src_db))
+    tgt_label = _clean_label_for_filter(_label_for_iri(tgt_iri, tgt_db))
+    return src_label, tgt_label
+
+
+def _is_clean_pair(
+    src_iri: str,
+    tgt_iri: str,
+    src_db,
+    tgt_db,
+    seen_labels: Optional[frozenset],
+    seen_pairs: Optional[frozenset] = None,
+) -> bool:
+    """Return True if a pair passes the selected contamination filter."""
+    if seen_labels is None:
+        return True
+
+    src_label, tgt_label = _label_pair_for_iris(src_iri, tgt_iri, src_db, tgt_db)
+    pair_seen = seen_pairs is not None and (src_label, tgt_label) in seen_pairs
+    label_seen = src_label in seen_labels or tgt_label in seen_labels
+
+    if CONTAMINATION_FILTER_MODE == "exact_pair":
+        return not pair_seen
+
+    if CONTAMINATION_FILTER_MODE == "label_disjoint":
+        return not label_seen
+
+    if CONTAMINATION_FILTER_MODE == "both":
+        return (not pair_seen) and (not label_seen)
+
+    raise ValueError(f"Unknown CONTAMINATION_FILTER_MODE: {CONTAMINATION_FILTER_MODE}")
+
+
+def _filter_refs_set(
+    refs: set,
+    src_db,
+    tgt_db,
+    seen_labels: Optional[frozenset],
+    seen_pairs: Optional[frozenset],
+) -> set:
+    if seen_labels is None:
+        return refs
+    return {
+        (s, t)
+        for s, t in refs
+        if _is_clean_pair(s, t, src_db, tgt_db, seen_labels, seen_pairs)
+    }
+
+
+def _refs_to_src_to_gold(refs: set) -> Dict[str, Set[str]]:
+    out: Dict[str, Set[str]] = defaultdict(set)
+    for s, t in refs:
+        out[s].add(t)
+    return out
 
 
 # Task registration + mapper invocation
@@ -432,46 +526,100 @@ def _flip_analysis(
 
 
 def _semisupervised_pattern_rerank(
-    task: str, src_db, tgt_db, refs_train: Path, refs_test: Path,
+    task: str,
+    src_db,
+    tgt_db,
+    refs_train: Path,
+    refs_test: Path,
+    *,
+    seen_labels: Optional[frozenset] = None,
+    seen_pairs: Optional[frozenset] = None,
 ) -> Tuple[List[Tuple[str, str, float]], float, Dict]:
-    """Tune (alpha, beta, threshold) on train.tsv, apply to test.tsv. Returns (preds, threshold, info)."""
-    train_src_to_gold, train_refs = _load_refs_by_src(refs_train)
-    test_src_to_gold, test_refs = _load_refs_by_src(refs_test)
+    """Tune (alpha, beta, threshold) on train.tsv, apply to test.tsv.
+    If contamination filtering is enabled, train/tune only on clean train pairs."""
+    train_src_to_gold_raw, train_refs_raw = _load_refs_by_src(refs_train)
+    test_src_to_gold_raw, test_refs_raw = _load_refs_by_src(refs_test)
+
+    if seen_labels is not None:
+        train_refs = _filter_refs_set(train_refs_raw, src_db, tgt_db, seen_labels, seen_pairs)
+        test_refs = _filter_refs_set(test_refs_raw, src_db, tgt_db, seen_labels, seen_pairs)
+        train_src_to_gold = _refs_to_src_to_gold(train_refs)
+        test_src_to_gold = _refs_to_src_to_gold(test_refs)
+    else:
+        train_refs = train_refs_raw
+        test_refs = test_refs_raw
+        train_src_to_gold = train_src_to_gold_raw
+        test_src_to_gold = test_src_to_gold_raw
+
     tgt_id_to_iri = _tgt_id_to_iri_map(tgt_db)
 
     print(f"  [RERANK] {task}: top_k={RERANK_TOP_K} "
           f"train_src={len(train_src_to_gold)} test_src={len(test_src_to_gold)}")
+    if seen_labels is not None:
+        print(f"  [RERANK] train refs {len(train_refs_raw)} -> {len(train_refs)} after contamination filter")
+        print(f"  [RERANK] test refs  {len(test_refs_raw)} -> {len(test_refs)} after contamination filter")
+
     train_cache = _build_topk_boosted_cache(set(train_src_to_gold), src_db, tgt_db, RERANK_TOP_K)
     test_cache = _build_topk_boosted_cache(set(test_src_to_gold), src_db, tgt_db, RERANK_TOP_K)
 
     _, _, _, _, _, baseline_train_top1 = _evaluate_rerank_cache(
         train_cache, tgt_db, tgt_id_to_iri, train_refs, 0.0, 0.0, 0.75)
 
-    best = {"alpha": 0.0, "beta": 0.0, "threshold": SWEEP_GRID[0],
-            "train_F1": -1.0, "train_P": 0.0, "train_R": 0.0,
-            "train_tp": 0, "train_n_preds": 0}
+    best = {
+        "alpha": 0.0,
+        "beta": 0.0,
+        "threshold": SWEEP_GRID[0],
+        "train_F1": -1.0,
+        "train_P": 0.0,
+        "train_R": 0.0,
+        "train_tp": 0,
+        "train_n_preds": 0,
+    }
+
     sweep_log: List[Dict] = []
+
     for alpha, beta in RERANK_GRID:
         for threshold in SWEEP_GRID:
             p, r, f1, tp, n_preds, top1 = _evaluate_rerank_cache(
                 train_cache, tgt_db, tgt_id_to_iri, train_refs, alpha, beta, threshold)
             good, bad, neutral = _flip_analysis(baseline_train_top1, top1, train_src_to_gold)
-            sweep_log.append({"alpha": alpha, "beta": beta, "threshold": threshold,
-                              "P": p, "R": r, "F1": f1, "tp": tp, "n_preds": n_preds,
-                              "good_flips": good, "bad_flips": bad,
-                              "neutral_flips": neutral, "net_flips": good - bad})
+            sweep_log.append({
+                "alpha": alpha,
+                "beta": beta,
+                "threshold": threshold,
+                "P": p,
+                "R": r,
+                "F1": f1,
+                "tp": tp,
+                "n_preds": n_preds,
+                "good_flips": good,
+                "bad_flips": bad,
+                "neutral_flips": neutral,
+                "net_flips": good - bad,
+            })
             if f1 > best["train_F1"]:
-                best.update({"alpha": alpha, "beta": beta, "threshold": threshold,
-                             "train_F1": f1, "train_P": p, "train_R": r,
-                             "train_tp": tp, "train_n_preds": n_preds})
+                best.update({
+                    "alpha": alpha,
+                    "beta": beta,
+                    "threshold": threshold,
+                    "train_F1": f1,
+                    "train_P": p,
+                    "train_R": r,
+                    "train_tp": tp,
+                    "train_n_preds": n_preds,
+                })
 
-    alpha = float(best["alpha"]); beta = float(best["beta"]); threshold = float(best["threshold"])
+    alpha = float(best["alpha"])
+    beta = float(best["beta"])
+    threshold = float(best["threshold"])
+
     print(f"  [RERANK] best train: alpha={alpha:.2f} beta={beta:.2f} thr={threshold:.2f} F1={best['train_F1']:.4f}")
 
     base_p, base_r, base_f1, base_tp, base_n, baseline_test_top1 = _evaluate_rerank_cache(
         test_cache, tgt_db, tgt_id_to_iri, test_refs, 0.0, 0.0, 0.75)
     test_p, test_r, test_f1, test_tp, test_n, test_top1 = _evaluate_rerank_cache(
         test_cache, tgt_db, tgt_id_to_iri, test_refs, alpha, beta, threshold)
+
     good, bad, neutral = _flip_analysis(baseline_test_top1, test_top1, test_src_to_gold)
 
     print(f"  [RERANK] baseline test @0.75: P={base_p:.4f} R={base_r:.4f} F1={base_f1:.4f}")
@@ -485,31 +633,72 @@ def _semisupervised_pattern_rerank(
             test_preds.append((src_iri, tgt_iri, float(score)))
 
     rerank_info = {
-        "rerank_enabled": True, "rerank_task": task, "rerank_top_k": RERANK_TOP_K,
-        "rerank_alpha": alpha, "rerank_beta": beta, "rerank_threshold": threshold,
-        "rerank_train_P": best["train_P"], "rerank_train_R": best["train_R"],
-        "rerank_train_F1": best["train_F1"], "rerank_train_tp": best["train_tp"],
+        "rerank_enabled": True,
+        "rerank_task": task,
+        "rerank_top_k": RERANK_TOP_K,
+        "rerank_alpha": alpha,
+        "rerank_beta": beta,
+        "rerank_threshold": threshold,
+        "rerank_train_P": best["train_P"],
+        "rerank_train_R": best["train_R"],
+        "rerank_train_F1": best["train_F1"],
+        "rerank_train_tp": best["train_tp"],
         "rerank_train_n_preds": best["train_n_preds"],
-        "rerank_baseline_test_P_at_075": base_p, "rerank_baseline_test_R_at_075": base_r,
+        "rerank_baseline_test_P_at_075": base_p,
+        "rerank_baseline_test_R_at_075": base_r,
         "rerank_baseline_test_F1_at_075": base_f1,
-        "rerank_test_P": test_p, "rerank_test_R": test_r, "rerank_test_F1": test_f1,
-        "rerank_test_tp": test_tp, "rerank_test_n_preds": test_n,
-        "rerank_good_flips_test": good, "rerank_bad_flips_test": bad,
-        "rerank_neutral_flips_test": neutral, "rerank_net_flips_test": good - bad,
+        "rerank_test_P": test_p,
+        "rerank_test_R": test_r,
+        "rerank_test_F1": test_f1,
+        "rerank_test_tp": test_tp,
+        "rerank_test_n_preds": test_n,
+        "rerank_good_flips_test": good,
+        "rerank_bad_flips_test": bad,
+        "rerank_neutral_flips_test": neutral,
+        "rerank_net_flips_test": good - bad,
         "rerank_sweep_log": sweep_log,
+        "rerank_train_refs_pre_filter": len(train_refs_raw),
+        "rerank_train_refs_post_filter": len(train_refs),
+        "rerank_test_refs_pre_filter": len(test_refs_raw),
+        "rerank_test_refs_post_filter": len(test_refs),
     }
+
     return test_preds, threshold, rerank_info
 
 
 # Threshold sweep on train
 
-def _sweep_threshold(preds: List[Tuple[str, str, float]], train_refs_path: Path, grid: List[float]) -> Dict:
-    """Pick threshold maximizing F1 on train.tsv. Preds restricted to sources present in train refs."""
-    train_refs = _load_refs(train_refs_path)
+def _sweep_threshold(
+    preds: List[Tuple[str, str, float]],
+    train_refs_path: Path,
+    grid: List[float],
+    *,
+    seen_labels: Optional[frozenset] = None,
+    seen_pairs: Optional[frozenset] = None,
+    src_db=None,
+    tgt_db=None,
+) -> Dict:
+    """Pick threshold maximizing F1 on train.tsv. If contamination filtering is enabled,
+    tune only on clean train references and clean train predictions."""
+    train_refs_raw = _load_refs(train_refs_path)
+
+    if seen_labels is not None and src_db is not None and tgt_db is not None:
+        train_refs = _filter_refs_set(train_refs_raw, src_db, tgt_db, seen_labels, seen_pairs)
+        train_preds_all = [
+            (s, t, sc)
+            for s, t, sc in preds
+            if _is_clean_pair(s, t, src_db, tgt_db, seen_labels, seen_pairs)
+        ]
+    else:
+        train_refs = train_refs_raw
+        train_preds_all = preds
+
     train_src = {s for s, _ in train_refs}
-    train_preds = [(s, t, sc) for s, t, sc in preds if s in train_src]
+    train_preds = [(s, t, sc) for s, t, sc in train_preds_all if s in train_src]
+
     sweep_log: List[Dict] = []
     best = {"threshold": grid[0], "F1": -1.0, "P": 0.0, "R": 0.0, "tp": 0, "n_preds": 0}
+
     for t in grid:
         preds_at_t = {(s, tg) for s, tg, sc in train_preds if sc >= t}
         p, r, f1, tp = _f1(preds_at_t, train_refs)
@@ -517,7 +706,13 @@ def _sweep_threshold(preds: List[Tuple[str, str, float]], train_refs_path: Path,
         sweep_log.append(rec)
         if f1 > best["F1"]:
             best = rec
-    return {"best": best, "sweep": sweep_log, "n_train_refs": len(train_refs)}
+
+    return {
+        "best": best,
+        "sweep": sweep_log,
+        "n_train_refs": len(train_refs),
+        "n_train_refs_pre_filter": len(train_refs_raw),
+    }
 
 
 # Local ranking (threshold-independent)
@@ -547,24 +742,33 @@ def _run_local_ranking(test_cands_path: Path, src_db, tgt_db, out_path: Path) ->
 
 
 def _eval_ranking(
-    rank_path: Path, ks: Tuple[int, ...] = (1, 5, 10),
-    *, seen_labels: Optional[frozenset] = None, src_db=None, tgt_db=None,
+    rank_path: Path,
+    ks: Tuple[int, ...] = (1, 5, 10),
+    *,
+    seen_labels: Optional[frozenset] = None,
+    seen_pairs: Optional[frozenset] = None,
+    src_db=None,
+    tgt_db=None,
 ) -> Dict:
-    """MRR / Hits@K. If seen_labels given, skip rows whose src or gold-tgt label is seen."""
+    """MRR / Hits@K. If filtering is enabled, skip rows whose source-gold pair is contaminated."""
     mrr_sum = 0.0
     hits = {k: 0 for k in ks}
     n = n_pre = 0
     filter_on = seen_labels is not None and src_db is not None and tgt_db is not None
+
     with open(rank_path, "r", encoding="utf-8") as f:
         r = csv.DictReader(f, delimiter="\t")
         for row in r:
             n_pre += 1
             src_iri = row["SrcEntity"].strip()
             gold = row["TgtEntity"].strip()
-            if filter_on and not _is_clean_pair(src_iri, gold, src_db, tgt_db, seen_labels):
+
+            if filter_on and not _is_clean_pair(src_iri, gold, src_db, tgt_db, seen_labels, seen_pairs):
                 continue
+
             scored = list(ast.literal_eval(row["TgtCandidates"]))
             scored.sort(key=lambda x: -float(x[1]))
+
             rank = next((i + 1 for i, (iri, _s) in enumerate(scored) if iri == gold), None)
             if rank is not None:
                 mrr_sum += 1.0 / rank
@@ -572,6 +776,7 @@ def _eval_ranking(
                     if rank <= k:
                         hits[k] += 1
             n += 1
+
     out: Dict = {"MRR": mrr_sum / n if n else 0.0, "n_test": n, "n_test_pre_filter": n_pre}
     for k in ks:
         out[f"Hits@{k}"] = hits[k] / n if n else 0.0
@@ -579,12 +784,19 @@ def _eval_ranking(
 
 
 def _eval_global_match_file(
-    match_path: Path, refs_path: Path, restrict_to_refs_src: bool,
-    *, seen_labels: Optional[frozenset] = None, src_db=None, tgt_db=None,
+    match_path: Path,
+    refs_path: Path,
+    restrict_to_refs_src: bool,
+    *,
+    seen_labels: Optional[frozenset] = None,
+    seen_pairs: Optional[frozenset] = None,
+    src_db=None,
+    tgt_db=None,
 ) -> Dict:
-    """Eval match.result.tsv against refs. If seen_labels given, drop pairs whose either label is seen."""
+    """Eval match.result.tsv against refs. If filtering is enabled, drop contaminated refs and preds."""
     raw_refs = _load_refs(refs_path)
     raw_refs_src = {s for s, _ in raw_refs}
+
     raw_preds: set = set()
     with open(match_path, "r", encoding="utf-8") as f:
         r = csv.DictReader(f, delimiter="\t")
@@ -594,16 +806,31 @@ def _eval_global_match_file(
             if restrict_to_refs_src and s not in raw_refs_src:
                 continue
             raw_preds.add((s, t))
+
     n_refs_pre, n_preds_pre = len(raw_refs), len(raw_preds)
+
     if seen_labels is not None and src_db is not None and tgt_db is not None:
-        refs = {p for p in raw_refs if _is_clean_pair(p[0], p[1], src_db, tgt_db, seen_labels)}
-        preds = {p for p in raw_preds if _is_clean_pair(p[0], p[1], src_db, tgt_db, seen_labels)}
+        refs = _filter_refs_set(raw_refs, src_db, tgt_db, seen_labels, seen_pairs)
+        preds = {
+            p
+            for p in raw_preds
+            if _is_clean_pair(p[0], p[1], src_db, tgt_db, seen_labels, seen_pairs)
+        }
     else:
         refs, preds = raw_refs, raw_preds
+
     p, r_, f1, tp = _f1(preds, refs)
-    return {"P": p, "R": r_, "F1": f1, "tp": tp,
-            "n_preds": len(preds), "n_refs": len(refs),
-            "n_preds_pre_filter": n_preds_pre, "n_refs_pre_filter": n_refs_pre}
+
+    return {
+        "P": p,
+        "R": r_,
+        "F1": f1,
+        "tp": tp,
+        "n_preds": len(preds),
+        "n_refs": len(refs),
+        "n_preds_pre_filter": n_preds_pre,
+        "n_refs_pre_filter": n_refs_pre,
+    }
 
 
 # Per-task driver
@@ -670,6 +897,9 @@ def run_task(task: str, year_dir: Path, out_dir: Path, sweep: bool, rebuild: boo
     raw_preds = _load_mapper_predictions(mapper_tsv, src_db, tgt_db, ignored)
     print(f"  Raw predictions (>= {MAPPER_FLOOR_THRESHOLD}): {len(raw_preds)}")
 
+    seen_labels = _load_seen_labels() if ENABLE_CONTAMINATION_FILTER else None
+    seen_pairs = _load_seen_pairs() if ENABLE_CONTAMINATION_FILTER else None
+
     sweep_info: Optional[Dict] = None
     rerank_info: Optional[Dict] = None
     preds_for_output = raw_preds
@@ -679,20 +909,42 @@ def run_task(task: str, year_dir: Path, out_dir: Path, sweep: bool, rebuild: boo
 
         if ENABLE_SEMISUPERVISED_RERANK and task in RERANK_TASKS:
             preds_for_output, chosen_threshold, rerank_info = _semisupervised_pattern_rerank(
-                task=task, src_db=src_db, tgt_db=tgt_db, refs_train=refs_train, refs_test=refs_test)
+                task=task,
+                src_db=src_db,
+                tgt_db=tgt_db,
+                refs_train=refs_train,
+                refs_test=refs_test,
+                seen_labels=seen_labels,
+                seen_pairs=seen_pairs,
+            )
             sweep_info = {
                 "best": {"threshold": chosen_threshold,
                          "P": rerank_info["rerank_train_P"], "R": rerank_info["rerank_train_R"],
                          "F1": rerank_info["rerank_train_F1"], "tp": rerank_info["rerank_train_tp"],
                          "n_preds": rerank_info["rerank_train_n_preds"]},
                 "sweep": rerank_info["rerank_sweep_log"],
-                "n_train_refs": len(_load_refs(refs_train)),
+                "n_train_refs": rerank_info["rerank_train_refs_post_filter"],
+                "n_train_refs_pre_filter": rerank_info["rerank_train_refs_pre_filter"],
             }
         else:
-            sweep_info = _sweep_threshold(raw_preds, refs_train, SWEEP_GRID)
+            sweep_info = _sweep_threshold(
+                raw_preds,
+                refs_train,
+                SWEEP_GRID,
+                seen_labels=seen_labels,
+                seen_pairs=seen_pairs,
+                src_db=src_db,
+                tgt_db=tgt_db,
+            )
             chosen_threshold = float(sweep_info["best"]["threshold"])
-            test_src = {s for s, _ in _load_refs(refs_test)}
-            preds_for_output = [(s, t, sc) for s, t, sc in raw_preds if s in test_src]
+            test_src = {s for s, _ in _filter_refs_set(
+                _load_refs(refs_test), src_db, tgt_db, seen_labels, seen_pairs
+            )}
+            preds_for_output = [
+                (s, t, sc)
+                for s, t, sc in raw_preds
+                if s in test_src and _is_clean_pair(s, t, src_db, tgt_db, seen_labels, seen_pairs)
+            ]
 
         print(f"  Sweep best: thr={chosen_threshold:.2f} "
               f"trainF1={sweep_info['best']['F1']:.4f} "
@@ -706,14 +958,25 @@ def run_task(task: str, year_dir: Path, out_dir: Path, sweep: bool, rebuild: boo
     n_match = _write_match_result(preds_for_output, chosen_threshold, match_path)
     print(f"  Global matching: {n_match} predictions @ thr={chosen_threshold} -> {eval_target}")
 
-    seen_labels = _load_seen_labels() if ENABLE_CONTAMINATION_FILTER else None
     global_metrics = _eval_global_match_file(
-        match_path, eval_refs, restrict_to_refs_src=restrict_src,
-        seen_labels=seen_labels, src_db=src_db, tgt_db=tgt_db)
+        match_path,
+        eval_refs,
+        restrict_to_refs_src=restrict_src,
+        seen_labels=seen_labels,
+        seen_pairs=seen_pairs,
+        src_db=src_db,
+        tgt_db=tgt_db,
+    )
 
     n_rank, n_src_missing = _run_local_ranking(test_cands, src_db, tgt_db, rank_path)
     print(f"  Local ranking: {n_rank} test rows scored ({n_src_missing} src not in DB)")
-    ranking_metrics = _eval_ranking(rank_path, seen_labels=seen_labels, src_db=src_db, tgt_db=tgt_db)
+    ranking_metrics = _eval_ranking(
+        rank_path,
+        seen_labels=seen_labels,
+        seen_pairs=seen_pairs,
+        src_db=src_db,
+        tgt_db=tgt_db,
+    )
 
     if ENABLE_CONTAMINATION_FILTER:
         print(f"  [FILTER] refs  {global_metrics['n_refs_pre_filter']:>6} -> {global_metrics['n_refs']:>6}")
@@ -724,11 +987,14 @@ def run_task(task: str, year_dir: Path, out_dir: Path, sweep: bool, rebuild: boo
         "task": task, "mode": "sweep" if sweep else "fixed",
         "threshold": chosen_threshold, "eval_on": eval_target,
         "contamination_filter": bool(ENABLE_CONTAMINATION_FILTER),
+        "contamination_filter_mode": CONTAMINATION_FILTER_MODE,
         **global_metrics, **ranking_metrics, "src_missing": n_src_missing,
     }
     if sweep_info is not None:
         metrics["sweep_log"] = sweep_info["sweep"]
         metrics["n_train_refs"] = sweep_info["n_train_refs"]
+        if "n_train_refs_pre_filter" in sweep_info:
+            metrics["n_train_refs_pre_filter"] = sweep_info["n_train_refs_pre_filter"]
     if rerank_info is not None:
         metrics.update(rerank_info)
 
@@ -744,10 +1010,11 @@ def run_task(task: str, year_dir: Path, out_dir: Path, sweep: bool, rebuild: boo
 
 # Summary writer (shared by orchestrator + single-task modes)
 
-_SUMMARY_COLS = ["task", "mode", "threshold", "eval_on", "contamination_filter",
+_SUMMARY_COLS = ["task", "mode", "threshold", "eval_on", "contamination_filter", "contamination_filter_mode",
                  "P", "R", "F1", "MRR", "Hits@1", "Hits@5", "Hits@10",
                  "n_preds", "n_refs", "tp", "n_test", "src_missing",
-                 "n_preds_pre_filter", "n_refs_pre_filter", "n_test_pre_filter"]
+                 "n_preds_pre_filter", "n_refs_pre_filter", "n_test_pre_filter",
+                 "n_train_refs", "n_train_refs_pre_filter"]
 
 
 def _write_summary(metrics_list: List[Dict], out_root: Path) -> None:
